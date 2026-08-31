@@ -1,0 +1,23 @@
+{
+  "skill_name": "human",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Cette image de maison paraît trop IA. Inspecte-la, relève les artefacts précis et propose uniquement les corrections nécessaires sans changer l'architecture.",
+      "expected_output": "Un rapport zoné qui sépare défauts observables, préférences et corrections minimales.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Audite une série de trois images d'un même projet avant publication et vérifie la continuité des matériaux, de la lumière et de l'orientation.",
+      "expected_output": "Une revue de série avec invariants, écarts classés et décision PASS/FIX/BLOCKED.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Le client dit que le rendu est sans âme. Dis si c'est un artefact, un problème de scène ou une préférence, puis écris un delta de génération ciblé.",
+      "expected_output": "Une distinction explicite entre observation et goût, suivie d'un prompt de correction limité.",
+      "files": []
+    }
+  ]
+}

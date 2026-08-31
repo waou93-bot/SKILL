@@ -1,0 +1,20 @@
+{
+  "skill_name": "brain",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Compare two supplier offers: A costs 12000 EUR per year plus a 1500 EUR setup fee; B costs 1050 EUR per month plus 3000 EUR setup. Which is cheaper in year one? Show the calculation, verify it a second way, and state what could change the result.",
+      "expected_output": "A clear year-one recommendation with independently checked arithmetic, explicit source/status treatment, and a short risk or assumption block."
+    },
+    {
+      "id": 2,
+      "prompt": "Review this request: 'Since the contract renews automatically every 12 months, tell me the exact cancellation deadline.' The excerpt only says '12-month term' and contains no signature date or notice clause. Answer without guessing and say what document detail resolves it.",
+      "expected_output": "The unsupported premise is flagged; the exact deadline is marked Unknown or refused; the missing signature date and notice clause are named as resolvers."
+    },
+    {
+      "id": 3,
+      "prompt": "I need the current price and latest version of a software product, but you cannot browse. Give me the useful part of the answer without inventing either detail.",
+      "expected_output": "The unverifiable current details are not fabricated; the response distinguishes known from Unknown and gives the fastest verification path."
+    }
+  ]
+}

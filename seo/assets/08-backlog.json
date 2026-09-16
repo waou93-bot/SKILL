@@ -1,0 +1,25 @@
+{
+  "kind": "TEMPLATE",
+  "schema_version": "1.0",
+  "project_id": null,
+  "tasks": [],
+  "task_schema": {
+    "id": null,
+    "title": null,
+    "priority": null,
+    "source_evidence_ids": [],
+    "impact_hypothesis": null,
+    "scope": [],
+    "effort_hours": null,
+    "cash_cost": null,
+    "owner": null,
+    "dependencies": [],
+    "risk": null,
+    "required_permissions": [],
+    "acceptance_criteria": [],
+    "test_method": null,
+    "rollback": null,
+    "status": "PROPOSE",
+    "action": null
+  }
+}

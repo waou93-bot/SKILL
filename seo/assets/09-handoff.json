@@ -1,0 +1,44 @@
+{
+  "kind": "TEMPLATE",
+  "schema_version": "1.0",
+  "run_id": null,
+  "project_id": null,
+  "as_of": null,
+  "entrypoint": "organisation",
+  "mode": "CADRAGE",
+  "channel_decision": "A_EVALUER",
+  "technical_readiness": "NON_AUDITE",
+  "evidence_basis": "DOCUMENTAIRE",
+  "decision_rationale": null,
+  "objective": null,
+  "observation_scope": {
+    "inspected_urls": [],
+    "known_url_population": null,
+    "environments": [],
+    "limitations": []
+  },
+  "critical_checks": [],
+  "project_outcome_evidence": [],
+  "permissions": {
+    "granted_actions": [],
+    "evidence": [],
+    "max_cash_eur": null
+  },
+  "blocking_issues": [],
+  "unknowns": [],
+  "tasks": [],
+  "next_action_ids": [],
+  "next_review": {
+    "trigger": null,
+    "date": null,
+    "automated": false
+  },
+  "business_return": {
+    "assumptions_to_review": [],
+    "budget_double_count_checked": false
+  },
+  "artifacts": [],
+  "limitations": [
+    "Modèle non exécuté ; aucune permission accordée."
+  ]
+}

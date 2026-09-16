@@ -1,0 +1,6 @@
+interface:
+  display_name: "SEO — Benchmark & croissance organique"
+  short_description: "Évaluer le canal SEO, auditer et prioriser les actions."
+  default_prompt: "Utilise $seo pour analyser ce projet, lire son contexte et proposer un plan SEO sourcé, sans modifier ni publier le site."
+policy:
+  allow_implicit_invocation: true

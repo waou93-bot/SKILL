@@ -45,3 +45,18 @@ Organisation conserve la coordination ; un skill appelé restitue son résultat 
 - Aucun service, serveur ou automatisation permanent n'est nécessaire au skill. L'installation est locale à ce PC et ne synchronise pas les autres ordinateurs.
 
 Pour vérifier ou maintenir ce skill, consulter [references/tests.md](references/tests.md), qui distingue contrôles de fichiers, détection par l'hôte, essais comportementaux et cas non exécutés.
+
+<!-- SEO_ROUTING:BEGIN -->
+Pour les demandes de stratégie SEO, audit de référencement, pré-lancement web,
+refonte/migration ou diagnostic de baisse organique, charger le skill seo lorsqu’il
+est réellement disponible. Pour une nouvelle activité, évaluer sa pertinence pendant
+l’analyse des canaux de Business ; ne pas imposer le SEO comme canal principal.
+Pour une retouche ciblée, utiliser uniquement les contrôles pertinents. Pour un projet
+privé sans enjeu de recherche web, ne pas lancer un plan SEO complet.
+
+Lire le contexte et les dossiers BUSINESS/ et SEO/ existants. Retourner à Organisation
+la décision de canal ET l’état technique, les preuves, les inconnues et le backlog.
+Une recommandation n’est pas une permission de publication, suppression ou dépense.
+Ne pas contourner une limite Business et ne pas condamner le produit entier parce
+que le SEO est non prioritaire. Éviter les rappels circulaires entre skills.
+<!-- SEO_ROUTING:END -->

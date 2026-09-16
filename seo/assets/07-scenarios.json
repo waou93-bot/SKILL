@@ -1,0 +1,228 @@
+{
+  "kind": "TEMPLATE",
+  "schema_version": "1.0",
+  "currency": "EUR_A_CONFIRMER",
+  "period": null,
+  "mode": "NON_DEFINI",
+  "business_assumption_version": null,
+  "notes": [
+    "Modèle paramétrique ; aucune prévision réalisée.",
+    "Les inconnues ne sont pas des zéros.",
+    "Ne pas compter deux fois demande potentielle/baseline ou sous-rapports IA/totaux.",
+    "Inclure les délais de conversion ; rentabilité et trésorerie sont distinctes."
+  ],
+  "formulas": {
+    "clicks": "eligible_impressions * ctr",
+    "eligible_sessions": "clicks * click_to_eligible_session_ratio",
+    "conversions": "eligible_sessions * conversion_rate",
+    "contribution": "conversions * (net_revenue_per_conversion - variable_cost_per_conversion)",
+    "economic_seo_cost": "seo_cash_cost + seo_labor_hours * labor_value_per_hour",
+    "incremental_channel_balance": "contribution - baseline_contribution - economic_seo_cost"
+  },
+  "scenarios": [
+    {
+      "name": "DEFAVORABLE",
+      "parameters": {
+        "eligible_impressions": {
+          "value": null,
+          "unit": "impressions/période",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "ctr": {
+          "value": null,
+          "unit": "proportion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "click_to_eligible_session_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "conversion_rate": {
+          "value": null,
+          "unit": "proportion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "net_revenue_per_conversion": {
+          "value": null,
+          "unit": "EUR/conversion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "variable_cost_per_conversion": {
+          "value": null,
+          "unit": "EUR/conversion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "seo_cash_cost": {
+          "value": null,
+          "unit": "EUR/période",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "seo_labor_hours": {
+          "value": null,
+          "unit": "heures/période",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "labor_value_per_hour": {
+          "value": null,
+          "unit": "EUR/heure",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "baseline_contribution": {
+          "value": null,
+          "unit": "EUR/période",
+          "status": "INCONNU",
+          "source_ids": []
+        }
+      },
+      "results": null
+    },
+    {
+      "name": "CENTRAL",
+      "parameters": {
+        "eligible_impressions": {
+          "value": null,
+          "unit": "impressions/période",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "ctr": {
+          "value": null,
+          "unit": "proportion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "click_to_eligible_session_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "conversion_rate": {
+          "value": null,
+          "unit": "proportion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "net_revenue_per_conversion": {
+          "value": null,
+          "unit": "EUR/conversion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "variable_cost_per_conversion": {
+          "value": null,
+          "unit": "EUR/conversion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "seo_cash_cost": {
+          "value": null,
+          "unit": "EUR/période",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "seo_labor_hours": {
+          "value": null,
+          "unit": "heures/période",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "labor_value_per_hour": {
+          "value": null,
+          "unit": "EUR/heure",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "baseline_contribution": {
+          "value": null,
+          "unit": "EUR/période",
+          "status": "INCONNU",
+          "source_ids": []
+        }
+      },
+      "results": null
+    },
+    {
+      "name": "FAVORABLE",
+      "parameters": {
+        "eligible_impressions": {
+          "value": null,
+          "unit": "impressions/période",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "ctr": {
+          "value": null,
+          "unit": "proportion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "click_to_eligible_session_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "conversion_rate": {
+          "value": null,
+          "unit": "proportion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "net_revenue_per_conversion": {
+          "value": null,
+          "unit": "EUR/conversion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "variable_cost_per_conversion": {
+          "value": null,
+          "unit": "EUR/conversion",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "seo_cash_cost": {
+          "value": null,
+          "unit": "EUR/période",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "seo_labor_hours": {
+          "value": null,
+          "unit": "heures/période",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "labor_value_per_hour": {
+          "value": null,
+          "unit": "EUR/heure",
+          "status": "INCONNU",
+          "source_ids": []
+        },
+        "baseline_contribution": {
+          "value": null,
+          "unit": "EUR/période",
+          "status": "INCONNU",
+          "source_ids": []
+        }
+      },
+      "results": null
+    }
+  ],
+  "zero_incremental_gain_stress_test": {
+    "incremental_commercial_gain": 0,
+    "seo_cost": null,
+    "max_loss_approved": null,
+    "status": "SCENARIO_DE_STRESS_PAS_UNE_OBSERVATION"
+  }
+}

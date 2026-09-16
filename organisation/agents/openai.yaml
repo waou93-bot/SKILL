@@ -1,0 +1,6 @@
+interface:
+  display_name: "Organisation"
+  short_description: "Orchestrer les projets avec un parcours proportionné"
+  default_prompt: "Utilise $organisation pour traiter ma demande de projet avec le contexte utile et le parcours le plus simple suffisant."
+policy:
+  allow_implicit_invocation: true

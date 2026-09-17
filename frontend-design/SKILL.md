@@ -10,6 +10,9 @@ The user provides frontend requirements: a component, page, application, or inte
 
 When the request concerns a themed site, application, or multi-section project rather than an isolated component, invoke `toolbox` before coding. Use its shortlist of relevant domain references, implementation options, media sources, licenses, and risks as input to the design direction. Do not let the shortlist replace the design read or turn a reference site into a template.
 
+## Design DNA integration
+
+For a visual interface, load `design-dna` first when it is available. Before this skill’s design plan, create or update the project’s `PROJECT_SKIN.yaml`, state one specific visual concept, and preserve approved visual decisions. Design DNA owns the cross-project visual intent, anti-slop exclusions, image and motion direction; this skill turns that intent into a brief-specific frontend plan and implementation. For a narrow adjustment, reuse the existing skin instead of inventing a new one.
 ## Output Requirements
 
 **MANDATORY**: The entry HTML file MUST be named `index.html`. This is a strict requirement for all generated frontend projects to ensure compatibility with standard web hosting and deployment workflows.

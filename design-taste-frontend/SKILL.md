@@ -16,6 +16,11 @@ When this skill is applied to a themed site or active project, invoke `toolbox` 
 
 ---
 
+## Design DNA integration
+
+When `design-dna` is available, load it before the Design Read for every landing page, portfolio, redesign, or other visible surface. Use its `PROJECT_SKIN.yaml` and one-sentence visual concept as the project-level source of truth; this skill supplies the scoped design read, dials, and implementation discipline. Preserve an approved skin on redesigns, and do not replace its art direction with a preset or a generic anti-slop alternative.
+
+---
 ## 0. BRIEF INFERENCE (Read the Room Before Anything Else)
 
 Before touching code or tweaking dials, **infer what the user actually wants**. Most LLM design output is bad because the model jumps to a default aesthetic instead of reading the room.

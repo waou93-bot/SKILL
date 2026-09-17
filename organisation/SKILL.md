@@ -46,6 +46,13 @@ Organisation conserve la coordination ; un skill appelé restitue son résultat 
 
 Pour vérifier ou maintenir ce skill, consulter [references/tests.md](references/tests.md), qui distingue contrôles de fichiers, détection par l'hôte, essais comportementaux et cas non exécutés.
 
+<!-- DESIGN_DNA_ROUTING:BEGIN -->
+## Routage Design DNA
+
+Lorsqu’une demande crée, modifie, audite ou implémente une surface produit visible — site, landing page, application web/mobile/desktop, SaaS, dashboard, portfolio, expérience interactive, style de composant, direction d’image ou motion — charger `design-dna` avant toute production visuelle s’il est disponible. Distinguer le périmètre visuel d’une correction purement technique : une retouche localisée réutilise le `PROJECT_SKIN.yaml` existant et n’impose pas de nouvelle direction artistique.
+
+Faire créer ou actualiser le `PROJECT_SKIN.yaml` avant une interface finale, conserver les éléments approuvés, puis organiser la production autour du concept, de la composition et de la typographie. Avant de conclure, demander les gates Anti-Slop et Design Quality pertinents. `design-dna` définit l’intention et les contraintes visuelles ; les skills de production conservent leurs responsabilités techniques. Ne pas créer de boucle si `design-dna` est invoqué explicitement.
+<!-- DESIGN_DNA_ROUTING:END -->
 <!-- SEO_ROUTING:BEGIN -->
 Pour les demandes de stratégie SEO, audit de référencement, pré-lancement web,
 refonte/migration ou diagnostic de baisse organique, charger le skill seo lorsqu’il

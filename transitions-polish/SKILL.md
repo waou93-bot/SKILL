@@ -9,6 +9,9 @@ An **add-on** to the [`transitions-dev`](../transitions-dev/SKILL.md) skill. Whe
 
 Install it alongside `transitions-dev`, or on its own — the token values are restated below so this skill can audit a project standalone. When it is installed, the transitions.dev **Refine panel** automatically feeds these rules into every **Small refinement** job.
 
+## Design DNA motion context
+
+When polishing a product-level motion system, read the existing `PROJECT_SKIN.yaml` and load `design-dna` when available before changing intensity, choreography, or signature behavior. The skin determines whether motion is warranted and how prominent it may be; this skill tunes the token values and usage fit. A narrow timing correction should preserve the established motion direction and reduced-motion fallback.
 ## Core doctrine: match on usage, never on the nearest number
 
 A value is not "wrong" because it is off by 20ms. It is wrong when it does not fit **what the motion does**. Always infer the usage first — modal close, dropdown open, tooltip, badge appear, page slide, text reveal, shake — then pick the token whose documented usage matches. A `300ms` modal close maps to `--duration-quick` (150ms) because both are "modal close", even though the numbers differ. If a value's usage matches **no** token usage, leave it untouched. Never force a swap just because a number is close.

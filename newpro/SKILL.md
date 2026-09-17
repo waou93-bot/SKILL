@@ -11,6 +11,11 @@ Transformer le contexte disponible en un socle MASTER lisible, trace et verifie.
 
 La V1 couvre trois profils : `software`, `artistic` et `hybrid`. Elle prepare la tranche verticale mais ne lance jamais sa production. La creation d'un Projet ChatGPT, le choix de sa memoire et la creation de conversations restent des actions manuelles ; preparer les instructions et la liste des sources a importer si cela est utile.
 
+## Intégration Design DNA
+
+Pour un projet dont le périmètre comporte une surface visible ou une direction artistique, charger `design-dna` pendant le bootstrap, après la classification factuelle et avant toute décision visuelle. Préparer un `PROJECT_SKIN.yaml` depuis son template dans la racine du projet ou du MASTER cible : n’y renseigner que les décisions existantes et marquer le reste `[A ARBITRER]`. Ce document cadre la future production ; il ne constitue ni une refonte, ni une direction artistique implicitement approuvée.
+
+Conserver les assets, polices et motions déjà approuvés. Toute proposition de skin, de concept ou d’exception visuelle reste soumise aux autorisations et garde-fous de ce skill.
 ## Workflow
 
 ### 1. Inspecter

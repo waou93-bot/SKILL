@@ -7,6 +7,9 @@ description: Production-ready CSS transitions for web apps. Use when implementin
 
 Twenty-one portable CSS transitions, each namespaced under `t-*` selectors with semantic CSS custom properties. Drop-in: paste the snippet, wire the documented HTML hooks, done. No framework dependencies, no demo-specific markup, and every snippet ships a `prefers-reduced-motion` guard.
 
+## Design DNA motion context
+
+For product-level motion, a signature interaction, narrative sequence, or a transition system spanning several surfaces, load `design-dna` first when available. Follow the project skin’s motion intensity, purpose, spatial-tech justification, and fallback rules before selecting a transition. An isolated feedback transition may use the existing skin directly; do not manufacture a new motion language for it. Every selected transition must still preserve immediate essential interactions and reduced-motion behavior.
 ## Quick reference
 
 | Transition | When to use | Reference |

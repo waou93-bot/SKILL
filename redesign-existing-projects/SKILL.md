@@ -5,6 +5,9 @@ description: Upgrades existing websites and apps to premium quality. Audits curr
 
 # Redesign Skill
 
+## Design DNA integration
+
+For a visible redesign, first inspect the existing product and read any approved `PROJECT_SKIN.yaml`. Then load `design-dna` before proposing visual changes: it establishes the project-specific concept, preserves approved assets and motion, and supplies the anti-slop and quality gates. If no skin exists, create one from evidence gathered in the audit and mark unresolved choices rather than inventing a replacement identity. Use this skill for the targeted implementation while keeping functionality intact.
 ## How This Works
 
 When applied to an existing project, follow this sequence:

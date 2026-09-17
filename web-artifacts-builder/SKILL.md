@@ -21,6 +21,9 @@ VERY IMPORTANT: To avoid what is often referred to as "AI slop", avoid using exc
 
 Before initializing a multi-component artifact with a defined theme, invoke `toolbox` to identify relevant domain references, compatible implementation options, media sources, and licensing or access constraints. Keep this artifact skill's required build and bundling stack unless a documented project constraint justifies an alternative; use shadcn/ui as functional primitives, not as the visual direction.
 
+## Design DNA integration
+
+For an artifact with a meaningful visible interface, load `design-dna` before choosing the component composition or styling. Create or update a `PROJECT_SKIN.yaml` alongside the artifact when the work merits a reusable visual direction; for a tiny targeted artifact, reuse the host project skin. Treat shadcn/ui as functional primitives only, and run the relevant Anti-Slop and Design Quality gates before delivery.
 ## Quick Start
 
 ### Step 1: Initialize Project

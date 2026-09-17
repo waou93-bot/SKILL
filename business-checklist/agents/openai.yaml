@@ -1,0 +1,6 @@
+interface:
+  display_name: "Business Checklist"
+  short_description: "Benchmark, preuves, viabilité et business plan"
+  default_prompt: "Utilise Business Checklist sur ce projet : lis l'existant, recherche les preuves, actualise la checklist et le business plan, puis recommande le prochain engagement sans modifier le code ni engager de dépenses."
+policy:
+  allow_implicit_invocation: true

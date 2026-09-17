@@ -1,0 +1,85 @@
+project: "PROJECT_NAME"
+surface: "website | web-app | mobile-app | desktop-software | hybrid | portfolio | dashboard | immersive"
+
+visual_concept: "One sentence. Specific, not generic."
+
+core:
+  design_dna: "design-dna"
+  preserve_approved_assets: true
+  preserve_approved_motion: true
+
+personality:
+  mood: []
+  keywords: []
+  avoid: []
+
+composition:
+  density: "low | medium | high"
+  asymmetry: "low | medium | high"
+  negative_space: "low | medium | high"
+  chaptering: "none | subtle | strong"
+
+color:
+  mode: "light | dark | adaptive"
+  contrast: "low | medium | high | very-high"
+  temperature: "cool | neutral | warm | mixed"
+  palette_notes: ""
+
+typography:
+  ui_body: "Plus Jakarta Sans"
+  neutral_fallback: "Inter"
+  display: "project-specific | existing-approved | none"
+  display_direction: "condensed grotesque when conceptually justified"
+  notes: ""
+
+surfaces:
+  radius: "restrained | project-specific"
+  depth: "flat | subtle | medium | strong"
+  texture: "none | subtle | material | project-specific"
+  borders: "none | subtle | structural"
+
+imagery:
+  role: "minimal | supporting | dominant"
+  style: ""
+  crop: "editorial | product | cinematic | functional"
+  treatment: ""
+
+motion:
+  intensity: "low | medium | high"
+  micro: true
+  structural: true
+  narrative: false
+  signature_motion: ""
+  reduced_motion_required: true
+
+spatial_tech:
+  parallax: false
+  two_point_five_d: false
+  webgl_3d: false
+  justification: ""
+  fallback: ""
+
+signature_exception:
+  idea: "One project-specific interaction or visual device."
+  reason: "Why it belongs to this project."
+
+anti_slop:
+  forbidden_patterns:
+    - "generic centered SaaS hero"
+    - "gratuitous purple/blue gradient"
+    - "decorative glassmorphism"
+    - "automatic bento grid"
+    - "wall of identical cards"
+    - "decorative 3D orb/blob"
+    - "stock imagery without intent"
+    - "motion without function"
+
+quality_gate:
+  anti_slop_passed: false
+  typography_passed: false
+  composition_passed: false
+  imagery_passed: false
+  motion_passed: false
+  responsive_passed: false
+  accessibility_passed: false
+  performance_passed: false

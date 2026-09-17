@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "is_template": true,
+  "project_id": null,
+  "as_of": null,
+  "currency": null,
+  "geography": null,
+  "forecast_start": null,
+  "horizon_months": 36,
+  "scenarios": [
+    "defavorable",
+    "central",
+    "favorable"
+  ],
+  "input_example": {
+    "id": null,
+    "label": null,
+    "value": null,
+    "unit": null,
+    "period": null,
+    "type": "INCONNU",
+    "source_ids": [],
+    "data_period": null,
+    "consulted_at": null,
+    "scope": null,
+    "scenario_values": {
+      "defavorable": null,
+      "central": null,
+      "favorable": null
+    },
+    "formula": null,
+    "input_ids": [],
+    "validation_test_id": null,
+    "limitations": null
+  },
+  "inputs": [],
+  "accounting_conventions": [],
+  "checks": [],
+  "warning": "Aucun chiffre de projet : les valeurs nulles ne sont pas des zéros."
+}

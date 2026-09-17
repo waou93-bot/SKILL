@@ -1,0 +1,51 @@
+project: "Down Trigger"
+surface: "website"
+visual_concept: "A hostile urban music experience structured as cinematic chapters, with navigation kept simple."
+
+personality:
+  mood: ["urban", "hostile", "cinematic", "musical"]
+  keywords: ["silhouette", "street", "contrast", "stage-energy"]
+  avoid: ["black-metal cliché", "generic post-apocalypse UI", "fantasy", "template music landing"]
+
+composition:
+  density: "low"
+  asymmetry: "high"
+  negative_space: "high"
+  chaptering: "strong"
+
+color:
+  mode: "dark"
+  contrast: "very-high"
+  temperature: "cool"
+  palette_notes: "Project-specific; do not inherit generic AI gradients."
+
+typography:
+  ui_body: "Plus Jakarta Sans"
+  neutral_fallback: "Inter"
+  display: "project-specific"
+  display_direction: "strong condensed grotesque"
+
+imagery:
+  role: "dominant"
+  style: "cinematic photographic"
+  crop: "cinematic"
+  treatment: "clean, high-impact, avoid gratuitous grain"
+
+motion:
+  intensity: "high"
+  micro: true
+  structural: true
+  narrative: true
+  signature_motion: "scroll-driven chapter reveals tied to music-world imagery"
+  reduced_motion_required: true
+
+spatial_tech:
+  parallax: true
+  two_point_five_d: true
+  webgl_3d: false
+  justification: "Use depth only when it increases immersion."
+  fallback: "Static/2D sequence preserving the same hierarchy."
+
+signature_exception:
+  idea: "A project-specific transition/interaction connected to the band's world."
+  reason: "Creates identity without turning the whole site into a technology demo."

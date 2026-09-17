@@ -1,0 +1,92 @@
+{
+  "kind": "TEMPLATE",
+  "schema_version": "2.0",
+  "run_id": null,
+  "project_id": null,
+  "as_of": null,
+  "entrypoint": "direct",
+  "mode": "NOUVEAU_PROJET",
+  "evidence_basis": "DOCUMENTAIRE",
+  "decision": null,
+  "decision_rationale": null,
+  "evidence": [],
+  "gates": [
+    {
+      "id": "G1",
+      "result": "NON_EVALUE",
+      "critical_for_next_scope": true,
+      "rationale": null,
+      "evidence_ids": []
+    },
+    {
+      "id": "G2",
+      "result": "NON_EVALUE",
+      "critical_for_next_scope": true,
+      "rationale": null,
+      "evidence_ids": []
+    },
+    {
+      "id": "G3",
+      "result": "NON_EVALUE",
+      "critical_for_next_scope": true,
+      "rationale": null,
+      "evidence_ids": []
+    },
+    {
+      "id": "G4",
+      "result": "NON_EVALUE",
+      "critical_for_next_scope": true,
+      "rationale": null,
+      "evidence_ids": []
+    },
+    {
+      "id": "G5",
+      "result": "NON_EVALUE",
+      "critical_for_next_scope": true,
+      "rationale": null,
+      "evidence_ids": []
+    },
+    {
+      "id": "G6",
+      "result": "NON_EVALUE",
+      "critical_for_next_scope": true,
+      "rationale": null,
+      "evidence_ids": []
+    }
+  ],
+  "blocking_issues": [],
+  "unknowns": [],
+  "next_step": {
+    "scope": null,
+    "max_cash_eur": null,
+    "max_hours": null,
+    "owner": null,
+    "review_date": null,
+    "review_trigger": null,
+    "budget_evidence_ref": null
+  },
+  "permissions": {
+    "granted_actions": [],
+    "approval_ref": null,
+    "max_cash_eur": null,
+    "max_hours": null
+  },
+  "finance": {
+    "status": "NON_MODELISE",
+    "model_ref": null,
+    "checks_ref": null,
+    "without_unsecured_funding_reviewed": false
+  },
+  "seo": {
+    "status": "NON_SOLLICITE",
+    "source_ref": null,
+    "budget_double_count_checked": null,
+    "cost_ids": []
+  },
+  "checklist_ref": null,
+  "next_actions": [],
+  "artifacts": [],
+  "limitations": [
+    "Modèle vierge : aucune analyse, permission, installation ou recherche exécutée pour un projet."
+  ]
+}

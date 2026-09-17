@@ -1,0 +1,51 @@
+project: "Business Software"
+surface: "desktop-software"
+visual_concept: "A calm, precise professional workspace with editorial hierarchy but restrained motion."
+
+personality:
+  mood: ["precise", "premium", "calm", "trustworthy"]
+  keywords: ["clarity", "structure", "focus"]
+  avoid: ["generic SaaS hero", "glass UI", "over-animation", "card wall"]
+
+composition:
+  density: "medium"
+  asymmetry: "medium"
+  negative_space: "medium"
+  chaptering: "subtle"
+
+color:
+  mode: "light"
+  contrast: "high"
+  temperature: "neutral"
+  palette_notes: "Distinctive project palette, restrained accents."
+
+typography:
+  ui_body: "Plus Jakarta Sans"
+  neutral_fallback: "Inter"
+  display: "none"
+  display_direction: "UI hierarchy through scale/weight rather than a decorative display face"
+
+imagery:
+  role: "minimal"
+  style: "real interface/product content"
+  crop: "functional"
+  treatment: "crisp"
+
+motion:
+  intensity: "low"
+  micro: true
+  structural: true
+  narrative: false
+  signature_motion: "subtle continuity between workspaces and states"
+  reduced_motion_required: true
+
+spatial_tech:
+  parallax: false
+  two_point_five_d: false
+  webgl_3d: false
+  justification: "Not useful for the task surface."
+  fallback: "Not required."
+
+signature_exception:
+  idea: "One distinctive workspace transition or information visualization."
+  reason: "Adds authorship without compromising professional speed."

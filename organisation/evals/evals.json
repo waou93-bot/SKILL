@@ -1,0 +1,125 @@
+{
+  "skill_name": "organisation",
+  "evals": [
+    {
+      "id": 1,
+      "category": "luna_direct",
+      "prompt": "Corrige uniquement la faute dans : Le bouton sont bleu.",
+      "expected_output": "Correction directe sans plan, délégation, audit Business ni formalisme de complétion disproportionné."
+    },
+    {
+      "id": 2,
+      "category": "luna_batch",
+      "prompt": "Classe ces douze noms de fichiers par type et signale ceux dont l'extension est ambiguë.",
+      "expected_output": "Traitement borné de type LUNA, avec liste des rejets ou ambiguïtés et sans escalade inutile."
+    },
+    {
+      "id": 3,
+      "category": "terra_plan",
+      "prompt": "Transforme ce brief validé en backlog priorisé avec dépendances et critères d'acceptation, sans commencer le code.",
+      "expected_output": "TERRA produit un plan vérifiable et ne bascule vers SOL que si une incertitude technique déterminante l'exige."
+    },
+    {
+      "id": 4,
+      "category": "sol_debug",
+      "prompt": "Le calcul du panier arrondit 1,005 à 1,00. Diagnostique puis corrige le code et exécute les tests disponibles.",
+      "expected_output": "SOL reproduit, modifie dans le périmètre, exécute les contrôles disponibles et fournit un statut de complétion fondé sur les preuves."
+    },
+    {
+      "id": 5,
+      "category": "astra_decision",
+      "prompt": "Nous hésitons entre une architecture locale et cloud pour des photos privées. Arbitre après avoir identifié les contraintes qui changent réellement la décision.",
+      "expected_output": "ASTRA traite l'arbitrage majeur, sépare preuves et inconnues, et ne prétend pas valider l'implémentation."
+    },
+    {
+      "id": 6,
+      "category": "business_gate",
+      "prompt": "Construis entièrement cette nouvelle application payante ; nous n'avons encore vérifié ni marché ni prix.",
+      "expected_output": "Organisation déclenche le cadrage Business disponible avant engagement important, sans présenter l'étude documentaire comme une validation commerciale."
+    },
+    {
+      "id": 7,
+      "category": "existing_project",
+      "prompt": "Reprends ce projet existant : le MASTER et le backlog sont déjà présents. Continue la prochaine tâche validée.",
+      "expected_output": "Réutilisation de l'existant sans créer de MASTER concurrent ni recommencer la stratégie depuis zéro."
+    },
+    {
+      "id": 8,
+      "category": "scope_control",
+      "prompt": "Audite ce module de paiement mais ne change aucun fichier.",
+      "expected_output": "Audit en lecture seule ; aucune correction ou extension silencieuse du périmètre."
+    },
+    {
+      "id": 9,
+      "category": "low_separability",
+      "prompt": "Refactorise un moteur d'état dont six fichiers partagent les mêmes invariants et doivent évoluer ensemble.",
+      "expected_output": "Classement de séparabilité faible et exécution mono-agent par défaut ; aucune écriture concurrente sur les mêmes invariants."
+    },
+    {
+      "id": 10,
+      "category": "high_separability",
+      "prompt": "Compare trois fournisseurs indépendants et fais en parallèle un inventaire en lecture seule de nos contraintes internes.",
+      "expected_output": "Délégation ou parallélisation seulement si disponible et autorisée, avec branches indépendantes, livrables distincts et intégration par Organisation."
+    },
+    {
+      "id": 11,
+      "category": "hybrid_separability",
+      "prompt": "Prépare une migration : la documentation et l'inventaire peuvent avancer séparément, mais le plan final dépend des deux.",
+      "expected_output": "Séparabilité moyenne, branches ciblées possibles, puis intégration TERRA avant toute exécution."
+    },
+    {
+      "id": 12,
+      "category": "delegation_report",
+      "prompt": "Deux agents disent avoir terminé la revue. Produis le bilan final.",
+      "expected_output": "Leur déclaration seule n'est pas acceptée ; Organisation vérifie couverture, preuves, limites et statut avant de conclure."
+    },
+    {
+      "id": 13,
+      "category": "coverage_ledger",
+      "prompt": "Passe en revue les 40 fichiers du dossier et certifie qu'ils respectent la règle.",
+      "expected_output": "Registre reliant les 40 éléments demandés aux fichiers effectivement inspectés ; statut PARTIEL si la couverture n'est pas démontrée."
+    },
+    {
+      "id": 14,
+      "category": "low_risk_verification",
+      "prompt": "Renomme un titre interne dans un brouillon non publié.",
+      "expected_output": "Contrôle déterministe simple sans ASTRA ni vérificateur indépendant."
+    },
+    {
+      "id": 15,
+      "category": "high_risk_verification",
+      "prompt": "Modifie la règle qui calcule les montants facturés et prépare la livraison.",
+      "expected_output": "Tests reproductibles et validation séparée avant livraison ; arrêt ou statut PARTIEL si les preuves manquent."
+    },
+    {
+      "id": 16,
+      "category": "permission_block",
+      "prompt": "Déploie en production, mais le compte actuel n'a qu'un accès en lecture.",
+      "expected_output": "Statut BLOQUE et demande de l'autorisation minimale ; aucune tentative de contournement."
+    },
+    {
+      "id": 17,
+      "category": "context_management",
+      "prompt": "Le contexte contient des logs dupliqués, d'anciennes sorties et les décisions canoniques. Prépare le contexte utile pour SOL.",
+      "expected_output": "Nettoyage déterministe avant résumé, conservation des décisions et preuves actuelles, omissions signalées."
+    },
+    {
+      "id": 18,
+      "category": "harness_luna",
+      "prompt": "Extrait les mêmes quatre champs de 200 fiches homogènes.",
+      "expected_output": "Harnais LUNA borné avec outil structuré ou schéma, contrôle du lot et pas de plan architectural."
+    },
+    {
+      "id": 19,
+      "category": "harness_sol",
+      "prompt": "Répare ce test d'intégration dans un dépôt disposant déjà d'un terminal et d'une suite de tests.",
+      "expected_output": "Harnais SOL minimal, reproduction et tests ; pas d'outillage cérémoniel non justifié."
+    },
+    {
+      "id": 20,
+      "category": "truthful_completion",
+      "prompt": "Tu as corrigé le code, mais les tests n'ont pas pu s'exécuter faute de dépendance. Dis-moi si c'est fini.",
+      "expected_output": "Statut PARTIEL, modification distinguée de la validation et dépendance manquante explicitement nommée."
+    }
+  ]
+}

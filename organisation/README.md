@@ -17,8 +17,11 @@ Dans une nouvelle conversation, invoquer `$organisation` suivi de la demande. Si
 - [SKILL.md](SKILL.md) : instructions opérationnelles et garde-fous.
 - [agents/openai.yaml](agents/openai.yaml) : interface et politique d’invocation.
 - [references/routing.md](references/routing.md) : rôles, capacités, délégation et escalade.
+- [references/harnesses.md](references/harnesses.md) : profils de contexte, plan et outils par rôle.
+- [references/completion-and-verification.md](references/completion-and-verification.md) : preuves de couverture, statut et validation proportionnelle au risque.
 - [references/integrations.md](references/integrations.md) : contrats souhaités et inventaire local daté.
 - [references/tests.md](references/tests.md) : contrôles réellement effectués, simulations et limites.
+- [evals/evals.json](evals/evals.json) : vingt scénarios de référence pour comparer les versions du routeur.
 
 Organisation reste utilisable seul. Vérifier et lire les skills réellement installés avant raccordement. `brain` fournit une méthode de raisonnement ; il ne faut pas le confondre avec New Pro Brain. `newpro` prépare un socle MASTER sans lancer la production. Les autres parcours absents sont annoncés comme disponibles après installation, sans exécution fictive.
 

@@ -26,7 +26,21 @@ description: "Routeur transversal pour démarrer, reprendre, planifier, auditer,
 | SOL | Construction technique, code, débogage, intégrations, tests et faisabilité. |
 | ASTRA | Stratégie, architecture majeure, forte incertitude, décisions critiques ; validation approfondie seulement si justifiée. |
 
-Ce sont des rôles de travail, pas des identifiants de modèles. Un agent par défaut. Avant toute délégation, sélection de modèle ou escalade, lire [references/routing.md](references/routing.md) et vérifier les capacités réelles. Au plus deux agents délégués simultanément, sans descendants ni écritures concurrentes sur les mêmes fichiers. Sans capacité adaptée, appliquer les rôles successivement avec l'agent actuel et signaler la limite ; ne pas prétendre à une revue indépendante.
+Ce sont des rôles de travail, pas des identifiants de modèles. Un agent par défaut. Avant toute délégation, sélection de modèle ou escalade, lire [references/routing.md](references/routing.md) et vérifier les capacités réelles. Le nombre d'agents dépend de la séparabilité du travail, pas seulement de sa difficulté. Au plus deux agents délégués simultanément, sans descendants ni écritures concurrentes sur les mêmes fichiers. Sans capacité adaptée, appliquer les rôles successivement avec l'agent actuel et signaler la limite ; ne pas prétendre à une revue indépendante.
+
+Adapter le harnais au rôle au lieu d'imposer les mêmes outils, le même plan et le même contexte à tous. Pour une tâche longue, un contexte proche de la limite ou une délégation, lire [references/harnesses.md](references/harnesses.md). Nettoyer d'abord le contexte par règles déterministes, puis résumer uniquement ce qui reste nécessaire.
+
+## Complétion et validation
+
+Une déclaration de l'agent ne constitue pas une preuve. Pour les audits, revues de fichiers, modifications, tâches multi-étapes ou déléguées, appliquer le [contrat de complétion et de validation](references/completion-and-verification.md). Le compte rendu doit distinguer :
+
+- périmètre demandé et périmètre réellement couvert ;
+- actions et fichiers effectivement inspectés ou modifiés ;
+- contrôles réellement exécutés et résultats ;
+- éléments non vérifiés ou devenus caducs ;
+- statut final `COMPLET`, `PARTIEL` ou `BLOQUE`.
+
+Ne pas exiger ce formalisme pour une réponse simple sans exécution : une conclusion directe et honnête suffit. Choisir la validation selon le risque de libérer un résultat erroné : contrôle déterministe par défaut, vérificateur indépendant lorsque le coût d'une fausse réussite le justifie, ASTRA seulement si le contrôle exige un jugement stratégique ou architectural.
 
 ## Skills et continuité
 
@@ -44,7 +58,7 @@ Organisation conserve la coordination ; un skill appelé restitue son résultat 
 - Publier, déployer en production, dépenser, envoyer des messages, modifier des droits ou accomplir une action destructive exige une autorisation adaptée. Tenir compte de l'autorisation déjà donnée sans la redemander inutilement.
 - Aucun service, serveur ou automatisation permanent n'est nécessaire au skill. L'installation est locale à ce PC et ne synchronise pas les autres ordinateurs.
 
-Pour vérifier ou maintenir ce skill, consulter [references/tests.md](references/tests.md), qui distingue contrôles de fichiers, détection par l'hôte, essais comportementaux et cas non exécutés.
+Pour vérifier ou maintenir ce skill, consulter [references/tests.md](references/tests.md) et `evals/evals.json`. Distinguer contrôles de fichiers, détection par l'hôte, essais comportementaux et cas non exécutés. Comparer une modification à la version de référence avec les mêmes modèles, outils et conditions ; ne pas généraliser depuis quelques exemples favorables.
 
 <!-- SEO_ROUTING:BEGIN -->
 Pour les demandes de stratégie SEO, audit de référencement, pré-lancement web,

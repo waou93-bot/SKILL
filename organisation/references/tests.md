@@ -1,5 +1,19 @@
 # Contrôles et essais d'Organisation
 
+## Extension du 18 septembre 2026 — à rejouer avant installation
+
+Cette révision ajoute un contrat de complétion, une classe de séparabilité avant délégation, des profils de harnais par rôle, une validation proportionnelle au risque et vingt scénarios dans `evals/evals.json`. Les contrôles historiques ci-dessous restent des preuves de la version du 16 septembre ; ils ne valident pas automatiquement cette révision.
+
+Contrôles à exécuter sur la révision :
+
+- validateur `quick_validate.py` et parsing JSON des vingt scénarios ;
+- résolution de tous les liens relatifs depuis `SKILL.md` ;
+- comparaison comportementale avec la version précédente sur les mêmes modèles, outils, efforts et fixtures ;
+- mesure séparée de la réussite, du coût, du temps, des reprises, des fausses réussites acceptées et des résultats corrects bloqués ;
+- vérification spécifique des cas de couverture incomplète, de séparabilité faible et de test impossible.
+
+Ne retenir une modification que si elle améliore les cas visés sans régression importante ailleurs. Le petit benchmark sert aux comparaisons de versions d'Organisation ; il ne classe pas universellement les modèles.
+
 Date : 16 septembre 2026. Registre historique du poste de référence ; les chemins personnels ont été remplacés par `$HOME` pour publication. Les sauvegardes et preuves de la machine restent locales. Ces résultats ne décrivent pas une installation déjà effectuée sur la machine du lecteur. Les niveaux ci-dessous sont distincts. Les simulations ne prouvent pas un comportement universel ni une intégration de production.
 
 ## 1. Fichiers créés et contrôlés

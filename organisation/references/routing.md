@@ -20,13 +20,30 @@ Ne pas imposer une succession LUNA → TERRA → SOL → ASTRA. Le rôle princip
 3. Ne pas modifier le modèle par défaut ni la configuration globale pour effectuer le routage. `agents/openai.yaml` décrit l'interface et l'invocation du skill ; il ne lance ni ne sélectionne aucun modèle.
 4. Si les sous-agents ou le changement de modèle ne sont pas disponibles ou autorisés, travailler avec l'agent actuel en adoptant successivement les rôles utiles. Le signaler brièvement lorsqu'un parcours devait bénéficier de ces capacités. Une auto-vérification ne devient pas une revue indépendante.
 
+## Évaluer la séparabilité avant de déléguer
+
+La difficulté seule ne justifie pas plusieurs agents. Classer la tâche à partir de quatre questions :
+
+1. Les branches peuvent-elles produire des résultats utiles sans attendre les mêmes étapes intermédiaires ?
+2. Les agents peuvent-ils travailler avec des entrées stables et des périmètres de fichiers distincts ?
+3. Les sorties peuvent-elles être vérifiées séparément puis intégrées par Organisation ?
+4. Une branche peut-elle échouer sans invalider silencieusement le travail des autres ?
+
+| Classe | Profil | Décision par défaut |
+| --- | --- | --- |
+| FAIBLE | Travail séquentiel, état partagé, mêmes fichiers ou décisions fortement couplées. | Un agent ; rôles successifs. |
+| MOYENNE | Quelques branches indépendantes, mais une intégration ou décision commune reste nécessaire. | Délégation ciblée d'une branche en lecture seule ou sur fichiers distincts. |
+| FORTE | Livrables indépendants, entrées stables, preuves séparables et intégration simple. | Parallélisation autorisée si l'hôte, les permissions et le coût le permettent. |
+
+Si la classe est incertaine, commencer en mono-agent. Ne déléguer qu'après avoir isolé une branche avec un livrable et des critères d'acceptation propres. Une recherche parallèle, une inspection de composants distincts ou des évaluations indépendantes peuvent être séparables ; un correctif traversant le même état ou les mêmes fichiers ne l'est généralement pas.
+
 ## Déléguer seulement un travail indépendant
 
 Un agent par défaut, au plus deux délégués actifs simultanément. Avant de déléguer, établir que le gain justifie le coût et que le mandat peut progresser indépendamment. Donner à chaque agent : résultat attendu, entrées minimales, critères d'acceptation, périmètre de fichiers, autorisations et contrôles attendus. Lui interdire de créer d'autres sous-agents ; lui signaler que d'autres agents travaillent et qu'il doit préserver leurs modifications.
 
 Aucune écriture concurrente dans les mêmes fichiers. Préférer une revue en lecture seule ou des propriétaires de fichiers distincts. Organisation reste responsable de l'intégration, de la résolution des divergences et de la vérification de l'ensemble ; ne pas consommer tout l'effort dans la délégation.
 
-Chaque restitution indique : actions réellement faites, fichiers touchés, preuves et commandes exécutées, limites, décisions attendues. Annoncer une revue indépendante ou plusieurs modèles uniquement lorsque cela a réellement eu lieu.
+Chaque restitution applique le contrat de complétion : actions réellement faites, fichiers touchés, preuves et commandes exécutées, limites, statut et décisions attendues. Annoncer une revue indépendante ou plusieurs modèles uniquement lorsque cela a réellement eu lieu.
 
 ## Diagnostiquer avant d'escalader
 

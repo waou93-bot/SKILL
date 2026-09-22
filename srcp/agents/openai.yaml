@@ -1,0 +1,4 @@
+interface:
+  display_name: "SRCP"
+  short_description: "Git backup, restore point, and push"
+  default_prompt: "Use $srcp to create a safe Git checkpoint, commit, and push this repository."

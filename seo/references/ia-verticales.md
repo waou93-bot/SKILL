@@ -42,6 +42,14 @@ contexte, prompt exact, répétitions et réponse. Une absence sur quelques prom
 prouve pas invisibilité générale ; une présence ne prouve pas une part de marché.
 Les conseils GEO non documentés restent des hypothèses à tester.
 
+## Conversion après visibilité
+
+Appliquer le funnel en quatre couches : visible, choisie, corrigée, convertissante.
+Une mention ou une citation IA est un signal amont ; elle ne vaut pas visite utile,
+action ou revenu. Pour chaque expérience, définir la page d'atterrissage, la prochaine
+étape et l'événement aval avant de comparer les résultats. Voir
+[le contrat du funnel](conversion-funnel.md).
+
 ## Activité locale
 
 Vérifier l'éligibilité Google Business Profile et la réalité de l'activité, du lieu,

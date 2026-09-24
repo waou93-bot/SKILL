@@ -16,6 +16,25 @@ baseline ; délai de conversion ; saison ; dates de modifications et incidents.
 | Économie | Revenu net / marge / coût complet | À définir | À vérifier | Attribution != causalité | |
 | IA | Mentions, citations, impressions, renvois | Une définition par outil | À vérifier | Pas de total multi-outils naïf | |
 
+## Funnel de page
+
+| Couche | Question | Signal minimal | Décision si le signal manque |
+|---|---|---|---|
+| L1_VISIBLE | La page est-elle trouvable ? | Accès, impression ou indexation observable | Corriger découverte ou marquer NON_VERIFIE |
+| L2_CHOISIE | La page est-elle sélectionnée ? | Clic, consultation depuis un résultat ou entrée sociale | Tester angle, extrait et adéquation à l'intention |
+| L3_FIXEE | La page répond-elle correctement ? | Réponse utile, liens, preuve, accessibilité et parcours contrôlés | Corriger le blocage le plus important |
+| L4_CONVERTIT | La page fait-elle progresser ? | Événement aval, visite qualifiée ou clic commercial défini | CORRIGER, ARRETER ou NON_CONCLUANT selon la fenêtre |
+
+Définir les événements projet avant le test. Une visite qualifiée Reddit/X est une
+session issue de la source qui consulte au moins deux pages ou déclenche
+`article_to_atelier`, `view_pieces` ou `share_look` lorsque ces événements existent.
+Cette définition ne prouve ni identité, ni causalité, ni achat ; elle doit être
+adaptée au parcours réel et conservée dans le journal de mesure.
+
+Conserver si disponible `utm_source`, `utm_medium`, `utm_campaign` et `utm_content`
+dans les événements locaux. Ne pas ajouter de cookie, de fournisseur tiers ou de
+collecte non consentie pour satisfaire ce modèle.
+
 ## Qualité
 
 Contrôler événements et doublons ; distinguer nouveaux clients et achats répétés ;

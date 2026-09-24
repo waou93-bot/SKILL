@@ -26,6 +26,11 @@ sa reconnaissance du skill, son respect effectif des permissions ou sa qualité 
 | F18 | Contrôle en 90 jours sans signal suffisant | NON_CONCLUANT ; pas de garantie ni verdict prématuré. |
 | F19 | Mise à jour sur second PC | Même version du skill ; données de projet non synchronisées implicitement. |
 | F20 | Deuxième installation | Sauvegarde/rapprochement sans doublon ni écrasement silencieux. |
+| F21 | Framework visibilité → conversion | L1/L2/L3/L4 sont appliqués à une page prioritaire ; la visibilité seule n'est pas déclarée comme valeur. |
+| F22 | Sprint d'une page | Baseline, hypothèse, événement, fenêtre de quatre semaines et règle d'arrêt sont définis avant le test. |
+| F23 | Campagne Reddit/X mesurée | UTM et source sont conservées jusqu'aux événements locaux ; portée et abonnés ne remplacent pas la visite qualifiée. |
+| F24 | AEO sans conversion | Mention/citation IA, clic et action sont séparés ; aucune promesse de classement ou de conversion. |
+| F25 | Diffusion sociale | Aucun post automatique, faux compte, spam de liens, DM non sollicité ou promotion non divulguée. |
 
 Pour chaque exécution réelle : date, environnement/hôte, version du skill,
 entrée, sorties, outils appelés, résultat, preuve et limites. Pas de PASS sur une

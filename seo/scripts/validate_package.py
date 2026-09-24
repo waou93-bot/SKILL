@@ -10,8 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = ['SKILL.md','agents/openai.yaml','references/recherche-benchmark.md',
  'references/audit-technique.md','references/contenu-autorite.md','references/mesure-economie.md',
  'references/ia-verticales.md','references/gates-experiences.md','references/sources.md',
+ 'references/conversion-funnel.md',
  'references/sources.json','scripts/check_handoff.py','scripts/validate_package.py',
- 'tests/test_handoff.py','tests/functional-cases.md']
+ 'tests/test_handoff.py','tests/functional-cases.md','evals/evals.json']
 
 def validate(root: Path=ROOT) -> tuple[list[str],dict[str,int]]:
     errors=[]; counts={'files':0,'json':0,'templates':0,'local_links':0,'sources':0}

@@ -2,7 +2,9 @@
 name: seo
 description: >-
   Réaliser un benchmark de recherche web/Reddit, évaluer le potentiel SEO,
-  auditer un site et construire un plan de croissance organique mesurable.
+  auditer un site et construire un plan de croissance organique mesurable,
+  jusqu'à la conversion des pages prioritaires. Inclure AEO/GEO, réponses IA,
+  sprints page-par-page et parcours visibilité → action lorsque pertinent.
   Utiliser pour une stratégie SEO, un lancement web, une refonte/migration,
   une baisse de trafic ou une mise à jour SEO ciblée. Fonctionner avec
   Organisation et Business ou seul. Ne pas déclencher une étude complète
@@ -12,14 +14,15 @@ description: >-
 
 # SEO — Benchmark, stratégie & croissance organique
 
-Version 1.0 · 16 septembre 2026 · Langue par défaut : français.
+Version 1.1 · 24 septembre 2026 · Langue par défaut : français.
 
 ## Mission
 
 Déterminer si la recherche organique mérite un investissement pour ce projet,
 quelles pages sont utiles, ce qui empêche leur découverte et comment mesurer
-leur contribution aux objectifs. Livrer des décisions et un plan exécutable,
-pas une liste de mots-clés ou une note flatteuse.
+leur contribution aux objectifs. Une visibilité n'est utile que si la page
+choisie répond à l'intention et propose une prochaine action mesurable. Livrer
+des décisions et un plan exécutable, pas une liste de mots-clés ou une note flatteuse.
 
 Le canal peut être secondaire ou non prioritaire. Cette conclusion ne condamne
 pas le projet : la transmettre à Business/Organisation pour réviser l'acquisition.
@@ -50,6 +53,7 @@ Aucune garantie de classement, de citation IA, d'indexation ou de chiffre d'affa
 - [Contenu et autorité](references/contenu-autorite.md)
 - [Mesure et économie](references/mesure-economie.md)
 - [IA, local, international et verticales](references/ia-verticales.md)
+- [Funnel visibilité → conversion](references/conversion-funnel.md)
 - [Décisions et expériences](references/gates-experiences.md)
 - [Sources datées](references/sources.md)
 
@@ -149,8 +153,24 @@ cannibalisation avant fusion : plusieurs URL sur une requête ne suffisent pas.
 
 Chaque page prioritaire doit avoir un public, une question, une offre/action utile,
 un angle distinctif, une preuve à produire, un rôle dans le parcours et des liens
-entrants/sortants proposés. Définir URL, titre, H1, description et balisage appropriés.
+entrants/sortants proposés. Définir URL, titre, H1, description, balisage,
+événement de conversion et prochaine étape appropriés.
 Les propositions de title/meta ne garantissent pas le texte affiché par le moteur.
+
+### Cadre de conversion en quatre niveaux
+
+Pour chaque page pilote, appliquer le funnel suivant : `L1_VISIBLE` (la page peut
+être trouvée), `L2_CHOISIE` (son extrait, son angle ou sa réponse donne une raison
+de la sélectionner), `L3_FIXEE` (contenu, structure, accessibilité, liens et preuves
+sont corrigés pour la recherche et les réponses IA), puis `L4_CONVERTIT` (la page
+fait progresser vers une action utile et mesurée). Ne pas déclarer la visibilité
+« réussie » si la page ne possède pas de prochaine étape crédible.
+
+Par défaut, préférer un sprint d'une page et d'une famille d'intention à la création
+de nombreuses pages. Le sprint comporte une baseline, une hypothèse, un propriétaire,
+un événement, une fenêtre de quatre semaines et des critères CONTINUER / CORRIGER /
+ARRETER / NON_CONCLUANT. Le document [funnel](references/conversion-funnel.md)
+décrit le contrat détaillé et ses limites.
 
 ## 6. Préparer contenu et autorité
 
@@ -175,16 +195,27 @@ activité locale éligible, international, médias, application, résultats IA.
 Ne pas indexer les données privées d'une application pour gagner du trafic.
 
 Pour l'IA : vérifier accès et contenu, méthodes de mesure actuelles, observations
-reproductibles. Distinguer indexation, mention, citation, clic et conversion. Ne pas
-confondre robots de recherche et d'entraînement ni changer les choix sans accord.
-Les expériences de « GEO » restent des hypothèses, pas des facteurs démontrés.
+reproductibles. Distinguer indexation, mention, citation, clic et conversion ;
+une réponse IA visible mais sans sélection, clic ou action reste une observation
+amont. Ne pas confondre robots de recherche et d'entraînement ni changer les choix
+sans accord. Les expériences de « GEO » restent des hypothèses, pas des facteurs
+démontrés.
 
 ## 8. Relier la mesure à l'économie
 
 Utiliser [le plan de mesure](assets/06-plan-mesure.md) et
 [les scénarios](assets/07-scenarios.json). Distinguer métriques techniques, visibilité,
 visites utiles, actions, revenus et marge. Définir événements, fenêtres, périmètres,
-dénominateurs, doublons et limites d'attribution avant de comparer.
+dénominateurs, doublons et limites d'attribution avant de comparer. Une visite
+qualifiée issue d'un canal social organique est une session qui consulte au moins
+deux pages ou déclenche un événement aval défini par le projet ; documenter la
+définition exacte au lieu de l'inférer depuis la seule source.
+
+Conserver les paramètres de campagne autorisés (`utm_source`, `utm_medium`,
+`utm_campaign`, `utm_content`) jusqu'aux événements locaux lorsque le site les
+supporte, sans installer de fournisseur analytics tiers par défaut ni collecter
+de données personnelles inutiles. Pour Reddit/X, comparer source, format, angle,
+landing page et action, pas seulement impressions ou abonnés.
 
 Pour un site actif : séparer marque/hors marque, pays/langue, mobile/desktop, pages
 et intentions ; comparer des périodes comparables, tenir compte de la saison et des
@@ -222,10 +253,21 @@ promesse de résultats à 90 jours. Une fenêtre trop pauvre en observations don
 `NON_CONCLUANT`, pas automatiquement « SEO mort ». Ne pas programmer de veille
 ou de tâche récurrente sans demande et outil réellement disponible.
 
+Pour un pilote éditorial, utiliser une boucle hebdomadaire : choisir une page,
+observer L1/L2/L3/L4, corriger le plus gros blocage, mesurer la prochaine étape,
+puis décider de continuer ou d'arrêter. Les actions de diffusion restent humaines :
+aucune publication automatique, faux compte, spam de liens, DM non sollicité ou
+promotion non divulguée.
+
 ## 10. Livrer et transmettre
 
 Le plan complet suit [les dix parties](assets/01-plan-seo.md). Dans un mode ciblé,
 mettre à jour uniquement les sections concernées, sans recréer le dossier.
+
+Pour un sprint page-par-page, le brief doit aussi faire apparaître la couche du
+funnel, l'hypothèse de conversion, la baseline, l'événement, la page d'atterrissage,
+les UTM éventuelles, la fenêtre, le seuil d'arrêt et le propriétaire. Ne pas créer
+un dossier AEO parallèle si ces informations peuvent rester dans `SEO/`.
 
 Dans le MASTER existant, si autorisé, créer/réutiliser `SEO/` :
 `00_DECISION.md`, `01_BRIEF.md`, `02_BENCHMARK.md`, `03_REQUETES_PAGES.json`,

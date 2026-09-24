@@ -1,0 +1,20 @@
+{
+  "skill_name": "seo",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Mon site de mode a dix articles, un atelier interactif et des visites depuis Reddit et X. Choisis une seule page prioritaire et construis un sprint SEO/AEO de quatre semaines avec les niveaux visible, choisie, corrigée et convertissante. Je ne veux pas installer d'analytics tiers.",
+      "expected_output": "Un sprint page-par-page avec baseline, hypothèse, action utile, événement local, UTM éventuelles, fenêtre, critères CONTINUER/CORRIGER/ARRETER/NON_CONCLUANT et limites d'attribution."
+    },
+    {
+      "id": 2,
+      "prompt": "Prépare une stratégie d'acquisition organique Reddit + X pour une audience francophone. Donne des formats, des règles de diffusion, une définition de visite qualifiée et un plan de comparaison par source, format, angle et landing page. Ne publie rien automatiquement.",
+      "expected_output": "Une stratégie humaine et conforme aux règles des plateformes, sans faux comptes, spam de liens, automatisation ni DMs non sollicités, avec UTM et événements aval."
+    },
+    {
+      "id": 3,
+      "prompt": "Une page est citée dans des réponses IA mais reçoit peu de clics et aucune action commerciale mesurée. Comment dois-je l'évaluer et que dois-je corriger en premier ?",
+      "expected_output": "Séparation explicite entre mention, citation, clic et conversion, diagnostic L1-L4, priorisation de l'intention et du parcours, sans promesse de classement ou de revenu."
+    }
+  ]
+}

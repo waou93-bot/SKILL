@@ -7,6 +7,17 @@ Statut : BROUILLON, non publié. Source Business et priorité : à préciser.
 **Page existante à préserver ou nouvelle URL proposée :**
 **Rôle dans le parcours et autres pages recouvrant le sujet :**
 
+## Sprint visibilité → conversion
+
+**Couche actuelle :** `L1_VISIBLE` / `L2_CHOISIE` / `L3_FIXEE` / `L4_CONVERTIT`
+**Hypothèse de progression :**
+**Baseline et période comparable :**
+**Événement de conversion ou prochaine étape :**
+**Définition de visite qualifiée :**
+**UTM/source/format/angle à comparer, si applicable :**
+**Fenêtre du test :** quatre semaines par défaut, à justifier si différente.
+**Propriétaire et critère CONTINUER / CORRIGER / ARRETER / NON_CONCLUANT :**
+
 ## Valeur propre
 
 Ce que le lecteur gagne ; preuve originale disponible et vérifiable ; démonstration

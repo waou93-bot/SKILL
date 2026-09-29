@@ -14,7 +14,7 @@ description: >-
 
 # SEO — Benchmark, stratégie & croissance organique
 
-Version 1.1 · 24 septembre 2026 · Langue par défaut : français.
+Version 1.2 · 29 septembre 2026 · Langue par défaut : français.
 
 ## Mission
 
@@ -48,6 +48,9 @@ Aucune garantie de classement, de citation IA, d'indexation ou de chiffre d'affa
 
 ## Lecture progressive
 
+- [Grille SEO 2026](references/checklist-2026.md) — stratégie, technique, contenu,
+  visibilité IA, mesure et impact métier ; utiliser comme index pour les audits
+  complets et cadrages, en sélectionnant les contrôles applicables.
 - [Recherche et benchmark](references/recherche-benchmark.md)
 - [Audit technique et migrations](references/audit-technique.md)
 - [Contenu et autorité](references/contenu-autorite.md)
@@ -131,6 +134,13 @@ Utiliser [l'audit](assets/04-audit.json). Contrôler découverte, crawl, indexab
 contenu rendu, canonical, statuts HTTP, sitemaps, liens internes, mobile, performances,
 données structurées et parcours de conversion. Vérifier les erreurs réellement
 observées ; marquer les autres `NON_VERIFIE` ou `NON_APPLICABLE`.
+
+Pour un audit ou cadrage complet, utiliser la [grille SEO 2026](references/checklist-2026.md)
+pour inventorier les dimensions pertinentes. Pour une correction ciblée, limiter la
+grille aux contrôles liés à la demande. Chaque ligne reçoit `VERIFIE`, `A_CORRIGER`,
+`NON_VERIFIE` ou `NON_APPLICABLE`, avec périmètre et preuve lorsque vérifiée. La grille
+ne constitue ni un score de conformité ni une liste obligatoire de livrables ; confirmer
+les règles susceptibles d'avoir évolué dans les sources officielles avant d'agir.
 
 Échantillonner par gabarit et valeur : accueil, offre, catégorie, fiche, contenu,
 langue, paramètres, erreur. Déclarer population connue/inconnue, nombre d'URL vues,
@@ -285,3 +295,4 @@ Conclure par la décision de canal, l'état technique, trois raisons, l'inconnue
 majeure et trois prochaines actions. Distinguer fait, observation, estimation,
 calcul, hypothèse et inconnu. Ne jamais annoncer une modification, une publication,
 une connexion, un test ou une installation qui n'a pas effectivement eu lieu.
+

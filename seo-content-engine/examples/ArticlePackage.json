@@ -1,0 +1,48 @@
+{
+  "status": "draft",
+  "evidence": [
+    {
+      "kind": "fictional",
+      "source": "jeu de démonstration fourni dans ce skill",
+      "observed_at": "2026-10-04T10:00:00Z",
+      "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+    }
+  ],
+  "assumptions": [
+    "Exemple pédagogique fictif"
+  ],
+  "missing_data": [],
+  "generated_at": "2026-10-04T10:00:00Z",
+  "next_action": "Revue humaine avant tout usage réel",
+  "brief_id": "B1",
+  "version": "v1",
+  "title": "Préparer votre vélo avant une visite en atelier",
+  "meta_description": "Une checklist pour noter vos symptômes et préparer votre visite dans notre atelier fictif.",
+  "slug": "entretien",
+  "content_markdown": "# Préparer votre vélo avant une visite en atelier\n\nCe brouillon concerne une entreprise entièrement fictive.\n\n## Notez ce que vous observez\nDécrivez le bruit, la gêne ou le moment où le problème apparaît, sans chercher à poser vous-même un diagnostic.\n\n## Préparez la visite\nLa fiche atelier fictive E1 propose de noter les points à examiner: freins, pneus et éclairage. Faites confirmer cette liste par le mécanicien avant publication réelle.\n\n## Choisissez un rendez-vous\nConsultez la [page diagnostic](https://atelier-velo.example/diagnostic) pour préparer votre demande.\n",
+  "internal_links": [
+    "https://atelier-velo.example/diagnostic"
+  ],
+  "external_sources": [],
+  "cta": {
+    "text": "Réserver un diagnostic",
+    "url": "https://atelier-velo.example/diagnostic"
+  },
+  "images": [
+    {
+      "brief": "Photo originale du vélo avant diagnostic, consentement à vérifier",
+      "alt": "Vélo urbain présenté devant un atelier"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "La fiche E1 couvre freins, pneus et éclairage",
+      "sources": [
+        "https://atelier-velo.example/fiche-e1"
+      ],
+      "state": "fictional"
+    }
+  ],
+  "structured_data": null
+}

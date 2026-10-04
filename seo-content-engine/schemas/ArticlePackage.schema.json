@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ArticlePackage",
+  "type": "object",
+  "required": [
+    "status",
+    "evidence",
+    "assumptions",
+    "missing_data",
+    "generated_at",
+    "next_action",
+    "brief_id",
+    "version",
+    "title",
+    "meta_description",
+    "slug",
+    "content_markdown",
+    "internal_links",
+    "external_sources",
+    "cta",
+    "images",
+    "claims",
+    "structured_data"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "blocked",
+        "draft",
+        "local_draft",
+        "failed",
+        "needs_reconciliation"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "source",
+          "observed_at",
+          "detail"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "observed",
+              "supplied",
+              "hypothetical",
+              "fictional"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "brief_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "content_markdown": {
+      "type": "string"
+    },
+    "internal_links": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "external_sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cta": {
+      "type": "object",
+      "required": [
+        "text",
+        "url"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "brief",
+          "alt"
+        ],
+        "properties": {
+          "brief": {
+            "type": "string"
+          },
+          "alt": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "sources",
+          "state"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "state": {
+            "enum": [
+              "verified",
+              "uncertain",
+              "fictional"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "structured_data": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

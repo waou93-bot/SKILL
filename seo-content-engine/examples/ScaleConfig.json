@@ -1,0 +1,16 @@
+{
+  "global_concurrency": 2,
+  "lease_seconds": 60,
+  "max_attempts": 3,
+  "sites": [
+    {
+      "site_id": "atelier-velo",
+      "site_url": "https://atelier-velo.example",
+      "publishing_mode": "draft",
+      "monthly_budget": 200,
+      "currency": "EUR",
+      "concurrency": 1,
+      "paused": false
+    }
+  ]
+}

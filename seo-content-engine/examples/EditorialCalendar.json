@@ -1,0 +1,58 @@
+{
+  "status": "draft",
+  "evidence": [
+    {
+      "kind": "fictional",
+      "source": "jeu de démonstration fourni dans ce skill",
+      "observed_at": "2026-10-04T10:00:00Z",
+      "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+    }
+  ],
+  "assumptions": [
+    "Exemple pédagogique fictif"
+  ],
+  "missing_data": [],
+  "generated_at": "2026-10-04T10:00:00Z",
+  "next_action": "Revue humaine avant tout usage réel",
+  "period_start": "2026-10-05",
+  "period_end": "2026-11-03",
+  "budget": {
+    "amount": 200,
+    "currency": "EUR"
+  },
+  "items": [
+    {
+      "date": "2026-10-08",
+      "brief_id": "B1",
+      "action": "update",
+      "owner": "Responsable éditorial fictif",
+      "effort_hours": 2,
+      "cost": 120,
+      "dependencies": [
+        "Validation mécanicien"
+      ],
+      "validation_stage": "Brouillon et revue"
+    },
+    {
+      "date": "2026-10-29",
+      "brief_id": "B1",
+      "action": "measurement",
+      "owner": "Responsable éditorial fictif",
+      "effort_hours": 1,
+      "cost": 60,
+      "dependencies": [
+        "Données si disponibles"
+      ],
+      "validation_stage": "Bilan sans publication"
+    }
+  ],
+  "clusters": [
+    {
+      "theme": "Entretien vélo urbain",
+      "pillar_url": "https://atelier-velo.example/entretien",
+      "brief_ids": [
+        "B1"
+      ]
+    }
+  ]
+}

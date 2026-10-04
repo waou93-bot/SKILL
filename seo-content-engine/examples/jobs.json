@@ -1,0 +1,15 @@
+[
+  {
+    "site_id": "atelier-velo",
+    "action": "validate",
+    "article_id": "B1",
+    "version": "v1",
+    "artifact_reference": "examples/ArticlePackage.json",
+    "estimated_cost": 10,
+    "authorization_reference": null,
+    "validation_passed": false,
+    "validated_version": null,
+    "sensitive_topic": false,
+    "qualified_approval": null
+  }
+]

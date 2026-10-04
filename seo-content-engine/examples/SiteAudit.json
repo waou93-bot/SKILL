@@ -1,0 +1,40 @@
+{
+  "status": "draft",
+  "evidence": [
+    {
+      "kind": "fictional",
+      "source": "jeu de démonstration fourni dans ce skill",
+      "observed_at": "2026-10-04T10:00:00Z",
+      "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+    }
+  ],
+  "assumptions": [
+    "Exemple pédagogique fictif"
+  ],
+  "missing_data": [
+    "Crawl réel",
+    "Mesures de vitesse"
+  ],
+  "generated_at": "2026-10-04T10:00:00Z",
+  "next_action": "Revue humaine avant tout usage réel",
+  "site_url": "https://atelier-velo.example",
+  "coverage": "Deux pages dans un inventaire fictif, aucun crawl",
+  "pages": [
+    {
+      "url": "https://atelier-velo.example/entretien",
+      "objective": "Informer",
+      "intent": "Préparer son vélo urbain",
+      "commercial_target": "https://atelier-velo.example/diagnostic",
+      "checks": [
+        {
+          "name": "HTTP/canonical/noindex/robots/sitemap/liens/duplication/vitesse",
+          "result": "unknown",
+          "detail": "Aucun accès réseau sur ce domaine fictif"
+        }
+      ]
+    }
+  ],
+  "technical_findings": [
+    "Contrôles techniques indisponibles dans cet exemple"
+  ]
+}

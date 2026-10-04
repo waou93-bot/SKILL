@@ -1,0 +1,54 @@
+{
+  "status": "draft",
+  "evidence": [
+    {
+      "kind": "fictional",
+      "source": "jeu de démonstration fourni dans ce skill",
+      "observed_at": "2026-10-04T10:00:00Z",
+      "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+    }
+  ],
+  "assumptions": [
+    "Exemple pédagogique fictif"
+  ],
+  "missing_data": [
+    "Search Console",
+    "Volumes SEO",
+    "SERP locale"
+  ],
+  "generated_at": "2026-10-04T10:00:00Z",
+  "next_action": "Revue humaine avant tout usage réel",
+  "query": "préparer vélo urbain avant révision",
+  "intent": "Information avant réservation",
+  "country": "FR",
+  "device": null,
+  "provider": null,
+  "metrics": {
+    "volume": null,
+    "difficulty": null,
+    "cpc": null,
+    "position": null,
+    "impressions": null,
+    "clicks": null
+  },
+  "recommended_action": "update",
+  "existing_url": "https://atelier-velo.example/entretien",
+  "priority": {
+    "score": null,
+    "components": [
+      {
+        "name": "pertinence offre",
+        "weight": 25,
+        "rating": 4,
+        "reason": "Lien direct avec révision; note fictive"
+      },
+      {
+        "name": "potentiel observable",
+        "weight": 15,
+        "rating": null,
+        "reason": "Aucune donnée"
+      }
+    ],
+    "interpretation": "Hypothèse commerciale, pas prévision"
+  }
+}

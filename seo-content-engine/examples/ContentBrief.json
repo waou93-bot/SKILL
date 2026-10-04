@@ -1,0 +1,48 @@
+{
+  "status": "draft",
+  "evidence": [
+    {
+      "kind": "fictional",
+      "source": "jeu de démonstration fourni dans ce skill",
+      "observed_at": "2026-10-04T10:00:00Z",
+      "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+    }
+  ],
+  "assumptions": [
+    "Exemple pédagogique fictif"
+  ],
+  "missing_data": [
+    "Sources primaires réelles",
+    "Résultats concurrents datés/localisés"
+  ],
+  "generated_at": "2026-10-04T10:00:00Z",
+  "next_action": "Revue humaine avant tout usage réel",
+  "id": "B1",
+  "intent": "Préparer une visite atelier",
+  "primary_query": "préparer vélo urbain avant révision",
+  "secondary_questions": [
+    "Que noter avant la visite ?",
+    "Quels accessoires apporter ?"
+  ],
+  "audience": "Cyclistes urbains",
+  "conversion_goal": "Réserver diagnostic",
+  "target_url": "https://atelier-velo.example/entretien",
+  "action": "update",
+  "competitor_results": [],
+  "original_angle": "Checklist de préparation issue de la fiche atelier fictive E1",
+  "outline": [
+    "Noter les symptômes",
+    "Préparer les accessoires",
+    "Réserver le diagnostic"
+  ],
+  "primary_sources": [
+    "fiche interne fictive E1"
+  ],
+  "expertise_needed": [
+    "Vérification de la checklist par le mécanicien"
+  ],
+  "internal_links": [
+    "https://atelier-velo.example/diagnostic"
+  ],
+  "cta": "Réserver un diagnostic"
+}

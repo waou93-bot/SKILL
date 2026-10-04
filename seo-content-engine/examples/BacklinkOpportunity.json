@@ -1,0 +1,27 @@
+{
+  "status": "draft",
+  "evidence": [
+    {
+      "kind": "fictional",
+      "source": "jeu de démonstration fourni dans ce skill",
+      "observed_at": "2026-10-04T10:00:00Z",
+      "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+    }
+  ],
+  "assumptions": [
+    "Exemple pédagogique fictif"
+  ],
+  "missing_data": [],
+  "generated_at": "2026-10-04T10:00:00Z",
+  "next_action": "Revue humaine avant tout usage réel",
+  "source_url": "https://association-velo.example/ressources",
+  "target_url": "https://atelier-velo.example/entretien",
+  "context": "Ressource de préparation pour adhérents, opportunité fictive",
+  "relevance": "Cyclistes urbains",
+  "anchor_text": "Préparer une visite en atelier",
+  "rel_attributes": [],
+  "link_status": "proposed",
+  "verified_at": null,
+  "provenance": "Simulation éditoriale, aucun contact",
+  "module": "editorial"
+}

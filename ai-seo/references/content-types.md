@@ -1,71 +1,23 @@
-# AI SEO by Content Type
+# Adaptations métier et parcours
 
-Tactical guidance for optimizing specific content types for AI search citation. These tactics work for non-Google AI engines (ChatGPT, Claude, Perplexity, Copilot) and don't hurt Google AI Overviews / AI Mode.
+| Projet | Informations et pages prioritaires | Conversion à mesurer sans invention |
+|---|---|---|
+| Affiliation/comparateur | Situations d'usage, méthode, critères, compatibilité vérifiée, limites, transparence affiliation, prix datés selon droits | Utilisation de l'outil, clic sortant ; vente seulement si le partenaire fournit une attribution autorisée |
+| SaaS/application | Cas d'usage, fonctions réellement livrées, limites, prix/conditions, comparaison honnête, documentation, sécurité vérifiée | Essai, activation ou lead qualifié selon instrumentation existante |
+| Commerce vendeur | Fiche produit, disponibilité et prix cohérents, livraison/retour, identifiants réels, flux admissibles | Achat confirmé et dédupliqué ; ne pas confondre début de checkout et vente |
+| Service local | Prestations, zones réellement desservies, identité/contact, références réelles et fiche d'établissement éligible | Contact/prise de rendez-vous qualifiés |
+| Média ou contenu | Guide original, auteur, sources, corrections, abonnement ou fonctionnalité utile | Engagement pertinent, inscription autorisée |
+| Portfolio/artiste/association | Entité, œuvres/projets réels, dates/lieux/services utiles, coordonnées, preuve d'activité | Contact pertinent, visite de projet, inscription |
+| Produit privé | Pages publiques explicitement prévues, sinon canal éventuellement non pertinent | Ne pas exposer le produit privé pour le rendre indexable |
 
-For the cross-cutting strategy, see [SKILL.md](../SKILL.md).
+Pour l'affiliation, construire des parcours d'idées selon la situation et le besoin ; éviter une
+simple série de listes de liens marchands sans valeur ajoutée. Les documents vendeurs et conditions
+d'affiliation restent des contraintes à vérifier ; aucune éligibilité Merchant Center ou programme
+marchand ChatGPT n'est présumée.
 
----
+Multilingue : contenu réellement traduit, URLs/canonicals/hreflang cohérents selon la stack,
+conditions commerciales par pays, pas de redirection linguistique empêchant la lecture. Les
+observations FR et EN sont séparées ; une réponse dans un pays ne prouve pas une couverture globale.
 
-## SaaS Product Pages
-
-**Goal:** Get cited in "What is [category]?" and "Best [category]" queries. (Citation is the realistic goal here; being *recommended* in the answer depends on offsite consensus — see [citations-vs-recommendations.md](citations-vs-recommendations.md).)
-
-**Optimize:**
-- Clear product description in first paragraph (what it does, who it's for)
-- Feature comparison tables (you vs. category, not just competitors)
-- Specific metrics ("processes 10,000 transactions/sec" not "blazing fast")
-- Customer count or social proof with numbers
-- Pricing transparency (AI cites pages with visible pricing) — add a `/pricing.md` file so AI agents can parse your plans without rendering your page (see "Machine-Readable Files" in the main skill)
-- FAQ section addressing common buyer questions
-
----
-
-## Blog Content
-
-**Goal:** Get cited as an authoritative source on topics in your space.
-
-**Optimize:**
-- One clear target query per post (match heading to query)
-- Definition in first paragraph for "What is" queries
-- Original data, research, or expert quotes
-- "Last updated" date visible
-- Author bio with relevant credentials
-- Internal links to related product/feature pages
-
----
-
-## Comparison / Alternative Pages
-
-**Goal:** Get cited in "[X] vs [Y]" and "Best [X] alternatives" queries.
-
-**Optimize:**
-- Structured comparison tables (not just prose)
-- Fair and balanced (AI penalizes obviously biased comparisons)
-- Specific criteria with ratings or scores
-- Updated pricing and feature data
-- Cite the `competitors` skill for building these pages
-
----
-
-## Documentation / Help Content
-
-**Goal:** Get cited in "How to [X] with [your product]" queries.
-
-**Optimize:**
-- Step-by-step format with numbered lists
-- Code examples where relevant
-- HowTo schema markup
-- Screenshots with descriptive alt text
-- Clear prerequisites and expected outcomes
-
----
-
-## Local Business / Ecom (Google emphasis)
-
-Google's AI features pull from product feeds and business profiles for local + ecom queries. Optimize:
-
-- **Merchant Center feeds** kept current with accurate inventory, pricing, attributes
-- **Google Business Profile** complete with hours, services, photos, posts, Q&A answered
-- **Reviews** — recent + sufficient volume; respond to reviews to signal active management
-- **Service area schema** for local services
-- **Business Agent** (where available) for conversational customer engagement
+Design : conserver Design DNA. Le contenu lisible, les labels et la structure sémantique ne
+justifient pas une nouvelle DA. Un audit du canal n'autorise pas la refonte d'une page entière.

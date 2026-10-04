@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI SEO — Acquisition IA"
+  short_description: "Audit, contenu, accès et mesure du canal IA"
+  default_prompt: "Utilise $ai-seo pour construire le canal d'acquisition IA de ce projet sans repartir de zéro."
+policy:
+  allow_implicit_invocation: true

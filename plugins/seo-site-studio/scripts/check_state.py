@@ -1,10 +1,31 @@
 """Check recorded consistency only; never probes a site or grants permission."""
-import json,sys
+import json,sys,os,posixpath
 STATES=['CONCEPTION','LOCAL_VERIFIE','PREPROD_PRIVEE_VERIFIEE','PRET_PRODUCTION','PRODUCTION_VERIFIEE']
 def check(s):
  errors=[]
  if s.get('state') not in STATES:return ['unknown state']
  if not s.get('version'):errors.append('artifact version missing')
+ git=s.get('git')
+ if git:
+  if git.get('applicable') is False:
+   if not git.get('reason'):errors.append('Git exclusion requires reason')
+  elif git.get('applicable') is True:
+   for field in ['root','branch','base_sha','head','preservation_record']:
+    if not git.get(field):errors.append('Git record missing: '+field)
+   owners=git.get('file_owners',[])
+   paths=[posixpath.normpath(o.get('path','').replace('\\','/')) for o in owners]
+   if not git.get('case_sensitive_paths',os.name!='nt'):paths=[p.casefold() for p in paths]
+   if len(paths)!=len(set(paths)):errors.append('multiple Git file owners')
+   if git.get('integration_status')=='verified':
+    if git.get('conflicts_remaining'):errors.append('verified integration with conflicts')
+    if git.get('tested_revision')!=git.get('head'):errors.append('Git tests cover old revision')
+    if git.get('tested_base_sha')!=git.get('base_sha'):errors.append('Git base moved after tests')
+    if not git.get('diff_review_source') or not git.get('test_source'):errors.append('Git integration proof missing')
+    if git.get('test_result')!='pass':errors.append('Git final tests not successful')
+    if git.get('ci_required') and (git.get('ci_revision')!=git.get('head') or git.get('ci_result')!='pass'):errors.append('required CI not verified on final revision')
+   for action in git.get('external_actions',[]):
+    if action.get('status')=='done' and (not action.get('action') or not action.get('target') or not any(a.get('action')==action.get('action') and a.get('target')==action.get('target') and a.get('human_source') for a in s.get('authorizations',[]))):errors.append('Git external action lacks recorded authorization')
+  else:errors.append('Git scope missing')
  def evidence(kind):
   remote=kind in ['served_version','access_control','noindex','https','production_indexability']
   environment='production' if s['state']=='PRODUCTION_VERIFIEE' else 'preproduction'

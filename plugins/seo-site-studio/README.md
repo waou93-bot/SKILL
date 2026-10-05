@@ -1,4 +1,4 @@
-# SEO Site Studio 1.2.0
+# SEO Site Studio 1.3.0
 
 Plugin local de skills, un seul point d'entrée : `seo-site-studio`. 26 modules embarqués comme ressources. Modèles préférés : Astra orchestre, Sol 6.1 reçoit les travaux les plus difficiles, Luna traite les lots répétitifs. Installation ne lance aucun projet ou service.
 
@@ -7,3 +7,5 @@ Depuis le CLI Codex : `codex plugin marketplace add <racine-marketplace> --json`
 Le manifest portable `plugin.json` et son équivalent de compatibilité `.codex-plugin/plugin.json` sont identiques. Aucun connecteur/MCP/hook ni exécutable permanent. Ressources originales référencées par le registre ; adaptations de coordination explicites. Les scripts de modules exigent leurs dépendances réellement disponibles.
 
 Ce package et son contrôle de registre ne prouvent pas la réalisation, le rendu ou le déploiement d'un site. Publication publique du plugin et du dépôt non effectuée.
+
+Workflow Git proportionné : branches/worktrees, préservation dirty, revue des conflits et validation de la révision finale ; voir references/git-workflow.md.

@@ -14,5 +14,16 @@
     "applicable": null,
     "families": {},
     "reason": "set actual scope and coverage before local verified"
+  },
+  "git": {
+    "applicable": null,
+    "root": null,
+    "branch": null,
+    "base_sha": null,
+    "head": null,
+    "preservation_record": null,
+    "file_owners": [],
+    "integration_status": "pending",
+    "external_actions": []
   }
 }

@@ -1,0 +1,23 @@
+interface:
+  display_name: design dna
+  short_description: 'Design system and art-direction router for every visual project:
+    website, web app,
+
+    desktop software, mobile app, SaaS, portfolio, interactive experience, hybrid
+    product,
+
+    dashboard or product UI. Load this skill before proposing or implementing visual
+    design.
+
+    It preserves Nicolas''s design DNA while creating a project-specific skin so projects
+
+    share quality and authorship without looking like the same template.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

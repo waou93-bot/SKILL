@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SiteAudit",
+  "type": "object",
+  "required": [
+    "status",
+    "evidence",
+    "assumptions",
+    "missing_data",
+    "generated_at",
+    "next_action",
+    "site_url",
+    "coverage",
+    "pages",
+    "technical_findings"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "blocked",
+        "draft",
+        "local_draft",
+        "failed",
+        "needs_reconciliation"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "source",
+          "observed_at",
+          "detail"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "observed",
+              "supplied",
+              "hypothetical",
+              "fictional"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "site_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "coverage": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "url",
+          "objective",
+          "intent",
+          "commercial_target",
+          "checks"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "objective": {
+            "type": "string"
+          },
+          "intent": {
+            "type": "string"
+          },
+          "commercial_target": {
+            "type": "string",
+            "format": "uri"
+          },
+          "checks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "name",
+                "result",
+                "detail"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "result": {
+                  "enum": [
+                    "pass",
+                    "fail",
+                    "unknown"
+                  ]
+                },
+                "detail": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "technical_findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

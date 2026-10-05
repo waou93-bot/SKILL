@@ -1,0 +1,27 @@
+{
+  "kind": "TEMPLATE",
+  "schema_version": "1.0",
+  "project_id": null,
+  "observed_at": null,
+  "environment": null,
+  "known_url_population": null,
+  "inspected_url_count": 0,
+  "inspected_templates": [],
+  "scope_limitations": [],
+  "technical_readiness": "NON_AUDITE",
+  "check_schema": {
+    "id": null,
+    "url": null,
+    "check": null,
+    "status": "NON_VERIFIE",
+    "environment": null,
+    "method": null,
+    "observed_at": null,
+    "evidence": null,
+    "severity": null,
+    "impact_hypothesis": null,
+    "suggested_fix": null,
+    "acceptance_test": null
+  },
+  "checks": []
+}

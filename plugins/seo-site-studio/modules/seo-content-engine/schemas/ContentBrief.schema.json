@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ContentBrief",
+  "type": "object",
+  "required": [
+    "status",
+    "evidence",
+    "assumptions",
+    "missing_data",
+    "generated_at",
+    "next_action",
+    "id",
+    "intent",
+    "primary_query",
+    "secondary_questions",
+    "audience",
+    "conversion_goal",
+    "target_url",
+    "action",
+    "competitor_results",
+    "original_angle",
+    "outline",
+    "primary_sources",
+    "expertise_needed",
+    "internal_links",
+    "cta"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "blocked",
+        "draft",
+        "local_draft",
+        "failed",
+        "needs_reconciliation"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "source",
+          "observed_at",
+          "detail"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "observed",
+              "supplied",
+              "hypothetical",
+              "fictional"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "intent": {
+      "type": "string"
+    },
+    "primary_query": {
+      "type": "string"
+    },
+    "secondary_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audience": {
+      "type": "string"
+    },
+    "conversion_goal": {
+      "type": "string"
+    },
+    "target_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "action": {
+      "enum": [
+        "create",
+        "update"
+      ]
+    },
+    "competitor_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "url",
+          "studied_at",
+          "location"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "studied_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "location": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "original_angle": {
+      "type": "string"
+    },
+    "outline": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "primary_sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expertise_needed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "internal_links": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "cta": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

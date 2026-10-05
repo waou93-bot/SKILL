@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO méthodologie"
+  short_description: "Architecture SEO, catalogue et guides par intention"
+  default_prompt: "Utilise $seo-methodologie pour concevoir une architecture SEO de guides utiles, fondée sur des données fiables et un maillage pertinent."

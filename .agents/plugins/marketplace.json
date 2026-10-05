@@ -1,0 +1,20 @@
+{
+  "name": "seo-site-studio-marketplace",
+  "interface": {
+    "displayName": "SEO Site Studio"
+  },
+  "plugins": [
+    {
+      "name": "seo-site-studio",
+      "source": {
+        "source": "local",
+        "path": "./plugins/seo-site-studio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "local_draft",
+  "evidence": [
+    {
+      "kind": "fictional",
+      "source": "jeu de démonstration fourni dans ce skill",
+      "observed_at": "2026-10-04T10:00:00Z",
+      "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+    }
+  ],
+  "assumptions": [
+    "Exemple pédagogique fictif"
+  ],
+  "missing_data": [
+    "Connexion CMS",
+    "Version précédente CMS"
+  ],
+  "generated_at": "2026-10-04T10:00:00Z",
+  "next_action": "Revue humaine avant tout usage réel",
+  "provider": "none",
+  "operation_key": "demo:atelier-velo:B1:v1:draft",
+  "article_version": "v1",
+  "mode": "draft",
+  "cms_id": null,
+  "cms_status": "local_draft",
+  "public_url": null,
+  "previous_version": null,
+  "snapshot_reference": null,
+  "authorization_reference": null,
+  "attempts": 0,
+  "actions": [
+    "Export local seulement; aucune mutation CMS"
+  ]
+}

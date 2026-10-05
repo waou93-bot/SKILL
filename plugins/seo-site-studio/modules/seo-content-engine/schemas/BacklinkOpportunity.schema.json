@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BacklinkOpportunity",
+  "type": "object",
+  "required": [
+    "status",
+    "evidence",
+    "assumptions",
+    "missing_data",
+    "generated_at",
+    "next_action",
+    "source_url",
+    "target_url",
+    "context",
+    "relevance",
+    "anchor_text",
+    "rel_attributes",
+    "link_status",
+    "verified_at",
+    "provenance",
+    "module"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "blocked",
+        "draft",
+        "local_draft",
+        "failed",
+        "needs_reconciliation"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "source",
+          "observed_at",
+          "detail"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "observed",
+              "supplied",
+              "hypothetical",
+              "fictional"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "target_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "context": {
+      "type": "string"
+    },
+    "relevance": {
+      "type": "string"
+    },
+    "anchor_text": {
+      "type": "string"
+    },
+    "rel_attributes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "link_status": {
+      "enum": [
+        "proposed",
+        "verified",
+        "rejected"
+      ]
+    },
+    "verified_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "module": {
+      "enum": [
+        "editorial",
+        "network"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

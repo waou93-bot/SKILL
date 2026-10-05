@@ -1,0 +1,90 @@
+{
+  "scope": "Portée demandée à renseigner",
+  "steps": [
+    {
+      "verification": "",
+      "id": "contexte",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "skills",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "recherche",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "toolbox",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "architecture",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "design",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "donnees",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "contenu",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "realisation",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "seo",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "recette",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    },
+    {
+      "verification": "",
+      "id": "livraison",
+      "state": "A_FAIRE",
+      "evidence": [],
+      "reason": ""
+    }
+  ],
+  "pages": []
+}

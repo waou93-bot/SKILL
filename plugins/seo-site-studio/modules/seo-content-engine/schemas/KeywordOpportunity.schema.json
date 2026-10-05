@@ -1,0 +1,223 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KeywordOpportunity",
+  "type": "object",
+  "required": [
+    "status",
+    "evidence",
+    "assumptions",
+    "missing_data",
+    "generated_at",
+    "next_action",
+    "query",
+    "intent",
+    "country",
+    "device",
+    "provider",
+    "metrics",
+    "recommended_action",
+    "existing_url",
+    "priority"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "blocked",
+        "draft",
+        "local_draft",
+        "failed",
+        "needs_reconciliation"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "source",
+          "observed_at",
+          "detail"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "observed",
+              "supplied",
+              "hypothetical",
+              "fictional"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "query": {
+      "type": "string"
+    },
+    "intent": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "device": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provider": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metrics": {
+      "type": "object",
+      "required": [
+        "volume",
+        "difficulty",
+        "cpc",
+        "position",
+        "impressions",
+        "clicks"
+      ],
+      "properties": {
+        "volume": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "difficulty": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "cpc": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "position": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "impressions": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "clicks": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "recommended_action": {
+      "enum": [
+        "create",
+        "update",
+        "merge",
+        "investigate"
+      ]
+    },
+    "existing_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "priority": {
+      "type": "object",
+      "required": [
+        "score",
+        "components",
+        "interpretation"
+      ],
+      "properties": {
+        "score": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "weight",
+              "rating",
+              "reason"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "weight": {
+                "type": "number"
+              },
+              "rating": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "interpretation": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

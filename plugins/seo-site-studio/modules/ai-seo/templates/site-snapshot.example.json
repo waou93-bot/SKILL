@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "origin": "https://example.test",
+  "observed_at": "2026-10-04T12:00:00Z",
+  "robots": {"status": 200, "text": "User-agent: *\nDisallow: /account/\nUser-agent: GPTBot\nDisallow: /\n"},
+  "pages": [{
+    "url": "https://example.test/guide",
+    "intended_public": true,
+    "status": 200,
+    "headers": {"content-type": "text/html; charset=utf-8"},
+    "html": "<!doctype html><html lang=\"fr\"><head><title>Guide synthétique</title><link rel=\"canonical\" href=\"https://example.test/guide\"></head><body><main><h1>Guide synthétique</h1><p>Exemple de capture, pas une preuve réelle.</p><a href=\"/contact\">Contact</a></main></body></html>"
+  }]
+}

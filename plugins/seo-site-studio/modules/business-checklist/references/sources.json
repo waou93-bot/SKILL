@@ -1,0 +1,236 @@
+{
+  "purpose": "Bibliographie de méthode, pas étude de marché d’un projet utilisateur.",
+  "sources": [
+    {
+      "id": "S01",
+      "publisher": "Sequoia Capital",
+      "title": "Writing a Business Plan",
+      "url": "https://sequoiacap.com/article/writing-a-business-plan",
+      "verification_status": "REOUVERT_V2",
+      "checked_at": "2026-09-16",
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Problème, solution, pourquoi maintenant, marché, alternatives, modèle, équipe et finances. Guide d’investisseur, pas norme universelle."
+    },
+    {
+      "id": "S02",
+      "publisher": "Andreessen Horowitz",
+      "title": "16 Startup Metrics",
+      "url": "https://a16z.com/16-startup-metrics/",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Définitions et prudence sur les métriques. Source ancienne de méthode, pas benchmark actuel."
+    },
+    {
+      "id": "S03",
+      "publisher": "Paul Graham",
+      "title": "Default Alive or Default Dead?",
+      "url": "https://paulgraham.com/aord.html",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Réflexion sur trésorerie et financement futur ; pas une statistique de réussite."
+    },
+    {
+      "id": "S04",
+      "publisher": "Strategyzer",
+      "title": "Kill the business plan",
+      "url": "https://www.strategyzer.com/library/kill-the-business-plan",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Hypothèses et tests avant récit figé ; pas suppression des dix rubriques demandées."
+    },
+    {
+      "id": "S05",
+      "publisher": "Strategyzer",
+      "title": "Testing Business Ideas: Book Summary and Key Takeaways",
+      "url": "https://www.strategyzer.com/library/testing-business-ideas-book-summary",
+      "verification_status": "REOUVERT_V2",
+      "checked_at": "2026-09-16",
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Désirabilité, faisabilité, viabilité ; tests et comportements. Aucun quota ou pourcentage d’efficacité repris."
+    },
+    {
+      "id": "S06",
+      "publisher": "Camuffo et al. / City Research Online",
+      "title": "A scientific approach to entrepreneurial decision-making: Large-scale replication and extension",
+      "url": "https://openaccess.city.ac.uk/id/eprint/32437/",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Référence de méthode conservée ; PDF non réanalysé dans cette reconstruction. Aucun effet chiffré nouvellement affirmé."
+    },
+    {
+      "id": "S07",
+      "publisher": "Service Public / DILA",
+      "title": "Projet de création d’entreprise : concevoir un business plan",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F35965",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Trame institutionnelle française. Règles en vigueur à revérifier selon le projet."
+    },
+    {
+      "id": "S08",
+      "publisher": "Fédération bancaire française",
+      "title": "Construire son Business Plan",
+      "url": "https://www.lesclesdelabanque.com/entreprise/votre-business-plan/",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Point de vue bancaire ; aucun seuil universel de crédit adopté."
+    },
+    {
+      "id": "S09",
+      "publisher": "Rob Fitzpatrick",
+      "title": "The Mom Test",
+      "url": "https://www.momtestbook.com/",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Préparation d’entretiens concrets ; ne constitue pas une lecture intégrale du livre."
+    },
+    {
+      "id": "S10",
+      "publisher": "Bpifrance Création",
+      "title": "Faire son business plan",
+      "url": "https://bpifrance-creation.fr/encyclopedie/previsions-financieres-business-plan/business-plan/faire-son-business-plan",
+      "verification_status": "REOUVERT_V2",
+      "checked_at": "2026-09-16",
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Adapter au lecteur : banque, investisseur, partenaire. Ne pas confondre leurs objectifs."
+    },
+    {
+      "id": "S11",
+      "publisher": "Bpifrance Création",
+      "title": "Le seuil de rentabilité",
+      "url": "https://bpifrance-creation.fr/encyclopedie/previsions-financieres-business-plan/previsions-financieres/seuil-rentabilite",
+      "verification_status": "REOUVERT_V2",
+      "checked_at": "2026-09-16",
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Charges fixes, marge sur coûts variables, traduction en ventes ; ce n’est pas un calendrier de cash."
+    },
+    {
+      "id": "S12",
+      "publisher": "Bpifrance Création",
+      "title": "Indicateurs de gestion",
+      "url": "https://bpifrance-creation.fr/encyclopedie/piloter-lentreprise/finance-pilotage-economique/indicateurs-gestion",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Pilotage économique général, non taux fiscal actuel."
+    },
+    {
+      "id": "S13",
+      "publisher": "OpenAI",
+      "title": "Build skills",
+      "url": "https://learn.chatgpt.com/docs/build-skills",
+      "verification_status": "REOUVERT_V2",
+      "checked_at": "2026-09-16",
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "SKILL.md, ressources, installation locale et invocation dépendant de l’hôte. Aucune détection desktop effectuée ici."
+    },
+    {
+      "id": "S14",
+      "publisher": "Bpifrance Création",
+      "title": "Le plan de financement initial",
+      "url": "https://bpifrance-creation.fr/encyclopedie/previsions-financieres-business-plan/previsions-financieres/plan-financement-initial",
+      "verification_status": "REOUVERT_V2",
+      "checked_at": "2026-09-16",
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Comparer besoins initiaux et ressources, BFR et sécurité ; distinguer démarrage et années suivantes."
+    },
+    {
+      "id": "S15",
+      "publisher": "OpenAI",
+      "title": "Custom instructions with AGENTS.md",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+      "verification_status": "REOUVERT_V2",
+      "checked_at": "2026-09-16",
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Portée utilisateur, CODEX_HOME et priorité d’AGENTS.override.md. Ne pas modifier ces fichiers sans mandat."
+    },
+    {
+      "id": "R01",
+      "publisher": "Reddit / r/startups",
+      "title": "Does every startup really need validation before building?",
+      "url": "https://www.reddit.com/r/startups/comments/1mvzegp/does_every_startup_really_need_validation_before/",
+      "verification_status": "REOUVERT_V2",
+      "checked_at": "2026-09-16",
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Discussion contradictoire : construire un petit test ou mener des entretiens ; pas preuve causale ou norme de succès."
+    },
+    {
+      "id": "R02",
+      "publisher": "Reddit / r/startups",
+      "title": "Looking for a practical validation framework",
+      "url": "https://www.reddit.com/r/startups/comments/1t0wwci/looking_for_a_practical_validation_framework_for/",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Piste qualitative de méthode ; quotas et taux non repris."
+    },
+    {
+      "id": "R03",
+      "publisher": "Reddit / r/startups",
+      "title": "How do you validate problems?",
+      "url": "https://www.reddit.com/r/startups/comments/1jbtg7a/how_do_you_validate_problems_i_will_not_promote/",
+      "verification_status": "REOUVERT_V2",
+      "checked_at": "2026-09-16",
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Opinions/engagements distingués ; auteurs et résultats non vérifiés indépendamment."
+    },
+    {
+      "id": "R04",
+      "publisher": "Reddit / r/SaaS",
+      "title": "Anyone else get stuck in endless idea validation?",
+      "url": "https://www.reddit.com/r/SaaS/comments/1uq61hf/anyone_else_get_stuck_in_endless_idea_validation/",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Témoignage sur accès aux clients et recherche interminable ; pas représentatif."
+    },
+    {
+      "id": "R05",
+      "publisher": "Reddit / r/startups",
+      "title": "2025 VC Investing Benchmarks by Stage",
+      "url": "https://www.reddit.com/r/startups/comments/1lp07gs/2025_vc_investing_benchmarks_by_stage_i_will_not/",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Benchmarks contestés dans le corpus V1 ; aucun montant repris comme norme."
+    },
+    {
+      "id": "R06",
+      "publisher": "Reddit / r/startups",
+      "title": "Any advice on idea validation strategies?",
+      "url": "https://www.reddit.com/r/startups/comments/1wcl4v7/any_advice_on_idea_validation_strategies_im_a/",
+      "verification_status": "HERITE_V1_NON_REOUVERT",
+      "checked_at": null,
+      "publication_date": null,
+      "publication_date_note": "Non normalisée lors de cette reconstruction ; distinguer de la consultation.",
+      "use_and_limits": "Piste V1 à rouvrir avant nouvel usage ; date et résultats non confirmés."
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "version": 1,
+  "modules": [
+    {
+      "name": "organisation",
+      "files": {
+        "agents/openai.yaml": "94041a0542e8ad365ae0eefd5c3e95e7547b2d27e4ebb85bb105fb05d6b2f0fd",
+        "assets/ORGANISATION_ROUTER.md": "4046b08a64feb920eed71513f07bb7c460c0cfb73067d33ede9b530633f3fdfa",
+        "evals/evals.json": "a2fc2a21fa5c2f720b8317a03c419b940195640129ccc39bceea3ff8c46858e7",
+        "README.md": "e8f53a764e327e96ce09a598f836f4bf3ea2e44ed8b437043054d05703c541d8",
+        "references/completion-and-verification.md": "628a66531eab08b46e4e8ec4f5f7bed8c1680d903ca6b76bc1a7122614f014ea",
+        "references/harnesses.md": "89a52efbb02373ee6662037bb943ff8c21cde7f315181ee4e22842161892a74a",
+        "references/integrations.md": "7a18a82cf4a42a8dd795c84d5eba8f3483c36e37340766c5be667f4f7a2c4b33",
+        "references/routing.md": "b77d40b49dd99f3433173ec794e0420668b6a16a6ea05b728550372afd774270",
+        "references/tests.md": "c59196b1678b8d1ddc5e7d4d2c8904825fae68d347e1add9a57841393ee3abec",
+        "SKILL.md": "7d0ac4011a7d19a7e4ac777425596dc4dc53162ae6837e4eb46850b7046bdf24"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "brain",
+      "files": {
+        "evals/evals.json": "9c78c098b1de493e2fb0ebfd1c59e7e2047150d45b49cc6162817c83428524f9",
+        "examples.md": "8e859c1f1f44ed39c3b309d8547561710682aa8219af25cfdf569ca020cec38a",
+        "README.md": "e1aa113ca2e5442ce2c9cb77339c9cac2bf84b543208d56234c2ec6850ae2bc4",
+        "references/fake-competence-patterns.md": "ec50ce574423a9b6b05111b0b6a4aa27e2e1fab970dd97b37aece00bb092a7b6",
+        "SKILL.md": "29de4490312c6c849dad268ed38c320bd0c9257444c36c69f3781bb8c3594557"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "Memory",
+      "files": {
+        "SKILL.md": "eaba0daa84dd53fd3a99c833a454ef19b5fbe6b1ba9ef278224a3d2e01bd697d"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "toolbox",
+      "files": {
+        "scripts/index-bookmarks.ps1": "7c3e5b0058fef92e066472ae4e0dd9fc391cd142f749a9752e0a9085f0a0ca14",
+        "SKILL.md": "29a126cf0e2ba911809b8489496c8e426f18fb46675b45fb4aa75443be084b82"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "newsit-seo",
+      "files": {
+        "agents/openai.yaml": "736ceb96d716e92f00cde7b610f360819d1c0e0184e27ce3772ffd76c0c8c136",
+        "assets/brief.md": "2226cc181c7bc386b17bee8b742102cb129dd44ccbd9ffe300b075115abd0002",
+        "assets/execution.json": "8f278fd9a43568454d83eb02da64a9e921bcc7519cce4c6c0aad4be7a9f46935",
+        "assets/pages.csv": "10f1d0c1c1b53d833211afc7457efb732df17de0275e19d9d1f5f7121acd4810",
+        "assets/seo-obligatoire.csv": "6d94050a603c2cd095452268279a7af95cad841a4a7ce8ddc2ca56403273d561",
+        "evals/evals.json": "e9ce2970a167498a91cec980f1126b4b6959a52c21707057fbb596a28b57bc15",
+        "README.md": "20646dd017c6eab871d5cd1d215a903d06b8ab5e00deeb1cd97cab141cd9a34d",
+        "references/affiliation.md": "028ea9abb301a357360a321b65b48770f0a82f05ad2ddd37b87047d9c374645f",
+        "references/architecture-thomas.md": "af1b652024816f1673c3eab8379df04022a8336c1c2e827a6e26a651c65c53d8",
+        "references/bing-principes.md": "ac2e7d6abd8b450b995166e47556e99adf3b5cec4195ed7cf61ce9cebdd7f3fc",
+        "references/deux-stacks.md": "ec6025c9d18f0b3cf5a5a79dbd938f5d6004962075e3b0864eb290ea6492d761",
+        "references/evaluation.md": "26f41209f1047144ea994f9b6becdba021def877c360ac3b96b5b17ba3b46535",
+        "references/google-bing-seo.md": "6734b41a68e234d3bbb3b5a160311de0d90bbdb1be11b0d3efb98ded6b5155f4",
+        "references/integrations.md": "b341fcde3b4e7d02bdc74c1b7adf75dcba79fe8c722fde961a331bc6f6c25a7e",
+        "references/marchand.md": "dfe03563f2a688cda8d01f583d4d78acab864ddb7ecf78652982a66af92ca73d",
+        "references/preferences-nicolas.md": "71ae08b62e23e1772e86af3f2352b11f26cd0823151279d388fc7a12476dda58",
+        "references/registre-skills.md": "1ff5234b630ca741208c47606250c66f308d43b0e4516e4f6093dbf6efd9a78d",
+        "references/seo-et-recette.md": "72d03782dbf68dfc873f49d3974473633469901255067ffbaf37ed83cd9edbae",
+        "references/systeme-execution.md": "cbc2f16dce12ba6deb4727fd11d5e8bc06ca94b8bb1161979d59bf4429e47cea",
+        "references/vitrine.md": "d36cb779280dbe41f0de7a0228602d3bf1d671878f3fd7e8882147e42571668c",
+        "scripts/check_execution.py": "87e8724375b5ed9528b5342b187f63505ca373b4e2443708f8144aa029aed083",
+        "scripts/install.ps1": "b38fc063a48598846d64f03bc176f6cff73191fa468e299f96dccfb92f26ad24",
+        "scripts/validate_package.py": "acb9964fa1d802844eae40dadb873634050dd0e5cf2c2157fe2651bb9216a7cd",
+        "SKILL.md": "274aba5fd73d76af7e77f9f7b7b3c2a73a377b12b8efcf2ef80445c66d4a749f",
+        "VALIDATION.md": "b5bea9f097f8af40cdd963129f94177f4b843b290c28610046ea0503833f6c86"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "newpro",
+      "files": {
+        "assets/templates/ACCEPTANCE.md": "97c11e793fd262c9caa5a3ae90ebbb9e51ffbcc6546aff2f14730e100651be0e",
+        "assets/templates/AGENTS.md": "927906092aa3f5abba06ae8596b46c172acb0a3c9c483009c2423b875ae672ff",
+        "assets/templates/ARCHITECTURE.md": "b29d26dcb3028e86c2ba1c5e27e6e239e551052970a97fae6c67c0e2c6fd3828",
+        "assets/templates/ART_DIRECTION.md": "1cd78dda6d7e5dd153ed7633519be3210f692f421c89813cbd909212c3054748",
+        "assets/templates/ASSET_BIBLE.md": "115dde274343ce062f4088562fe8af3598add80558775e5ac494315a0be3f112",
+        "assets/templates/ASSETS.md": "6f45df586ffeafb19367af2fc2d58f0ef7668345789e0f940dd90df35a86516e",
+        "assets/templates/BACKLOG.md": "ace8476e44ff5e9ee3abdea64ff7f92f28e6097f6e966e0a30f499d7cac6e0be",
+        "assets/templates/CODE_CONVENTIONS.md": "7f816cb64d9ccf2886bea7acdb2a7b9f73d89d49ddd245f01a11be0e625e9a86",
+        "assets/templates/DECISIONS.md": "6d743768dbc49510defd4c424702decc557f549701e7ce8ab1f70412a33e5e32",
+        "assets/templates/IMPORT_MANIFEST.md": "45e3279cd14dc186f5305a042f433db7f78e43156ad6dff5ed16880404d73f53",
+        "assets/templates/MASTER_BRIEF.md": "a710f86d9de6224fc466e428c8024f34e5cb7d4ab9c6c9ecc68abfd7fcf5d63f",
+        "assets/templates/README.md": "eee97f49d94155e1573c90d85613212140b445278378581552d329a8996eee41",
+        "assets/templates/REJECTIONS.md": "670d15115206656fbccca1948fd38bd473a656f59babee33e1b5c1aad13c61d1",
+        "assets/templates/RISKS.md": "58cf8224526f15a97816efb1ffb7bb61527bdaa1363024f75e1bf50b3865b4c0",
+        "assets/templates/TRANSFER_SHEET.md": "d55cf2309959a0423650b8ddab453326e7317de32f3cef86b75246898664290f",
+        "references/ASSET_REGISTRY.json": "3cdc7fb4a46032a3bbb9258a480c894a0259d6a99a42ea83df93a0b317bf4d50",
+        "references/ASSET_REGISTRY.md": "8027e1f8e55747af4c60bf9c75a40ce4a06fabf2fdd537cefaed626a18d4bc0c",
+        "references/DECISION_RULES.md": "093a527d8b8745877cf45ac827c578f79f018a79b4f6e080576090e9254dc8d4",
+        "references/METHODE_NOUVEAU_PROJET.md": "cde8cdfcc85486b5662bacd199312c25d5b622121cc6378e9319160623b8b470",
+        "references/PROJECT_TYPES.md": "2720df439748eaebe2951e5828e8c4da9da1303ad3de93d835d0388d57295eb0",
+        "scripts/asset_registry.py": "c7c27d60767b72a6df59ead1a18c7a702e53f4744642f3dc04262a9dfb878faa",
+        "scripts/bootstrap_project.py": "940a1ce917d0954c8c155ffdecb18a79fb352a7da16ab6b091966e0c41eb9e16",
+        "scripts/inspect_context.py": "d598f0264ad3a285b794f7792665ce467dacbe46fd0f380f0c28d2be4a8c95e5",
+        "scripts/validate_project.py": "f7894be114ba231c285a3f81aa9f67c3baa6b1bf2fcb165f55caefce9554f1b3",
+        "SKILL.md": "5ee6b5317e7af4fa8c71a9c9087dc6a6851263fa4c59cf77e7560565da00333a"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "newsite",
+      "files": {
+        "references/anti-template-gate.md": "dbaac043c7ec17901f73fb6f73addfc432bdb04a9ab3446863c7a283b6ab3253",
+        "references/conversion-workflow.md": "e22176a5b4a29a5a8b4617c881a80c27fb80f8f14f4599120bfb050fccc56cf0",
+        "references/design-toolbox.md": "11aecfd22f619da809a615791d223fc3a48cebe728c8068a76ad180e677c375e",
+        "references/site-delivery.md": "167250f555d71e3d6b746e312622550d941ea7ab49cb71f7e9fd687bb9ce8671",
+        "references/stack-router.md": "544ecd5956afe2b6df7de300b9e7ff464a031ce4cdce0e9e1590571b55f1e6e2",
+        "references/toolbox-snapshot-template.md": "f482f7af7831a4c61d23c89113265218c7dafcbc490151eaccd188fe5a62e621",
+        "SKILL.md": "2b11a60f48dabbe8ae4887861e0beafa473dc8fea78b53590a7474ba4ff8eccf"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "design-dna",
+      "files": {
+        "agents/openai.yaml": "693c7ab0074c9895aef3726e7343a18784c0d020b1428fab3da4c797be21f880",
+        "assets/icon.svg": "2f264abab3ebabc3876f3f25a23bc7e05ce558ee176b3059598922889bc61ceb",
+        "examples/business-software.skin.yaml": "04645bc76e2c505a14c8b979eecdbaa48d55c047a56cff117b4895efc582d5ea",
+        "examples/down-trigger.skin.yaml": "7742e29ddeeda40372f3f59c4f3915e413edbff1cd9521c75970dd588cf00d50",
+        "integration/organisation-hook.md": "c36b92fddda44b46545ff90c3fde412f2e1ecba59934521243e556458ba47560",
+        "README.md": "b2159ebd4366f1ec7b5a6d8e7fe06291f5842d94699ec0f9656a618f3bb8e0a6",
+        "references/anti-slop.md": "cc8a0853a30728883430a1d2c4f4a11aab517c0f22a139744bbb2a19224b226e",
+        "references/image-direction.md": "cc6ac70a39f53b571b21c76d032c00fb2965906ee48ea60867e25d47211dcc9a",
+        "references/motion.md": "d69b157fdab37840ee42892df1726466d5bf7dff8e49db8d490177114a3a8f89",
+        "references/personal-preferences.md": "b95f55aab1451e55937a4e9d7e5014432a848866a1265846474a46482662f2ed",
+        "references/quality-gates.md": "d1f16e0971d550c5d73c15159b0f13f2bb2f19541a87c1d6c2ca410847aeaa25",
+        "references/scenarios.md": "1b12b6dbe316325f1ffb26a683741b8fb74f038d0ee375d95698724bbe413445",
+        "references/typography.md": "9dc3253cd1292cc19f8ec2c76eb785d7a88124e593ccec380a930fb5de6090bc",
+        "SKILL.md": "0b18094ebf3adbf592916198bcee6eee61023d333c9d220882cf07dcd181af8b",
+        "templates/project-skin.template.yaml": "aa097a3ae78c3058f6be18509d56555d634775767fab0c38d3275b7194d4c684",
+        "templates/tokens.template.css": "34f231399de8ac336da225630d2c3b6ee42dd52f33f0488f5f92321211d5f24b"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "no-slop",
+      "files": {
+        "banned-vocabulary.md": "35225e9ac94c86049e98a91fa3c2a84a35965e34208fd47fb5a2070a78cc254e",
+        "LICENSE": "a9521255c20c5e551ad4cf274f1c31b793a117be91311bd60d3238e1773e026a",
+        "references/scenarios.md": "37ee5bc03662bb6848fa7b59bd5d5ac48c3eaecf973c08cc9d2103b2d55d01eb",
+        "references/web-review.md": "3ed7c90e156a3571e79020b9c37c1fadf67d80604b01c65d589854072e144923",
+        "SKILL.md": "428022918253fe17e4bf293b23687d54fcd66362f22752dbe3790640de1ce5b8"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "asset-continuity",
+      "files": {
+        "references/continuity-pack.md": "351cc397791331c324bf6387e82afba37d00dabff5476a63f80c7bd5ab468007",
+        "SKILL.md": "7bf121b4a7219e5d5cfb0df09557bd8535c1cdbcc5b86fc3a65ff2f6cb38799f"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "seo-methodologie",
+      "files": {
+        "agents/openai.yaml": "ac9365d55b4f3e492e667a36aad95ed7e1b812cd79339241423ad186bd2a16eb",
+        "references/architecture-thomas.md": "af1b652024816f1673c3eab8379df04022a8336c1c2e827a6e26a651c65c53d8",
+        "SKILL.md": "b6fb97d406dd1d63b383c04edd14573d8e8cc0833d86ab4c4d178805ab259459"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "seo",
+      "files": {
+        "agents/openai.yaml": "8e8d67db9022a1b3095c77c6494f38dbc2d320814f198201d153fa223d6c5345",
+        "assets/00-cadrage.md": "8498f9f46d8f44f995ce98cbde5c3a007842ab36ccbbfc1aa555008d454e4fe2",
+        "assets/01-plan-seo.md": "5853c4a75ead01f3a4c4ca3fbccd9638e6ad667e6d409ac2c6166d21b7cda7af",
+        "assets/02-benchmark.md": "616b1c949e432b99321aa6edab2d4dff983423fb093f04641aeebf42eb5e1a5e",
+        "assets/03-requetes-pages.json": "7c781b1a774450b20a88d2f54a397438d04bb50e8badfa460c1794463f38c2a7",
+        "assets/04-audit.json": "a5c31a996212af5e553c574c384cb98e804dc902c10512d8eb95393ccf5c1379",
+        "assets/05-brief-page.md": "2e6012474eabffa9a745405a6ea023dea876b9370decaefd1ae055b477c1b2d8",
+        "assets/06-plan-mesure.md": "fa8e84714f036fad1ffccc3b99b585f4b86b5464c47749a936d9232af0f535a0",
+        "assets/07-scenarios.json": "0c289ef1e961e957952973fda5800bbad21145ddf8c39ce4f26ce42fdfcea482",
+        "assets/08-backlog.json": "d732402837a8727a098d23b2362d2e0fe372301297934b777bf6e41e394e3216",
+        "assets/09-handoff.json": "0f80beb1460e0e986cf478478b620419887356bf271451d168802875ac30b190",
+        "assets/10-migration.md": "650a166d958cc933e9901f59fb15d23e8d3106d6719c57ea4531f6e38d8127d3",
+        "assets/11-registre-preuves.md": "6b55bf61e382e21bbc50af62fcf872085a47861714e5c87479306f65adfe287c",
+        "evals/evals.json": "033d9a58da9278ecb369645fbdc6405f3da2742fae61bd8a24dc4d944f0ce0cd",
+        "references/audit-technique.md": "0ebc9ae42a1f0697fb293a2a87a4a8c4ac35710419f56ae76f5037983b6d49c8",
+        "references/checklist-2026.md": "62b4a414edec799c4acb506a837d8b1e9fd05f6c23c590713c1d50a384c3b753",
+        "references/contenu-autorite.md": "743a55bd1517165b4d0ecb0ebe5a513da5a77c5485db317855d1bd3555356e91",
+        "references/conversion-funnel.md": "95839a3ef1eb81b2ee6e5109c26785a3a3430ab56ee0245cdf50167432e01205",
+        "references/gates-experiences.md": "3c061a89df9d3f2e92bbaf9f20d6499efbb24e2ce7edbf0294bd87ceb9613aee",
+        "references/ia-verticales.md": "c19fed31a6c72f032cb83110ce6cb694a689d4715fc3ec412f5417435ded5814",
+        "references/mesure-economie.md": "b4aa66955fe763bdecb1c3d220c375b42487489badb06e7a2c0357da4b07dc1e",
+        "references/recherche-benchmark.md": "8755b42bc3b7dd20df42c053cd22ea371e5be386d907a82893636cadef1464e8",
+        "references/sources.json": "087a9cb026e3d2bc492a36d7b78f803113c6e9ff4bb7574b0b2814ed1cce5554",
+        "references/sources.md": "f072bc76120621e790be6ab1d69225d61dedd3ebea7141aca371557ff7bbdcf9",
+        "scripts/check_handoff.py": "6efed2d95ea876b01d423a71e043ae74f4c60dfd65bc0d5c5116d7ff03e4e718",
+        "scripts/validate_package.py": "3ec85cd41dea8dc0ab925ab7476e458f646b7bc58e73f6132b2de5c8043d5d00",
+        "SKILL.md": "05ff3b784fb9c889ff445f80dcd4b2f59631516b3a181253f3da4cd9fca3d460",
+        "tests/functional-cases.md": "38ee8a75f41f82e453550165dadd1a1900ed4af3941f081245c7cc9a18b193da",
+        "tests/test_handoff.py": "24e3381d6f04055210f8664ba4712b4f8a01d00b49b4528dccc9f99dc257b305"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "seo-content-engine",
+      "files": {
+        "evals/behaviors.json": "a946f65b238191685bd8d09dfa2b4105be76be82741e2f2fba06a2a34f1633e3",
+        "evals/critical.test.cjs": "341f68ae412744e167fcbd9295847a4e1a377d40de73615b9731fd3907696979",
+        "evals/queue.test.cjs": "fd7ae61b3d12be812477fd8bf2ede53afb8f8bd16fe2c9080040da80ee07b84b",
+        "evals/validation-report.md": "4ea55253eda74cc9a4ae69bf1ffe212083f0f6f523b5aefd1d5b2d3b371c8fa0",
+        "examples/ArticlePackage.json": "4d973767f9f36899a7dae176707e076af76ebc405049f88454abce911521b0fc",
+        "examples/BacklinkOpportunity.json": "9def62f06cd39895a455c852f83cf06420449884110e632c98a57a839102232d",
+        "examples/Config.json": "7eedd227a151b279edf154d1198794e897274d4eb4bbc37a0fe0794d22e05a82",
+        "examples/ContentBrief.json": "45b4fc1533c59ff8cb39f14ec9baa21c8831abfeb7124122005a7e3c5210dbb8",
+        "examples/EditorialCalendar.json": "9a66d89a5e55b5a18fa50ba37be0a7c647474ad243e65e163f52c72e7f019f87",
+        "examples/fictitious-run.md": "cf0465fb58c3e8205177039078bb23ef4b937a293751e0bb983d754439a47aa6",
+        "examples/jobs.json": "775023bcc4c4e897bd12c12bc4e142bea49debcdb43532114a93d612966cd34e",
+        "examples/KeywordOpportunity.json": "14dd535ed58dadce694aa0234ca07ad71242900df14a36e5c414c9f2b841ba04",
+        "examples/PerformanceReport.json": "9891aa789c37be7cf5a37fb1f8d9e4c1f631f8549a3a46717c921240ddb1eb2a",
+        "examples/PublicationRecord.json": "0e00ce7ad53be27b7f84aaf08d33614a23fbd584fbc98796ce3bb09eaa7f6f1f",
+        "examples/run.json": "dd3d2a6cd4e47b202267ec38db2876dd2e59b392040085f660c9ba8892c91f97",
+        "examples/ScaleConfig.json": "736b030af8389c6b4a9e8db3fb5208766ed594af8ae8d5689c8cb541aedc8ee0",
+        "examples/SiteAudit.json": "999a8e089a280b5d6e03057b687bd4865847051cad2454008b714d792ddbee63",
+        "examples/ValidationReport.json": "82e6e35157c40a7b81755a0d3a15d67f6e24179c0980dff99f466a7aed3f22bb",
+        "references/connectors.md": "85382f765c6e2bf477865e5ebc7dfa9ac789561f08f367dfa7ff894275b2c72f",
+        "references/editorial.md": "444c079193696956cdedad24b31583812463ac0ff1b77c24ba6af04cce8a133a",
+        "references/measurement.md": "d27530e13cd0246d56cbc94c632f03e91716dc0c4aae4cbb72a5aa522a38dc07",
+        "references/scale.md": "caa5c6fef66e6de5ef4434efacbb67b4f05d918340a0cb459593ab6bd3023754",
+        "references/strategy.md": "95a86cc0966b042ab5c708243df4476e4af25026b45f6cff99f5861a88d818d8",
+        "schemas/ArticlePackage.schema.json": "9f805e24113114c0d5283ada1abdbeb787fdb481ff88f1ef81cb16d422f97e8f",
+        "schemas/BacklinkOpportunity.schema.json": "0120213c593e030b3daf4281c1b5d50edd4983b514d8a8ac85c211876da6b32a",
+        "schemas/Config.schema.json": "33afb636cce67124429acb2357b1be5def147bfccdb233b2826147655b270231",
+        "schemas/ContentBrief.schema.json": "dcc7767cad27928a10ec5aa503332725cbeeb665ac2adaf5232c5f90b6b31cbe",
+        "schemas/EditorialCalendar.schema.json": "279a9f7998a06094c9fbe55d290464d478667319c05d70096f2341384d563fac",
+        "schemas/KeywordOpportunity.schema.json": "3d7e1ee5386856a6b4e135ea2583c070a51009d93b9a45e55274f10c63ff73a8",
+        "schemas/PerformanceReport.schema.json": "5ee3f854285cc9d27ad4886f4b780e6eb4447b30a1a65125bff45fd085a93d73",
+        "schemas/PublicationRecord.schema.json": "c57435927ce74b0b6b838a4b2ce4cd01392c0ef3960be87f9fb938e875670fc9",
+        "schemas/QueueJob.schema.json": "0ee21121b4dc6e02a1a23611488811adb0db4c07757b791d260abcb27a172002",
+        "schemas/ScaleConfig.schema.json": "b1214b50edebe44944dcc4dc5ad7550a89217631d800393f199f828c32169000",
+        "schemas/SiteAudit.schema.json": "6345b07a7d6167d9eb466412cb1b782fcd33852436a8d70854769218c595677f",
+        "schemas/ValidationReport.schema.json": "eefaa2afa3aa2bed63cb36c9b8c71856d78dbb579e701abe09ba789302720e6c",
+        "scripts/check-package.cjs": "ad99bf169bb6702d45cf7abaf3f25cc0a64d9d967d6b931214580687f0ed9ef4",
+        "scripts/queue.cjs": "9fbb2af224c6122f69433aeedac9892ca445b80b4ba9a2f3a45e1bec1f65ec4e",
+        "scripts/validate.cjs": "c36cee9b066d0a0b0511eaa29a025160c70b15f381429a6f52543dd22419091b",
+        "SKILL.md": "5d73cd57651547707ac7f6158cc7a4127f96b35f403cea4834eade08174bcf14"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "ai-seo",
+      "files": {
+        "agents/openai.yaml": "47b9bd29ea3529133a8e44e7c169f0ac5ea0bc5d53e0d75aab03ce57334364f4",
+        "evals/evals.json": "5f5bd4b84eb7b824c83b729490cca2d089ba961254b99b3062bc623ce90239c2",
+        "PROMPT_INSTALLATION_CODEX.md": "b7997e30f2645d6dee9e58407d8dd0b676aec244e5beede328270844277f975c",
+        "README.md": "93fe4833e83508cd212e36bd3d3f0f4c283ada0a36436b40d5817fc3118528b4",
+        "references/04-measurement.md": "a6b263b3e14ea4cd562e9c1c08f764a300517618e394e0b066f392d55c211f6c",
+        "references/citations-vs-recommendations.md": "4d75def63200a84dd0302ae502e9ce261bff7cf68320899a46bdd32199c824ff",
+        "references/content-patterns.md": "7841dba55b5ac52f73542980c867aba31e8f970a2b671a72944e54e9f0c22e93",
+        "references/content-types.md": "66393e3fe1f12945379cee5c6d6d6712cd9b1af2c19279bf248a0a306a04ac3e",
+        "references/implementation.md": "682efb84a17609a9b024a3d8cbb4c9808a731c30e5aa3e37417281b1e26952a0",
+        "references/integrations.md": "3a1483cc2b2327aa37f87bc397ea59ee8c5e460572814fba2ea6b9c880dc7f2c",
+        "references/okf.md": "c80693cb57b42f894568631c055453a023757f5e6303d8f01839542c7c36c6f6",
+        "references/platform-ranking-factors.md": "475fce29b3c5f117a7ed3bc13489f05893e19381586fd6e10234f8a71b21f65a",
+        "references/sources.md": "7aacfc36c20307266264b9e63f6979bed24969b0d4ca2feb17bd0a6ad077a696",
+        "scripts/audit_snapshot.py": "f4a95ed5e8b4d6eb92341334029fee6f3f6527841e8b45b5af1b856547e1ed49",
+        "scripts/classify_referral.py": "954cb84c7fff9b60a2e3eb67c52320ce1340dcaea7f3c56b68e8e8a79b082401",
+        "scripts/init_project.py": "41a09fcccee7d0ddae1ef0b32b827f8fdb4e8be7a6917b47f9f3001bdf2bdefe",
+        "scripts/install.py": "07a14f436b77a8817c39fcb55e70c70c36ce49059ae0880e8365f828d0020e19",
+        "scripts/measure_panel.py": "75068ef3954f8f90b03884f94fc59cf7fc9f6945930a805a03275c62f074d8f8",
+        "scripts/README.md": "da529ccf3208599c4199676300ca48e6bd191e36e014de736b25157181bf6021",
+        "SKILL.md": "8fbdd68cc4094d8de1d4c6b6dfc7c196c5b76065c5521719abd66fb4b123cfc3",
+        "templates/observations.example.jsonl": "15d8ab60ebe58140dd5ec3d35cd4916154deacc891b21bdf2cfa740b70924e7f",
+        "templates/project/00_CONTEXT.md": "1804535e0820512e899b5dfd778b9ccd543e6fc5b2bcb081b7bdd13a07300a8c",
+        "templates/project/01_AUDIT.md": "90adac3c4e2f3d2b963e7d15b4b96728db8bed3da0daabb327a91890b212e22a",
+        "templates/project/02_PLAN.md": "a99edbbc32ffad7e7aafd4b5f3842b1b828f5428c92eaa0ace6c266b79c0d55c",
+        "templates/project/03_MEASUREMENT.md": "ebe032e6545c69b9c1aab63675352eee45890678676da6363ea32e589c475f20",
+        "templates/project/04_REPORT.md": "5f108385862ca8aef41fb984c10ae37df9aa4e8026b44e93eb9c36b282d47e8d",
+        "templates/site-snapshot.example.json": "1a6f0c12a3ac75876977552a30c1aa42d0875fcc88bf51b54c89a90cae5f08f6",
+        "tests/test_tools.py": "317504f22eb52cf8f03e02b8fd053c6655e347986eef3d3f948aa335366f3a50",
+        "VALIDATION.md": "f4ed9fa0f4d8dffd9372e7076f75b49887e0620228985b8561363b9dc4971082"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "seo-post-deploy",
+      "files": {
+        "references/operators.md": "b39aa50cbdd014337bade842b5933954de22e1e728d5e4c877d2003c86390de6",
+        "references/scenarios.md": "bc69d1c66eaa3eeaec58bbfd9d1c6e03254b9db99dc5337dc181efa07e972db5",
+        "SKILL.md": "f3d05f1096e6b0e37bf87f3d0b1e8a20fc30ca10621e833cd55952fd867e9f05"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "site-checklist",
+      "files": {
+        "references/scenarios.md": "51d19029cd67c6eb2360c66293be7a6367906352deb1ee6f84be11cab89615bc",
+        "SKILL.md": "acfa5c93e35694c0ec25df3ca9da1ba3579f9f18774a278728cc087d03140c10"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "analytics",
+      "files": {
+        "evals/evals.json": "35d03690f48f8e191f419629419dcd4fa0c1b524b8f2643d3a61d00c8787e1ef",
+        "references/event-library.md": "04faf3c1f8e7c27ffa5a541d819f6355222ff834a2ee770ba523c9c1194485e4",
+        "references/ga4-implementation.md": "8a9cb81c590e87101b0c6ffdfe11157076dfa82c4f6af0d919394fd2930bf67e",
+        "references/gtm-implementation.md": "a10ca35b77d97fbe5414efb35c39597862ff82c0bc27237c304ee3c0b2a22d11",
+        "SKILL.md": "5674199dfb5f0897aef81fd333e727f8cd9ae4a6757defe133a135c0790037cf"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "human-reading",
+      "files": {
+        "scripts/contrast_ratio.py": "054ada05b64b8c9ee5357cfb1eda1b61ee792e38bdeb2d19ac1b46593fa7b065",
+        "SKILL.md": "065117f96e13b2071279ee2f34aeaa1e8b124dc2430b6459c6601e160a3a1efd"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "human",
+      "files": {
+        "evals/evals.json": "d5010f9ff3e16ba343d3af78e3c741b60e31961e0f751e53049cea9eb841d10b",
+        "SKILL.md": "f7e60f4124e53d14c7d52bfd7e6e4e0a0c1ff7fc84528c8a483a252e4de24bb6"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "business-checklist",
+      "files": {
+        "agents/openai.yaml": "860a77d959a30fa1233d67a0f36f30e340585b52a491ca02f1eeab15fd5eace6",
+        "assets/00-brief-projet.md": "3920d975c2bd04c2bb1f978adaf1d179c1f5cecb8f8f35cc9a77f4042dceed54",
+        "assets/01-benchmark.md": "62229a603aa6a65b6508d814b8df6d5de8d262a9fb432014ca25e35b90f7e246",
+        "assets/02-registre-preuves.md": "50da751633f70995c62fa9064028122b67946ef4038e6cd2cb78c5bce91b1aa7",
+        "assets/03-plan-validation.md": "5dd215b6eb3601439639394f253b4745057a8d0199b5caa5962a4e67df54438a",
+        "assets/04-business-plan.md": "5f2632119f78f0a84cad8574d7d2fe2a864436e57378ff3bd2dd489c4f01068c",
+        "assets/05-decision-handoff.json": "3ab0a9ad552ad38eff3d0e8ab12a15405b8406695da59ff56e5bb7a4c62ea788",
+        "assets/06-hypotheses.json": "389b454f745372496f277f7466cdb95972216ee1a9f16f837675870e455dde6a",
+        "assets/07-note-decision.md": "db13947fb5f2775c4b4c153dd9d2235d009809ba172451199551368303a0594b",
+        "assets/08-checklist.json": "005dbb74396b773005f6d95e4bdcce70e00664267c5b5989f7a41eba8c0280bf",
+        "assets/08-checklist.md": "a38e96e72253a71a46377e87003e329e7f33110dbfda42b4b703b063ebb4e194",
+        "assets/09-reprise.md": "8c0ba1ccc7daab434b5ece6f4770a7214b5663fb52d60447ef27ee14230565f1",
+        "assets/10-seo-interface.md": "e19a557e324a7e244c3ca8f07701df659c9c9a48cbcf8dc175a88b7f79504ef6",
+        "references/criteres-financeurs.md": "136fc4e62a755751c79c3d336aa03923951f30ca8a5f998b591d6201785f728b",
+        "references/gates-validation.md": "b5061359d7b67f23a3fd64094aa4ae5647842fb0219c5bd8255f3c6025bab07c",
+        "references/handoff-schema.md": "13e153fcd01be70013e3b0f41e47ac55983a04c683a20fb9104c21b7e5b71791",
+        "references/integrations.md": "a8776e6fbafe7b730578767926f78e8dfbad3facaca755af42f5b56db9bda26c",
+        "references/modele-financier.md": "5da99ca2f79c6372e105b9ca0cfbae77cd9ad5e1093b66eb53d967740f5524f9",
+        "references/modeles-revenus.md": "cc1e18d262c814700b82edbeb73a0e517dab6aa5a43305c425024bd476374a8b",
+        "references/recherche-web-reddit.md": "d3672aa28cad05f5d41800a6ef3c1faf354da8304881cb7b2428529b9e746a51",
+        "references/reprise-et-portabilite.md": "9f3251aeced5e07124efdab8275e138ae6d03a930f80775a9b33b591e44b9b3c",
+        "references/sources.json": "758ca0393f0e7151322cbafe19ddfe28932a733c47f8c69c521b71fac2ad8785",
+        "references/sources.md": "56a9336374b971bf1dd17875cdb075186669faafd7dfc25084e4286ff9cb02df",
+        "scripts/check_handoff.py": "ed58edae200912824279af78d60a82cd621533e13a3ff133369ecdec9c25a9d4",
+        "scripts/validate_package.py": "f61a1188b40e566fea03ec72c815d7dc783cfacd71edbfb6219c687f763e3ce9",
+        "SKILL.md": "26567272251ddb9c5f2776cb24f7007ff6c7df80dd83a7066acd515383821280",
+        "tests/functional-cases.md": "f13ae44e1f0e2402d8a9e427fa190e0c7b65e8451faaf1bb8348ff161e342df9",
+        "tests/test_handoff.py": "6bfadc24b785660736d5448604615bd38c3badf67dfc600399db351b1c600189"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "product-marketing",
+      "files": {
+        "evals/evals.json": "99ed087b244d4724bb93b6426107c63ec87957196842e5905334efd7ab29acd0",
+        "SKILL.md": "75bbf1e4a8803417ffd51c33c718e6831d2b6e35732c6861cd18c74a8512c4da"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "cro",
+      "files": {
+        "evals/evals.json": "31a978defd41b86a0aafa2728499be488de21bfb0f1c7f33a93c1ce876eb38fd",
+        "references/experiments.md": "f3103edc47e61e62eb4c733f30aa6bebe31e117beb74d61b3d44b766ae9324a1",
+        "references/form.md": "5ec37523ce85312c23da1a8980d35956a9654010f415ced318503bfaa2afef0d",
+        "SKILL.md": "fb4f8601c3c723b3167a21bd2a7ce7d4b6530f39fc28cc9f1e09d56530c9c5ce"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "design-taste-frontend",
+      "files": {
+        "SKILL.md": "70fc7fe97ec6cd6558004d509fd4fae7259cb9084ba5cc68060da6d5794a9d6b"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "webapp-testing",
+      "files": {
+        "examples/console_logging.py": "e4236735be7684dd66817881ed9e25b508d1fb602f3635fc8fe4489a08ce5d14",
+        "examples/element_discovery.py": "aca3ffbf6d6f0692395d111c1cc2f61a5d952bb2a0fbab6c8d00514219912691",
+        "examples/static_html_automation.py": "3ca15c3aab69693e5f02c554b8bd501bd8134ff1d82136466f23369b5cf348b2",
+        "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+        "scripts/with_server.py": "bad569c06e313d8a4290bbbef37bd53673ac7515754b04f5c67ddc55f7649094",
+        "SKILL.md": "4f50750c77f8c7972da336df8ac892943745a3fdbd739c55a8627949839cd340"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "web-design-guidelines",
+      "files": {
+        "SKILL.md": "17e48da905f83a19c174079b50760a98c069527ba50079239b3c187236627c29"
+      },
+      "mode": "resource; load only when relevant",
+      "source": "local reviewed snapshot; upstream standalone sources preserved"
+    }
+  ]
+}

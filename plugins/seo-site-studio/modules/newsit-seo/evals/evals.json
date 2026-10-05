@@ -1,0 +1,115 @@
+{
+  "skill_name": "newsit-seo",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Newsit SEO : conçois le site vitrine d'un électricien à Beauchamp. Garde /, /services/, /realisations/ et /contact/. Son objectif est une demande de devis qualifiée. Nous n'avons pas encore d'avis ni de chiffres de réalisations vérifiés. Propose deux stacks, explique pourquoi ces deux choix et recommande la meilleure. Prépare le parcours, la carte des pages, les règles SEO Google et Bing, la tranche et les critères de recette. Mode conception seulement, sans publication, achat ni message. Réponds dans un document Markdown de 1200 mots maximum ; marque les recherches non effectuées plutôt que de les inventer.",
+      "expected_output": "Proposition vitrine spécifique, architecture conservée, deux stacks crédibles argumentées avec recommandation, conversion effectivement qualifiable, règles Google/Bing et preuves non fabriquées.",
+      "files": [],
+      "expectations": [
+        "Conserve les quatre routes imposées et ne propose pas de pages locales clonées.",
+        "Ne redemande pas le type déjà fourni et n'invente aucun avis ni chiffre.",
+        "Présente exactement deux stacks complètes plausibles, leurs raisons et une recommandation explicite.",
+        "Prévoit demande reçue et qualification, distinctes du simple clic CTA.",
+        "Couvre title, description, HTML/indexation, sitemap, Google et Bing avec limites de vérification et aucune garantie de ranking."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Newsit SEO : prépare une boutique française de luminaires qui vend directement, avec catégories, fiches et variantes, panier et commande. Garde /collections/, /produits/ et /panier/. Il faut choisir la stack : présente exactement deux solutions complètes, pourquoi ces deux et laquelle tu recommandes. Le stock et le prix font autorité côté serveur ; aucun avis client n'est encore disponible. Prépare architecture, SEO Google/Bing et recette du paiement en mode test, y compris refus et notification rejouée. Mode conception seulement, sans achat réel ni publication. Livrable Markdown, 1200 mots maximum ; ne prétends pas avoir testé une boutique inexistante.",
+      "expected_output": "Projet marchand propre, deux stacks justifiées, données produit fiables, checkout de test à vérifier côté serveur, SEO marchand et limites honnêtes.",
+      "files": [],
+      "expectations": [
+        "Traite le site comme vendeur direct et conserve les routes imposées.",
+        "Présente exactement deux stacks pertinentes pour un marchand et recommande l'une selon le brief.",
+        "Prévoit vérification serveur prix/variante, notification signée et idempotence contre double commande.",
+        "Distingue retour navigateur, commande confirmée, achat de test et vente réelle.",
+        "Prévoit Product/Offer selon contenu réel, facettes/canonical/sitemap, Google et Bing, sans avis ou résultats de tests inventés."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Avec Newsit SEO, conçois un site d'affiliation pour les trajets : manteaux, liseuses et casques. Je veux conserver /situations/, /guides/ et /comparatifs/. Reprends le meilleur d'Accord Raccord : le besoin avant le produit, un kit dont on retire ce qu'on possède déjà et des liens marchands par pièce. Propose deux stacks et recommande celle qui paraît la meilleure. Intègre aussi les textes invisibles dans les titres pour Google et Microsoft. Mode conception seulement ; aucune vente ou performance n'a été mesurée, les prix seront sourcés ensuite. Livre un Markdown de 1200 mots maximum, sans publication ni commande.",
+      "expected_output": "Parcours affilié par situation, catalogue et kit réutilisables, deux stacks argumentées, métadonnées légitimes Google/Bing, liens rémunérés clairs et résultats non inventés.",
+      "files": [],
+      "expectations": [
+        "Conserve les trois familles d'URLs et distingue les intentions plutôt que créer leurs permutations.",
+        "Compose un parcours situation puis choix sourcé, avec pièces optionnelles retirables et IDs produit partagés.",
+        "Présente exactement deux stacks argumentées et recommande l'une selon le parcours.",
+        "Interprète les textes invisibles comme title/meta/JSON-LD/accessibilité, sans H1 caché manipulateur ni bourrage ; inclut Google et Bing.",
+        "Distingue clic et vente, révèle l'affiliation, prévoit sponsored et ne promet pas de panier Amazon ou performance prouvée."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Utilise Newsit SEO pour mon nouveau site autour du café. Je ne sais pas encore comment il va fonctionner.",
+      "expected_output": "Demande utile de type vitrine/marchand/affiliation ou hybride avant de figer la conversion ; pas de boutique choisie silencieusement.",
+      "files": [],
+      "expectations": [
+        "Pose d'abord la question du type de site et ne choisit pas de checkout arbitraire."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Newsit SEO : conçois un site hybride, je vends mes propres mugs et je recommande des machines à café affiliées. Next.js est déjà validé. Conserve la navigation et ne change pas le framework.",
+      "expected_output": "Sépare vendeur/affilié et leurs conversions, conserve Next.js et la navigation. Puisque le moteur marchand/CMS n'est pas validé, compare deux compositions compatibles gardant Next.js et recommande l'une.",
+      "files": [],
+      "expectations": [
+        "Préserve Next.js et la navigation, distingue commande et lien marchand, compare deux compositions pour les couches encore ouvertes sans réouvrir le framework."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Newsit SEO : conçois l'architecture d'un comparateur avec les règles disponibles ici, mais seo-methodologie et newpro sont absents. Nous n'avons ni Search Console ni Bing Webmaster Tools.",
+      "expected_output": "Signale dépendances absentes, utilise les règles intégrées sans prétendre exécuter ces skills, prépare les mesures sans inventer d'indexation.",
+      "files": [],
+      "expectations": [
+        "Ne prétend ni charger les skills absents ni avoir consulté les consoles."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Je veux seulement un audit SEO public de mon site existant. Pas de refonte, pas de nouvelle stack ni de modification du site.",
+      "expected_output": "Parcours audit ciblé, sans bootstrap, deux stacks ou construction non autorisés.",
+      "files": [],
+      "expectations": [
+        "Respecte l'audit seul et n'invente pas une nouvelle réalisation."
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Reprends avec Newsit SEO le MASTER validé et réalise tout le site d'affiliation prévu. Garde Astro et les URLs. Nous avons déjà validé les choix ; il manque le kit personnalisable et ses événements.",
+      "expected_output": "Travail effectif dans le périmètre autorisé, MASTER conservé, stack inchangée et vérification du kit/clic ; ne s'arrête pas à un nouveau plan.",
+      "files": [],
+      "expectations": [
+        "Conserve les décisions et avance vers l'implémentation et ses preuves."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Newsit SEO : audit ciblé Bing d’un guide affilié existant. Préserver ses URLs et sa stack. Le guide contient seulement une vidéo et des liens marchands, sans critères ni sources. Aucun accès Webmaster Tools ni autorisation de publication. Proposer les corrections et preuves attendues sans inventer les performances.",
+      "expected_output": "Réponse ciblée : valeur du conseil et contenu visible autonome, source Bing fraîche ou limite de lecture, mesures et autorisations distinctes.",
+      "files": [],
+      "expectations": [
+        "Ne redemande pas deux stacks pour cet audit ciblé.",
+        "Identifie le manque de texte utile et de valeur originale du conseil.",
+        "Référence les principes Bing et distingue lecture indexée et rendu direct si nécessaire.",
+        "Ne promet pas de citation et ne confond pas citations et conversions.",
+        "Ne soumet pas de sitemap ou de clé sans autorisation."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Crée de bout en bout un nouveau site affilié de lampes de lecture. Tu choisis la stack. Respecte mes préférences et l’architecture Thomas. Travail local, aucune publication ni dépense. Les données absentes doivent être signalées.",
+      "expected_output": "Réalisation locale de toute la portée, décisions réversibles autonomes, architecture et design contrôlés, registre de preuves et blocages réels.",
+      "files": [],
+      "expectations": [
+        "Ne s’arrête ni au brief ni à une seule tranche verticale.",
+        "Applique Memory, Toolbox et Design DNA, sans flèches dans les CTA.",
+        "Documente la carte des intentions et le catalogue partagé.",
+        "N’invente ni données produit ni recette navigateur.",
+        "Présente un registre complet et distingue site local, publication et trafic mesuré."
+      ]
+    }
+  ]
+}

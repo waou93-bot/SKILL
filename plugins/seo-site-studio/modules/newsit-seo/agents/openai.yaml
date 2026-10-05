@@ -1,0 +1,4 @@
+interface:
+  display_name: "Newsite SEO"
+  short_description: "Créer un site complet avec ton design et une recette tracée"
+  default_prompt: "Utilise $newsit-seo pour réaliser mon site de bout en bout à partir de sa niche et de son type, avec mes préférences, l’architecture Thomas, la toolbox et toutes les vérifications applicables."

@@ -1,0 +1,477 @@
+{
+  "Config": {
+    "site_url": "https://atelier-velo.example",
+    "language": "fr",
+    "target_country": "FR",
+    "business_description": "Entreprise fictive Atelier Vélo, entretien de vélos urbains à Lyon",
+    "products_services": [
+      "Révision vélo",
+      "Diagnostic atelier"
+    ],
+    "target_audiences": [
+      "Cyclistes urbains lyonnais"
+    ],
+    "conversion_goals": [
+      "Réservation diagnostic"
+    ],
+    "geographic_scope": "Lyon",
+    "competitors": [
+      "https://rival.example"
+    ],
+    "excluded_domains": [
+      "rival.example"
+    ],
+    "brand_voice": "Précise, simple, pédagogique",
+    "expert_materials": [
+      {
+        "id": "E1",
+        "description": "Checklist atelier fictive: freins, pneus, éclairage",
+        "source": "fiche interne fictive E1"
+      }
+    ],
+    "cms_provider": "none",
+    "publishing_mode": "draft",
+    "publishing_frequency": "Une mise à jour dans les 30 jours",
+    "monthly_budget": {
+      "amount": 200,
+      "currency": "EUR"
+    },
+    "optional_search_console_connection": null,
+    "optional_analytics_connection": null,
+    "backlink_network_enabled": false
+  },
+  "SiteAudit": {
+    "status": "draft",
+    "evidence": [
+      {
+        "kind": "fictional",
+        "source": "jeu de démonstration fourni dans ce skill",
+        "observed_at": "2026-10-04T10:00:00Z",
+        "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+      }
+    ],
+    "assumptions": [
+      "Exemple pédagogique fictif"
+    ],
+    "missing_data": [
+      "Crawl réel",
+      "Mesures de vitesse"
+    ],
+    "generated_at": "2026-10-04T10:00:00Z",
+    "next_action": "Revue humaine avant tout usage réel",
+    "site_url": "https://atelier-velo.example",
+    "coverage": "Deux pages dans un inventaire fictif, aucun crawl",
+    "pages": [
+      {
+        "url": "https://atelier-velo.example/entretien",
+        "objective": "Informer",
+        "intent": "Préparer son vélo urbain",
+        "commercial_target": "https://atelier-velo.example/diagnostic",
+        "checks": [
+          {
+            "name": "HTTP/canonical/noindex/robots/sitemap/liens/duplication/vitesse",
+            "result": "unknown",
+            "detail": "Aucun accès réseau sur ce domaine fictif"
+          }
+        ]
+      }
+    ],
+    "technical_findings": [
+      "Contrôles techniques indisponibles dans cet exemple"
+    ]
+  },
+  "KeywordOpportunity": {
+    "status": "draft",
+    "evidence": [
+      {
+        "kind": "fictional",
+        "source": "jeu de démonstration fourni dans ce skill",
+        "observed_at": "2026-10-04T10:00:00Z",
+        "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+      }
+    ],
+    "assumptions": [
+      "Exemple pédagogique fictif"
+    ],
+    "missing_data": [
+      "Search Console",
+      "Volumes SEO",
+      "SERP locale"
+    ],
+    "generated_at": "2026-10-04T10:00:00Z",
+    "next_action": "Revue humaine avant tout usage réel",
+    "query": "préparer vélo urbain avant révision",
+    "intent": "Information avant réservation",
+    "country": "FR",
+    "device": null,
+    "provider": null,
+    "metrics": {
+      "volume": null,
+      "difficulty": null,
+      "cpc": null,
+      "position": null,
+      "impressions": null,
+      "clicks": null
+    },
+    "recommended_action": "update",
+    "existing_url": "https://atelier-velo.example/entretien",
+    "priority": {
+      "score": null,
+      "components": [
+        {
+          "name": "pertinence offre",
+          "weight": 25,
+          "rating": 4,
+          "reason": "Lien direct avec révision; note fictive"
+        },
+        {
+          "name": "potentiel observable",
+          "weight": 15,
+          "rating": null,
+          "reason": "Aucune donnée"
+        }
+      ],
+      "interpretation": "Hypothèse commerciale, pas prévision"
+    }
+  },
+  "ContentBrief": {
+    "status": "draft",
+    "evidence": [
+      {
+        "kind": "fictional",
+        "source": "jeu de démonstration fourni dans ce skill",
+        "observed_at": "2026-10-04T10:00:00Z",
+        "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+      }
+    ],
+    "assumptions": [
+      "Exemple pédagogique fictif"
+    ],
+    "missing_data": [
+      "Sources primaires réelles",
+      "Résultats concurrents datés/localisés"
+    ],
+    "generated_at": "2026-10-04T10:00:00Z",
+    "next_action": "Revue humaine avant tout usage réel",
+    "id": "B1",
+    "intent": "Préparer une visite atelier",
+    "primary_query": "préparer vélo urbain avant révision",
+    "secondary_questions": [
+      "Que noter avant la visite ?",
+      "Quels accessoires apporter ?"
+    ],
+    "audience": "Cyclistes urbains",
+    "conversion_goal": "Réserver diagnostic",
+    "target_url": "https://atelier-velo.example/entretien",
+    "action": "update",
+    "competitor_results": [],
+    "original_angle": "Checklist de préparation issue de la fiche atelier fictive E1",
+    "outline": [
+      "Noter les symptômes",
+      "Préparer les accessoires",
+      "Réserver le diagnostic"
+    ],
+    "primary_sources": [
+      "fiche interne fictive E1"
+    ],
+    "expertise_needed": [
+      "Vérification de la checklist par le mécanicien"
+    ],
+    "internal_links": [
+      "https://atelier-velo.example/diagnostic"
+    ],
+    "cta": "Réserver un diagnostic"
+  },
+  "EditorialCalendar": {
+    "status": "draft",
+    "evidence": [
+      {
+        "kind": "fictional",
+        "source": "jeu de démonstration fourni dans ce skill",
+        "observed_at": "2026-10-04T10:00:00Z",
+        "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+      }
+    ],
+    "assumptions": [
+      "Exemple pédagogique fictif"
+    ],
+    "missing_data": [],
+    "generated_at": "2026-10-04T10:00:00Z",
+    "next_action": "Revue humaine avant tout usage réel",
+    "period_start": "2026-10-05",
+    "period_end": "2026-11-03",
+    "budget": {
+      "amount": 200,
+      "currency": "EUR"
+    },
+    "items": [
+      {
+        "date": "2026-10-08",
+        "brief_id": "B1",
+        "action": "update",
+        "owner": "Responsable éditorial fictif",
+        "effort_hours": 2,
+        "cost": 120,
+        "dependencies": [
+          "Validation mécanicien"
+        ],
+        "validation_stage": "Brouillon et revue"
+      },
+      {
+        "date": "2026-10-29",
+        "brief_id": "B1",
+        "action": "measurement",
+        "owner": "Responsable éditorial fictif",
+        "effort_hours": 1,
+        "cost": 60,
+        "dependencies": [
+          "Données si disponibles"
+        ],
+        "validation_stage": "Bilan sans publication"
+      }
+    ],
+    "clusters": [
+      {
+        "theme": "Entretien vélo urbain",
+        "pillar_url": "https://atelier-velo.example/entretien",
+        "brief_ids": [
+          "B1"
+        ]
+      }
+    ]
+  },
+  "ArticlePackage": {
+    "status": "draft",
+    "evidence": [
+      {
+        "kind": "fictional",
+        "source": "jeu de démonstration fourni dans ce skill",
+        "observed_at": "2026-10-04T10:00:00Z",
+        "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+      }
+    ],
+    "assumptions": [
+      "Exemple pédagogique fictif"
+    ],
+    "missing_data": [],
+    "generated_at": "2026-10-04T10:00:00Z",
+    "next_action": "Revue humaine avant tout usage réel",
+    "brief_id": "B1",
+    "version": "v1",
+    "title": "Préparer votre vélo avant une visite en atelier",
+    "meta_description": "Une checklist pour noter vos symptômes et préparer votre visite dans notre atelier fictif.",
+    "slug": "entretien",
+    "content_markdown": "# Préparer votre vélo avant une visite en atelier\n\nCe brouillon concerne une entreprise entièrement fictive.\n\n## Notez ce que vous observez\nDécrivez le bruit, la gêne ou le moment où le problème apparaît, sans chercher à poser vous-même un diagnostic.\n\n## Préparez la visite\nLa fiche atelier fictive E1 propose de noter les points à examiner: freins, pneus et éclairage. Faites confirmer cette liste par le mécanicien avant publication réelle.\n\n## Choisissez un rendez-vous\nConsultez la [page diagnostic](https://atelier-velo.example/diagnostic) pour préparer votre demande.\n",
+    "internal_links": [
+      "https://atelier-velo.example/diagnostic"
+    ],
+    "external_sources": [],
+    "cta": {
+      "text": "Réserver un diagnostic",
+      "url": "https://atelier-velo.example/diagnostic"
+    },
+    "images": [
+      {
+        "brief": "Photo originale du vélo avant diagnostic, consentement à vérifier",
+        "alt": "Vélo urbain présenté devant un atelier"
+      }
+    ],
+    "claims": [
+      {
+        "id": "C1",
+        "text": "La fiche E1 couvre freins, pneus et éclairage",
+        "sources": [
+          "https://atelier-velo.example/fiche-e1"
+        ],
+        "state": "fictional"
+      }
+    ],
+    "structured_data": null
+  },
+  "ValidationReport": {
+    "status": "blocked",
+    "evidence": [
+      {
+        "kind": "fictional",
+        "source": "jeu de démonstration fourni dans ce skill",
+        "observed_at": "2026-10-04T10:00:00Z",
+        "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+      }
+    ],
+    "assumptions": [
+      "Exemple pédagogique fictif"
+    ],
+    "missing_data": [],
+    "generated_at": "2026-10-04T10:00:00Z",
+    "next_action": "Revue humaine avant tout usage réel",
+    "article_version": "v1",
+    "checks": [
+      {
+        "name": "Intention et offre",
+        "result": "pass",
+        "detail": "Cohérentes au sein de la fiction"
+      },
+      {
+        "name": "Exactitude et liens",
+        "result": "unknown",
+        "detail": "Aucune source ni URL réelle vérifiée"
+      }
+    ],
+    "blocking_defects": [
+      "Preuves fictives",
+      "Liens non vérifiés",
+      "Revue mécanicien manquante"
+    ],
+    "sensitive_topic": false,
+    "qualified_approval": null,
+    "reviewer": "Auto-revue pédagogique, aucune qualification revendiquée"
+  },
+  "PublicationRecord": {
+    "status": "local_draft",
+    "evidence": [
+      {
+        "kind": "fictional",
+        "source": "jeu de démonstration fourni dans ce skill",
+        "observed_at": "2026-10-04T10:00:00Z",
+        "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+      }
+    ],
+    "assumptions": [
+      "Exemple pédagogique fictif"
+    ],
+    "missing_data": [
+      "Connexion CMS",
+      "Version précédente CMS"
+    ],
+    "generated_at": "2026-10-04T10:00:00Z",
+    "next_action": "Revue humaine avant tout usage réel",
+    "provider": "none",
+    "operation_key": "demo:atelier-velo:B1:v1:draft",
+    "article_version": "v1",
+    "mode": "draft",
+    "cms_id": null,
+    "cms_status": "local_draft",
+    "public_url": null,
+    "previous_version": null,
+    "snapshot_reference": null,
+    "authorization_reference": null,
+    "attempts": 0,
+    "actions": [
+      "Export local seulement; aucune mutation CMS"
+    ]
+  },
+  "BacklinkOpportunity": {
+    "status": "draft",
+    "evidence": [
+      {
+        "kind": "fictional",
+        "source": "jeu de démonstration fourni dans ce skill",
+        "observed_at": "2026-10-04T10:00:00Z",
+        "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+      }
+    ],
+    "assumptions": [
+      "Exemple pédagogique fictif"
+    ],
+    "missing_data": [],
+    "generated_at": "2026-10-04T10:00:00Z",
+    "next_action": "Revue humaine avant tout usage réel",
+    "source_url": "https://association-velo.example/ressources",
+    "target_url": "https://atelier-velo.example/entretien",
+    "context": "Ressource de préparation pour adhérents, opportunité fictive",
+    "relevance": "Cyclistes urbains",
+    "anchor_text": "Préparer une visite en atelier",
+    "rel_attributes": [],
+    "link_status": "proposed",
+    "verified_at": null,
+    "provenance": "Simulation éditoriale, aucun contact",
+    "module": "editorial"
+  },
+  "PerformanceReport": {
+    "status": "partial",
+    "evidence": [
+      {
+        "kind": "fictional",
+        "source": "jeu de démonstration fourni dans ce skill",
+        "observed_at": "2026-10-04T10:00:00Z",
+        "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+      }
+    ],
+    "assumptions": [
+      "Exemple pédagogique fictif"
+    ],
+    "missing_data": [
+      "Mesures réelles",
+      "Protocole IA",
+      "Conversions"
+    ],
+    "generated_at": "2026-10-04T10:00:00Z",
+    "next_action": "Revue humaine avant tout usage réel",
+    "period_current": {
+      "start": "2026-10-05",
+      "end": "2026-11-03"
+    },
+    "period_baseline": {
+      "start": "2026-09-05",
+      "end": "2026-10-04"
+    },
+    "filters": "France, tous appareils; exemple fictif, jours de semaine non alignés",
+    "metrics": [
+      {
+        "category": "delivery",
+        "name": "Brouillon local",
+        "current": 1,
+        "baseline": 0,
+        "unit": "contenu",
+        "provider": "simulation"
+      },
+      {
+        "category": "visibility",
+        "name": "Impressions",
+        "current": null,
+        "baseline": null,
+        "unit": "impressions",
+        "provider": null
+      },
+      {
+        "category": "acquisition",
+        "name": "Sessions",
+        "current": 130,
+        "baseline": 100,
+        "unit": "sessions fictives",
+        "provider": "jeu de démonstration"
+      },
+      {
+        "category": "business",
+        "name": "Prospects",
+        "current": null,
+        "baseline": null,
+        "unit": "prospects",
+        "provider": null
+      },
+      {
+        "category": "ai",
+        "name": "Citations",
+        "current": null,
+        "baseline": null,
+        "unit": "citations",
+        "provider": null
+      }
+    ],
+    "confounders": [
+      "Campagne simultanée fictive",
+      "Calendriers non alignés",
+      "Aucun contenu réellement publié"
+    ],
+    "causal_conclusion": "Hausse fictive de 30 %; aucune preuve de causalité SEO.",
+    "ai_tests": [],
+    "recommendations": [
+      {
+        "url": "https://atelier-velo.example/entretien",
+        "action": "enrich",
+        "reason": "Remplacer les preuves fictives par la checklist réelle",
+        "authorization_required": false
+      }
+    ]
+  }
+}

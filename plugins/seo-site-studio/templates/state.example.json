@@ -1,0 +1,18 @@
+{
+  "state": "CONCEPTION",
+  "version": "replace-with-actual-artifact-version",
+  "status": "PARTIEL",
+  "tasks": [],
+  "decisions": [],
+  "evidence": [],
+  "authorizations": [],
+  "facts_confirmed": false,
+  "domain": null,
+  "url": null,
+  "blockers": [],
+  "seo_architecture": {
+    "applicable": null,
+    "families": {},
+    "reason": "set actual scope and coverage before local verified"
+  }
+}

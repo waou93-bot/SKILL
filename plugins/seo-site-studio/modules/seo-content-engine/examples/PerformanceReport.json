@@ -1,0 +1,87 @@
+{
+  "status": "partial",
+  "evidence": [
+    {
+      "kind": "fictional",
+      "source": "jeu de démonstration fourni dans ce skill",
+      "observed_at": "2026-10-04T10:00:00Z",
+      "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+    }
+  ],
+  "assumptions": [
+    "Exemple pédagogique fictif"
+  ],
+  "missing_data": [
+    "Mesures réelles",
+    "Protocole IA",
+    "Conversions"
+  ],
+  "generated_at": "2026-10-04T10:00:00Z",
+  "next_action": "Revue humaine avant tout usage réel",
+  "period_current": {
+    "start": "2026-10-05",
+    "end": "2026-11-03"
+  },
+  "period_baseline": {
+    "start": "2026-09-05",
+    "end": "2026-10-04"
+  },
+  "filters": "France, tous appareils; exemple fictif, jours de semaine non alignés",
+  "metrics": [
+    {
+      "category": "delivery",
+      "name": "Brouillon local",
+      "current": 1,
+      "baseline": 0,
+      "unit": "contenu",
+      "provider": "simulation"
+    },
+    {
+      "category": "visibility",
+      "name": "Impressions",
+      "current": null,
+      "baseline": null,
+      "unit": "impressions",
+      "provider": null
+    },
+    {
+      "category": "acquisition",
+      "name": "Sessions",
+      "current": 130,
+      "baseline": 100,
+      "unit": "sessions fictives",
+      "provider": "jeu de démonstration"
+    },
+    {
+      "category": "business",
+      "name": "Prospects",
+      "current": null,
+      "baseline": null,
+      "unit": "prospects",
+      "provider": null
+    },
+    {
+      "category": "ai",
+      "name": "Citations",
+      "current": null,
+      "baseline": null,
+      "unit": "citations",
+      "provider": null
+    }
+  ],
+  "confounders": [
+    "Campagne simultanée fictive",
+    "Calendriers non alignés",
+    "Aucun contenu réellement publié"
+  ],
+  "causal_conclusion": "Hausse fictive de 30 %; aucune preuve de causalité SEO.",
+  "ai_tests": [],
+  "recommendations": [
+    {
+      "url": "https://atelier-velo.example/entretien",
+      "action": "enrich",
+      "reason": "Remplacer les preuves fictives par la checklist réelle",
+      "authorization_required": false
+    }
+  ]
+}

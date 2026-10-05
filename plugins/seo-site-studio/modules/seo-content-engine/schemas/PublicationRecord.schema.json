@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PublicationRecord",
+  "type": "object",
+  "required": [
+    "status",
+    "evidence",
+    "assumptions",
+    "missing_data",
+    "generated_at",
+    "next_action",
+    "provider",
+    "operation_key",
+    "article_version",
+    "mode",
+    "cms_id",
+    "cms_status",
+    "public_url",
+    "previous_version",
+    "snapshot_reference",
+    "authorization_reference",
+    "attempts",
+    "actions"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "blocked",
+        "draft",
+        "local_draft",
+        "failed",
+        "needs_reconciliation"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "source",
+          "observed_at",
+          "detail"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "observed",
+              "supplied",
+              "hypothetical",
+              "fictional"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "operation_key": {
+      "type": "string"
+    },
+    "article_version": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "draft",
+        "review",
+        "automatic"
+      ]
+    },
+    "cms_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cms_status": {
+      "enum": [
+        "local_draft",
+        "draft",
+        "published",
+        "failed",
+        "unknown"
+      ]
+    },
+    "public_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "previous_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "snapshot_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authorization_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attempts": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

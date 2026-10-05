@@ -1,0 +1,271 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PerformanceReport",
+  "type": "object",
+  "required": [
+    "status",
+    "evidence",
+    "assumptions",
+    "missing_data",
+    "generated_at",
+    "next_action",
+    "period_current",
+    "period_baseline",
+    "filters",
+    "metrics",
+    "confounders",
+    "causal_conclusion",
+    "ai_tests",
+    "recommendations"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "complete",
+        "partial",
+        "blocked",
+        "draft",
+        "local_draft",
+        "failed",
+        "needs_reconciliation"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "source",
+          "observed_at",
+          "detail"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "observed",
+              "supplied",
+              "hypothetical",
+              "fictional"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "detail": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_data": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "next_action": {
+      "type": "string"
+    },
+    "period_current": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "period_baseline": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "string"
+        },
+        "end": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "filters": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "category",
+          "name",
+          "current",
+          "baseline",
+          "unit",
+          "provider"
+        ],
+        "properties": {
+          "category": {
+            "enum": [
+              "delivery",
+              "visibility",
+              "acquisition",
+              "business",
+              "ai"
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "current": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "baseline": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": "string"
+          },
+          "provider": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "confounders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "causal_conclusion": {
+      "type": "string"
+    },
+    "ai_tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "question",
+          "engine",
+          "date",
+          "language",
+          "location",
+          "repetitions",
+          "mention",
+          "citation",
+          "recommendation"
+        ],
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "engine": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "repetitions": {
+            "type": "integer"
+          },
+          "mention": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "citation": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "recommendation": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "url",
+          "action",
+          "reason",
+          "authorization_required"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "action": {
+            "enum": [
+              "update",
+              "merge",
+              "enrich",
+              "maintain",
+              "delete"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "authorization_required": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

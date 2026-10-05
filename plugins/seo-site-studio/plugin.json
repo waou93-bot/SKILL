@@ -1,0 +1,17 @@
+{
+  "name": "seo-site-studio",
+  "version": "1.0.0",
+  "description": "Parcours site et SEO : conception, réalisation, recette, préproduction contrôlée et production autorisée.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SEO Site Studio",
+    "shortDescription": "Sites et SEO avec continuité et preuves",
+    "longDescription": "Pilote unique, modules locaux et répartition Astra, Sol 6.1, Luna. Publication conditionnée aux autorisations réelles.",
+    "category": "Productivity",
+    "defaultPrompt": [
+      "Construis un site complet jusqu’à une livraison locale vérifiée.",
+      "Reprends ce projet et prépare sa préproduction contrôlée.",
+      "Audite ce site et prépare son SEO après déploiement."
+    ]
+  }
+}

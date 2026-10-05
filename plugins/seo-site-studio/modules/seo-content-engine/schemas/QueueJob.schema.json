@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "QueueJob",
+  "type": "object",
+  "properties": {
+    "site_id": {
+      "type": "string"
+    },
+    "action": {
+      "enum": [
+        "audit",
+        "research",
+        "brief",
+        "write",
+        "validate",
+        "create_draft",
+        "update_draft",
+        "publish",
+        "measure",
+        "optimize"
+      ]
+    },
+    "article_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "artifact_reference": {
+      "type": "string"
+    },
+    "estimated_cost": {
+      "type": "number",
+      "minimum": 0
+    },
+    "authorization_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "validation_passed": {
+      "type": "boolean"
+    },
+    "validated_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sensitive_topic": {
+      "type": "boolean"
+    },
+    "qualified_approval": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "site_id",
+    "action",
+    "article_id",
+    "version",
+    "artifact_reference",
+    "estimated_cost",
+    "authorization_reference",
+    "validation_passed",
+    "validated_version",
+    "sensitive_topic",
+    "qualified_approval"
+  ],
+  "additionalProperties": false
+}

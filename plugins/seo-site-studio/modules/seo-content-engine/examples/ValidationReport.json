@@ -1,0 +1,38 @@
+{
+  "status": "blocked",
+  "evidence": [
+    {
+      "kind": "fictional",
+      "source": "jeu de démonstration fourni dans ce skill",
+      "observed_at": "2026-10-04T10:00:00Z",
+      "detail": "Entreprise, observations et chiffres entièrement fictifs; aucun appel réseau."
+    }
+  ],
+  "assumptions": [
+    "Exemple pédagogique fictif"
+  ],
+  "missing_data": [],
+  "generated_at": "2026-10-04T10:00:00Z",
+  "next_action": "Revue humaine avant tout usage réel",
+  "article_version": "v1",
+  "checks": [
+    {
+      "name": "Intention et offre",
+      "result": "pass",
+      "detail": "Cohérentes au sein de la fiction"
+    },
+    {
+      "name": "Exactitude et liens",
+      "result": "unknown",
+      "detail": "Aucune source ni URL réelle vérifiée"
+    }
+  ],
+  "blocking_defects": [
+    "Preuves fictives",
+    "Liens non vérifiés",
+    "Revue mécanicien manquante"
+  ],
+  "sensitive_topic": false,
+  "qualified_approval": null,
+  "reviewer": "Auto-revue pédagogique, aucune qualification revendiquée"
+}

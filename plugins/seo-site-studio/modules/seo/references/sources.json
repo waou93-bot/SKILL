@@ -1,0 +1,285 @@
+{
+  "as_of": "2026-09-16",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Google Search Essentials",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/essentials",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Éligibilité et bonnes pratiques publiques ; ne révèle pas une formule de classement."
+    },
+    {
+      "id": "S02",
+      "title": "SEO Starter Guide",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "publication_or_update_recorded": "2025-12-10",
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Guide général ; délais variables, absence de garantie, faux standards à éviter."
+    },
+    {
+      "id": "S03",
+      "title": "Creating helpful, reliable, people-first content",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Contenu utile et apport propre ; cadre qualitatif, pas un score."
+    },
+    {
+      "id": "S04",
+      "title": "Spam policies for Google web search",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Liens, contenu à grande échelle, dissimulation et manipulation ; vérifier à chaque usage sensible."
+    },
+    {
+      "id": "S05",
+      "title": "Introduction to robots.txt",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Distinguer crawl, indexation et confidentialité."
+    },
+    {
+      "id": "S06",
+      "title": "How to specify a canonical",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Consolidation des URL et signaux cohérents."
+    },
+    {
+      "id": "S07",
+      "title": "Understand JavaScript SEO basics",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Accès et rendu ; vérifier les pages réellement servies."
+    },
+    {
+      "id": "S08",
+      "title": "Understanding Core Web Vitals and Google search results",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/appearance/core-web-vitals",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Mesures de performance ; ne suffisent pas à établir le référencement."
+    },
+    {
+      "id": "S09",
+      "title": "Debugging drops in Google Search traffic",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/monitor-debug/debugging-search-traffic-drops",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Diagnostic multi-causes et comparaisons de périodes."
+    },
+    {
+      "id": "S10",
+      "title": "Site moves with URL changes",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Préparer et vérifier les migrations ; pas de transfert instantané garanti."
+    },
+    {
+      "id": "S11",
+      "title": "Tell Google about localized versions of your page",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Versions linguistiques et hreflang ; adapter à la configuration."
+    },
+    {
+      "id": "S12",
+      "title": "General structured data guidelines",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Véracité du contenu balisé et conditions des résultats enrichis."
+    },
+    {
+      "id": "S13",
+      "title": "Performance report (Search results): Overview and basic setup",
+      "publisher": "Google",
+      "url": "https://support.google.com/webmasters/answer/7576553?hl=en",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Périmètres des mesures Search Console ; interfaces évolutives."
+    },
+    {
+      "id": "S14",
+      "title": "AI features and your website",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "publication_or_update_recorded": "2025-12-10",
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Fondamentaux applicables à AI Overviews/AI Mode ; compléter la mesure avec S15/S22 plus récents."
+    },
+    {
+      "id": "S15",
+      "title": "Introducing Search Generative AI performance reports in Search Console",
+      "publisher": "Google",
+      "url": "https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports",
+      "publication_or_update_recorded": "2026-06-03",
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Note de déploiement mondial au 31/08/2026 ; disponibilité/volume à vérifier dans la propriété."
+    },
+    {
+      "id": "S16",
+      "title": "Introducing AI Performance in Bing Webmaster Tools Public Preview",
+      "publisher": "Microsoft Bing",
+      "url": "https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview",
+      "publication_or_update_recorded": "2026-02-10",
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Citations et grounding ; annonce datée, ne présumer ni rang ni conversion."
+    },
+    {
+      "id": "S17",
+      "title": "Overview of OpenAI Crawlers",
+      "publisher": "OpenAI",
+      "url": "https://developers.openai.com/api/docs/bots",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "OAI-SearchBot et GPTBot : fonctions et préférences indépendantes."
+    },
+    {
+      "id": "S18",
+      "title": "Publishers and Developers — FAQ",
+      "publisher": "OpenAI",
+      "url": "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Découverte/recherche et paramètres de provenance ChatGPT ; pas de garantie de présence."
+    },
+    {
+      "id": "S19",
+      "title": "Business eligibility and ownership guidelines",
+      "publisher": "Google",
+      "url": "https://support.google.com/business/answer/13763036?hl=en",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Éligibilité Business Profile ; ne pas inventer une présence locale."
+    },
+    {
+      "id": "S20",
+      "title": "Build skills",
+      "publisher": "OpenAI",
+      "url": "https://learn.chatgpt.com/docs/build-skills",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Emplacement utilisateur .agents/skills, SKILL.md et agents/openai.yaml ; vérifier le profil local."
+    },
+    {
+      "id": "S21",
+      "title": "Custom instructions with AGENTS.md",
+      "publisher": "OpenAI",
+      "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Instructions et périmètres ; préserver les instructions existantes."
+    },
+    {
+      "id": "S22",
+      "title": "Generative AI performance report (Search)",
+      "publisher": "Google",
+      "url": "https://support.google.com/webmasters/answer/16984139",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Impressions IA, agrégations et exports ; des indisponibilités peuvent devenir zéro dans un export."
+    },
+    {
+      "id": "S23",
+      "title": "FAQ about Google Trends data",
+      "publisher": "Google",
+      "url": "https://support.google.com/trends/answer/4365533?hl=en",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Normalisation, échantillonnage et limites des faibles volumes."
+    },
+    {
+      "id": "S24",
+      "title": "About Keyword Planner forecasts",
+      "publisher": "Google",
+      "url": "https://support.google.com/google-ads/answer/3022575?hl=en",
+      "publication_or_update_recorded": null,
+      "accessed_at": "2026-09-16",
+      "category": "OFFICIAL",
+      "limitation": "Données et prévisions publicitaires ; pas un modèle de difficulté organique."
+    },
+    {
+      "id": "R01",
+      "title": "How I Grew My App's Organic Traffic 15x in 90 Days",
+      "publisher": "Reddit r/juststart",
+      "url": "https://www.reddit.com/r/juststart/comments/1umaicw/how_i_grew_my_apps_organic_traffic_15x_in_90_days/",
+      "publication_or_update_recorded": "2026-07-03",
+      "accessed_at": "2026-09-16",
+      "category": "REDDIT_SELF_REPORT",
+      "limitation": "Retour auto-déclaré lié au produit de l’auteur ; chiffres et causalité non audités."
+    },
+    {
+      "id": "R02",
+      "title": "Discoverability (I will not promote)",
+      "publisher": "Reddit r/startups",
+      "url": "https://www.reddit.com/r/startups/comments/1ucrcmq/discoverability_i_will_not_promote/",
+      "publication_or_update_recorded": "2026-06-22",
+      "accessed_at": "2026-09-16",
+      "category": "REDDIT_SELF_REPORT",
+      "limitation": "Problème de distribution ; objectif de hobby explicitement différent d’une entreprise commerciale."
+    },
+    {
+      "id": "R03",
+      "title": "The quiet ones, where are you now?",
+      "publisher": "Reddit r/SEO",
+      "url": "https://www.reddit.com/r/SEO/comments/1biboln/the_quiet_ones_where_are_you_now/",
+      "publication_or_update_recorded": "2024-03-19",
+      "accessed_at": "2026-09-16",
+      "category": "REDDIT_SELF_REPORT",
+      "limitation": "Discussion historique sur une mise à jour de 2024 ; expériences divergentes, pas diagnostic 2026."
+    },
+    {
+      "id": "R04",
+      "title": "Your landing page is probably too polite",
+      "publisher": "Reddit r/SaaS",
+      "url": "https://www.reddit.com/r/SaaS/comments/1l7ydmz/your_landing_page_is_probably_too_polite/",
+      "publication_or_update_recorded": "2025-06-10",
+      "accessed_at": "2026-09-16",
+      "category": "REDDIT_SELF_REPORT",
+      "limitation": "Opinion sur clarté de l’offre ; autopromotion présente, pas expérience contrôlée de conversion."
+    }
+  ]
+}

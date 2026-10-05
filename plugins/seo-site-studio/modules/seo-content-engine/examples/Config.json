@@ -1,0 +1,41 @@
+{
+  "site_url": "https://atelier-velo.example",
+  "language": "fr",
+  "target_country": "FR",
+  "business_description": "Entreprise fictive Atelier Vélo, entretien de vélos urbains à Lyon",
+  "products_services": [
+    "Révision vélo",
+    "Diagnostic atelier"
+  ],
+  "target_audiences": [
+    "Cyclistes urbains lyonnais"
+  ],
+  "conversion_goals": [
+    "Réservation diagnostic"
+  ],
+  "geographic_scope": "Lyon",
+  "competitors": [
+    "https://rival.example"
+  ],
+  "excluded_domains": [
+    "rival.example"
+  ],
+  "brand_voice": "Précise, simple, pédagogique",
+  "expert_materials": [
+    {
+      "id": "E1",
+      "description": "Checklist atelier fictive: freins, pneus, éclairage",
+      "source": "fiche interne fictive E1"
+    }
+  ],
+  "cms_provider": "none",
+  "publishing_mode": "draft",
+  "publishing_frequency": "Une mise à jour dans les 30 jours",
+  "monthly_budget": {
+    "amount": 200,
+    "currency": "EUR"
+  },
+  "optional_search_console_connection": null,
+  "optional_analytics_connection": null,
+  "backlink_network_enabled": false
+}

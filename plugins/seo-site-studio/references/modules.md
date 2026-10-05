@@ -1,6 +1,6 @@
 # Registre et adaptations
 
-Socle : organisation (coordination), brain (fiabilité), newsit-seo (réalisation complète), newpro (continuité/bootstrap), newsite (site de conversion), Memory (préférences contextualisées), toolbox (outils disponibles), design-dna (PROJECT_SKIN), no-slop (rédaction et motifs), site-checklist (recette), human-reading (lisibilité).
+Socle : organisation (coordination), brain (fiabilité), newsit-seo (réalisation complète), newpro (continuité/bootstrap), newsite (site de conversion), Memory (préférences contextualisées), toolbox (outils disponibles), design-dna (PROJECT_SKIN), no-slop (rédaction et motifs), site-checklist (recette), human-reading (lisibilité), cross-platform-qa (procédure de recette desktop/iOS/Android avec preuves et limites de méthode).
 
 Selon le besoin : seo-methodologie/seo (architecture et audit organiques), seo-content-engine (contenus, cadence seulement autorisée), ai-seo (visibilité IA), seo-post-deploy (production réellement vérifiée), analytics (mesure réelle et consentement), product-marketing/cro (conversion), business-checklist (projet monétisé), asset-continuity/human (assets et pixels), design-taste-frontend/web-design-guidelines/webapp-testing (implémentation et recette web). Chaque dossier contient ses ressources originales ; lire uniquement le périmètre utile. Les outils d'hébergement, stack, navigateur et génération médias restent des capacités externes vérifiées à l'exécution, aucune installation implicite.
 

@@ -431,6 +431,16 @@
       },
       "mode": "resource; load only when relevant",
       "source": "local reviewed snapshot; upstream standalone sources preserved"
+    },
+    {
+      "name": "cross-platform-qa",
+      "files": {
+        "references/protocol.md": "095bc86d83370b6885f2ee2877a7cb688410f005fee637f718ba358647caa98b",
+        "references/scenarios.md": "60a4045175cd2fa5f72a2cde0f16ccec58b5062e311e04696b37de4a496f5823",
+        "SKILL.md": "9a2153c86efa8293a5ce04295d29e054eec72ff3d780ed711d0f55ffb81b375f"
+      },
+      "mode": "resource; load for cross-platform verification",
+      "source": "session-authored generic skill"
     }
   ]
 }

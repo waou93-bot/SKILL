@@ -75,3 +75,7 @@ d'observations dépendantes. Privilégier descriptions et effectifs quand le pan
 
 Une revue périodique est une recommandation tant qu'aucune tâche planifiée n'a été créée avec
 l'autorisation de l'utilisateur. Ne pas annoncer une surveillance permanente inexistante.
+
+## Cartographie des sources récurrentes
+
+Compléter les observations avec URL exacte, domaine, type de source et affirmation soutenue selon [le protocole de cartographie](citation-map-pilot.md). Séparer citations du site et sources tierces. Pour chaque domaine, compter au plus une occurrence par réponse et afficher réponses valides et questions uniques concernées.

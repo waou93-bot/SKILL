@@ -2,8 +2,8 @@
 name: ai-seo
 description: "Construire, auditer et mesurer le canal d'acquisition par ChatGPT Search et les autres moteurs ou agents IA sur un site existant ou en cours. Déclencher pour SEO IA, GEO, AEO, LLMO, recommandations IA, citations, visibilité ChatGPT/Claude/Perplexity/Gemini/Copilot, accès des robots ou site lisible par les agents. Ne pas déclencher pour un chatbot interne, une simple retouche visuelle ou un audit SEO classique sans enjeu IA."
 metadata:
-  version: "3.0.0"
-  reviewed_at: "2026-10-04"
+  version: "3.1.0"
+  reviewed_at: "2026-10-05"
 ---
 
 # AI SEO — acquisition, citations et recommandations
@@ -97,3 +97,7 @@ Rendre : périmètre réellement couvert, fichiers effectivement changés, tests
 Séparer explicitement : skill écrit, tests du package, commit GitHub vérifié, installation locale, découverte par Codex, application à un site, déploiement, résultats d'acquisition. Un push GitHub ne met pas à jour le PC de l'utilisateur.
 
 Les tests déterministes sont dans `tests/test_tools.py`. Les scénarios comportementaux de `evals/evals.json` nécessitent de vraies exécutions ; leur présence ne signifie pas qu'ils ont réussi.
+
+## Cartographie et pilote ciblé
+
+Pour un panel de questions d’achat, une distribution fondée sur les sources citées ou un premier sprint d’acquisition, lire [cartographie des citations et pilote](references/citation-map-pilot.md). Relier chaque source à l’affirmation soutenue, préparer un pack de preuve réutilisable et vérifier les blocages techniques dès le départ. Les volumes et délais sont ajustables ; une simple mention ne vaut pas recommandation.

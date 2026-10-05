@@ -18,3 +18,7 @@ Stocker source_url, target_url, contexte, pertinence, anchor_text, rel_attribute
 Sources officielles vérifiées le 2026-10-04; revérifier à l'exécution:
 - https://developers.google.com/search/docs/essentials/spam-policies
 - https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links
+
+## Opportunités issues des citations IA
+
+Si le programme vise les réponses IA, consulter ai-seo et son protocole de cartographie lorsque disponible. Relier les questions de décision aux sources citées, à leur type et aux affirmations soutenues. Ajouter au brief les lacunes de preuve et un pack réutilisable : conclusion, méthode, limites et visuel pertinent. Conserver ces observations dans les preuves existantes sans modifier les schémas. Prioriser les sources pertinentes récurrentes plutôt qu’un quota de liens ou de pages. Vérifier accès et mesure dès le départ ; aucune prise de contact implicite. Les études de corrélation ne garantissent pas un gain causal.

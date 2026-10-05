@@ -37,3 +37,7 @@ changer artificiellement la date d'un article inchangé. Pas de fausse biographi
 
 Garder auteur/éditeur, méthode, politique de correction et disclosure commercial faciles à trouver.
 Une bonne page peut rester absente d'une réponse : pertinence et sélection restent celles du moteur.
+
+## Préparer la diffusion de la preuve
+
+Pour une ressource destinée à être reprise, préparer le [pack de preuve](citation-map-pilot.md) : conclusion, tableau ou graphique pertinent, méthode, limites, attribution et données partageables autorisées. Une phrase facilement citable doit rester exacte dans son contexte.

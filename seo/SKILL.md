@@ -14,7 +14,7 @@ description: >-
 
 # SEO — Benchmark, stratégie & croissance organique
 
-Version 1.2 · 29 septembre 2026 · Langue par défaut : français.
+Version 1.3 · 5 octobre 2026 · Langue par défaut : français.
 
 ## Mission
 
@@ -296,3 +296,7 @@ majeure et trois prochaines actions. Distinguer fait, observation, estimation,
 calcul, hypothèse et inconnu. Ne jamais annoncer une modification, une publication,
 une connexion, un test ou une installation qui n'a pas effectivement eu lieu.
 
+
+## Pilote de citations IA
+
+Lorsqu’un pilote vise les réponses IA, lire le skill ai-seo disponible et sa référence de cartographie des citations et pilote. Réutiliser le dossier SEO : panel de décisions, URL citées, affirmations soutenues, preuve originale et distribution pertinente. Ne pas créer de dossier concurrent ni transformer des corrélations externes en facteurs garantis.

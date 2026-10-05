@@ -2,7 +2,7 @@
 name: analytics
 description: When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics," "conversion tracking," "event tracking," "UTM parameters," "tag manager," "GTM," "analytics implementation," "tracking plan," "how do I measure this," "track conversions," "attribution," "Mixpanel," "Segment," "are my events firing," or "analytics isn't working." Use this whenever someone asks how to know if something is working or wants to measure marketing results. For A/B test measurement, see ab-testing.
 metadata:
-  version: 2.0.0
+  version: 2.1.0
 ---
 
 # Analytics Tracking
@@ -134,9 +134,13 @@ checkout_payment_completed
 
 ## GA4 Implementation
 
+### Google Search Console integration
+
+For post-deployment organic measurement, read [the GA4–Search Console procedure](references/search-console-link.md). Reuse the verified link or configure the exact authorized property/web-stream pair after checking existing associations, page scope and required roles. Keep link configuration, report visibility, data availability and collection consent separate. No target means generic preparation only; never modify an arbitrary Google account. Return evidence and blockers to SEO post-deploy without restarting orchestration.
+
 ### Quick Setup
 
-1. Create GA4 property and data stream
+1. Inspect and reuse the authorized GA4 property and web data stream; create only when required and authorized
 2. Install gtag.js or GTM
 3. Enable enhanced measurement
 4. Configure custom events
@@ -289,11 +293,11 @@ dataLayer.push({
 
 ## Tool Integrations
 
-For implementation, see the [tools registry](../../tools/REGISTRY.md). Key analytics tools:
+Inspect the actual session catalog before using any connector, API or browser. The table below identifies candidate products, not proof of installed integrations. Use local tool-registry guides only when those files actually exist; absent guides do not block reading the official product documentation.
 
 | Tool | Best For | MCP | Guide |
 |------|----------|:---:|-------|
-| **GA4** | Web analytics, Google ecosystem | ✓ | [ga4.md](../../tools/integrations/ga4.md) |
+| **GA4** | Web analytics, Google ecosystem | Verify availability | Official Google documentation and the Search Console procedure above |
 | **Mixpanel** | Product analytics, event tracking | - | [mixpanel.md](../../tools/integrations/mixpanel.md) |
 | **Amplitude** | Product analytics, cohort analysis | - | [amplitude.md](../../tools/integrations/amplitude.md) |
 | **PostHog** | Open-source analytics, session replay | - | [posthog.md](../../tools/integrations/posthog.md) |

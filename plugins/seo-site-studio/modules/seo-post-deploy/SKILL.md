@@ -1,6 +1,6 @@
 ---
 name: seo-post-deploy
-description: Prendre en charge après déploiement les démarches de découverte et d'indexation du site courant auprès de Google, Bing, IndexNow et des services pertinents, vérifier les accès des moteurs IA, conserver les preuves et reprendre les actions inachevées. Utiliser pour référencer un site nouvellement publié ou relancer sa prise en charge après une mise à jour.
+description: Prendre en charge après déploiement la découverte et l'indexation du site courant, sa liaison GA4–Search Console autorisée, et l'optimisation de visibilité fondée sur données réelles Google, Bing et IA. Conserver les preuves et reprendre les actions inachevées sans promettre classement ni élargir les autorisations.
 ---
 
 # Référencement après déploiement
@@ -36,7 +36,17 @@ Corriger les blocages démontrés dans le périmètre autorisé, avec la stack e
 
 Privilégier API/connecteurs officiels ; utiliser une session navigateur autorisée si nécessaire et disponible. En cas de connexion, MFA, CAPTCHA ou preuve de propriété manquante, demander uniquement l'intervention indispensable sans contourner le contrôle. Ne pas arrêter tout le workflow pour un seul opérateur inaccessible.
 
-## Preuves, reprise et suivi
+## Relier mesure organique et Analytics
+
+Pour un site réel autorisé, charger Analytics et sa [procédure GA4–Search Console](../analytics/references/search-console-link.md). Lire les liens existants avant création ; vérifier le couple propriété GSC/flux web GA4, sa portée effective et les rôles Éditeur GA4/propriétaire vérifié GSC. Réutiliser le lien exact. Une mauvaise association ou une limite occupée ne permet pas de supprimer/recréer sans mandat adapté. Sans site/propriété ciblés, produire la préparation uniquement ; sans accès, noter le rôle et l’intervention manquants sans bloquer les autres démarches.
+
+Vérifier et consigner séparément lien configuré, collection publiée, rapports accessibles et données disponibles ; observer une période éligible et tenir compte du délai documenté. Préserver consentement et choix de collecte ; une liaison n’autorise pas de nouveau tag. Ne jamais assimiler clics GSC à sessions GA4, réception de sitemap à indexation, ou configuration réussie à collecte observée. Après résultat d’écriture inconnu, rechercher le lien avant réessai.
+
+## Optimiser la visibilité après déploiement
+
+Appliquer [la boucle d’optimisation de recherche](references/search-optimization.md) sur les données réelles du site : indexabilité/exploration, requêtes/pages GSC et Bing accessibles, engagement/événements clés GA4 consent-aware, visibilité IA observée avec limites. Comparer périodes/filtres/volumes et saisonnalité ; prioriser intentions, catalogue, maillage, métadonnées et performance démontrés. Réutiliser SEO méthodologie, SEO contenu et IA sans récursion, production massive ni promesse de classement. Sans données : baseline et attente documentées. Séparer recommandations, corrections locales autorisées, publication et écritures de comptes ; consigner historique, preuves, hypothèses et réévaluation sans automation implicite.
+
+## Tenir le registre et reprendre
 
 Réutiliser le dossier SEO ; sinon créer SEO/POST_DEPLOY/. Conserver un registre lisible, éventuellement JSON, par domaine et opérateur : propriété, sitemap/URLs, action, date, preuve non sensible, statut, erreur, accès manquant et prochaine action. Statuts utiles : A_FAIRE, FAIT_VERIFIE, SOUMIS_EN_ATTENTE, BLOQUE_ACCES, BLOQUE_TECHNIQUE, NON_APPLICABLE, NON_VERIFIE. Séparer soumission acceptée, sitemap lu, URL indexée, impressions/clics et visibilité IA.
 

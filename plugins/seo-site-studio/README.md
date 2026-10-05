@@ -1,4 +1,4 @@
-# SEO Site Studio 1.0.0
+# SEO Site Studio 1.1.0
 
 Plugin local de skills, un seul point d'entrée : `seo-site-studio`. 25 modules embarqués comme ressources. Modèles préférés : Astra orchestre, Sol 6.1 reçoit les travaux les plus difficiles, Luna traite les lots répétitifs. Installation ne lance aucun projet ou service.
 

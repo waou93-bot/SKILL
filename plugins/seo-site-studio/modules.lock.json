@@ -302,7 +302,8 @@
       "files": {
         "references/operators.md": "b39aa50cbdd014337bade842b5933954de22e1e728d5e4c877d2003c86390de6",
         "references/scenarios.md": "bc69d1c66eaa3eeaec58bbfd9d1c6e03254b9db99dc5337dc181efa07e972db5",
-        "SKILL.md": "f3d05f1096e6b0e37bf87f3d0b1e8a20fc30ca10621e833cd55952fd867e9f05"
+        "references/search-optimization.md": "12f72eea6393a41528ea7ec55ff9acc5d1a5dc648ff8872dc818b02b1c914c49",
+        "SKILL.md": "45656e270f9a14768570ebfb6cc2ef34499c2a4f82097b61040f5d9689e12c92"
       },
       "mode": "resource; load only when relevant",
       "source": "local reviewed snapshot; upstream standalone sources preserved"
@@ -323,7 +324,8 @@
         "references/event-library.md": "04faf3c1f8e7c27ffa5a541d819f6355222ff834a2ee770ba523c9c1194485e4",
         "references/ga4-implementation.md": "8a9cb81c590e87101b0c6ffdfe11157076dfa82c4f6af0d919394fd2930bf67e",
         "references/gtm-implementation.md": "a10ca35b77d97fbe5414efb35c39597862ff82c0bc27237c304ee3c0b2a22d11",
-        "SKILL.md": "5674199dfb5f0897aef81fd333e727f8cd9ae4a6757defe133a135c0790037cf"
+        "references/search-console-link.md": "c21c99c6f94aaa65deb630c29302452df70636799708bb69cb5a7f2835e55bee",
+        "SKILL.md": "77d4247546f24f51619ab229e41db45130cf34a9cc79710532573cae54022f34"
       },
       "mode": "resource; load only when relevant",
       "source": "local reviewed snapshot; upstream standalone sources preserved"

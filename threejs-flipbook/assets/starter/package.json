@@ -1,0 +1,16 @@
+﻿{
+    "version":  "1.0.0",
+    "name":  "folio-flipbook-starter",
+    "scripts":  {
+                    "test":  "node test.mjs",
+                    "build":  "node build.mjs"
+                },
+    "devDependencies":  {
+                            "esbuild":  "0.28.2"
+                        },
+    "type":  "module",
+    "dependencies":  {
+                         "three":  "0.186.1"
+                     },
+    "private":  true
+}

@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import {build} from 'esbuild';
+await build({entryPoints:['src/main.mjs'],bundle:true,minify:true,format:'iife',platform:'browser',outfile:'assets/main.js'});
+let html=fs.readFileSync('index.html','utf8');
+const css=fs.readFileSync('assets/style.css','utf8');
+const js=fs.readFileSync('assets/main.js','utf8').replace(/<\/script/gi,'<\\/script');
+html=html.replace('<link rel="stylesheet" href="assets/style.css">',()=>`<style>${css}</style>`);
+html=html.replace('<script src="assets/main.js" defer></script>','');
+html=html.replace('</body>',()=>`<script>${js}</script>\n</body>`);
+const start=html.indexOf('<script>')+8,end=html.indexOf('</script>',start);
+if(html.slice(start,end)!==js)throw new Error('JavaScript corrompu pendant l’assemblage HTML');
+fs.writeFileSync('FOLIO.html',html);
+console.log('Bundle et HTML autonome générés et comparés.');

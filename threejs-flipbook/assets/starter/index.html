@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9e5dc">
+  <meta name="description" content="FOLIO, une revue graphique interactive en trois dimensions. Études de papier, d'encre et de mouvement.">
+  <title>FOLIO — Études de mouvement</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="#" id="home" aria-label="Folio, revenir à la couverture">FOLIO<span class="wordmark-dot">®</span></a>
+    <div class="edition">REVUE D'EXPLORATIONS VISUELLES<br><span>ÉDITION 001 — OCTOBRE 2026</span></div>
+    <button id="index-toggle" class="text-button" aria-expanded="false" aria-controls="index-panel">Sommaire <span class="plus" aria-hidden="true">+</span></button>
+  </header>
+
+  <main id="main">
+    <section id="stage" aria-label="Magazine 3D interactif" aria-describedby="instructions">
+      <div class="side-note" aria-hidden="true">PAPIER / ENCRE / MOUVEMENT</div>
+      <div class="intro" id="intro">
+        <p class="small-label">UN OBJET À EXPLORER</p>
+        <h1>L'art de<br>tourner<br><em>la page.</em></h1>
+        <p class="intro-copy">Six études graphiques.<br>Un peu d'encre. Une autre dimension.</p>
+      </div>
+      <div id="canvas-host"></div>
+      <div id="flat-view" hidden aria-label="Planches du magazine"></div>
+      <div class="stage-meta"><span id="chapter">00 / COUVERTURE</span><span>VOL. 01</span></div>
+      <button id="open-book" class="open-button">Ouvrir la revue</button>
+      <div class="loading" id="loading" role="status">Préparation du papier…</div>
+    </section>
+
+    <footer class="controls">
+      <p id="instructions">Clique pour feuilleter. Attrape le bord pour tourner à ton rythme.</p>
+      <div class="pagination" role="group" aria-label="Navigation des pages">
+        <button id="prev" class="nav-button" aria-label="Page précédente" disabled>←</button>
+        <span id="page-number" aria-live="polite" aria-atomic="true">COUVERTURE</span>
+        <button id="next" class="nav-button" aria-label="Page suivante">→</button>
+      </div>
+      <div class="view-controls">
+        <button id="read-toggle" class="text-button" aria-pressed="false">Vue lecture</button>
+        <button id="sound-toggle" class="text-button" aria-pressed="false">Son <span id="sound-state">off</span></button>
+      </div>
+    </footer>
+  </main>
+
+  <aside id="index-panel" class="index-panel" hidden aria-label="Sommaire">
+    <div class="panel-heading"><span>LA REVUE</span><span>001</span></div>
+    <h2>Études de<br>mouvement.</h2>
+    <nav id="chapter-links" aria-label="Chapitres"></nav>
+    <p class="panel-note">Une exploration du graphisme par le papier, la géométrie et le mouvement. Toutes les planches sont dessinées pour cette édition.</p>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+  <section id="accessible-copy" class="sr-only" aria-label="Texte de la double page courante"></section>
+  <noscript><p class="noscript">Active JavaScript pour explorer la revue 3D.</p></noscript>
+</body>
+</html>

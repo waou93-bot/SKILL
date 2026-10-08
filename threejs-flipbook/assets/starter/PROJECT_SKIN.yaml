@@ -1,0 +1,65 @@
+project: FOLIO — Études de mouvement
+surface: immersive
+visual_concept: "Une revue d'art graphique posée sur une table, dont le papier devient la navigation."
+core:
+  design_dna: design-dna
+  preserve_approved_assets: true
+  preserve_approved_motion: true
+personality:
+  mood: [tactile, éditorial, expérimental]
+  keywords: [papier, encre, pli, mouvement]
+  avoid: [interface SaaS, panneaux décoratifs, verre, particules]
+composition:
+  density: low
+  asymmetry: medium
+  negative_space: high
+  chaptering: strong
+color:
+  mode: light
+  contrast: very-high
+  temperature: warm
+  palette_notes: "Table #e9e5dc, papier #f5f0e5, encre #24231f, vermillon #ed4932."
+typography:
+  ui_body: Arial
+  neutral_fallback: sans-serif
+  display: Arial Black
+  display_direction: "Grotesque lourd et chiffres monospace pour une revue d'études graphiques."
+  notes: "Deux systèmes locaux, aucun chargement réseau. Échelle 12/16/40/120."
+surfaces:
+  radius: restrained
+  depth: strong
+  texture: material
+  borders: structural
+imagery:
+  role: dominant
+  style: "Compositions originales de lignes, trames et caractères dessinées sur canvas."
+  crop: editorial
+  treatment: "Encre noire et vermillon sur papier ivoire."
+motion:
+  intensity: high
+  micro: true
+  structural: true
+  narrative: true
+  signature_motion: "Page articulée et courbée, avec une ombre projetée pendant le retournement."
+  reduced_motion_required: true
+spatial_tech:
+  parallax: true
+  two_point_five_d: false
+  webgl_3d: true
+  justification: "Le magazine est l'objet manipulable et le dispositif de navigation."
+  fallback: "Planches canvas dans une vue DOM feuilletable; lecture texte accessible."
+signature_exception:
+  idea: "Passer d'une table d'exposition au fac-similé lisible de la double page."
+  reason: "Associer le plaisir de manipulation et la lecture réelle."
+anti_slop:
+  forbidden_patterns: [generic hero, glassmorphism, bento grid, decorative orb, stock imagery, random particles]
+quality_gate:
+  anti_slop_passed: true
+  typography_passed: true
+  composition_passed: false
+  imagery_passed: true
+  motion_passed: false
+  responsive_passed: false
+  accessibility_passed: false
+  performance_passed: false
+  notes: "Planches graphiques et page de texte contrôlées sur des rendus canvas. Géométrie et navigation sans WebGL testées. Validation visuelle 3D dans Chrome indisponible; gates concernés restent à confirmer."

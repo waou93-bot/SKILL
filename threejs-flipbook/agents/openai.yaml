@@ -1,0 +1,4 @@
+interface:
+  display_name: "Magazine 3D feuilletable"
+  short_description: "Réutiliser un magazine 3D fluide avec Three.js"
+  default_prompt: "Utilise $threejs-flipbook pour intégrer un magazine 3D feuilletable dans ce projet en adaptant son contenu et son identité visuelle."

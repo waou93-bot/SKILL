@@ -13,7 +13,7 @@
 3. Meta description de 155 caractères maximum, avec bénéfice et invitation sobre à lire. Compter réellement les caractères. La longueur ne garantit pas son affichage par Google.
 4. Slug court en minuscules, mots séparés par des tirets, sans accents inutiles.
 5. Un seul H1, différent du title retenu mais fidèle à la même promesse. H2 informatifs et H3 subordonnés, variantes sémantiques naturelles ; pas de saut de niveau gratuit.
-6. Textes alternatifs en français décrivant chaque image utile ; pour un visuel simplement proposé, indiquer « visuel suggéré ». Les images décoratives peuvent avoir un alt vide.
+6. Textes alternatifs en français décrivant chaque image utile ; pour un visuel simplement proposé, indiquer « visuel suggéré ». Les images décoratives peuvent avoir un alt vide. Choisir une illustration dessinée, photoréaliste ou schématique professionnelle selon ton-et-style.md ; rejeter les schémas rudimentaires.
 7. Trois à cinq liens internes : ancre naturelle, page cible ou sujet cible, emplacement conseillé. Si l'inventaire du site manque, livrer des propositions à valider, sans URL inventée et sans prétendre qu'une page existe.
 8. Suggestion de données structurées en JSON-LD conforme au contenu visible. Auteur et date de mise à jour fournis ou signalés à vérifier. La date de travail est celle du brouillon, pas une fausse date de publication.
 9. Pour un article long, liste des H2 optimisés et trois titres alternatifs pour les réseaux sociaux.

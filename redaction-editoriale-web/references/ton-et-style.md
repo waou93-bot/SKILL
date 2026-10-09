@@ -28,3 +28,19 @@ Préférer « utiliser », « choisir », « ouvrir », « enregistrer », « li
 Identifier l'intention avant de titrer. Mettre le mot-clé dans les 30 premiers caractères quand cela reste naturel. Choisir un seul levier : chiffre, année, bénéfice, contrainte, contraste ou question réelle. Appliquer ce contrôle au title, H1, H2/H3, à la meta, aux titres sociaux et aux titres de journal. Un chiffre exigé par le sujet n'oblige pas à empiler une deuxième accroche.
 
 Pas de MAJUSCULES criardes, d'exclamations en série, de superlatif non prouvé ni de promesse absente du texte. Ne pas ajouter une année si une actualisation annuelle n'est pas assurée. Varier les constructions entre les pages. Les questions inspirées de lecteurs ne sont pas des questions People Also Ask observées sans recherche effective.
+
+## Illustrations : qualité éditoriale professionnelle
+
+Privilégier des illustrations qui montrent réellement le sujet, son usage ou le détail expliqué. Choisir selon le contenu :
+
+- **Dessin éditorial soigné** : formes crédibles, proportions justes, trait maîtrisé, composition aboutie et palette cohérente.
+- **Photoréalisme** : matières, éclairage et perspective plausibles ; pour un produit identifié, respecter les détails documentés et signaler une illustration générée afin de ne pas la faire passer pour une photo de test.
+- **Illustration schématique professionnelle** : objet reconnaissable, dessin technique précis, détails pertinents, repères alignés et annotations lisibles. Cette approche est permise lorsqu’elle explique mieux une fonction.
+
+Ne pas produire un schéma rudimentaire composé de quelques traits, cercles, rectangles ou flèches pour remplacer une illustration. Exclure gribouillis d’enfant, bonshommes bâtons, silhouettes approximatives, cliparts pauvres et aspect de brouillon. Une illustration technique doit rester professionnelle ; « schématique » ne signifie pas simpliste.
+
+Exemple à rejeter : un sac représenté par un trapèze, un cercle et des traits horizontaux avec des mots posés autour. Exemple attendu : un vrai dessin du sac en trois quarts, avec volume, coutures et fermetures crédibles, accompagné de quelques repères précis sur les accès utiles. Ne pas inventer les caractéristiques d’un modèle commercial ; utiliser un objet générique si aucun modèle documenté n’est fourni.
+
+Chaque proposition de visuel précise : objectif pédagogique, style retenu, sujet et cadrage, détails utiles, éventuelles annotations et texte alternatif en français. Éviter les annotations décoratives sans information. Pour un tutoriel logiciel, privilégier une capture réelle et lisible de la version ciblée lorsqu’elle est disponible ; ne pas inventer une interface ni présenter un dessin comme une capture.
+
+Avant livraison, examiner le visuel s’il a été produit : sujet identifiable, proportions cohérentes, finition éditoriale, lisibilité, exactitude des détails et absence de tracés rudimentaires. Corriger un résultat insuffisant au lieu de le livrer comme illustration finale. Si seule une proposition textuelle est fournie, ne pas prétendre avoir effectué un contrôle visuel.

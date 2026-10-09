@@ -2,7 +2,7 @@
 
 ## Voix
 
-Tutoiement par défaut, vouvoiement sur demande. Phrases courtes, une idée par paragraphe. Une phrase longue est acceptable si elle évite une ambiguïté. Humour discret, jamais au prix d'un fait ou au détriment du lecteur. Les médias de référence indiquent un niveau éditorial, pas une identité à imiter.
+Tutoiement par défaut, vouvoiement sur demande. Phrases courtes ou moyennes avec une cadence variée, une idée développée par paragraphe. Éviter le découpage télégraphique. Appliquer les repères de [rythme-et-mise-en-page](rythme-et-mise-en-page.md). Une phrase longue est acceptable si elle évite une ambiguïté. Humour discret, jamais au prix d'un fait ou au détriment du lecteur. Les médias de référence indiquent un niveau éditorial, pas une identité à imiter.
 
 Commencer par « La réponse en 20 secondes » ou une réponse équivalente : conclusion, destinataire, condition essentielle. Ne pas ajouter artificiellement ce libellé dans une brève.
 

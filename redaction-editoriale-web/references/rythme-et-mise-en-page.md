@@ -10,6 +10,8 @@ Ces repères sont des choix éditoriaux adaptés à partir d’un échantillon, 
 - Relier fait, conséquence pratique et limite lorsque pertinent, sans reproduire systématiquement cette formule dans chaque paragraphe.
 - Ajouter un intertitre à un changement de question ou d’usage, souvent après 2 à 5 paragraphes. Ne pas poser un H2 au-dessus de chaque phrase ni fabriquer des sections vides pour atteindre un quota.
 - Une transition indique un lien réel : cause, conséquence, réserve, étape suivante. Éliminer les connecteurs de remplissage et les conclusions qui répètent le chapô.
+- Alterner les modes de lecture selon le besoin : une synthèse se parcourt vite, les paragraphes développent la décision, un visuel explique ou identifie, puis une offre permet d'agir. Après une liste ou un tableau, reprendre une prose qui apporte une explication nouvelle ; ne pas empiler résumé, puces et tableau racontant la même chose.
+- Donner aux fiches des repères comparables, avec une longueur proportionnée aux différences utiles. Éviter les textes interchangeables, les pavés et le découpage systématique en phrases isolées. Une limite et sa conséquence restent ensemble, même lorsqu'un module commercial suit.
 - Utiliser le gras pour une décision, une condition ou une donnée importante, rarement plus d’un fragment par paragraphe. Éviter le gras sur tous les mots-clés, les phrases entièrement grasses et les emojis décoratifs.
 
 Exemple original : « Pour le train, commence par vérifier la réduction du bruit. Cette fonction peut rendre un trajet plus confortable, mais son efficacité doit être évaluée dans un environnement comparable au tien. Une simple mention sur la fiche technique ne suffit pas. »
@@ -25,10 +27,11 @@ Exemple original : « Pour le train, commence par vérifier la réduction du bru
 
 ## Mise en page Markdown par défaut
 
-- H1, chapô, éventuelle synthèse rapide, puis développement. Un sommaire est utile pour un guide long, pas pour une brève.
+- H1 en question, sous-titre qui donne un début de réponse, chapô qui développe, éventuelle synthèse rapide, puis développement. Le sous-titre est une phrase sous le H1, pas un H2 décoratif ; fusionner sous-titre et chapô si le support le demande. Un sommaire est utile pour un guide long, pas pour une brève.
 - Une ligne vide entre paragraphes et autour des titres, listes, tableaux et images. Ne pas ajouter des lignes vides multiples ou des sauts de ligne manuels après chaque phrase pour simuler des marges.
 - Corps en prose. Puces pour critères parallèles, points forts et limites ; numérotation pour actions ordonnées. Encadré bref pour avertissement ou verdict réellement utile, sans transformer tout l’article en cartes.
 - Dans les guides, répéter une même structure de fiche pour permettre la comparaison. Dans les explicatifs, garder une progression continue. Dans les tutoriels, placer le visuel près de l’action concernée.
+- Dans les guides pédagogiques, regrouper les options sous le critère expliqué ; dans les sélections, grouper les modèles par profils si cela simplifie le choix. Les offres suivent les points de décision définis dans [structures-et-partenaires](structures-et-partenaires.md), avec une séparation lisible entre argumentation et action commerciale.
 - Tableau avec quelques critères qui changent le choix ; scinder un tableau trop large en groupes cohérents. Ne pas réduire la police pour caser dix colonnes.
 - Placer une illustration professionnelle à proximité de l’idée qu’elle explique, avec légende et crédit/provenance connus. Ne pas ajouter des visuels à intervalles fixes pour remplir une page.
 - Séparer clairement l’article destiné au lecteur du dossier de livraison : variantes de title, mots-clés, propositions de liens, JSON-LD et vérifications ne sont pas des paragraphes à publier dans le corps.
@@ -41,11 +44,13 @@ Réutiliser la charte existante. Les valeurs suivantes sont des points de dépar
 - `word-spacing: normal` et `letter-spacing: normal` pour le corps. L’air vient de l’interligne, des marges et de la largeur de colonne, pas d’un écart artificiel entre chaque mot.
 - Plus d’espace avant un intertitre qu’après pour rattacher celui-ci au texte qui suit. Maintenir une hiérarchie nette H1/H2/H3 sans recopier les polices, couleurs ou composants d’un média.
 - Images adaptatives, légendes proches ; tableaux lisibles avec défilement local ou représentation adaptée, sans débordement de toute la page.
-- Les espaces publicitaires, cookies, widgets commerciaux et menus observés ne constituent pas un modèle de rythme éditorial à reproduire.
+- Les espaces publicitaires, cookies et menus ne dictent pas le rythme éditorial. Pour les modules commerciaux, reprendre leur fonction et un placement pertinent décrit dans structures-et-partenaires, sans recopier leur habillage ni leur multiplication.
 
 ## Contrôle final
 
 Lire le chapô puis seulement les intertitres : la décision et le parcours doivent être compréhensibles. Relire un passage à voix haute pour repérer monotonie et ruptures inutiles. Contrôler espaces doubles, ponctuation, nombres/unités, respiration des paragraphes, surusage du gras et cohérence des fiches. Pour une page rendue, vérifier à une largeur mobile et sur ordinateur ; si seul Markdown est livré, ne pas annoncer une validation du rendu, des pixels ou de l’accessibilité.
+
+Retirer les modules commerciaux pendant une relecture : chaque fiche ou critère doit conserver son raisonnement et ses limites. Vérifier ensuite que les liens et offres se placent à la fin d'une unité de sens et que leur répétition aide une nouvelle décision. Le scan complémentaire des deux guides demandé le 13 octobre 2026 est documenté dans structures-et-partenaires ; il porte sur le texte et l'ordre accessible des blocs, sans nouvelles mesures CSS.
 
 ## Sources et portée du scan — 9 octobre 2026
 

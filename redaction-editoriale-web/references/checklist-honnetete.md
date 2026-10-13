@@ -22,6 +22,8 @@
 - Pour Amazon, employer la mention Partenaire Amazon adaptée aux conditions actuelles réellement vérifiées et au statut du site ; ne pas prétendre être partenaire sans confirmation.
 - Distinguer affiliation et contenu sponsorisé. Un sponsoring confirmé doit être indiqué clairement.
 - Si le statut manque : « Affiliation : [À VÉRIFIER] avant publication » dans le dossier éditorial, sans fausse déclaration dans l'article. Ne pas inventer de lien suivi.
+- Distinguer un accès au catalogue propre du site, un lien marchand simple, un lien affilié et un emplacement sponsorisé. La présence d'un vendeur, d'une marque, d'un logo ou d'un bouton ne prouve pas une relation commerciale. Placer les modules selon [structures-et-partenaires](structures-et-partenaires.md), avec les statuts confirmés.
+- Le classement éditorial ne dépend pas de la commission. Un bloc de catalogue ou de meilleures ventes conserve son libellé et son périmètre documenté ; il ne prouve pas la qualité des produits. Ne pas confondre note d'un test et note d'avis clients.
 
 ## Avant livraison
 
@@ -29,7 +31,9 @@
 - Aucune donnée inventée : mesure, test, prix, note, avis, disponibilité, auteur, source ?
 - Sources datées et provenance compréhensible ? Liens fournis non vérifiés identifiés ?
 - Affiliation signalée quand réelle ? Inconvénients de chaque produit présents ?
-- Promesse des cinq titles et du H1 tenue ? Title/meta comptés, slug fourni ?
+- Parcours adapté à la question : choix de modèles ou compréhension des critères ? Prose complète sans les offres ? Appels à l'action placés après une raison de choisir, sans interrompre une réserve ?
+- Offres sur la même variante et le même état ? Prix de lancement, prix relevé et frais distingués ? Statuts commerciaux confirmés ou inconnues reprises dans le dossier ?
+- H1 et cinq titles en question, sauf convention explicitement imposée ? Sous-titre et meta donnant une première réponse étayée ? Promesse tenue sans suspense artificiel ? Title/meta comptés, slug fourni ?
 - JSON-LD aligné sur le texte, sans notes, prix ou avis fictifs ?
 - Auteur identifié ou [À VÉRIFIER] ? Date de brouillon distinguée de publication/mise à jour publique ?
 - Tous les marqueurs repris dans **À vérifier/tester avant publication** ?

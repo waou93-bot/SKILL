@@ -1,22 +1,34 @@
 # Gabarits éditoriaux
 
-Utiliser le format qui répond au brief ; pour une fiche produit éditoriale, adapter la fiche de sélection du guide en article autonome. Ne pas imposer les quatre formats au même contenu. Les exemples ci-dessous sont des fragments pédagogiques, pas des faits de marché.
+Utiliser le format qui répond au brief ; pour une fiche produit éditoriale, adapter la fiche de sélection du guide en article autonome. Ne pas imposer les quatre formats au même contenu. Les exemples ci-dessous sont des fragments pédagogiques, pas des faits de marché. Pour un guide, choisir la progression et les emplacements commerciaux avec [structures-et-partenaires](structures-et-partenaires.md).
 
 ## 1. Guide d'achat / meilleur X
 
-- Titre à mot-clé ; ajouter l'année seulement si la mise à jour annuelle est assurée.
-- Réponse rapide : meilleur choix global, meilleur budget, meilleur pour un usage précis. Expliquer le critère de chacun. Sans preuves suffisantes, marquer les trois recommandations provisoires ou impossibles à départager.
-- Critères de choix expliqués à partir du public et de ses usages.
-- Sélection : pour chaque produit, pour qui, points forts sourcés, limites, provenance des données, prix indicatif avec vendeur/devise/date de relevé, lien consulté. Ne pas afficher de prix inventé ; noter [À VÉRIFIER].
-- Tableau comparatif des critères réellement utiles ; indiquer les inconnues et l'origine des mesures.
-- Erreurs à éviter, FAQ de 4 à 6 questions utiles, méthode de sélection et mise à jour.
+### Sélection de modèles / meilleur X
+
+- H1 sous forme de question à mot-clé, sous-titre qui amorce la réponse et chapô qui précise besoin et périmètre ; ajouter l'année seulement si la mise à jour annuelle est assurée.
+- Sélection rapide de quelques choix réellement distincts : budget, polyvalence, usage ou compatibilité. Expliquer le critère de chacun sans imposer un « meilleur global ». Sans preuves suffisantes, les recommandations restent provisoires ou impossibles à départager.
+- Sommaire pour un guide long. Faire remonter les prérequis qui pourraient invalider toute la sélection.
+- Fiches comparables sous des intertitres produit + usage : identification et visuel utile, atouts/limites, analyse en prose, provenance et offre éventuelle. La prose développe confort ou prise en main, performances utiles et compromis selon le sujet ; une fiche ne se réduit pas à des spécifications en puces.
+- Tableau comparatif des critères réellement utiles ; indiquer les inconnues et l'origine des mesures. Expliquer le positionnement et distinguer les types de prix.
+- Critères de choix à partir des usages, erreurs à éviter et questions qui peuvent encore changer la décision. Une FAQ de quelques questions suffit ; ne pas remplir un quota. Méthode de sélection, périmètre des sources et actualisation.
+
+### Guide pédagogique / comment choisir
+
+- H1 en question sur le choix, sous-titre qui donne un premier critère de réponse, chapô orienté vers la décision, repères essentiels et sommaire si le développement est long.
+- Usages, familles/formes, puis critères techniques et pratiques dans un ordre qui resserre le choix.
+- Pour chaque critère : définition accessible, conséquence concrète, limite et options comparables si utiles. Placer une image à proximité de l'explication ; proposer ensuite une catégorie vérifiée si le brief comporte un catalogue.
+- Terminer par une synthèse de décision ou une suite pertinente. Aucun classement, prix, produit ou FAQ artificiels lorsque le contenu sert à comprendre les critères.
+
+Un guide mixte peut commencer par les choix rapides, expliquer les critères bloquants, puis détailler les modèles. Garder une seule introduction et éviter de répéter la même explication dans chaque fiche.
 
 Exemple court : « Pour des appels dans une pièce calme, privilégie d'abord la qualité du micro documentée. Pour le train, il faut aussi un essai en bruit ambiant. Sans cet essai, notre recommandation reste provisoire. »
 
-Fiche : « Modèle [nom fourni] — Pour qui : [usage]. Atout : [fait sourcé]. Limite : [fait sourcé ou À TESTER]. Prix : [À VÉRIFIER]. Provenance : fiche constructeur, pas de test réalisé. »
+Fiche de travail : « Modèle [nom fourni] — Pour qui : [usage]. Atout : [fait sourcé]. Limite : [fait sourcé ou À TESTER]. Prix : [À VÉRIFIER]. Provenance : fiche constructeur, pas de test réalisé. » Développer ces repères en paragraphes pour la version destinée au lecteur. Tout prix publié comporte vendeur, devise, date de relevé et conditions connues ; un accès commercial suit les consignes de structures-et-partenaires.
 
 ## 2. Comparatif A vs B
 
+- H1 en question (« A ou B : lequel choisir pour [usage] ? »), sous-titre qui amorce le verdict avec sa condition essentielle.
 - Verdict en haut, conditionné aux usages et à la qualité des preuves.
 - Tableau de spécifications avec source pour chaque ensemble de données ; distinguer specs, mesures et ressenti.
 - Différences qui comptent : effet concret pour le lecteur, sans réciter toutes les lignes.
@@ -27,6 +39,7 @@ Exemple court : « Choisis A si [caractéristique établie] répond à ton usage
 
 ## 3. Tutoriel pas à pas
 
+- H1 en question sur l'action à accomplir, sous-titre qui indique la première voie ou le prérequis décisif.
 - Résultat attendu, durée sourcée ou estimation explicitement signalée, prérequis, système et version concernés.
 - Étapes numérotées : un verbe d'action en tête, une action par étape. Séparer ouvrir, sélectionner et confirmer si ce sont trois actions.
 - Pour chaque étape : capture ou visuel suggéré avec texte alternatif ; ne pas prétendre avoir produit une capture réelle.
@@ -39,6 +52,7 @@ Ne pas présenter des menus mémorisés comme vérifiés sur une version actuell
 
 ## 4. Explicatif / actualité
 
+- H1 en question sur le changement ou sa conséquence, sous-titre qui en donne une première réponse confirmée.
 - Chapô qui répond immédiatement à la question ou décrit le changement confirmé.
 - Contexte : événement, date et version, avec les inconnues visibles.
 - Points clés sous des intertitres informatifs, en distinguant annonce, disponibilité effective et interprétation.

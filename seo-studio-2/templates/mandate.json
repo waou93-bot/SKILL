@@ -1,0 +1,51 @@
+{
+  "id": null,
+  "run_id": null,
+  "brief_version": null,
+  "role_id": null,
+  "logical_parent_id": null,
+  "execution_parent": "ORCHESTRATOR_ONLY",
+  "goal": null,
+  "skill_sources": [],
+  "personna_training_evidence": null,
+  "inputs": [],
+  "owned_files": [],
+  "deliverables": [],
+  "acceptance_criteria": [],
+  "reviewer": null,
+  "dependencies": [],
+  "budget": {
+    "time": null,
+    "cost": null,
+    "status": "UNKNOWN"
+  },
+  "permissions": {
+    "read": [],
+    "write": [],
+    "publish": false,
+    "spend": false,
+    "contact_third_parties": false
+  },
+  "exclusions": [],
+  "preserve": [],
+  "sources": [],
+  "challenge": null,
+  "actual_model": null,
+  "actual_model_selection_evidence": null,
+  "return_contract": [
+    "realise",
+    "verifie",
+    "non_verifie",
+    "fichiers",
+    "contradictions",
+    "statut",
+    "preuves"
+  ],
+  "niche": null,
+  "persona_path": null,
+  "persona_sha256": null,
+  "persona_version": null,
+  "competency_ids": [],
+  "workflow_step": null,
+  "persona_loading_instruction": null
+}

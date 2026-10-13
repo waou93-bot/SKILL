@@ -1,0 +1,129 @@
+{
+  "observed_at": "2026-10-08",
+  "method": "Lecture de texte et liens publics rendus par le navigateur de recherche. Pas de captures navigateur, de DOM/head complet, de crawl exhaustif ni d’accès analytics.",
+  "scope": "6 domaines ciblés ; 4 ont livré du texte exploitable ; 2 non observés.",
+  "sites": [
+    {
+      "id": "B01",
+      "domain": "garagemalin.fr",
+      "url": "https://garagemalin.fr/",
+      "status": "NOT_OBSERVED",
+      "pages_analyzed": [],
+      "observed": [],
+      "blocked_reason": "Les tentatives domaine direct, variantes et lien t.co n’ont pas fourni de page exploitable.",
+      "not_inferred": [
+        "site hors ligne",
+        "qualité design",
+        "trafic SEO"
+      ],
+      "next_check": "Ouvrir dans un navigateur autorisé ; capturer accueil, rubrique, guide et encarts si présents."
+    },
+    {
+      "id": "B02",
+      "domain": "belles-truffes.com",
+      "url": "https://belles-truffes.com/fr/",
+      "status": "TEXT_ONLY",
+      "pages_analyzed": [
+        "https://belles-truffes.com/fr/",
+        "https://belles-truffes.com/fr/promenade/harnais-chien/",
+        "https://belles-truffes.com/fr/methode-de-selection/"
+      ],
+      "observed": [
+        "Navigation chien/chat et catégories d’usage.",
+        "Guide avec critères, limites, liens internes et destinations marchandes.",
+        "Méthode annonçant une sélection documentaire sans tests produits."
+      ],
+      "transfer": "Hubs par besoins, guide de choix, méthode visible et limites avant achat.",
+      "risk": "Ne pas reprendre le classement comme preuve de meilleur produit ; la pertinence du bloc de liens doit être triée.",
+      "unverified": [
+        "rendu mobile",
+        "données produit",
+        "conversions",
+        "indexation"
+      ]
+    },
+    {
+      "id": "B03",
+      "domain": "doucevenue.fr",
+      "url": "https://doucevenue.fr/",
+      "status": "NOT_OBSERVED",
+      "pages_analyzed": [],
+      "observed": [],
+      "blocked_reason": "Les tentatives domaine direct, variantes et lien t.co n’ont pas fourni de page exploitable.",
+      "not_inferred": [
+        "site hors ligne",
+        "public cible",
+        "pratiques SEO"
+      ],
+      "next_check": "Ouvrir dans un navigateur autorisé ; relever parcours, structure et monétisation effectivement présents."
+    },
+    {
+      "id": "B04",
+      "domain": "accordraccord.fr",
+      "url": "https://www.accordraccord.fr/",
+      "status": "TEXT_ONLY",
+      "pages_analyzed": [
+        "https://www.accordraccord.fr/",
+        "https://www.accordraccord.fr/journal/casque-ou-ecouteurs"
+      ],
+      "observed": [
+        "Univers éditoriaux reliés au journal, aux sélections et aux comparatifs.",
+        "Questions concrètes avant achat et possibilité de conserver l’existant.",
+        "Précisions sur illustrations et nature de liens sortants."
+      ],
+      "transfer": "Relier inspiration, explication, comparaison et choix sans imposer un achat.",
+      "risk": "Ne pas copier l’univers graphique ni élargir une niche juste pour reprendre toutes les rubriques.",
+      "unverified": [
+        "composition rendue",
+        "typographie exacte",
+        "animations",
+        "performance SEO"
+      ]
+    },
+    {
+      "id": "B05",
+      "domain": "pasdujour.fr",
+      "url": "https://pasdujour.fr/",
+      "status": "TEXT_ONLY",
+      "pages_analyzed": [
+        "https://pasdujour.fr/",
+        "https://pasdujour.fr/comparatif/"
+      ],
+      "observed": [
+        "Entrée par la place disponible et les dimensions de rangement.",
+        "Parcours de comparaison et renvois vers sources et points à vérifier.",
+        "Offres/variantes datées et avertissement de changement du vendeur."
+      ],
+      "transfer": "Transformer une contrainte éliminatoire en aide au choix, puis relier une offre précise.",
+      "risk": "La présence du lien vers l’outil ne valide ni sa logique ni son fonctionnement ; ne pas inférer confort et bruit réels.",
+      "unverified": [
+        "calculateur exécuté",
+        "mesures produit",
+        "ergonomie mobile",
+        "résultats commerciaux"
+      ]
+    },
+    {
+      "id": "B06",
+      "domain": "modergb.fr",
+      "url": "https://modergb.fr/",
+      "status": "TEXT_ONLY",
+      "pages_analyzed": [
+        "https://modergb.fr/"
+      ],
+      "observed": [
+        "Entrées par projet d’ambiance et espace à éclairer.",
+        "Orientation vers guides et contraintes de compatibilité.",
+        "Illustrations d’ambiance distinguées de produits exacts."
+      ],
+      "transfer": "Commencer par le résultat souhaité, vérifier les compatibilités puis proposer une sélection.",
+      "risk": "Un avant/après illustré ne constitue pas une preuve de luminosité ou de rendu d’un produit précis.",
+      "unverified": [
+        "slider exécuté",
+        "questionnaire exécuté",
+        "contraste",
+        "classements et trafic"
+      ]
+    }
+  ]
+}

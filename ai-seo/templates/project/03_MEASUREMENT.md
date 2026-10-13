@@ -18,4 +18,11 @@ Règles UTM/referrer/conflits/bots :
 Limites d'attribution, trafic inconnu et tests exclus :
 Rapport Google disponible sur la propriété et métriques réellement exposées :
 
+Version du panel, IDs question/branche et URL de réponse ; hypothèses éditoriales séparées :
+Carte citation → affirmation soutenue → page/section consultée, preuve et limite :
+Date de publication du traitement / date de collecte / période effective de données :
+Réponses ou branches inspectées / résolues et dénominateur explicite :
+Rapports tiers : source, méthode, champ observé, recouvrement éventuel avec les totaux :
+Effet d'acquisition : MESURE / NON_CONCLUANT / NON_MESURE ; raisons et prochaine observation :
+
 Aucune surveillance n'est active du seul fait de remplir ce document.

@@ -131,6 +131,43 @@
         "May briefly mention FAQ schema benefits"
       ],
       "files": []
+    },
+    {
+      "id": 101,
+      "prompt": "Audite ces guides existants et propose du fan-out utile sans modifier les sites. Aucun accès GSC.",
+      "expected_output": "Audit en lecture seule, matrice questions/provenance/URL-section/réponse/preuve/limite/action. Réutilisation des pages, propositions avant/après et vérification du corps ; absence de données requêtes déclarée.",
+      "assertions": [
+        "Déclare périmètre et versions",
+        "Branches hypothétiques sans faux volumes",
+        "ABSENT exige inspection",
+        "Aucune création ou publication implicite"
+      ],
+      "files": []
+    },
+    {
+      "id": 102,
+      "prompt": "Le dernier commit a changé le footer et le build date de ce matin. Audite les lastmod, les 136 alts vides et un lien Direct Running affilié via Awin.",
+      "expected_output": "Examine le diff et la modification significative, ne transforme pas un build en date éditoriale, vérifie rôle décoratif/informatif des images au rendu et relation commerciale du lien hors hôte Awin.",
+      "assertions": [
+        "Pas de date inventée",
+        "Alt vide pas défaut automatique",
+        "Relation affiliée réelle vérifiée",
+        "Constate et propose sans modifier"
+      ],
+      "files": []
+    },
+    {
+      "id": 103,
+      "prompt": "Le sitemap public et le dépôt ont des nombres différents ; tous les JSON-LD passent. Peut-on republier ?",
+      "expected_output": "Réconcilie source/version et routes publiques, compare HTTP final/canonical/sitemap/indexabilité. La syntaxe JSON-LD seule ne valide pas le transfert ou la couverture de réponses.",
+      "assertions": [
+        "Préserve les routes publiques",
+        "Sépare source, build, production et indexation",
+        "Pas de republication obsolète"
+      ],
+      "files": []
     }
-  ]
+  ],
+  "version": "2.2.0",
+  "status": "behavioral_cases_not_executed"
 }

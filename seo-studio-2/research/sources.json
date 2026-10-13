@@ -1,0 +1,134 @@
+{
+  "consulted_at": "2026-10-08",
+  "scope": "Sources primaires consultées. Réactualiser les règles volatiles au moment d’exécuter.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Google — règles antispam",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Règles courantes sur contenus et liens ; vérifier toute évolution et portée régionale."
+    },
+    {
+      "id": "S02",
+      "title": "Google — titres",
+      "url": "https://developers.google.com/search/docs/appearance/title-link",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Des titres descriptifs ; les fourchettes de caractères ne sont pas des obligations absolues."
+    },
+    {
+      "id": "S03",
+      "title": "Google — descriptions",
+      "url": "https://developers.google.com/search/docs/appearance/snippet",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Descriptions spécifiques ; troncature selon affichage, pas limite universelle obligatoire."
+    },
+    {
+      "id": "S04",
+      "title": "Google — rédiger des avis",
+      "url": "https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Analyse utile et preuves propres ; ne pas inventer un essai."
+    },
+    {
+      "id": "S05",
+      "title": "Google — liens sortants",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "sponsored est recommandé pour les liens payés ; nofollow est également accepté."
+    },
+    {
+      "id": "S06",
+      "title": "Google — liens explorables",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/links-crawlable",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Liens HTML explorables et ancres descriptives."
+    },
+    {
+      "id": "S07",
+      "title": "Google — product snippets",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Vérifier éligibilité et correspondance des données réelles avant balisage."
+    },
+    {
+      "id": "S08",
+      "title": "Google — fonctions de recherche IA",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Pas de fichier IA ni de schema spécial requis ; éligibilité ne garantit pas affichage."
+    },
+    {
+      "id": "S09",
+      "title": "OpenAI — robots",
+      "url": "https://developers.openai.com/api/docs/bots",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Recherche, entraînement et accès à la demande ont des rôles distincts."
+    },
+    {
+      "id": "S10",
+      "title": "Google — modifications de documentation",
+      "url": "https://developers.google.com/search/updates",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "La documentation consultée indique le retrait des résultats enrichis FAQ en 2026 ; ne pas reprendre la règle de 2023 comme actuelle."
+    },
+    {
+      "id": "S11",
+      "title": "web.dev — Web Vitals",
+      "url": "https://web.dev/articles/vitals",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Objectifs de bons Core Web Vitals au 75e percentile ; distinguer terrain et laboratoire."
+    },
+    {
+      "id": "S12",
+      "title": "W3C — WCAG 2.2 Quick Reference",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Critères de référence pour la spécification et les vérifications accessibilité."
+    },
+    {
+      "id": "S13",
+      "title": "CNIL — questions cookies et traceurs",
+      "url": "https://www.cnil.fr/fr/questions-reponses-lignes-directrices-modificatives-et-recommandation-cookies-traceurs",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "L’exemption de consentement de mesure d’audience dépend de conditions précises."
+    },
+    {
+      "id": "S14",
+      "title": "Google — structure de navigation commerce",
+      "url": "https://developers.google.com/search/docs/specialty/ecommerce/help-google-understand-your-ecommerce-site-structure",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "Les relations de liens aident à comprendre la structure du site."
+    },
+    {
+      "id": "S15",
+      "title": "Google — Mobile-Friendly Test retiré",
+      "url": "https://developers.google.com/search/blog/2016/05/a-new-mobile-friendly-testing-tool",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "La mise à jour du 1 décembre 2023 annonce le retrait ; ne pas dépendre de cet outil."
+    },
+    {
+      "id": "S16",
+      "title": "OpenAI — Build skills",
+      "url": "https://learn.chatgpt.com/docs/build-skills",
+      "consulted_at": "2026-10-08",
+      "kind": "official_documentation",
+      "supports": "SKILL.md, scripts/références, invocation et emplacements locaux de skills."
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "contract_version": "2.1.0",
+  "note": "Ajouter les contraintes utilisateur propres au projet. Une exigence NON_APPLICABLE n’est permise que lorsque allow_not_applicable est vrai et qu’une décision Astra motivée existe.",
+  "requirements": [
+    {
+      "id": "R01",
+      "text": "Cadrer la niche, le type de site, le public et les permissions",
+      "expected_output": "00_CADRAGE.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R02",
+      "text": "Rechercher la niche et tracer les limites des références",
+      "expected_output": "01_RECHERCHE.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R03",
+      "text": "Lire les vrais skills transversaux et tous les skills SEO découverts",
+      "expected_output": "state.json",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R04",
+      "text": "Former via le vrai /personna tous les rôles intervenants",
+      "expected_output": "state.json",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R05",
+      "text": "Hiérarchiser les rôles et borner leur exécution",
+      "expected_output": "state.json",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R06",
+      "text": "Confronter idées, architecture, roadmap et production pilote",
+      "expected_output": "10_DECISIONS.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R07",
+      "text": "Faire arbitrer les désaccords non résolus par Astra",
+      "expected_output": "10_DECISIONS.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R08",
+      "text": "Définir positionnement, exclusions, viabilité et test du canal",
+      "expected_output": "02_POSITIONNEMENT.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R09",
+      "text": "Cartographier intentions, sous-questions fan-out, pages propriétaires, parcours et indexation",
+      "expected_output": "03_ARCHITECTURE.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R10",
+      "text": "Produire les liens contextuels entrants/sortants et les prochaines actions des pages",
+      "expected_output": "state.json",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R11",
+      "text": "Créer un Project Skin avec provenance Design DNA",
+      "expected_output": "PROJECT_SKIN.yaml",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R12",
+      "text": "Spécifier gabarits, composants, mobile et états",
+      "expected_output": "04_DESIGN.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R13",
+      "text": "Rédiger les briefs V1 et la carte question, réponse, preuve, limite et action",
+      "expected_output": "05_CONTENU.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R14",
+      "text": "Écrire les contenus pilotes applicables",
+      "expected_output": "PILOTES",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R15",
+      "text": "Proposer les partenaires, formats et encarts adaptés",
+      "expected_output": "06_PARTENAIRES.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R16",
+      "text": "Spécifier transparence, destinations et indépendance commerciales",
+      "expected_output": "06_PARTENAIRES.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R17",
+      "text": "Vérifier sources, limites, dates traçables et absence de fausse expérience",
+      "expected_output": "11_QA.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R18",
+      "text": "Comparer deux stacks et motiver la recommandation",
+      "expected_output": "07_TECHNIQUE.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R19",
+      "text": "Spécifier CMS, données, offres, droits et édition",
+      "expected_output": "03_ARCHITECTURE.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R20",
+      "text": "Spécifier SEO technique, version/source publique, routes à préserver, performance et recette",
+      "expected_output": "07_TECHNIQUE.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R21",
+      "text": "Évaluer le canal IA pertinent et relier panel, questions, pages et affirmations citées",
+      "expected_output": "08_MESURE.md",
+      "allow_not_applicable": true
+    },
+    {
+      "id": "R22",
+      "text": "Définir événements, attribution, consentement, accès et fenêtres effectives de données",
+      "expected_output": "08_MESURE.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R23",
+      "text": "Prévoir maintenance et périmètre post-déploiement",
+      "expected_output": "09_ROADMAP.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R24",
+      "text": "Produire roadmap, dépendances, capacité et tickets",
+      "expected_output": "09_ROADMAP.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R25",
+      "text": "Appliquer gates et contrôles sans fausse complétude",
+      "expected_output": "11_QA.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R26",
+      "text": "Geler et transmettre les artefacts, règles et permissions",
+      "expected_output": "12_HANDOFF.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R27",
+      "text": "Terminer la réflexion F0–F3 puis enchaîner la préproduction autorisée",
+      "expected_output": "00_REFLEXION.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R28",
+      "text": "Rechercher LinkedIn/Reddit et intégrer les compétences métier aux personas des vrais sous-agents",
+      "expected_output": "01_COMPETENCES.md",
+      "allow_not_applicable": false
+    }
+  ]
+}

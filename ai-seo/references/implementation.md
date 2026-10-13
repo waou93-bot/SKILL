@@ -58,6 +58,13 @@ politique de données. Réserver toute action commerciale à une autorisation ex
 contrôles serveur, confirmation, idempotence et journalisation appropriés. Pas de checkout
 agentique créé pour une simple demande de référencement.
 
+Pour une révision de couverture, utiliser [questions, réponses, versions et dates](query-fanout.md).
+Contrôler source/version publique et différences d'URL avant publication autorisée,
+réponses du corps et promesses title/H1/meta, liens contextuels et fragments au rendu.
+Vérifier une modification significative et sa provenance avant lastmod/dateModified.
+Respecter toute instruction explicite de ne pas lancer de tests ; préciser alors
+quels contrôles restent non exécutés, sans présenter le build comme une suite de tests.
+
 ## Critères de sortie d'un patch
 
 Diff limité, lint/tests/build pertinents, absence de régression d'accès privé, canonical/sitemap

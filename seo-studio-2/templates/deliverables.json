@@ -1,0 +1,144 @@
+{
+  "00_REFLEXION.md": [
+    "F0 : problème et contexte",
+    "F1 : faits, preuves et limites",
+    "F2 : options et compromis",
+    "F3 : décision, critique et critères"
+  ],
+  "01_COMPETENCES.md": [
+    "Contexte et protocole de recherche",
+    "LinkedIn : sources lues et limites",
+    "Reddit : discussions et contradictions",
+    "Matrice compétences, rôles et comportements",
+    "Calibration et limites d’expertise"
+  ],
+  "00_CADRAGE.md": [
+    "Niche et type de site",
+    "Contexte existant et périmètre",
+    "Public et tâche",
+    "Objectifs et modèle économique",
+    "Contraintes et invariants",
+    "Permissions",
+    "Faits, hypothèses et inconnues"
+  ],
+  "01_RECHERCHE.md": [
+    "Protocole et sources datées",
+    "Demande et langage clients",
+    "Concurrents et substituts",
+    "Patterns retenus et rejetés",
+    "Références non observées",
+    "Contre-preuves",
+    "Données non mesurées"
+  ],
+  "02_POSITIONNEMENT.md": [
+    "Promesse et segments",
+    "Exclusions",
+    "Parcours prioritaires",
+    "Preuve originale",
+    "Viabilité et alternative ne pas faire",
+    "Décision de canal",
+    "Test discriminant"
+  ],
+  "03_ARCHITECTURE.md": [
+    "Arborescence et intentions",
+    "Parcours et maillage",
+    "Taxonomie",
+    "URLs, langues et indexation",
+    "Modèle CMS et relations",
+    "États et cas limites",
+    "Existant et migration",
+    "Questions principales, branches fan-out et propriétaires"
+  ],
+  "04_DESIGN.md": [
+    "Concept et deux directions",
+    "Choix et provenance",
+    "Skin",
+    "Gabarits ordonnés",
+    "Composants et états",
+    "Lecture mobile",
+    "Accessibilité et motion",
+    "Assets et droits",
+    "Tests visuels prévus ou exécutés"
+  ],
+  "05_CONTENU.md": [
+    "Doctrine éditoriale",
+    "Clusters et couverture",
+    "V1 et backlog",
+    "Briefs par page",
+    "Pilotes écrits",
+    "Méthode, sources et auteurs",
+    "Calendrier soutenable",
+    "Maintenance",
+    "Couverture question, réponse, preuve, limite et action"
+  ],
+  "06_PARTENAIRES.md": [
+    "Pertinence ou exclusions",
+    "Candidats et statuts",
+    "Formats et emplacements",
+    "Textes des encarts",
+    "États sans offre",
+    "Destinations et disclosure",
+    "Indépendance éditoriale",
+    "Économie et suivi"
+  ],
+  "07_TECHNIQUE.md": [
+    "Contraintes",
+    "Deux architectures",
+    "ADR et recommandation",
+    "CMS et données",
+    "Rendu et SEO",
+    "Performance et accessibilité",
+    "Sécurité",
+    "Tests et rollback",
+    "Source publique, routes à préserver et dates traçables"
+  ],
+  "08_MESURE.md": [
+    "Objectifs",
+    "Événements et déduplication",
+    "Consentement",
+    "Accès réels",
+    "Baseline",
+    "Panel IA pertinent ou exclusion",
+    "Attribution et limites",
+    "Critères de décision",
+    "Questions, citations, dates effectives et limites du bilan"
+  ],
+  "09_ROADMAP.md": [
+    "Lots",
+    "Tickets et dépendances",
+    "Capacité de production et vérification",
+    "Budget ou inconnues",
+    "Critères de sortie",
+    "Maintenance",
+    "Post-déploiement préparé",
+    "Conditions continuer/corriger/arrêter"
+  ],
+  "10_DECISIONS.md": [
+    "Idées : proposition, critique, correction",
+    "Architecture : proposition, critique, correction",
+    "Roadmap : proposition, critique, correction",
+    "Production pilote : proposition, critique, correction",
+    "Arbitrages Astra",
+    "Désaccords ouverts",
+    "Demandes de changement"
+  ],
+  "11_QA.md": [
+    "Périmètre réel",
+    "Contrôles déterministes",
+    "Revues de fond",
+    "Preuves et versions",
+    "P0/P1/P2",
+    "Gates",
+    "Non vérifié et impact",
+    "Recette de couverture, métadonnées, liens et réalisation"
+  ],
+  "12_HANDOFF.md": [
+    "État final",
+    "Artefacts et empreintes",
+    "Décisions gelées",
+    "Consignes de réalisation",
+    "Permissions et interdits",
+    "Blocages",
+    "Reprise et prochaine vérification"
+  ]
+}

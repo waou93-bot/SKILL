@@ -65,6 +65,21 @@ L'ancienne page `appearance/ai-features` expose encore une mesure globale : note
 utiliser la documentation dédiée récente plutôt que répéter « aucun rapport IA n'existe ».
 Sources : [sources.md](sources.md), entrées Google guide et rapport génératif.
 
+Reconsultation du 13 octobre 2026 : le guide actuel et le rapport dédié restent
+accessibles. Le rapport décrit les impressions, des dimensions page/pays/date/appareil
+et des types texte/multimodal ; ne pas en déduire un tableau de sous-requêtes fan-out.
+Ses données sont comprises dans le rapport Web : ne pas additionner les totaux.
+L'absence de rapport peut tenir au faible nombre d'impressions ou à une exclusion.
+Vérifier le paramètre d'inclusion en lecture seule ; son changement n'est pas autorisé
+par un simple audit. Dater la fenêtre effective, distinguer données préliminaires et
+agrégation propriété/page, et noter le fuseau du rapport lors des comparaisons.
+
+Pour un traitement fan-out, relier question/branche, URL/section, réponse/preuve et
+observation de citation selon [le contrat](query-fanout.md). Conserver séparément
+progrès éditorial, indexation, visibilité, visite et conversion. Un taux de couverture
+ne mesure ni part de marché ni citations gagnées. Un bilan de 28 jours dont les données
+s'arrêtent à la date du traitement ne permet pas d'en mesurer l'effet.
+
 ## Expériences
 
 Formuler hypothèse, traitement, pages/panel témoins si possibles, métrique primaire, garde-fous,

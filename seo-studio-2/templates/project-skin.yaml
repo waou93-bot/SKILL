@@ -1,0 +1,23 @@
+{
+  "status": "PROPOSED",
+  "project": null,
+  "visual_concept": null,
+  "audience_reading_constraints": [],
+  "directions_considered": [],
+  "selected_direction": null,
+  "typography": {"display": null, "body": null, "rationale": null},
+  "palette": {},
+  "grid_and_reading_width": {},
+  "density_and_spacing": {},
+  "image_direction": null,
+  "media_provenance_and_rights": [],
+  "motion": {"purpose": null, "intensity": null, "reduced_motion_fallback": null},
+  "signature": null,
+  "components_and_states": [],
+  "anti_slop_exclusions": [],
+  "approved_invariants": [],
+  "decision_provenance": [],
+  "accessibility_checks": [],
+  "performance_budgets": {},
+  "approvals": []
+}

@@ -1,0 +1,141 @@
+{
+  "repository": "waou93-bot/SKILL",
+  "revision": "7702b2e86f42f418783a50fddce6cd419f3fb10d",
+  "observed_at": "2026-10-08",
+  "scope": "SKILL.md des neuf dépendances lus via GitHub ; seules les références de détail listées ici ont aussi été lues. Aucune installation locale prouvée.",
+  "dependencies": [
+    {
+      "name": "brain",
+      "version": null,
+      "path": "brain/SKILL.md",
+      "blob_sha": "f647cdce6ce533c928ced4c42febfa6cf2866f0c",
+      "url": "https://github.com/waou93-bot/SKILL/blob/7702b2e86f42f418783a50fddce6cd419f3fb10d/brain/SKILL.md",
+      "status": "READ",
+      "responsibility": "Vérification et Final Gate",
+      "installed_on_user_pc": "UNKNOWN"
+    },
+    {
+      "name": "organisation",
+      "version": "préférences du 2026-10-05",
+      "path": "organisation/SKILL.md",
+      "blob_sha": "51dd81fae6fad21e70e329c542def83bd9722072",
+      "url": "https://github.com/waou93-bot/SKILL/blob/7702b2e86f42f418783a50fddce6cd419f3fb10d/organisation/SKILL.md",
+      "status": "READ",
+      "responsibility": "Orchestration et capacités",
+      "installed_on_user_pc": "UNKNOWN"
+    },
+    {
+      "name": "no-slop",
+      "version": null,
+      "path": "no-slop/SKILL.md",
+      "blob_sha": "d497786a13016f64169548e5bcb1d2fde0ce49c7",
+      "url": "https://github.com/waou93-bot/SKILL/blob/7702b2e86f42f418783a50fddce6cd419f3fb10d/no-slop/SKILL.md",
+      "status": "READ",
+      "responsibility": "Rédaction et revue de patterns",
+      "installed_on_user_pc": "UNKNOWN"
+    },
+    {
+      "name": "design-dna",
+      "version": null,
+      "path": "design-dna/SKILL.md",
+      "blob_sha": "62de93f9991a0ef28c6b5c08b3656648a35dc223",
+      "url": "https://github.com/waou93-bot/SKILL/blob/7702b2e86f42f418783a50fddce6cd419f3fb10d/design-dna/SKILL.md",
+      "status": "READ",
+      "responsibility": "Identité et design",
+      "installed_on_user_pc": "UNKNOWN"
+    },
+    {
+      "name": "seo",
+      "version": "1.3",
+      "path": "seo/SKILL.md",
+      "blob_sha": "a438f9f59c0e5688cc0e00a9f4dcfe6b5f2bc26a",
+      "url": "https://github.com/waou93-bot/SKILL/blob/7702b2e86f42f418783a50fddce6cd419f3fb10d/seo/SKILL.md",
+      "status": "READ",
+      "responsibility": "Stratégie et socle SEO",
+      "installed_on_user_pc": "UNKNOWN"
+    },
+    {
+      "name": "ai-seo",
+      "version": "3.1.0",
+      "path": "ai-seo/SKILL.md",
+      "blob_sha": "bd3711b200b2d8e06ada339320c35de0862695a2",
+      "url": "https://github.com/waou93-bot/SKILL/blob/7702b2e86f42f418783a50fddce6cd419f3fb10d/ai-seo/SKILL.md",
+      "status": "READ",
+      "responsibility": "Acquisition recherche IA",
+      "installed_on_user_pc": "UNKNOWN"
+    },
+    {
+      "name": "seo-audit",
+      "version": "2.0.0",
+      "path": "seo-audit/SKILL.md",
+      "blob_sha": "c525957d9237c20aa6e8eb3ec61b8596a6b3635e",
+      "url": "https://github.com/waou93-bot/SKILL/blob/7702b2e86f42f418783a50fddce6cd419f3fb10d/seo-audit/SKILL.md",
+      "status": "READ",
+      "responsibility": "Audit technique/on-page ; contradictions à corriger",
+      "installed_on_user_pc": "UNKNOWN"
+    },
+    {
+      "name": "seo-content-engine",
+      "version": null,
+      "path": "seo-content-engine/SKILL.md",
+      "blob_sha": "ff54eb889676110b74c65b5ef995caf4871fc5a9",
+      "url": "https://github.com/waou93-bot/SKILL/blob/7702b2e86f42f418783a50fddce6cd419f3fb10d/seo-content-engine/SKILL.md",
+      "status": "READ",
+      "responsibility": "Lots et production éditoriale",
+      "installed_on_user_pc": "UNKNOWN"
+    },
+    {
+      "name": "seo-post-deploy",
+      "version": null,
+      "path": "seo-post-deploy/SKILL.md",
+      "blob_sha": "4d71edf7752d4676cf0c0d6cbc7b52762029af63",
+      "url": "https://github.com/waou93-bot/SKILL/blob/7702b2e86f42f418783a50fddce6cd419f3fb10d/seo-post-deploy/SKILL.md",
+      "status": "READ",
+      "responsibility": "Préparation du suivi, exécution ultérieure autorisée",
+      "installed_on_user_pc": "UNKNOWN"
+    }
+  ],
+  "additional_references_read": [
+    "brain/references/fake-competence-patterns.md",
+    "design-dna/references/personal-preferences.md",
+    "no-slop/banned-vocabulary.md",
+    "no-slop/references/web-review.md",
+    "organisation/references/completion-and-verification.md",
+    "organisation/references/harnesses.md"
+  ],
+  "requested_personna": {
+    "requested_command": "/personna",
+    "status": "NOT_LOCATED",
+    "searched": [
+      "arbre GitHub récursif de la révision ci-dessus, termes personna et persona",
+      "catalogue des skills installés exposé à cette session"
+    ],
+    "scope_limit": "Le système de fichiers du PC utilisateur n’a pas été inspecté.",
+    "replacement_created": false,
+    "training_executed": false
+  },
+  "runtime_rule": "Réinventorier les skills SEO, lire les versions courantes, ne pas limiter l’ensemble aux cinq noms observés.",
+  "local_revision_2026_10_13": {
+    "scope": "Maintenance du skill seulement ; lecture réelle Organisation/Personna/Deep Research/Skill Creator. Pas de formation de tous les rôles des sites.",
+    "personna": {
+      "sha256": "b8db7cd37c6ef94eb01526f7523a2d84203b461882a47e11962c463984f5b48e",
+      "status": "LOCATED_AND_READ",
+      "references_read": [
+        "recherche.md",
+        "entretien.md",
+        "livraison.md"
+      ],
+      "application": "Profil portable evaluation/persona-critique-audio.md et revue de scénarios ; pas entraînement des poids",
+      "catalog_locator": "personna/SKILL.md : résoudre dans le catalogue actif ; chemin local non publié"
+    },
+    "research_example": "research/personas-metier-2026-10-13.md",
+    "delegated_evaluation": {
+      "actual_agent": "LOCAL_IDENTIFIER_REDACTED",
+      "profile_path": "evaluation/persona-critique-audio.md",
+      "profile_sha256": "ff22ac40ece9de622190f0a2fbe42cd7865dfdb970ef5eb9e6d1e4302c332b33",
+      "status": "REAL_DOCUMENT_REVIEW_AND_FOLLOWUPS",
+      "scope": "Critique des instructions et lecture du code ; aucun dossier de préproduction entier ni essai acoustique",
+      "public_provenance_note": "Identifiant local conservé dans le registre privé ; ce package ne publie pas la trace privée complète."
+    }
+  }
+}

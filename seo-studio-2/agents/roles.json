@@ -1,0 +1,191 @@
+{
+  "hierarchy": "METIER_UNIQUEMENT",
+  "max_active_delegates": 2,
+  "max_execution_depth": 1,
+  "no_recursive_delegation": true,
+  "training_required": "canonical /personna",
+  "roles": [
+    {
+      "id": "ASTRA",
+      "parent_id": null,
+      "profile": "orchestration",
+      "mission": "Arbitrage global et décisions transversales",
+      "challenge": "Éviter compromis incohérent ; ne jamais effacer une inconnue",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "TERRA",
+      "parent_id": "ASTRA",
+      "profile": "planning",
+      "mission": "Programme, dépendances, backlog, capacité",
+      "challenge": "Refuser le calendrier sans capacité de validation",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "SOL",
+      "parent_id": "ASTRA",
+      "profile": "hard_execution",
+      "mission": "Travaux difficiles et architecture technique",
+      "challenge": "Comparer faisabilité et risque, sans quota de travail",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "LUNA",
+      "parent_id": "TERRA",
+      "profile": "bounded_operations",
+      "mission": "Extraction, normalisation, contrôles répétitifs",
+      "challenge": "Ne pas inférer au-delà de la source",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "RESEARCH_LEAD",
+      "parent_id": "TERRA",
+      "profile": "research",
+      "mission": "Besoin, concurrence, positionnement",
+      "challenge": "Chercher les contre-preuves du projet",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "SEO_ARCHITECT",
+      "parent_id": "TERRA",
+      "profile": "architecture",
+      "mission": "Intentions, pages, taxonomie et maillage",
+      "challenge": "Refuser cannibalisation et routes orphelines",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "DESIGN_LEAD",
+      "parent_id": "TERRA",
+      "profile": "design",
+      "mission": "Concept, skin, gabarits et lecture",
+      "challenge": "Refuser un template sans lien avec la niche",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "EDITORIAL_LEAD",
+      "parent_id": "TERRA",
+      "profile": "editorial",
+      "mission": "Doctrine, briefs et textes",
+      "challenge": "Refuser expérience inventée et conclusions non sourcées",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "PARTNER_LEAD",
+      "parent_id": "TERRA",
+      "profile": "partnerships",
+      "mission": "Adéquation partenaire, encarts et mesure",
+      "challenge": "Refuser classement payé présenté neutre",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "QA_LEAD",
+      "parent_id": "ASTRA",
+      "profile": "quality",
+      "mission": "Vérification contradictoire et blocages",
+      "challenge": "La preuve actuelle prime sur la déclaration de l’auteur",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "DEMAND_ANALYST",
+      "parent_id": "RESEARCH_LEAD",
+      "profile": "subrole",
+      "mission": "Langage clients et recherche",
+      "challenge": "Pas de volume de recherche inventé",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "COMPETITOR_ANALYST",
+      "parent_id": "RESEARCH_LEAD",
+      "profile": "subrole",
+      "mission": "Benchmark et alternatives",
+      "challenge": "Pas de trafic déduit d’une page publique",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "LINK_PLANNER",
+      "parent_id": "SEO_ARCHITECT",
+      "profile": "subrole",
+      "mission": "Graphe de liens et logique de parcours",
+      "challenge": "Vérifier liens entrants et sortants",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "TECHNICAL_SEO",
+      "parent_id": "SEO_ARCHITECT",
+      "profile": "subrole",
+      "mission": "Exploration, indexabilité, rendu et balisage",
+      "challenge": "Ne pas confondre plan et audit live",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "AI_SEARCH",
+      "parent_id": "SEO_ARCHITECT",
+      "profile": "subrole",
+      "mission": "Accès IA, panel et acquisition",
+      "challenge": "Mention, citation et conversion restent distinctes",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "UX_ACCESSIBILITY",
+      "parent_id": "DESIGN_LEAD",
+      "profile": "subrole",
+      "mission": "Lecture mobile, clavier, états et erreurs",
+      "challenge": "Pas de validation visuelle sans pixels",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "ART_DIRECTION",
+      "parent_id": "DESIGN_LEAD",
+      "profile": "subrole",
+      "mission": "Type, composition, assets et motion",
+      "challenge": "Protéger les préférences et images exactes",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "GUIDE_WRITER",
+      "parent_id": "EDITORIAL_LEAD",
+      "profile": "subrole",
+      "mission": "Guides pratiques et comparatifs",
+      "challenge": "Critères avant sélection",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "FACT_CHECKER",
+      "parent_id": "QA_LEAD",
+      "profile": "subrole",
+      "mission": "Sources, données, expériences et dates",
+      "challenge": "Les IDs de citations ne garantissent pas la vérité",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "COMMERCE_REVIEW",
+      "parent_id": "PARTNER_LEAD",
+      "profile": "subrole",
+      "mission": "Disclosure, destinations et offres",
+      "challenge": "Aucun faux partenariat ni prix permanent",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "DATA_CMS",
+      "parent_id": "SOL",
+      "profile": "subrole",
+      "mission": "Modèles de contenu, offres et édition",
+      "challenge": "Séparer données volatiles et texte durable",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    },
+    {
+      "id": "PERFORMANCE_QA",
+      "parent_id": "QA_LEAD",
+      "profile": "subrole",
+      "mission": "Tests, rendu et budgets",
+      "challenge": "Distinguer labo, terrain et spécification",
+      "model_preference": "inherit verified Organisation routing, never infer selection from role name"
+    }
+  ],
+  "min_distinct_delegates_for_full_run": 2,
+  "domain_research_required": [
+    "LINKEDIN",
+    "REDDIT"
+  ],
+  "persona_loading_required": "Content or readable path with explicit reading instruction, version and SHA256 in actual spawn mandate"
+}

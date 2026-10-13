@@ -1,12 +1,23 @@
 ---
 name: ai-seo
-description: "Construire, auditer et mesurer le canal d'acquisition par ChatGPT Search et les autres moteurs ou agents IA sur un site existant ou en cours. Déclencher pour SEO IA, GEO, AEO, LLMO, recommandations IA, citations, visibilité ChatGPT/Claude/Perplexity/Gemini/Copilot, accès des robots ou site lisible par les agents. Ne pas déclencher pour un chatbot interne, une simple retouche visuelle ou un audit SEO classique sans enjeu IA."
+description: "Construire, auditer et mesurer l'acquisition par les moteurs IA : couverture query fan-out, réponses vérifiables, citations, recommandations et conversion. Utiliser pour SEO IA, GEO/AEO/LLMO, visibilité ChatGPT/Claude/Perplexity/Gemini/Copilot, accès des robots ou site lisible par les agents. Ne pas déclencher pour un chatbot interne, une simple retouche visuelle ou un audit SEO classique sans enjeu IA."
 metadata:
-  version: "3.1.0"
-  reviewed_at: "2026-10-05"
+  version: "3.2.0"
+  reviewed_at: "2026-10-13"
 ---
 
 # AI SEO — acquisition, citations et recommandations
+
+<!-- GOOGLE_STARTER_GUIDE:BEGIN -->
+## Socle Google Search Central
+
+Lire et appliquer [les bonnes pratiques du guide SEO Google](../seo/references/google-starter-guide.md) avant les étapes concernées, dans un périmètre proportionné. Réutiliser ce socle pour les pages publiques, sans en déduire des facteurs de classement, citations ou recommandations pour les plateformes IA. Conserver leurs règles spécifiques et la distinction entre recherche, entraînement et récupération.
+
+Source consultée le 8 octobre 2026. Le socle prime sur les recettes rigides contradictoires ; il nʼétend aucune autorisation.
+
+
+Pour les controles specialises (rendu, sitemap, liens, medias, international, recherche generative et mesure), lire uniquement les sections pertinentes des [controles avances Google](../seo/references/google-advanced-practices.md). Verifier les sources actuelles avant application et distinguer exigences, recommandations et options.
+<!-- GOOGLE_STARTER_GUIDE:END -->
 
 Développer un canal d'acquisition utile, pas un score GEO décoratif. Rendre l'offre découvrable, compréhensible, vérifiable et utilisable par les humains et les agents, puis mesurer les observations et les conversions disponibles. Aucune promesse de recommandation, de classement ou d'entraînement d'un modèle.
 
@@ -50,6 +61,12 @@ Inventorier les pages prioritaires et quelques concurrents réellement pertinent
 
 Observer seulement les plateformes disponibles. Consigner la surface exacte, recherche activée ou non, langue, pays, contexte/personnalisation, modèle affiché, date, réponse, liens et limites. Une requête API n'est pas un test de l'application grand public. Un chat déjà informé sur le projet n'est pas une baseline neutre. Un moteur inaccessible = non testé, jamais zéro visibilité. Voir [mesure](references/04-measurement.md).
 
+Pour un audit de couverture ou une révision fan-out, lire [questions, réponses et
+preuves](references/query-fanout.md). Relier question principale, sous-questions,
+URL/section propriétaire, réponse présente, preuves, limites et prochaine action.
+Distinguer besoins observés, hypothèses éditoriales et sous-requêtes effectivement
+exposées par un outil. Ne pas inventer le fan-out interne d'une plateforme.
+
 ### 3. Auditer l'accès et l'implémentation
 
 Comparer HTML initial, DOM rendu et arbre d'accessibilité sur les pages représentatives. Vérifier statuts, redirects, canonical, robots meta/en-têtes, robots.txt, sitemap, maillage, rendu du contenu utile, schema valide et cohérent, langues, performance et parcours de conversion. Examiner le CDN/WAF et les logs uniquement avec les droits disponibles. Les requêtes avec UA simulé ne prouvent pas l'accès du vrai robot.
@@ -60,6 +77,12 @@ Appliquer la [checklist d'implémentation](references/implementation.md). Corrig
 
 Relier chaque question à une URL canonique utile et une preuve. Partir des situations d'usage, critères de décision, contraintes et limites de l'offre, pas d'une suite de mots-clés. Montrer pour qui la solution convient et ne convient pas. Préférer des informations originales vérifiables à des textes génériques. Lire [les modèles éditoriaux](references/content-patterns.md) et [les adaptations métier](references/content-types.md).
 
+Chercher les réponses existantes avant toute création. Décider enrichir une section,
+lier une page propriétaire ou créer pour une tâche distincte ; aucun quota d'articles.
+Aligner title/H1/meta avec le corps, sans bourrage des branches dans les balises.
+Charger `redaction-editoriale-web` avant une réécriture effective si disponible.
+La [matrice fan-out](templates/fanout-map.csv) est un format possible, pas un dossier imposé.
+
 Pour recommander une offre, les agents doivent pouvoir identifier l'entité, ce qui est réellement fourni, ses conditions et les éléments de confiance. Développer la présence externe légitime sans fabriquer un consensus. Une citation d'un guide ne prouve pas une recommandation de son éditeur : lire [citation et recommandation](references/citations-vs-recommendations.md).
 
 ### 5. Implémenter, instrumenter et vérifier
@@ -68,9 +91,19 @@ Utiliser la stack existante et les skills techniques réellement disponibles. Co
 
 Exécuter les tests du projet, les contrôles de liens, rendu, accessibilité et structured data adaptés au changement. Vérifier les pages privées et les anciennes URLs. Distinguer contrôles locaux, preview, production, indexation observée et visibilité IA observée.
 
+Respecter une instruction explicite de ne pas lancer de tests. Avant publication
+autorisée, identifier la source faisant foi et préserver les routes publiques plus
+récentes que la copie locale. Vérifier provenance et modification significative
+avant lastmod/dateModified ; un commit ou une date de build ne suffit pas seul.
+
 ### 6. Mesurer et arbitrer
 
 Comparer les observations avant/après dans des conditions enregistrées, avec pages témoins lorsque possible. Noter changements de produit, de moteur, saisonnalité et campagnes. Prioriser selon valeur attendue, confiance, effort, risque et dépendances ; pas de précision financière inventée. Réviser ou arrêter les expérimentations sans résultat exploitable. Une cadence proposée n'est pas une veille effectivement programmée.
+
+Dater publication, collecte et fenêtre effective des données séparément. Vérifier
+la méthode des métriques IA fournies par un connecteur tiers ; ne pas les ajouter à
+un total qui les contient. Sans panel ou attribution disponible, le résultat de
+contenu/technique reste distinct d'un impact d'acquisition `NON_CONCLUANT`.
 
 ## Livrables et outils
 
@@ -101,3 +134,7 @@ Les tests déterministes sont dans `tests/test_tools.py`. Les scénarios comport
 ## Cartographie et pilote ciblé
 
 Pour un panel de questions d’achat, une distribution fondée sur les sources citées ou un premier sprint d’acquisition, lire [cartographie des citations et pilote](references/citation-map-pilot.md). Relier chaque source à l’affirmation soutenue, préparer un pack de preuve réutilisable et vérifier les blocages techniques dès le départ. Les volumes et délais sont ajustables ; une simple mention ne vaut pas recommandation.
+
+Pour capitaliser sur les chantiers Accord Raccord, e-report, Pas du Jour et Mode RGB,
+lire [le retour daté des quatre sites](references/four-sites-feedback.md). Il fournit
+des cas et leurs limites ; vérifier l'état courant avant d'appliquer une action.

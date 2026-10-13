@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve the exact bytes covered by the SEO Studio 2 manifest.
+seo-studio-2/** -text

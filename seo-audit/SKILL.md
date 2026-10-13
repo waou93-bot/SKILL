@@ -2,10 +2,29 @@
 name: seo-audit
 description: When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," "SEO health check," "my traffic dropped," "lost rankings," "not showing up in Google," "site isn't ranking," "Google update hit me," "page speed," "core web vitals," "crawl errors," or "indexing issues." Use this even if the user just says something vague like "my SEO is bad" or "help with SEO" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema. For AI search optimization, see ai-seo.
 metadata:
-  version: 2.0.0
+  version: 2.2.0
+  reviewed_at: "2026-10-13"
 ---
 
 # SEO Audit
+
+<!-- GOOGLE_STARTER_GUIDE:BEGIN -->
+## Socle Google Search Central
+
+Lire et appliquer [les bonnes pratiques du guide SEO Google](../seo/references/google-starter-guide.md) avant les étapes concernées, dans un périmètre proportionné. Use this baseline in every applicable audit check. Treat character ranges, keyword placement and heading counts as editorial heuristics, never Google ranking requirements. Separate demonstrated defects, accessibility issues and optional improvements.
+
+Source consultée le 8 octobre 2026. Le socle prime sur les recettes rigides contradictoires ; il nʼétend aucune autorisation.
+
+
+Pour les controles specialises (rendu, sitemap, liens, medias, international, recherche generative et mesure), lire uniquement les sections pertinentes des [controles avances Google](../seo/references/google-advanced-practices.md). Verifier les sources actuelles avant application et distinguer exigences, recommandations et options.
+<!-- GOOGLE_STARTER_GUIDE:END -->
+
+<!-- AFFILIATE_AUDIT:BEGIN -->
+## Sites affiliés et audits contradictoires
+
+Pour un site de guides d’achat ou une relecture d’audit externe, lire les [contrôles affiliation, preuves produit et comparaison d’audits](../seo/references/affiliate-audit.md). Vérifier chaque remarque sur les gabarits réels, distinguer défaut Google, partage social et recommandation éditoriale, rechercher les pages existantes avant de proposer des créations. Ne pas déduire une pénalité de l’absence d’essai, d’une animation, d’images générées ou d’un éditeur commun. Les corrections conservent les URL, données, parcours et consentements ; comparer sources et production avant livraison.
+<!-- AFFILIATE_AUDIT:END -->
+
 
 You are an expert in search engine optimization. Your goal is to identify SEO issues and provide actionable recommendations to improve organic search performance.
 
@@ -33,20 +52,75 @@ Before auditing, understand:
 
 ---
 
+## Mandatory Page-Level SEO Checks
+
+For a complete editorial audit, combined SEO/AI audit, fan-out review, or republication
+check, read [coverage, journeys and release evidence](references/fanout-and-release-evidence.md).
+Audit the decision behind each page and its useful subquestions: observed need or
+editorial hypothesis → existing owner URL/section → actual answer and proof → next action.
+Reuse or enrich existing answers before proposing a distinct page. Do not treat a
+topic map as observed internal AI queries or a count of keywords as useful coverage.
+Use [the page audit worksheet](assets/page-audit.md) or equivalent fields in the
+existing report; a targeted audit does not require a new document hierarchy.
+
+Apply this checklist to each in-scope URL or representative template. State whether coverage is exhaustive or sampled, list the URLs and templates inspected, and separate the public response from repository/build output. Keep the audit read-only unless the user explicitly asks for corrections.
+
+### Internal linking and discoverability
+
+- Build a source-to-destination inventory from crawlable HTML links. Separate contextual links in the main content from global navigation, footer, product widgets, and links that appear only after interaction.
+- For priority URLs, record incoming links, outgoing links, useful anchor text, destination status/final URL, and depth from a declared entry point. Flag an orphan only when the declared crawl has exhausted its reachable graph and the URL is in the expected page population.
+- Check that the anchor describes the destination and makes sense in its sentence; identify generic, ambiguous, misleading, repeated, or over-optimized anchors. Do not enforce a link-count or click-depth quota.
+- Verify important journeys and content relationships (for example: hub → guide/article → relevant product list). Inspect fragments, pagination, filters, accordions, and other interactive destinations in the rendered page when initial HTML cannot establish that they work. A fragment absent from initial HTML is a review item, not automatically a broken link.
+- Report broken links, redirects, orphan findings, and missing contextual links with source URL, destination URL, response evidence, and the relevant interaction state. Do not infer ranking penalties from graph shape alone.
+
+### Title and heading relevance
+
+For every in-scope page, compare the HTML title, visible H1, section headings, URL, main content, and the page's stated role. Record the actual text and assess:
+
+- whether the topic and intended decision are explicit, precise, natural, and understandable without guessing;
+- whether the title and H1 accurately describe the content that follows and distinguish this page from related guides, articles, categories, and product lists;
+- whether near-duplicates, vague labels, mismatches, keyword stuffing, or competing page intents are demonstrated;
+- whether the title, H1, and page content agree. Check the relevant query/search intent only when reliable query or SERP evidence is available.
+
+Give a page-specific proposed title or heading only when the evidence supports a useful change. Character counts and display-width estimates are editorial clues, not pass/fail requirements or ranking rules. Do not assert traffic gain, cannibalization, or ranking loss without supporting evidence.
+
+### HTML tags, structured data, and accessibility
+
+Inspect the delivered HTML head and body, not only source files. For each URL/template, record:
+
+- title, canonical, meta robots and X-Robots-Tag, html lang, applicable hreflang, and viewport;
+- Open Graph (og:title, og:description, og:url, og:image) and Twitter card tags when social previews are in scope; verify that image URLs resolve and represent the page;
+- semantic heading levels, useful image alt text (including intentional empty alt for decoration), and crawlable anchor links;
+- every JSON-LD block: parse validity, type and property requirements for the relevant supported search feature, consistency with visible page content, canonical URL, language, and dates.
+
+Compare initial HTML with rendered DOM when scripts or interactions may add, remove, or alter content or markup. Use the current official rich-results validator for applicable structured data. Report syntax validity separately from required-property errors, optional warnings, policy/content mismatch, eligibility, and actual search appearance. A parser that cannot see a script or an initial-HTML-only check does not prove that markup is absent.
+
+### Metadata and page-level evidence
+
+Check title and description presence, useful uniqueness, accuracy, and consistency with the actual page; verify canonical and robots directives against the intended indexability and sitemap; and confirm social metadata agrees with the page. Do not treat a missing canonical by itself, description length, or deprecated meta keywords as a demonstrated Google ranking defect. A canonical tag and a sitemap are signals, not proof of the URL Google selected or indexed it.
+
+For each finding, include the exact URL/template, observed value or source/destination, dated evidence and method, status (VERIFIED, NEEDS_CORRECTION, NOT_VERIFIED, or NOT_APPLICABLE), reader/search consequence, a scoped recommendation, and a recheck criterion. Separate proven defects, accessibility/comprehension concerns, editorial opportunities, and unverified hypotheses. Do not silently edit or publish during an audit.
+
+Also identify the inspected environment/version and the state of each change:
+proposed, local, pushed, published or measured. For editorial proposals, keep title,
+H1 and description before/after with the reason and actual body coverage. Metadata
+must not promise a fan-out answer absent from the page. Inspect decorative versus
+informative media and interactive fragments in the rendered page before flagging them.
+
+---
 ## Audit Framework
 
-### Schema Markup Detection Limitation
+For indexing issues or republication, apply the [repository, production and indexation checks](../seo/references/production-indexation.md). Compare the main branch, open PRs and actual deployment; preserve newer public routes and interactions. Check absolute canonical, og:url, JSON-LD and sitemap origins in the build and on the final domain. Keep intentional noindex exclusions. Date global Search Console reports and individual inspections separately; an older excluded URL may now be indexed. A live test proves present eligibility, not index membership. Audit permission alone does not authorize deployment; an explicit request to correct and publish does within its stated scope.
 
-**`web_fetch` and `curl` cannot reliably detect structured data / schema markup.**
+Identify the authoritative source/commit or artifact and public version before
+republication. Preserve useful public routes missing from an older snapshot. Trace
+lastmod/dateModified to a significant change in the published content: review the
+Git diff or editorial record; a build, clone, restore or sitemap date alone is not
+evidence of editorial freshness. Omit optional unknown dates rather than inventing them.
 
-Many CMS plugins (AIOSEO, Yoast, RankMath) inject JSON-LD via client-side JavaScript — it won't appear in static HTML or `web_fetch` output (which strips `<script>` tags during conversion).
+### Schema Markup Detection
 
-**To accurately check for schema markup, use one of these methods:**
-1. **Browser tool** — render the page and run: `document.querySelectorAll('script[type="application/ld+json"]')`
-2. **Google Rich Results Test** — https://search.google.com/test/rich-results
-3. **Screaming Frog export** — if the client provides one, use it (SF renders JavaScript)
-
-Reporting "no schema found" based solely on `web_fetch` or `curl` leads to false audit findings — these tools can't see JS-injected schema.
+Raw HTML can reveal server-rendered JSON-LD. Text conversions may remove script elements, and raw HTML cannot reveal markup injected only by JavaScript. Check both initial HTML and rendered DOM where relevant, then the Google Rich Results Test. Record unobserved markup as unknown rather than absent. Separate syntax, required properties, optional warnings and qualitative eligibility; automated validation does not guarantee an enhanced search result.
 
 ### Priority Order
 1. **Crawlability & Indexation** (can Google find and index it?)
@@ -67,14 +141,14 @@ Reporting "no schema found" based solely on `web_fetch` or `curl` leads to false
 - Check sitemap reference
 
 **XML Sitemap**
-- Exists and accessible
+- If present, accessible and valid; a sitemap is useful but not universally required
 - Submitted to Search Console
 - Contains only canonical, indexable URLs
-- Updated regularly
+- Reflects significant changes; accurate lastmod, not routine date refreshes
 - Proper formatting
 
 **Site Architecture**
-- Important pages within 3 clicks of homepage
+- Important pages easy to discover through useful internal links; no universal three-click ranking requirement
 - Logical hierarchy
 - Internal linking structure
 - No orphan pages
@@ -88,7 +162,7 @@ Reporting "no schema found" based solely on `web_fetch` or `curl` leads to false
 ### Indexation
 
 **Index Status**
-- site:domain.com check
+- site:domain.com as a partial visibility clue, not an exhaustive index inventory
 - Search Console coverage report
 - Compare indexed vs. expected
 
@@ -100,7 +174,7 @@ Reporting "no schema found" based solely on `web_fetch` or `curl` leads to false
 - Duplicate content without canonicals
 
 **Canonicalization**
-- All pages have canonical tags
+- Canonical signals consistent where needed; missing a tag alone is not a universal defect
 - Self-referencing canonicals on unique pages
 - HTTP → HTTPS canonicals
 - www vs. non-www consistency
@@ -109,9 +183,9 @@ Reporting "no schema found" based solely on `web_fetch` or `curl` leads to false
 ### Site Speed & Core Web Vitals
 
 **Core Web Vitals**
-- LCP (Largest Contentful Paint): < 2.5s
-- INP (Interaction to Next Paint): < 200ms
-- CLS (Cumulative Layout Shift): < 0.1
+- LCP (Largest Contentful Paint): <= 2.5s at the 75th percentile of field data
+- INP (Interaction to Next Paint): <= 200ms at the 75th percentile of field data
+- CLS (Cumulative Layout Shift): <= 0.1 at the 75th percentile of field data
 
 **Speed Factors**
 - Server response time (TTFB)
@@ -157,75 +231,14 @@ Reporting "no schema found" based solely on `web_fetch` or `curl` leads to false
 
 ## International SEO & Localization
 
-Check when the site serves multiple languages or regions. Misconfigurations can suppress indexing of entire locale variants or drag down site-wide quality signals. See [International SEO reference](references/international-seo.md) for evidence and source URLs.
+When multiple languages or regions are in scope, read the [International SEO reference](references/international-seo.md). Audit actual rendered annotations, access and indexed canonical choices.
 
-### Hreflang
-
-Three equivalent placement methods: HTML `<link>` in `<head>`, HTTP `Link` headers, XML sitemap `<xhtml:link>`. If using multiple, they must agree -- conflicting signals cause Google to drop that pair. For 10+ locales, prefer sitemap-based (no page weight, no per-request cost).
-
-**Check for:**
-- Self-referencing entry on every page (page must include itself in the hreflang set)
-- Reciprocal links (if A points to B, B must point back to A -- or both are ignored)
-- Valid codes: ISO 639-1 language + optional ISO 3166-1 Alpha 2 region (e.g., `en`, `en-GB` -- never `en-UK`)
-- `x-default` present, pointing to fallback page (language selector or default locale)
-- All target URLs return 200, are indexable, and match their canonical URL
-- No duplicate language-region codes pointing to different URLs
-
-**Common errors:** Missing self-referencing entry (all hreflang ignored). No return tag / one-directional (pair dropped). Invalid codes like `en-UK` (use `en-GB`). Hreflang target is non-canonical, 404, or blocked (cluster discarded). HTML and sitemap annotations disagree (conflicting pair dropped).
-
-**At scale:** `<xhtml:link>` children don't count toward 50K URL sitemap limit, but the 50MB file size limit becomes the bottleneck (plan 2K-5K URLs per file with full hreflang). Focus hreflang on pages receiving wrong-language traffic -- not required on every page. For Bing: supplement with `<html lang>` and `<meta http-equiv="content-language">` (Bing treats hreflang as a weak signal).
-
-### Canonicalization for Multilingual Sites
-
-- Each locale page must self-canonical (e.g., `/ar/page` canonicals to `/ar/page`)
-- Never cross-locale canonical (French to English) -- suppresses the non-canonical locale entirely
-- Canonical URL must appear in the hreflang set -- if not, all hreflang is ignored
-- Canonical overrides hreflang when they conflict
-- Protocol/domain must be consistent across canonical, hreflang, and sitemap (`https` + same domain variant)
-- Paginated locale pages: self-referencing canonical per page (never canonical page 2+ to page 1)
-
-**Common mistakes:** all locales canonical to English (kills indexing), canonical URL not in hreflang set (silently ignored), protocol mismatch between canonical and hreflang, CMS setting deep page canonical to homepage.
-
-### International Sitemaps
-
-**Check for:**
-- `xmlns:xhtml` namespace on `<urlset>`, each `<url>` includes `<xhtml:link>` for all locales including itself
-- `x-default` alternate included; all URLs absolute (full protocol + domain)
-- Sitemap index in Search Console and robots.txt; split by content type, not by locale
-
-**Next.js caveat:** `alternates.languages` does NOT auto-include a self-referencing `<xhtml:link>` for the `<loc>` URL -- you must add the current locale explicitly.
-
-### Locale URL Structure
-
-**Recommended:** Subdirectories (`/en/`, `/ar/`). **Acceptable:** Subdomains or ccTLDs. **Not recommended:** URL parameters (`?lang=en`).
-
-**Check for:**
-- Consistent locale prefix strategy; all locales prefixed (hiding locale from URLs prevents Google from distinguishing versions)
-- Root URL handled as `x-default` with redirect, or serves default locale content
-- No IP/Accept-Language content negotiation (Googlebot: US IPs, no Accept-Language header)
-- Trailing slash + case consistency across locale paths, canonicals, hreflang, and sitemaps
-- 301 redirects from non-canonical format to canonical
-
-**Note:** Google's International Targeting report in Search Console is deprecated. Geotargeting relies on hreflang, content signals, and linking patterns.
-
-### Content Quality Across Locales
-
-**Translation quality:**
-- AI-translated content is not inherently spam (Google's 2025 stance), but scaled low-value translations can trigger scaled content abuse policy
-- Google uses visible content to determine language -- translate ALL page content (title, description, headings, body), not just boilerplate
-- Translating only template/nav while main content stays in original language creates duplicates
-
-**Thin locale pages:**
-- Helpful content system is site-wide -- many thin locale pages can suppress rankings for strong pages too
-- Don't noindex thin locales (wastes crawl budget) or cross-locale canonical (conflicts with hreflang)
-- Best approach: don't create locale pages you cannot make genuinely helpful
-
-**Check for:**
-- All locale pages have fully translated main content (not just UI chrome)
-- No near-identical content across locales ("Duplicate, Google chose different canonical" in GSC)
-- Hreflang only for locales with genuine content and search demand
-- Localized signals: currency, phone format, addresses where applicable
-- Broken hreflang links (404s, redirects) waste crawl budget AND invalidate hreflang clusters
+- Separate language URLs; no mandatory prefix on the default language. Avoid forced location/language redirects that hide alternatives.
+- HTML, HTTP and sitemap hreflang are equivalent. Check self-reference, return links, valid codes and absolute destinations. `x-default` is optional. Do not infer that one broken relationship invalidates every variant.
+- Distinguish different-language translations from same-language regional duplicates before recommending canonicals. Preserve intentional exclusions.
+- Validate sitemap namespaces, alternates and real size; no arbitrary 2K-5K URL cap or mandatory split strategy.
+- Review the usefulness and accuracy of localized main content. Do not infer a site-wide penalty from thin locale pages alone.
+- Report URL-level evidence, affected relationships and measured language/country visibility; verify framework output rather than assuming version-specific behavior.
 
 ---
 
@@ -234,55 +247,55 @@ Three equivalent placement methods: HTML `<link>` in `<head>`, HTTP `Link` heade
 ### Title Tags
 
 **Check for:**
-- Unique titles for each page
-- Primary keyword near beginning
-- 50-60 characters (visible in SERP)
+- Page-specific titles where useful; shared titles may be valid within paginated series
+- Clear, accurate topic in natural language; no mandatory keyword position
+- Clear and concise; character ranges are editorial guides, not fixed display or ranking limits
 - Compelling and click-worthy
 - Brand name placement (end, usually)
 
 **Common issues:**
 - Duplicate titles
 - Too long (truncated)
-- Too short (wasted opportunity)
+- Too vague to communicate the page purpose (length alone is not a defect)
 - Keyword stuffing
 - Missing entirely
 
 ### Meta Descriptions
 
 **Check for:**
-- Unique descriptions per page
-- 150-160 characters
-- Includes primary keyword
+- Page-specific descriptions where useful; pagination can share descriptions
+- Short, page-specific summary; no fixed Google character requirement
+- Describes the relevant page content naturally, without keyword stuffing
 - Clear value proposition
 - Call to action
 
 **Common issues:**
 - Duplicate descriptions
 - Auto-generated garbage
-- Too long/short
+- Unhelpful or inaccurate summary; length alone is not a demonstrated SEO issue
 - No compelling reason to click
 
 ### Heading Structure
 
 **Check for:**
-- One H1 per page
-- H1 contains primary keyword
+- Useful page heading and accessible semantic structure; no universal single-H1 ranking rule
+- Page heading clearly describes the subject in natural language
 - Logical hierarchy (H1 → H2 → H3)
 - Headings describe content
 - Not just for styling
 
 **Common issues:**
-- Multiple H1s
-- Skip levels (H1 → H3)
+- Confusing heading structure; multiple H1s alone are not proof of a Google ranking defect
+- Skipped levels that impair accessibility or comprehension; distinguish from ranking claims
 - Headings used for styling only
 - No H1 on page
 
 ### Content Optimization
 
 **Primary Page Content**
-- Keyword in first 100 words
+- Explain the topic promptly when useful; no keyword placement quota
 - Related keywords naturally used
-- Sufficient depth/length for topic
+- Sufficient useful detail for the intent; no magical minimum word count
 - Answers search intent
 - Better than competitors
 
@@ -296,7 +309,7 @@ Three equivalent placement methods: HTML `<link>` in `<head>`, HTTP `Link` heade
 
 **Check for:**
 - Descriptive file names
-- Alt text on all images
+- Useful alt text for informative images; empty alt for decorative images
 - Alt text describes image
 - Compressed file sizes
 - Modern formats (WebP)
@@ -336,7 +349,9 @@ Three equivalent placement methods: HTML `<link>` in `<head>`, HTTP `Link` heade
 
 ## Content Quality Assessment
 
-### E-E-A-T Signals
+### E-E-A-T Quality Considerations
+
+E-E-A-T is not a single Google ranking factor or measurable Google score. Evaluate evidence and trust for the reader.
 
 **Experience**
 - First-hand experience demonstrated
@@ -400,14 +415,11 @@ Three equivalent placement methods: HTML `<link>` in `<head>`, HTTP `Link` heade
 - Missing author pages
 
 ### Multilingual / Multi-Regional Sites
-- Hreflang errors (missing return tags, invalid codes, no self-reference)
-- Canonical conflicting with hreflang (cross-locale canonical suppresses indexing)
-- Thin locale pages dragging down site-wide quality signal
-- Only boilerplate translated, main content identical across locales
-- No x-default fallback declared
-- Sitemap missing hreflang alternates or missing reciprocal entries
-- IP-based redirects hiding content from Googlebot
-- Framework locale mode hiding locale from URLs
+- Broken reciprocal language annotations or wrong destinations
+- Canonical choices inconsistent with the intended language/regional content
+- Main content insufficiently localized or inaccurate
+- Forced redirects hiding alternate language URLs
+- Unsupported claims of cluster rejection or site-wide penalties; require evidence
 
 ### Local Business
 - Inconsistent NAP
@@ -464,10 +476,10 @@ Same format as above
 - Google PageSpeed Insights
 - Bing Webmaster Tools
 - Rich Results Test (**use this for schema validation — it renders JavaScript**)
-- Mobile-Friendly Test
+- Chrome DevTools responsive checks and PageSpeed Insights (Mobile-Friendly Test retired in December 2023)
 - Schema Validator
 
-> **Note on schema detection:** `web_fetch` strips `<script>` tags (including JSON-LD) and cannot detect JS-injected schema. Use the browser tool, Rich Results Test, or Screaming Frog instead — they render JavaScript and capture dynamically-injected markup. See the Schema Markup Detection Limitation section above.
+> **Schema:** inspect raw HTML and rendered markup as needed; validation cannot establish all quality-policy requirements.
 
 **Paid Tools** (if available)
 - Screaming Frog

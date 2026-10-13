@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": null,
+  "niche": null,
+  "brief_version": "1",
+  "preproduction_started_sequence": null,
+  "steps": [
+    {
+      "id": "F0_CADRAGE",
+      "status": "PLANNED",
+      "sequence": null,
+      "evidence_ids": []
+    },
+    {
+      "id": "F1_RECHERCHE",
+      "status": "PLANNED",
+      "sequence": null,
+      "evidence_ids": []
+    },
+    {
+      "id": "F2_OPTIONS",
+      "status": "PLANNED",
+      "sequence": null,
+      "evidence_ids": []
+    },
+    {
+      "id": "F3_DECISION",
+      "status": "PLANNED",
+      "sequence": null,
+      "evidence_ids": []
+    }
+  ],
+  "research": {
+    "platforms": [
+      {
+        "platform": "LINKEDIN",
+        "status": "PENDING",
+        "queries": [],
+        "source_ids": [],
+        "attempted_at": null,
+        "evidence_ids": [],
+        "limits": ""
+      },
+      {
+        "platform": "REDDIT",
+        "status": "PENDING",
+        "queries": [],
+        "source_ids": [],
+        "attempted_at": null,
+        "evidence_ids": [],
+        "limits": ""
+      }
+    ]
+  },
+  "competencies": [],
+  "profiles": [],
+  "delegates": [],
+  "iterations": []
+}

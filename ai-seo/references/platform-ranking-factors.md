@@ -14,7 +14,7 @@ partagent pas nécessairement leur index, leurs outils ou leurs signaux de class
 | Claude recherche | `Claude-SearchBot` | Ce n'est pas `ClaudeBot`. |
 | Entraînement Claude | `ClaudeBot` | Choix distinct de la recherche. |
 | Visite demandée à Claude | `Claude-User` | Appliquer les contrôles Anthropic, pas ceux d'OpenAI par analogie. |
-| Google AI Overviews / AI Mode | Googlebot, indexation et contrôles Search de prévisualisation | `Google-Extended` n'est pas le contrôle d'inclusion ou de classement Google Search. |
+| Google AI Overviews / AI Mode | Search Console Search generative AI (Include/Exclude/Inherited), Googlebot, indexation et contrôles Search de prévisualisation | `Google-Extended` n'est pas le contrôle d'inclusion ou de classement Google Search. |
 | Certains usages Gemini | Google-Extended contrôle entraînement et grounding des produits précisés par Google | Ce token n'a pas un UA HTTP séparé ; ne pas généraliser à toutes les surfaces Google. |
 | Bing / Copilot | Vérifier la documentation Bing actuelle et l'indexation Bing | Ne pas prétendre connaître toutes les sources de toutes les versions Copilot. |
 | Autre agent | Identifier comment il découvre et lit le site, puis vérifier son contrat réel | Un agent arbitraire n'obéit pas nécessairement à cette matrice. |
@@ -45,3 +45,8 @@ RFC ni le comportement réel du robot. Confirmer les cas ambigus avec un parseur
 
 Autoriser un crawl ne contraint pas un moteur à indexer, citer ou recommander. Aucun levier
 d'entraînement n'est présenté comme un canal d'acquisition mesurable à court terme.
+
+
+## Google Search generative AI - verification 2026-10-08
+
+Lire la section recherche generative des [controles Google](../../seo/references/google-advanced-practices.md). Inspecter l'etat effectif et l'heritage des proprietes avant diagnostic. Ce controle distingue inclusion generative, recherche classique et entrainement ; ne pas modifier un choix du proprietaire sans autorisation. Le rapport dedie mesure des impressions ; ne pas inventer des clics/conversions IA ni additionner ses donnees au total Web.

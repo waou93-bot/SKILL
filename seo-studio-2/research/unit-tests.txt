@@ -1,0 +1,90 @@
+test_arbitration_without_astra_decision (test_studio.ContractTests.test_arbitration_without_astra_decision) ... ok
+test_bool_is_not_integer (test_studio.ContractTests.test_bool_is_not_integer) ... ok
+test_brief_missing (test_studio.ContractTests.test_brief_missing) ... ok
+test_business_inputs_change_invalidates_approvals (test_studio.ContractTests.test_business_inputs_change_invalidates_approvals) ... ok
+test_cannot_turn_off_independent_gate (test_studio.ContractTests.test_cannot_turn_off_independent_gate) ... ok
+test_cannot_waive_mandatory_requirement (test_studio.ContractTests.test_cannot_waive_mandatory_requirement) ... ok
+test_complete_fixture_is_only_structurally_valid (test_studio.ContractTests.test_complete_fixture_is_only_structurally_valid) ... ok
+test_credentials_not_in_partner_url (test_studio.ContractTests.test_credentials_not_in_partner_url) ... ok
+test_dependency_exclusion_reason (test_studio.ContractTests.test_dependency_exclusion_reason) ... ok
+test_duplicate_title (test_studio.ContractTests.test_duplicate_title) ... ok
+test_empty_niche (test_studio.ContractTests.test_empty_niche) ... ok
+test_evidence_hash_changed (test_studio.ContractTests.test_evidence_hash_changed) ... ok
+test_evidence_traversal (test_studio.ContractTests.test_evidence_traversal) ... ok
+test_exception_must_target_correct_requirement (test_studio.ContractTests.test_exception_must_target_correct_requirement) ... ok
+test_fact_needs_source (test_studio.ContractTests.test_fact_needs_source) ... ok
+test_fake_training_evidence_kind (test_studio.ContractTests.test_fake_training_evidence_kind) ... ok
+test_first_hand_claim_needs_test_report (test_studio.ContractTests.test_first_hand_claim_needs_test_report) ... ok
+test_fresh_template_is_not_handoff (test_studio.ContractTests.test_fresh_template_is_not_handoff) ... ok
+test_fresh_template_is_valid_draft (test_studio.ContractTests.test_fresh_template_is_valid_draft) ... ok
+test_future_page_not_linked_at_launch (test_studio.ContractTests.test_future_page_not_linked_at_launch) ... ok
+test_intent_collision (test_studio.ContractTests.test_intent_collision) ... ok
+test_misleading_search_destination (test_studio.ContractTests.test_misleading_search_destination) ... ok
+test_missing_artifact (test_studio.ContractTests.test_missing_artifact) ... ok
+test_missing_core_skill (test_studio.ContractTests.test_missing_core_skill) ... ok
+test_missing_field (test_studio.ContractTests.test_missing_field) ... ok
+test_missing_gate (test_studio.ContractTests.test_missing_gate) ... ok
+test_missing_personna (test_studio.ContractTests.test_missing_personna) ... ok
+test_missing_real_trace_structure (test_studio.ContractTests.test_missing_real_trace_structure) ... ok
+test_missing_review_topic (test_studio.ContractTests.test_missing_review_topic) ... ok
+test_non_observed_source_cannot_support_fact (test_studio.ContractTests.test_non_observed_source_cannot_support_fact) ... ok
+test_omitted_new_seo_skill (test_studio.ContractTests.test_omitted_new_seo_skill) ... ok
+test_orphan (test_studio.ContractTests.test_orphan) ... ok
+test_paid_link_needs_sponsored (test_studio.ContractTests.test_paid_link_needs_sponsored) ... ok
+test_paid_link_needs_visible_disclosure (test_studio.ContractTests.test_paid_link_needs_visible_disclosure) ... ok
+test_pilot_exception_requires_motivated_decision (test_studio.ContractTests.test_pilot_exception_requires_motivated_decision) ... ok
+test_pilot_minimum (test_studio.ContractTests.test_pilot_minimum) ... ok
+test_private_page_not_indexable (test_studio.ContractTests.test_private_page_not_indexable) ... ok
+test_readonly_snapshot_is_not_approval (test_studio.ContractTests.test_readonly_snapshot_is_not_approval) ... ok
+test_recursive_delegate (test_studio.ContractTests.test_recursive_delegate) ... ok
+test_release_fixture_validates_structure_only (test_studio.ContractTests.test_release_fixture_validates_structure_only) ... ok
+test_release_requires_permission_and_live_proof (test_studio.ContractTests.test_release_requires_permission_and_live_proof) ... ok
+test_review_snapshot_missing (test_studio.ContractTests.test_review_snapshot_missing) ... ok
+test_role_hierarchy_cycle (test_studio.ContractTests.test_role_hierarchy_cycle) ... ok
+test_scaffold_not_accepted (test_studio.ContractTests.test_scaffold_not_accepted) ... ok
+test_self_review_cannot_claim_independence (test_studio.ContractTests.test_self_review_cannot_claim_independence) ... ok
+test_three_delegates (test_studio.ContractTests.test_three_delegates) ... ok
+test_unassigned_reviewer (test_studio.ContractTests.test_unassigned_reviewer) ... ok
+test_unavailable_delegation (test_studio.ContractTests.test_unavailable_delegation) ... ok
+test_unknown_evidence_in_draft (test_studio.ContractTests.test_unknown_evidence_in_draft) ... ok
+test_unknown_field (test_studio.ContractTests.test_unknown_field) ... ok
+test_unknown_link_target (test_studio.ContractTests.test_unknown_link_target) ... ok
+test_unknown_role_parent (test_studio.ContractTests.test_unknown_role_parent) ... ok
+test_unread_skill (test_studio.ContractTests.test_unread_skill) ... ok
+test_unresolved_objection (test_studio.ContractTests.test_unresolved_objection) ... ok
+test_unsafe_partner_url (test_studio.ContractTests.test_unsafe_partner_url) ... ok
+test_untrained_role (test_studio.ContractTests.test_untrained_role) ... ok
+test_unverified_model_selection (test_studio.ContractTests.test_unverified_model_selection) ... ok
+test_updated_artifact_hash_does_not_refresh_review (test_studio.ContractTests.test_updated_artifact_hash_does_not_refresh_review) ... ok
+test_valid_optional_exception (test_studio.ContractTests.test_valid_optional_exception) ... ok
+test_wrong_type_not_crash (test_studio.ContractTests.test_wrong_type_not_crash) ... ok
+test_dry_run_creates_nothing (test_studio.FilesystemTests.test_dry_run_creates_nothing) ... ok
+test_init_is_idempotent (test_studio.FilesystemTests.test_init_is_idempotent) ... ok
+test_init_preserves_existing_files (test_studio.FilesystemTests.test_init_preserves_existing_files) ... ok
+test_init_refuses_other_project (test_studio.FilesystemTests.test_init_refuses_other_project) ... ok
+test_install_and_idempotence (test_studio.FilesystemTests.test_install_and_idempotence) ... ok
+test_install_dry_run (test_studio.FilesystemTests.test_install_dry_run) ... ok
+test_install_refuses_corrupt_package (test_studio.FilesystemTests.test_install_refuses_corrupt_package) ... ok
+test_install_refuses_customized_copy (test_studio.FilesystemTests.test_install_refuses_customized_copy) ... ok
+test_inventory_description_candidates (test_studio.FilesystemTests.test_inventory_description_candidates) ... ok
+test_inventory_duplicate_versions (test_studio.FilesystemTests.test_inventory_duplicate_versions) ... ok
+test_inventory_dynamic_seo_and_self_exclusion (test_studio.FilesystemTests.test_inventory_dynamic_seo_and_self_exclusion) ... ok
+test_json_duplicate_keys_are_rejected (test_studio.FilesystemTests.test_json_duplicate_keys_are_rejected) ... ok
+test_manifest_cannot_certify_empty_skill (test_studio.FilesystemTests.test_manifest_cannot_certify_empty_skill) ... ok
+test_manifest_detects_extra_file (test_studio.FilesystemTests.test_manifest_detects_extra_file) ... ok
+test_manifest_detects_tamper (test_studio.FilesystemTests.test_manifest_detects_tamper) ... ok
+test_non_json_nan_is_rejected (test_studio.FilesystemTests.test_non_json_nan_is_rejected) ... ok
+test_safe_path_blocks_absolute_and_windows (test_studio.FilesystemTests.test_safe_path_blocks_absolute_and_windows) ... ok
+test_safe_path_blocks_symlink (test_studio.FilesystemTests.test_safe_path_blocks_symlink) ... ok
+
+----------------------------------------------------------------------
+Ran 78 tests in 1.097s
+
+OK
+
+
+Révision 2.3.0, Windows / Python 3.12, 2026-10-13.
+Ran 129 tests in 326.308s
+OK (skipped=1)
+Maintenance installer: Ran 6 tests in 0.922s, OK.
+Les fixtures ne sont pas une exécution réelle d’agents.

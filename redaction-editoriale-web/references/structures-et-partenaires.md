@@ -15,11 +15,11 @@ Materiel.net est ici un distributeur qui renvoie vers son propre catalogue. La p
 
 ## Choisir la progression
 
-**Sélection de modèles** : répondre d'abord « lequel pour mon usage ? ». Ouvrir sur une sélection courte et motivée, puis un sommaire si nécessaire. Développer chaque modèle sous un intertitre qui associe produit et raison de choisir. Une image identifie le modèle ; les atouts/limites permettent le balayage ; la prose explique les compromis ; le lien vers un test tiers établit la provenance. Terminer par un tableau utile, les critères et les questions encore nécessaires au choix. Un conseil bloquant, comme une incompatibilité, remonte avant la sélection.
+**Sélection de modèles** : répondre d'abord « lequel pour mon usage ? ». Ouvrir sur une sélection courte et motivée, puis un sommaire si nécessaire. Développer chaque modèle sous un intertitre qui associe produit et raison de choisir. Une image identifie le modèle ; les atouts/limites permettent le balayage ; la prose explique les compromis ; le lien vers un test tiers établit la provenance. Terminer par un tableau utile, les critères et les questions encore nécessaires au choix. Un conseil bloquant, comme une incompatibilité, remonte avant la sélection.
 
-**Guide pédagogique** : répondre d'abord « comment choisir ? ». Partir des situations d'usage, passer aux familles de produits, puis aux critères techniques dans l'ordre où ils réduisent le choix. Pour chaque critère, expliquer ce qu'il signifie, dans quelle situation il compte et ce qu'il ne permet pas de conclure. Une liste compare les options ; le paragraphe relie le critère à l'usage. Un accès à une catégorie peut clore cette explication, si une destination réelle est disponible. Aucun podium n'est nécessaire sans comparaison documentée de modèles.
+**Guide pédagogique** : répondre d'abord « comment choisir ? ». Partir des situations d'usage, passer aux familles de produits, puis aux critères techniques dans l'ordre où ils réduisent le choix. Pour chaque critère, expliquer ce qu'il signifie, dans quelle situation il compte et ce qu'il ne permet pas de conclure. Une liste compare les options ; le paragraphe relie le critère à l'usage. Un accès à une catégorie peut clore cette explication, si une destination réelle est disponible. Aucun podium n'est nécessaire sans comparaison documentée de modèles.
 
-**Parcours mixte** : une réponse rapide, les quelques critères indispensables, puis une sélection et des explications ciblées. Éviter deux longues introductions ou deux développements équivalents sur le même critère. Le sommaire suit le parcours final, pas un quota de sections. La pagination de la référence marchande n'impose pas de découper un article court en plusieurs pages.
+**Parcours mixte** : une réponse rapide, les quelques critères indispensables, puis une sélection et des explications ciblées. Éviter deux longues introductions ou deux développements équivalents sur le même critère. Le sommaire suit le parcours final, pas un quota de sections. La pagination de la référence marchande n'impose pas de découper un article court en plusieurs pages.
 
 ## Placer les offres au moment utile
 
@@ -30,8 +30,8 @@ Materiel.net est ici un distributeur qui renvoie vers son propre catalogue. La p
 | Critère pédagogique | Après l'explication complète, avant le sujet suivant. | Accès à la famille ou au filtre réellement pertinent. |
 | Fin de guide | Suite adaptée au choix accompli, seulement si elle apporte quelque chose. | Test détaillé, guide spécialisé ou catégorie cohérente. |
 
-- Un appel à l'action termine une unité de sens : ne pas couper une phrase, une réserve ou une explication pour insérer un vendeur. Éviter les liens marchands dans chaque phrase et les répétitions de la même incitation sans nouvelle décision.
-- Utiliser des libellés sobres et précis : « Comparer les offres », « Voir l'offre chez [vendeur confirmé] », « Explorer les [catégorie documentée] ». Pas d'urgence, de rareté ou de réduction sans preuve.
+- Un appel à l'action termine une unité de sens : ne pas couper une phrase, une réserve ou une explication pour insérer un vendeur. Éviter les liens marchands dans chaque phrase et les répétitions de la même incitation sans nouvelle décision.
+- Utiliser des libellés sobres et précis : « Comparer les offres », « Voir l'offre chez [vendeur confirmé] », « Explorer les [catégorie documentée] ». Pas d'urgence, de rareté ou de réduction sans preuve.
 - Comparer la même variante, le même état et des conditions compatibles. Identifier neuf/reconditionné, vendeur de marketplace, frais connus, abonnement, code promotionnel ou restriction. Distinguer prix de lancement, prix relevé et coût total ; ne pas annoncer « meilleur prix » sans périmètre et relevé comparables.
 - Une offre indique vendeur, devise, date du relevé et destination consultée. Les conditions inconnues restent visibles. Ne pas ajouter de paramètres de suivi ou reconstruire une URL affiliée ; conserver le lien fourni et autorisé.
 - Les produits sont retenus pour leurs critères éditoriaux. Présenter une sélection de catalogue ou de ventes comme telle, avec son périmètre documenté ; elle ne devient pas un palmarès de qualité. Distinguer également note d'un test et avis clients, avec leur provenance.
@@ -39,8 +39,8 @@ Materiel.net est ici un distributeur qui renvoie vers son propre catalogue. La p
 
 ## Préparer la livraison
 
-Avec des liens vérifiés, intégrer les blocs sobres dans l'article au bon endroit. Sans partenaires ou destinations fournis, l'article reste lisible : proposer dans le dossier un plan d'emplacements, avec les données manquantes, sans faux bouton, URL, prix ou déclaration d'affiliation dans le corps. Un emplacement explicitement demandé pour une maquette peut rester un bloc clairement provisoire.
+Avec des liens vérifiés, intégrer les blocs sobres dans l'article au bon endroit. Sans partenaires ou destinations fournis, l'article reste lisible : proposer dans le dossier un plan d'emplacements, avec les données manquantes, sans faux bouton, URL, prix ou déclaration d'affiliation dans le corps. Un emplacement explicitement demandé pour une maquette peut rester un bloc clairement provisoire.
 
 Le plan d'emplacements précise section, point d'insertion, objectif pour le lecteur, type de module, libellé proposé, destination/statut connus et données à vérifier. Il décrit une intégration ; il ne prétend pas qu'un widget fonctionne déjà. S'il n'y a aucune dimension commerciale dans le brief, ne pas ajouter des partenaires pour remplir le gabarit.
 
-Avant livraison, retirer mentalement les offres : le lecteur doit encore comprendre les raisons et limites du choix. Lire ensuite les seuls liens : leur progression doit correspondre aux décisions expliquées, avec des destinations et mentions cohérentes.
+Avant livraison, retirer mentalement les offres : le lecteur doit encore comprendre les raisons et limites du choix. Lire ensuite les seuls liens : leur progression doit correspondre aux décisions expliquées, avec des destinations et mentions cohérentes.

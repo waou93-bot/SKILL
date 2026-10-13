@@ -24,7 +24,7 @@ Un guide mixte peut commencer par les choix rapides, expliquer les critères blo
 
 Exemple court : « Pour des appels dans une pièce calme, privilégie d'abord la qualité du micro documentée. Pour le train, il faut aussi un essai en bruit ambiant. Sans cet essai, notre recommandation reste provisoire. »
 
-Fiche de travail : « Modèle [nom fourni] — Pour qui : [usage]. Atout : [fait sourcé]. Limite : [fait sourcé ou À TESTER]. Prix : [À VÉRIFIER]. Provenance : fiche constructeur, pas de test réalisé. » Développer ces repères en paragraphes pour la version destinée au lecteur. Tout prix publié comporte vendeur, devise, date de relevé et conditions connues ; un accès commercial suit les consignes de structures-et-partenaires.
+Fiche de travail : « Modèle [nom fourni] — Pour qui : [usage]. Atout : [fait sourcé]. Limite : [fait sourcé ou À TESTER]. Prix : [À VÉRIFIER]. Provenance : fiche constructeur, pas de test réalisé. » Développer ces repères en paragraphes pour la version destinée au lecteur. Tout prix publié comporte vendeur, devise, date de relevé et conditions connues. Les accès commerciaux au modèle utilisent l'URL affiliée autorisée du partenaire, avec « Voir le prix » ou « Voir le modèle sur [partenaire] » ; la mention d'affiliation est séparée du bouton, selon structures-et-partenaires. Sans URL disponible, noter le manque dans le dossier sans faux lien actif.
 
 ## 2. Comparatif A vs B
 
@@ -33,6 +33,7 @@ Fiche de travail : « Modèle [nom fourni] — Pour qui : [usage]. Atout :
 - Tableau de spécifications avec source pour chaque ensemble de données ; distinguer specs, mesures et ressenti.
 - Différences qui comptent : effet concret pour le lecteur, sans réciter toutes les lignes.
 - « Choisis A si… / Choisis B si… » ; inclure les compromis de chacun.
+- Si des offres sont prévues, associer chaque modèle à son partenaire et à son URL affiliée autorisée. Employer un bouton d'action comme « Voir le prix sur [partenaire] » ; ne pas afficher « lien affilié » dans le bouton. Préserver les liens de tests et sources comme preuves distinctes.
 - FAQ : questions qui changent réellement le choix.
 
 Exemple court : « Choisis A si [caractéristique établie] répond à ton usage. Choisis B si [autre caractéristique établie] est prioritaire. La photo de nuit n'a pas été comparée : [À TESTER]. »

@@ -28,6 +28,8 @@
 - Pour Amazon, employer la mention Partenaire Amazon adaptée aux conditions actuelles réellement vérifiées et au statut du site ; ne pas prétendre être partenaire sans confirmation.
 - Distinguer affiliation et contenu sponsorisé. Un sponsoring confirmé doit être indiqué clairement.
 - Si le statut manque : « Affiliation : [À VÉRIFIER] avant publication » dans le dossier éditorial, sans fausse déclaration dans l'article. Ne pas inventer de lien suivi.
+- Pour chaque accès commercial à un produit, utiliser l'URL affiliée fournie et autorisée du partenaire confirmé. Conserver ses paramètres et vérifier modèle, variante et destination quand accessible. Si l'URL manque, indiquer **[URL AFFILIÉE À FOURNIR]** dans le dossier et ne pas présenter une URL simple ou un faux bouton comme conforme.
+- Les boutons et liens d'action portent « Voir le prix », « Voir le prix sur [partenaire] » ou « Voir le modèle sur [partenaire] », avec le nom réel du partenaire. Ni le texte visible ni le libellé accessible ne portent « lien affilié » ou une formule de suivi/commission. Garder la mention d'affiliation séparée et lisible avant ou près du premier lien ; ce choix de libellé ne permet pas de masquer l'affiliation.
 - Distinguer un accès au catalogue propre du site, un lien marchand simple, un lien affilié et un emplacement sponsorisé. La présence d'un vendeur, d'une marque, d'un logo ou d'un bouton ne prouve pas une relation commerciale. Placer les modules selon [structures-et-partenaires](structures-et-partenaires.md), avec les statuts confirmés.
 - Le classement éditorial ne dépend pas de la commission. Un bloc de catalogue ou de meilleures ventes conserve son libellé et son périmètre documenté ; il ne prouve pas la qualité des produits. Ne pas confondre note d'un test et note d'avis clients.
 
@@ -39,6 +41,7 @@
 - Affiliation signalée quand réelle ? Inconvénients de chaque produit présents ?
 - Parcours adapté à la question : choix de modèles ou compréhension des critères ? Prose complète sans les offres ? Appels à l'action placés après une raison de choisir, sans interrompre une réserve ?
 - Offres sur la même variante et le même état ? Prix de lancement, prix relevé et frais distingués ? Statuts commerciaux confirmés ou inconnues reprises dans le dossier ?
+- Tous les accès commerciaux aux produits reliés aux URLs affiliées autorisées de leurs partenaires ? Paramètres préservés, modèle et variante corrects, destination vérifiée ou contrôle non effectué signalé ? Libellés utiles sans « lien affilié », mention d'affiliation séparée et lisible ? URLs manquantes reprises dans la liste finale ?
 - H1 et cinq titles en question, sauf convention explicitement imposée ? Sous-titre et meta donnant une première réponse étayée ? Promesse tenue sans suspense artificiel ? Champs finaux comptés après arbitrage ? Slug fourni seulement si le périmètre le demande ?
 - Références, observations Trends et décision ASTRA traçables ou étapes non effectuées signalées ? Aucun arbitrage, indice, classement ou gain de CTR inventé ? Édition réellement vérifiée ou simples propositions clairement identifiées ?
 - Deux-points liés au mot précédent par un caractère insécable dans tous les textes éditoriaux ? Aucun saut forcé autour du signe dans une phrase ou un titre ? Contrôle des caractères distingué de la vérification du rendu ?

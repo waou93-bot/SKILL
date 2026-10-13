@@ -31,16 +31,50 @@ Materiel.net est ici un distributeur qui renvoie vers son propre catalogue. La p
 | Fin de guide | Suite adaptée au choix accompli, seulement si elle apporte quelque chose. | Test détaillé, guide spécialisé ou catégorie cohérente. |
 
 - Un appel à l'action termine une unité de sens : ne pas couper une phrase, une réserve ou une explication pour insérer un vendeur. Éviter les liens marchands dans chaque phrase et les répétitions de la même incitation sans nouvelle décision.
-- Utiliser des libellés sobres et précis : « Comparer les offres », « Voir l'offre chez [vendeur confirmé] », « Explorer les [catégorie documentée] ». Pas d'urgence, de rareté ou de réduction sans preuve.
+- Utiliser des libellés sobres et précis : « Voir le prix », « Voir le prix sur [partenaire] », « Voir le modèle sur [partenaire] », avec le nom du partenaire confirmé. « Comparer les offres » convient si la destination présente réellement plusieurs offres ; « Explorer les [catégorie documentée] » annonce un accès de catégorie. Pas d'urgence, de rareté ou de réduction sans preuve. Ne jamais afficher « lien affilié » ou une formulation de suivi comme texte de bouton.
 - Comparer la même variante, le même état et des conditions compatibles. Identifier neuf/reconditionné, vendeur de marketplace, frais connus, abonnement, code promotionnel ou restriction. Distinguer prix de lancement, prix relevé et coût total ; ne pas annoncer « meilleur prix » sans périmètre et relevé comparables.
 - Une offre indique vendeur, devise, date du relevé et destination consultée. Les conditions inconnues restent visibles. Ne pas ajouter de paramètres de suivi ou reconstruire une URL affiliée ; conserver le lien fourni et autorisé.
 - Les produits sont retenus pour leurs critères éditoriaux. Présenter une sélection de catalogue ou de ventes comme telle, avec son périmètre documenté ; elle ne devient pas un palmarès de qualité. Distinguer également note d'un test et avis clients, avec leur provenance.
 - Pour l'affiliation et le sponsoring, appliquer [checklist-honnetete](checklist-honnetete.md). Une mention confirmée doit être lisible avant ou près du premier lien concerné ; un contenu sponsorisé s'identifie dès l'ouverture et un emplacement publicitaire se distingue du conseil. Adapter le tutoiement/vouvoiement au brief.
 
+## Destinations des produits et libellés des boutons
+
+Tous les liens de consultation ou d'achat associés à un produit doivent conduire
+chez le partenaire confirmé via son lien affilié fourni et autorisé. Cela comprend
+les boutons, liens de prix et, lorsqu'ils sont cliquables à des fins commerciales,
+le nom du modèle, son image ou sa carte. Associer chaque accès à la bonne référence,
+variante et offre ; ne pas envoyer vers un autre produit ou un catalogue générique
+derrière un bouton qui annonce un modèle précis.
+
+Conserver l'URL affiliée complète, y compris ses paramètres et une éventuelle
+redirection du réseau d'affiliation. Ne pas reconstruire le suivi ni substituer une
+URL marchande ordinaire. Vérifier la destination finale quand l'accès le permet ;
+si elle n'a pas été ouverte, indiquer ce contrôle non effectué dans le dossier.
+Les liens de sources, tests et guides restent des accès éditoriaux avec leur propre
+destination de preuve, distincts de ces accès commerciaux.
+
+| Action proposée | Libellé destiné au lecteur | Destination attendue |
+| --- | --- | --- |
+| Consulter le prix du produit | « Voir le prix » ou « Voir le prix sur [partenaire] » | Offre du produit et de la variante chez ce partenaire, via son URL affiliée. |
+| Consulter la fiche marchande | « Voir le modèle sur [partenaire] » | Fiche du modèle chez ce partenaire, via son URL affiliée. |
+| Comparer plusieurs offres | « Comparer les offres » | Comparaison réelle ; chaque lien sortant produit utilise l'URL affiliée de son partenaire. |
+
+Remplacer `[partenaire]` par son nom réel confirmé. Le texte visible et le libellé
+accessible du bouton décrivent l'action, sans « lien affilié », « lien partenaire
+affilié », mention de tracking ou de commission. La transparence reste assurée par
+une mention d'affiliation lisible séparée, avant ou près du premier lien concerné ;
+ne pas la déplacer uniquement dans le dossier SEO ou la masquer dans une infobulle.
+
+Sans partenaire confirmé ou URL affiliée disponible, noter **[URL AFFILIÉE À FOURNIR]**
+dans le plan d'emplacements et reprendre ce manque avant publication. Ne pas fabriquer
+de lien actif, ajouter un identifiant supposé, utiliser `#` comme destination ou
+faire passer une URL marchande simple pour une URL affiliée. Le libellé proposé peut
+être conservé dans le dossier ; aucun faux bouton fonctionnel ne doit être livré.
+
 ## Préparer la livraison
 
 Avec des liens vérifiés, intégrer les blocs sobres dans l'article au bon endroit. Sans partenaires ou destinations fournis, l'article reste lisible : proposer dans le dossier un plan d'emplacements, avec les données manquantes, sans faux bouton, URL, prix ou déclaration d'affiliation dans le corps. Un emplacement explicitement demandé pour une maquette peut rester un bloc clairement provisoire.
 
-Le plan d'emplacements précise section, point d'insertion, objectif pour le lecteur, type de module, libellé proposé, destination/statut connus et données à vérifier. Il décrit une intégration ; il ne prétend pas qu'un widget fonctionne déjà. S'il n'y a aucune dimension commerciale dans le brief, ne pas ajouter des partenaires pour remplir le gabarit.
+Le plan d'emplacements précise section, point d'insertion, objectif pour le lecteur, type de module, produit/variante, partenaire confirmé, libellé proposé, URL affiliée autorisée, destination finale vérifiée ou non, mention d'affiliation et données à compléter. Il décrit une intégration ; il ne prétend pas qu'un widget fonctionne déjà. S'il n'y a aucune dimension commerciale dans le brief, ne pas ajouter des partenaires pour remplir le gabarit.
 
 Avant livraison, retirer mentalement les offres : le lecteur doit encore comprendre les raisons et limites du choix. Lire ensuite les seuls liens : leur progression doit correspondre aux décisions expliquées, avec des destinations et mentions cohérentes.

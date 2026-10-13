@@ -245,6 +245,96 @@ budgets, tests de charge proportionnés et alertes. Faire varier les stratégies
 de cache selon la fréquence de changement ; inclure les règles de purge et
 stale-while-revalidate selon le support réel du stack.
 
+## Rédaction éditoriale, offres et partenaires
+
+Pour une page pSEO destinée à être lue (guide, sélection, comparatif, fiche
+produit ou conseil), appliquer aussi les principes de `redaction-editoriale-web`
+si ce skill est disponible : identifier l'intention, le public et le format avant
+d'écrire ; ouvrir sur une réponse concrète ; faire progresser un raisonnement
+centré sur l'usage ; choisir des caractéristiques qui changent réellement la
+décision ; expliquer leurs conséquences et compromis. Adapter la structure au
+besoin du lecteur au lieu d'imposer le même plan ou la même phrase d'accroche à
+toutes les pages. Les références de style inspirent le niveau de clarté, jamais
+une voix ou une structure à copier.
+
+Varier introductions, transitions et exemples à partir des faits propres à la
+page. Éviter le texte permutationnel où seuls le nom du produit, la ville ou le
+mot-clé changent. Un gabarit fournit la cohérence, les données structurées
+fournissent la matière factuelle, et la rédaction explique ce qui importe dans
+ce cas précis. Un tableau ou une liste aide au balayage ; une prose suivie relie
+les faits à la situation. Ne pas ajouter des blocs pour atteindre un quota de
+mots ni réserver une réponse utile afin de provoquer un clic.
+
+Pour un comparatif ou une recommandation, expliciter le périmètre et les critères
+de sélection, relier chaque avantage à une preuve, exposer les limites et
+indiquer à qui le produit convient ou non. Distinguer fiche fabricant, calcul,
+test propre documenté, test tiers et avis d'utilisateurs. Sans preuve de test,
+ne jamais écrire « nous avons testé » ni inventer une expérience, une note ou un
+verdict. Si les preuves ne départagent pas les options, garder le choix provisoire
+et nommer les vérifications manquantes. Vérifier d'abord les pages, routes et
+guides déjà existants ; ne pas créer une nouvelle URL pour une variante de
+formulation qui relève de la même intention.
+
+### Liens commerciaux et intégrité éditoriale
+
+Traiter les destinations commerciales comme des données fournies, versionnées et
+validées : partenaire confirmé, identifiant produit, variante/état, URL affiliée
+autorisée, paramètres de suivi et date de vérification. Ne jamais fabriquer,
+deviner ou réécrire une URL affiliée, retirer ses paramètres, substituer un lien
+marchand ordinaire ou diriger un bouton vers une fiche générique pour un modèle
+précis. Si l'URL ou le statut du partenariat manque, conserver un emplacement
+provisoire dans le dossier et aucun bouton actif. Vérifier la destination quand
+l'accès le permet et noter tout contrôle non effectué.
+
+Une offre apparaît après la raison éditoriale de consulter cette offre, au point
+où elle aide la décision. Éviter de couper un raisonnement, de répéter le même
+module après chaque paragraphe ou de laisser la commission choisir le classement.
+Le texte de la page doit rester compréhensible et utile si l'on retire tous les
+modules commerciaux. Utiliser des libellés d'action sobres, par exemple « Voir
+le prix sur Amazon » ou « Voir le modèle sur Direct-Running », uniquement quand
+le partenaire et la destination correspondent et sont confirmés. Ne jamais
+afficher « lien affilié » ou une mention de commission dans le bouton. Afficher
+une mention claire d'affiliation séparée, avant ou près du premier accès
+commercial concerné ; distinguer affiliation, publicité et sponsoring. Pour
+Amazon, vérifier la formulation exacte exigée par le programme et le statut
+réels du site avant publication.
+
+Comparer uniquement des offres suffisamment comparables (même référence,
+variante, état et conditions). Un prix exige vendeur, devise, date de relevé et
+conditions connues ; s'il n'est pas vérifié, ne pas le présenter comme actuel.
+Ne jamais promettre le « meilleur prix », une remise, la disponibilité ou un
+avantage partenaire sans preuve. Qualifier les liens sortants rémunérés selon
+les recommandations actuelles des moteurs et les règles applicables au site ;
+vérifier le HTML rendu et non seulement le composant source.
+
+Pour les textes français destinés au lecteur, employer une espace insécable avant
+le deux-points (idéalement U+202F) et ne pas forcer de retour à la ligne autour
+de lui. Appliquer ce contrôle aux titres, paragraphes, offres, libellés et
+tableaux, mais préserver la syntaxe du code, des URLs, YAML et JSON.
+
+### Contrôle éditorial par famille
+
+Avant d'ouvrir en indexation une famille de pages, relire un échantillon varié
+comme le ferait un lecteur :
+
+- la réponse et l'angle sont spécifiques à l'intention de la page ;
+- les affirmations importantes ont des sources/provenances visibles ou des
+  marqueurs locaux `[À VÉRIFIER]` / `[À TESTER]` ;
+- les chiffres, versions, variantes, prix et dates sont traçables et cohérents
+  entre texte, filtres, tableaux, liens et données structurées ;
+- les bénéfices et compromis sont exprimés en français naturel, sans superlatifs
+  vides, bourrage de mots-clés ni répétitions mécaniques ;
+- les offres correspondent à la bonne référence et n'interrompent pas le conseil ;
+- la mention d'affiliation est visible, le libellé décrit l'action, et l'article
+  conserve sa valeur sans les offres ;
+- title, H1, résumé, canonical et schéma correspondent au contenu réellement
+  visible, sans promesse absente ni donnée structurée inventée.
+
+Rejeter ou remettre en rédaction les pages qui échouent à ces contrôles ; ne pas
+compenser une faible valeur par plus de liens commerciaux ou de texte généré.
+Pour les pages déjà publiées, cartographier les URLs et l'historique avant toute
+fusion, redirection ou suppression.
+
 ## EEAT, auteurs et preuves
 
 Relier chaque affirmation importante à une source ou à une méthode de calcul,

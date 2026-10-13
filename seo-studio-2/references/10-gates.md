@@ -77,6 +77,14 @@ Chaque revue enregistre `inputs_sha256` et les couples chemin/empreinte de `revi
 
 ## Gates de réalisation locale et de reprise
 
+Pour les produits proposés chez des partenaires, G3 vérifie la spécification de
+l'URL affiliée autorisée, du modèle/variante, du bouton d'action et de la mention
+d'affiliation séparée selon [le contrat partenaires](08-partners.md). La recette
+contrôle leurs valeurs rendues et la destination lorsqu'accessible. Une URL affiliée
+manquante, un bouton « lien affilié », une destination produit incorrecte ou une
+mention masquée laisse R16 ouverte pour le module concerné. Les preuves de clic
+et de rendu non exécutées restent non vérifiées ; le dossier ne les invente pas.
+
 Pour les rubriques riches en contenus, G2 précise le corpus et les champs de recherche,
 G3 spécifie son emplacement en tête de rubrique et ses états, et la recette de
 réalisation vérifie [le comportement du moteur](06-design.md#recherche-en-tête-des-rubriques).

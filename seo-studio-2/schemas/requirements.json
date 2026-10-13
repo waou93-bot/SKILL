@@ -94,7 +94,7 @@
     },
     {
       "id": "R16",
-      "text": "Spécifier transparence, destinations et indépendance commerciales",
+      "text": "Spécifier indépendance commerciale, accès produits via les URLs affiliées autorisées des partenaires, boutons orientés action et mention d'affiliation séparée du bouton",
       "expected_output": "06_PARTENAIRES.md",
       "allow_not_applicable": false
     },

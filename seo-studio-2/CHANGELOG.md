@@ -1,3 +1,12 @@
+# 2.3.2 — 2026-10-13
+
+- Accès commerciaux des produits via les URLs affiliées autorisées des partenaires,
+  avec conservation du suivi et de la bonne référence/variante.
+- Boutons « Voir le prix » ou « Voir le modèle sur [partenaire] » ; mention
+  d'affiliation lisible séparée du bouton, sans « lien affilié » dans son libellé.
+- Contrat partenaires, design, briefs, recette et exigence R16 alignés ; module
+  non publiable si son URL manque. Aucun champ machine ni script modifié.
+
 # 2.3.1 — 2026-10-13
 
 - Recherche interne visible en tête des rubriques riches en produits, articles,

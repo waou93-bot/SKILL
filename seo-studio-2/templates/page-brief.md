@@ -30,6 +30,9 @@ Liens sortants internes (page, ancre, emplacement, raison) :
 Action suivante et alternative sans achat :
 Produits/offres sources, référence/variante exacte, fraîcheur :
 Encarts proposés, destination, disclosure visible et rel :
+Accès produits : référence/variante, partenaire confirmé, URL affiliée autorisée et paramètres conservés :
+Bouton « Voir le prix » / « Voir le modèle sur [partenaire] » ; nom réel et libellé accessible sans « lien affilié » :
+Mention d'affiliation séparée du bouton, emplacement visible desktop/mobile ; état sans URL et destination vérifiée ou non :
 
 ## Design et implémentation
 Gabarit et sections ordonnées ; composants et états :

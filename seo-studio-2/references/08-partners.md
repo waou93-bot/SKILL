@@ -31,6 +31,33 @@ recommandé uniquement pour sa commission ou de carte marchand qui imite un test
 La pression publicitaire maximale est définie après conception des gabarits : aucune
 fréquence universelle n'est exigée. Éviter plusieurs blocs identiques visibles ensemble.
 
+## Liens produits affiliés et boutons
+
+Pour les produits proposés chez les partenaires, tous les accès commerciaux utilisent
+l'URL affiliée fournie et autorisée du partenaire correspondant : bouton, lien de prix,
+nom, image ou carte cliquables pour consulter ou acheter le modèle. Associer modèle,
+variante, offre, partenaire et URL ; conserver les paramètres et les redirections
+autorisées du réseau. Ne pas reconstruire le suivi, inventer un tag ou remplacer
+silencieusement l'URL affiliée par un lien marchand simple.
+
+Les libellés destinés au lecteur sont « Voir le prix », « Voir le prix sur [partenaire] »
+ou « Voir le modèle sur [partenaire] ». Remplacer le placeholder par le nom confirmé.
+Le texte visible et le libellé accessible du bouton décrivent l'action ; ils ne
+contiennent ni « lien affilié », ni « partenaire affilié », ni formule de commission
+ou de tracking. Le bouton vers un modèle ouvre ce modèle et sa variante ; une catégorie
+ou une recherche générale exige un libellé qui annonce ce périmètre.
+
+Placer la mention d'affiliation séparément, avant ou près du premier lien concerné,
+lisible sur desktop et mobile. Ne pas la masquer dans une infobulle, le dossier SEO
+ou le pied de page seulement. Les liens de tests, sources et navigation gardent leur
+destination de preuve ou de parcours ; ils ne deviennent pas des liens marchands.
+
+Sans partenaire confirmé ou URL affiliée disponible, enregistrer
+`URL_AFFILIEE_A_FOURNIR` dans le dossier, avec responsable et donnée manquante.
+Le module reste non publiable ; ne pas livrer de bouton actif pointant vers `#`,
+une URL inventée ou une URL simple présentée comme affiliée. Une maquette peut
+montrer un emplacement clairement provisoire, sans prétendre que le lien fonctionne.
+
 ## Texte d'encart à adapter
 
 Exemple de structure de copie, pas de contenu final publié :
@@ -38,8 +65,8 @@ Exemple de structure de copie, pas de contenu final publié :
 > **[Critère utile au lecteur]**
 > Cette option convient à [profil] lorsque [condition vérifiée]. Elle ne convient
 > pas à [limite]. [Caractéristique déterminante avec source/date].
-> **Lien affilié** : une rémunération peut être perçue selon les conditions du programme.
-> **[Voir la référence chez le marchand / comparer les offres / voir cette recherche]**
+> **Affiliation** : cet encart contient un lien affilié ; une rémunération peut être perçue selon les conditions du programme.
+> **Voir le prix** ou **Voir le modèle sur [partenaire confirmé]**.
 > Avant de commander : vérifier [variante, taille, compatibilité ou condition spécifique].
 
 Ne pas ajouter « sans surcoût » ou une autre garantie commerciale sans base vérifiée.
@@ -85,6 +112,14 @@ formules et hypothèses explicites seulement ; un clic affilié n'est ni une ven
 ni une commission confirmée. Aucun contact ni signature n'est exécuté en préproduction.
 
 ## Contrôle de couverture éditoriale
+
+Pour chaque accès produit, tracer référence/variante, partenaire confirmé, URL affiliée
+autorisée, libellé, emplacement de la mention et destination finale vérifiée ou non.
+En réalisation autorisée, contrôler les valeurs réellement rendues, les paramètres
+conservés, les liens de cartes/images/boutons, le clavier et la lisibilité mobile.
+La mention doit être séparée du bouton et chaque libellé doit annoncer la destination.
+Sans accès à la destination ou au rendu, noter le contrôle non effectué ; une
+spécification ou un hash n'est pas une preuve de clic fonctionnel.
 
 Appliquer la matrice article/besoin/référence du
 [protocole de réalisation](13-autonomie-production.md). Repérer les guides sans

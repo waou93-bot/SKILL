@@ -88,6 +88,14 @@ pages de résultats indexables par défaut.
 
 ## Contrat des composants
 
+Pour les cartes et offres produits, appliquer [le contrat partenaires](08-partners.md) :
+URL affiliée autorisée vers le modèle chez le partenaire confirmé, paramètres conservés,
+bouton « Voir le prix » ou « Voir le modèle sur [partenaire] », et mention d'affiliation
+visible séparée du bouton. Le texte et le libellé accessible du bouton n'emploient
+pas « lien affilié ». Nom ou image cliquables à des fins commerciales suivent la même
+destination. Spécifier l'état sans URL affiliée sans faux accès actif ; les liens
+de sources et de tests restent distincts.
+
 Chaque composant comporte props/données, texte, sources, variantes de contenu,
 états default/hover/focus/open/loading/empty/error/unavailable, rôle sémantique,
 clavier, largeur mobile, comportement sans JS et événement utile. Prévoir les

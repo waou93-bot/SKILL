@@ -10,7 +10,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "2.3.1"
+  version: "2.3.2"
   reviewed_at: "2026-10-13"
 ---
 
@@ -117,6 +117,25 @@ facile à parcourir, justifier simplement l'absence de recherche. En préproduct
 spécifier le comportement ; en réalisation autorisée, le rendre fonctionnel et
 le tester. Un champ décoratif ou filtrant uniquement la page courante ne satisfait
 pas cette règle.
+
+## Accès produits et boutons des partenaires
+
+Lorsque le projet comporte des produits proposés chez des partenaires, les liens
+commerciaux et boutons associés doivent utiliser leurs URLs affiliées fournies et
+autorisées. Cela couvre les liens de prix, cartes, noms et images cliquables pour
+consulter ou acheter le modèle. Conserver le suivi, le partenaire et la bonne variante.
+Ne pas substituer une URL marchande simple ni inventer un identifiant d'affiliation.
+
+Employer « Voir le prix », « Voir le prix sur [partenaire] » ou « Voir le modèle sur
+[partenaire] », avec le nom réel confirmé. Le texte et le libellé accessible du bouton
+ne portent pas « lien affilié » ni une formule de commission ou de tracking. Placer
+une mention d'affiliation lisible séparée, avant ou près du premier lien concerné.
+Les sources, tests et liens de navigation gardent leurs destinations éditoriales.
+
+Appliquer [le contrat partenaires](references/08-partners.md) à la conception,
+aux briefs, aux encarts et à la recette. Sans URL affiliée disponible, signaler
+`URL_AFFILIEE_A_FOURNIR` dans le dossier et conserver le module non publiable ;
+aucun faux lien actif. Vérifier destination, libellé et mention séparée avant transfert.
 
 ## Couverture fan-out et capitalisation des sites
 

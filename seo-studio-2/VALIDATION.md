@@ -1,3 +1,15 @@
+# Vérification documentaire 2.3.2 — 13 octobre 2026
+
+Ajout ciblé des accès produits affiliés vers les partenaires, des boutons
+orientés action et de la mention d’affiliation séparée. Contrôles exécutés :
+diff borné, liens locaux et ancres, JSON, conservation des IDs R01–R28 ;
+seule la formulation de R16 évolue. Manifeste recalculé et vérifié.
+Aucun script ni schéma machine modifié. Aucun lien partenaire réel, moteur
+ou rendu de site testé ; aucun site publié. Les suites historiques ci-dessous
+ne constituent pas une nouvelle exécution pour cette révision documentaire.
+
+---
+
 # Vérification documentaire 2.3.1 — 13 octobre 2026
 
 Ajout ciblé de la recherche en tête des rubriques riches en contenus.

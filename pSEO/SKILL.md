@@ -269,6 +269,51 @@ orphelines, baisse de couverture, données périmées, coût IA anormal, file bl
 régression de performance ou erreurs d'import. Chaque alerte doit avoir un
 propriétaire et une action associée.
 
+## Quand la demande est un outil pSEO concret
+
+Si l'utilisateur fournit une spécification exécutable (CLI, service, pipeline,
+plugin ou dépôt) et demande du code, traiter cette demande comme un travail
+d'ingénierie complet. Le périmètre ne s'arrête pas à l'architecture ou au plan :
+inspecter le dépôt, implémenter le produit demandé, ajouter les tests et la
+documentation convenus, puis exécuter les contrôles demandés. Ne jamais annoncer
+des tests verts sans les avoir exécutés.
+
+Avant de coder, afficher un plan concis d'au plus 10 lignes lorsque le prompt le
+demande. Si le prompt demande de ne pas poser de questions, choisir l'option la
+plus simple pour les ambiguïtés non bloquantes et la noter dans la documentation.
+Ne pas demander de confirmation pour ces choix. Respecter les critères
+d'acceptation comme des exigences vérifiables, ainsi que les limites de sécurité,
+de coûts, réseau, versions, dépendances et formats de sortie spécifiées.
+
+Pour un générateur programmatique d'URLs avec contrôle de similarité, couvrir au
+minimum ces invariants lorsqu'ils s'appliquent : validation et provenance du
+catalogue; génération déterministe; filtrage métier avant produit cartésien;
+normalisation des slugs et détection des collisions; exclusion et étiquetage des
+URL existantes; seuils de qualité empêchant la publication de pages sans données
+propres; comparaison de pages à l'intérieur et entre gabarits pertinents;
+blocking/LSH ou autre méthode mesurable pour éviter une comparaison quadratique
+non maîtrisée; score explicable, clusters et recommandations éditoriales; exports
+reproductibles; comportement de sortie CLI documenté; rapport de lot. Une
+similarité algorithmique est un signal de revue, pas une conclusion Google sur le
+contenu abusif ni une décision automatique de publication.
+
+Concevoir les algorithmes à partir de leurs vrais signaux : tokenisation FR,
+stopwords et stemming léger documentés; identité des entités normalisée; données
+propres représentées par des identifiants stables de faits/champs, afin que le
+recouvrement soit calculable et pas un nombre seul. Si le contrat d'entrée ne
+permet pas de connaître les faits partagés, documenter l'approximation retenue.
+Définir précisément les intervalles de score, égalités de seuil, priorité des
+statuts (`EXISTS`, `BLOCKED`, `DUPLICATE`, `SIMILAR`, `OK`) et ordre de sélection
+du canonique.
+
+Mettre en place des tests unitaires et de bout en bout pour les règles métier,
+les cas limites et la reproductibilité. Pour les exigences de performance,
+mesurer sur une charge représentative, documenter la machine et la configuration,
+et vérifier le temps sans dégrader la correction. La seed doit être explicite si
+une étape probabiliste en dépend. Maintenir un README exécutable de bout en bout,
+avec les hypothèses et limites; garder le code typé, formaté et linté selon les
+outils demandés.
+
 ## Livrables selon le besoin
 
 Pour une architecture complète, assembler uniquement les sections pertinentes

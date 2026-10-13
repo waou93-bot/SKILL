@@ -1,3 +1,12 @@
+# 2.3.1 — 2026-10-13
+
+- Recherche interne visible en tête des rubriques riches en produits, articles,
+  guides ou autres ressources, avant les listes et adaptée au corpus.
+- Architecture, composants, briefs et recette alignés sur l'exigence R12 existante :
+  corpus complet, résultats, remise à zéro, états, clavier et mobile.
+- Mise à jour documentaire compatible, sans nouveau champ machine obligatoire.
+  Elle ne constitue ni l'implémentation ni la recette d'un moteur sur un site.
+
 # 2.3.0 — 2026-10-13
 
 - Réflexion F0–F3 obligatoire avant préproduction, puis poursuite autonome.

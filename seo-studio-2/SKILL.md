@@ -10,7 +10,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "2.3.0"
+  version: "2.3.1"
   reviewed_at: "2026-10-13"
 ---
 
@@ -100,6 +100,23 @@ le site et le corpus autorisés jusqu'au résultat local vérifiable, sans s'arr
 au dossier de préproduction. Une reprise ciblée charge les références applicables
 et poursuit l'orchestration existante ; elle ne relance pas G0 ni une formation complète.
 La production locale autorisée ne vaut jamais autorisation de publication externe.
+
+## Recherche en tête des rubriques riches en contenus
+
+Pour les catalogues de produits, index d'articles, guides, comparatifs, ressources
+et autres rubriques volumineuses ou paginées, prévoir un moteur de recherche interne
+visible au début de la rubrique, après son titre et une courte introduction éventuelle,
+avant les filtres et les listes. Adapter son libellé et son périmètre au contenu :
+« Rechercher un produit », « Rechercher un article », « Rechercher un guide ».
+La recherche globale du site ne remplace pas cet accès local.
+
+Appliquer [le contrat de recherche des rubriques](references/06-design.md#recherche-en-tête-des-rubriques)
+à G2/G3, aux briefs et à la recette : corpus complet, résultats pertinents,
+réinitialisation, absence de résultat, mobile et clavier. Pour une rubrique courte
+facile à parcourir, justifier simplement l'absence de recherche. En préproduction,
+spécifier le comportement ; en réalisation autorisée, le rendre fonctionnel et
+le tester. Un champ décoratif ou filtrant uniquement la page courante ne satisfait
+pas cette règle.
 
 ## Couverture fan-out et capitalisation des sites
 

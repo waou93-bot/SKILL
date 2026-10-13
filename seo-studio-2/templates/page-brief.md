@@ -33,6 +33,10 @@ Encarts proposés, destination, disclosure visible et rel :
 
 ## Design et implémentation
 Gabarit et sections ordonnées ; composants et états :
+Recherche en tête de rubrique : applicable / petit corpus avec justification ; emplacement avant les listes :
+Libellé et corpus complet (produits / articles / guides / autre), champs et filtres couverts :
+Résultats, destinations, pertinence, pagination ; chargement / erreur / vide / effacement :
+Recette recherche : entrée hors première page, zéro résultat, requête vide, clavier et mobile ; preuve ou non exécuté :
 Assets, droits, statut illustration/produit exact, alt selon rôle :
 Mobile, tableau long, erreurs, vide, indisponible, clavier et sans JS :
 Canonical / indexation / structured data réellement pertinent :

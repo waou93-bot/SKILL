@@ -44,6 +44,48 @@ L'encart partenaire reste identifiable, sans imiter un conseil neutre ou recouvr
 les informations nécessaires. Sur mobile, préserver l'ordre des critères et un
 moyen compréhensible de comparer plutôt que rétrécir les colonnes à l'extrême.
 
+## Recherche en tête des rubriques
+
+Une rubrique est concernée lorsque son catalogue est étoffé, sa liste paginée ou
+son contenu difficile à parcourir rapidement. Tenir compte du corpus réel ou prévu
+en V1 ; ne pas imposer un seuil arbitraire à tous les sites. Documenter les rubriques
+concernées dans l'architecture et les briefs. Une courte liste lisible peut conserver
+une navigation simple, avec cette justification.
+
+Placer un champ de recherche visible après le titre et la courte introduction
+éventuelle, avant les filtres, cartes, grilles ou listes. Le rendre directement
+accessible sur mobile ; ne pas le cacher uniquement dans le menu, derrière une
+icône ou en bas de page. Conserver le H1 et les accès aux catégories.
+
+Adapter le libellé visible au périmètre : « Rechercher un produit », « Rechercher
+un article », « Rechercher un guide » ou « Rechercher dans les ressources ».
+Un placeholder ne remplace pas le libellé accessible. Prévoir une action de recherche
+compréhensible, l'envoi avec Entrée et un contrôle pour effacer la requête.
+
+La recherche couvre par défaut toute la rubrique, pas seulement les cartes chargées
+ou la page de pagination courante. Pour des produits, couvrir nom, marque et référence
+lorsque ces données existent ; pour des articles et guides, titre, sujet et catégories
+documentées. Un hub mixte identifie les types dans les résultats et peut proposer
+un filtre produit/article/guide. Les filtres retenus restent visibles et leur effet
+sur la recherche est expliqué. Ne pas élargir silencieusement au site entier.
+
+Spécifier résultats liés aux bonnes pages, ordre de pertinence, nombre de résultats,
+pagination éventuelle, états chargement/erreur/aucun résultat et remise à zéro.
+Une requête vide retrouve la liste initiale ; l'absence de résultat aide à reformuler
+ou à retirer un filtre. Définir le traitement de la casse et des accents. Réutiliser
+la recherche existante si adaptée ; choisir filtre local ou index côté serveur selon
+le corpus et la performance, sans imposer un service tiers. Garder les contenus et
+leurs liens accessibles lorsque la recherche est indisponible.
+
+En préproduction, livrer spécification et critères. En réalisation autorisée,
+tester une entrée connue hors de la première page, une recherche sans résultat,
+une requête vide, effacement, filtres éventuels, liens des résultats, clavier et
+petit écran. Un champ sans logique ou une recherche partielle non annoncée échoue
+à la recette. Distinguer ces tests réellement exécutés du seul contrôle documentaire.
+Appliquer la politique des recherches internes et filtres de
+[la référence technique](09-technical.md) ; la présence du moteur ne rend pas ses
+pages de résultats indexables par défaut.
+
 ## Contrat des composants
 
 Chaque composant comporte props/données, texte, sources, variantes de contenu,

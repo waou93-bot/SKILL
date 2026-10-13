@@ -1,3 +1,15 @@
+# Vérification documentaire 2.3.1 — 13 octobre 2026
+
+Ajout ciblé de la recherche en tête des rubriques riches en contenus.
+Contrôles exécutés : diff borné aux instructions, liens locaux et ancres,
+JSON et conservation des IDs R01–R28 ; seule la formulation de R12 évolue.
+Le manifeste est recalculé et vérifié pour cette copie de travail.
+Aucun script de production ni schéma machine modifié ; aucun moteur de recherche
+de site implémenté ou testé, aucune publication. Les tests de la révision
+précédente ci-dessous restent des résultats historiques, sans nouvelle exécution.
+
+---
+
 # Vérification de la révision 2.3.0 — 13 octobre 2026
 
 Exécution locale Windows / Python 3.12. Les scripts restent sans réseau, modèle,

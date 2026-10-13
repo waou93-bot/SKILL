@@ -77,6 +77,13 @@ Chaque revue enregistre `inputs_sha256` et les couples chemin/empreinte de `revi
 
 ## Gates de réalisation locale et de reprise
 
+Pour les rubriques riches en contenus, G2 précise le corpus et les champs de recherche,
+G3 spécifie son emplacement en tête de rubrique et ses états, et la recette de
+réalisation vérifie [le comportement du moteur](06-design.md#recherche-en-tête-des-rubriques).
+Une rubrique concernée sans cette spécification, ou un champ décoratif en réalisation,
+laisse l'exigence R12 ouverte. Un petit corpus peut justifier une navigation simple.
+Une vérification documentaire ne prouve pas le fonctionnement dans le navigateur.
+
 Pour un site réalisé, compléter G2/G3 par les preuves du
 [protocole de réalisation](13-autonomie-production.md) : accès depuis landing/menu,
 index et hubs, liens contextuels entrants, articles effectivement rédigés avec

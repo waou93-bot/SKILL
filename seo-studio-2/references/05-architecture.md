@@ -13,6 +13,12 @@ public, parent, contenu distinctif, preuve attendue, title/H1, description propo
 canonical, politique d'indexation, action suivante, propriétaire et vague de sortie.
 Le domaine peut rester inconnu pendant le plan ; utiliser des chemins stables.
 
+Pour chaque hub, catégorie ou index riche en contenus, préciser le corpus recherché,
+les types et champs couverts, les filtres utiles et les destinations des résultats.
+Prévoir une recherche en tête de rubrique selon [le contrat de design](06-design.md#recherche-en-tête-des-rubriques),
+sur tout ce corpus, y compris les entrées hors de la première page. Une recherche
+globale seule ne suffit pas ; une courte rubrique peut justifier son absence.
+
 Pour les pages prioritaires, intégrer la [matrice de sous-questions et propriétaires](14-fanout-retour-sites.md)
 à l'inventaire : branche observée ou hypothèse, réponse/section, preuve, décision et
 action suivante. Une branche peut rester sur la page principale ou renvoyer vers

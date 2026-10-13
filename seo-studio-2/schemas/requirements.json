@@ -70,7 +70,7 @@
     },
     {
       "id": "R12",
-      "text": "Spécifier gabarits, composants, mobile et états",
+      "text": "Spécifier gabarits, composants, mobile et états, dont la recherche en tête des rubriques riches en contenus avec corpus, résultats et critères de recette",
       "expected_output": "04_DESIGN.md",
       "allow_not_applicable": false
     },

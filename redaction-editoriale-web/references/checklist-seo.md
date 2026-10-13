@@ -5,14 +5,17 @@
 - Identifier intention informationnelle, comparative, transactionnelle ou navigationnelle ; préciser l'intention dominante d'un contenu mixte.
 - Un mot-clé principal et 3 à 5 secondaires pertinents. Ne pas prétendre disposer de volumes, positions ou questions People Also Ask non consultés.
 - Longueur adaptée à l'intention ; chaque section répond à une question utile.
+- Pour créer ou optimiser les H1 et métas, appliquer [h1-metas-trends-astra](h1-metas-trends-astra.md) : références du sujet consultées, comparaison Trends avec filtres explicites, variantes, décision ASTRA réelle si disponible, puis édition et nouveau contrôle. Conserver les observations et limites dans le dossier éditorial.
 
-## Livrable systématique
+## Livrable selon le périmètre
+
+Pour une optimisation ciblée, préparer les cinq titles et les trois ensembles dans le dossier de travail, puis livrer et éditer les seuls champs demandés avec leurs comptes, une justification et les statuts de recherche/arbitrage. Si le brief demande seulement H1 et meta description, ne pas imposer title ou sous-titre supplémentaires ; proposer les variantes détaillées seulement si utiles ou demandées. Pour une création d'article ou un paquet SEO complet, livrer les éléments ci-dessous. Ne pas réécrire tout un article pour modifier ses accroches.
 
 1. Cinq variantes de title en question précise : texte, nombre exact de caractères (espaces et ponctuation inclus), intention visée. Recommander une variante avec une justification d'une ligne. Respecter un titre exact ou une convention expressément imposés dans le brief.
-2. Title retenu de 60 caractères maximum ; viser aussi 580 px maximum. La largeur dépend de la police et de l'affichage : la mesurer si un outil approprié existe, sinon signaler « largeur en pixels non mesurée ». Ne pas convertir mécaniquement caractères en pixels ni promettre l'absence de troncature.
-3. Meta description de 155 caractères maximum qui commence à répondre à la question du titre : critère décisif, première action ou conséquence confirmée. Elle reste compréhensible seule et reflète les réserves essentielles. Éviter les amorces « Découvrez… » qui ne donnent aucune réponse. Compter réellement les caractères. La longueur ne garantit pas son affichage par Google.
+2. Title retenu de 60 caractères maximum par défaut ; viser aussi 580 px maximum si une mesure appropriée est disponible. Ce sont des cibles éditoriales du skill, pas des limites imposées par Google. La largeur dépend de la police et de l'affichage : la mesurer si possible, sinon signaler « largeur en pixels non mesurée ». Ne pas convertir mécaniquement caractères en pixels ni promettre l'absence de troncature. Respecter une contrainte explicite du support ; ne pas appliquer cette limite au H1.
+3. Meta description de 155 caractères maximum par défaut, comme cible éditoriale, qui commence à répondre à la question du titre : critère décisif, première action ou conséquence confirmée. Elle reste compréhensible seule et reflète les réserves essentielles. Éviter les amorces « Découvrez… » qui ne donnent aucune réponse. Compter réellement les caractères après la dernière édition. Google peut choisir un autre extrait selon la requête ; longueur et contenu de la balise ne garantissent pas son affichage.
 4. Slug court en minuscules, mots séparés par des tirets, sans accents inutiles.
-5. Un seul H1 en question, différent du title retenu mais fidèle à la même promesse. Prévoir un sous-titre éditorial qui donne une première réponse et un chapô qui la développe sans répétition ; fusionner sous-titre/chapô si le support le demande. H2 informatifs et H3 subordonnés, éléments de réponse ou sous-questions utiles, variantes sémantiques naturelles ; pas de saut de niveau gratuit.
+5. Un seul H1 en question, adapté à la lecture visible ; proposer une formulation distincte du title par défaut, avec la même promesse. Ce choix éditorial n'est pas une exigence SEO universelle. Prévoir un sous-titre qui donne une première réponse et un chapô qui la développe sans répétition ; fusionner sous-titre/chapô si le support le demande. H2 informatifs et H3 subordonnés, éléments de réponse ou sous-questions utiles, variantes sémantiques naturelles ; pas de saut de niveau gratuit.
 6. Textes alternatifs en français décrivant chaque image utile ; pour un visuel simplement proposé, indiquer « visuel suggéré ». Les images décoratives peuvent avoir un alt vide. Choisir une illustration dessinée, photoréaliste ou schématique professionnelle selon ton-et-style.md ; rejeter les schémas rudimentaires.
 7. Trois à cinq liens internes : ancre naturelle, page cible ou sujet cible, emplacement conseillé. Si l'inventaire du site manque, livrer des propositions à valider, sans URL inventée et sans prétendre qu'une page existe.
 8. Suggestion de données structurées en JSON-LD conforme au contenu visible. Auteur et date de mise à jour fournis ou signalés à vérifier. La date de travail est celle du brouillon, pas une fausse date de publication.
@@ -25,6 +28,8 @@
 - Promesse tenue dans le texte ; aucune urgence artificielle, MAJUSCULES criardes, exclamations multiples, superlatifs sans classement ou bourrage.
 - Année uniquement avec mise à jour annuelle réelle ; marque en fin de title si la place le permet.
 - Si l'inventaire du site existe, contrôler titres concurrents et cannibalisation. Sinon noter cette vérification comme non effectuée.
+- Départager les formulations avec le contenu, le benchmark et Trends ; faire arbitrer les ensembles par ASTRA selon la référence dédiée. Ne pas sélectionner mécaniquement le terme en plus forte progression ni annoncer un gain de CTR sans données comparables.
+- Séparer H1 visible, balise title, sous-titre, meta description et extrait observé dans un moteur. Une balise concurrente inaccessible reste « non relevée » ; un résultat de recherche ne la remplace pas.
 
 Points de départ à varier :
 - Guide : « Quel [produit] choisir pour [usage] ? ».

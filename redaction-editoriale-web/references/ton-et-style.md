@@ -32,7 +32,7 @@ Exemple original de conseil générique, sans essai ni produit allégué :
 | Un écran révolutionnaire et une autonomie incroyable. | La fiche annonce un écran OLED. L'autonomie en usage réel reste [À TESTER]. |
 | Grâce au Wi-Fi 6, profite d'une expérience optimale. | Le Wi-Fi 6 est une génération de réseau sans fil conçue pour mieux gérer plusieurs appareils connectés. Son intérêt dépend aussi de ton routeur. |
 | Nous avons testé ce modèle : il est parfait. | Selon la fiche constructeur fournie, ce modèle possède [caractéristique documentée]. Nous n'avons pas de test terrain. |
-| Vous ne devinerez jamais cette astuce ! | Comment retrouver un fichier supprimé : les vérifications utiles. |
+| Vous ne devinerez jamais cette astuce ! | Comment retrouver un fichier supprimé ? |
 | Il convient de noter que cet appareil se distingue… | Son avantage : [fait sourcé]. Sa limite : [fait sourcé ou manque explicite]. |
 
 ## Vocabulaire
@@ -48,6 +48,8 @@ Identifier l'intention avant de titrer. Par défaut, écrire le H1, le title et 
 Le sous-titre sous le H1 donne une première réponse, un critère décisif ou une conséquence confirmée en une phrase. La meta description commence également à répondre à la question et reste autonome ; ce n'est pas une invitation vague à découvrir la réponse. Une réserve déterminante figure dans cette première réponse si les preuves l'exigent. Le chapô développe le point sans répéter mot pour mot le sous-titre. Si le support fusionne sous-titre et chapô, une seule ouverture suffit.
 
 Les H2/H3 font avancer la réponse : élément de décision, conséquence ou sous-question réellement traitée. Appliquer à tous ces textes les contrôles de fidélité, de preuve et de promesse tenue.
+
+Pour rendre ces accroches compétitives, suivre [h1-metas-trends-astra](h1-metas-trends-astra.md) : rechercher les formulations et les angles du sujet, les comparer aux références et à Trends, puis faire arbitrer les ensembles avant de les éditer. Gagner en précision et en utilité plutôt que reprendre une formule concurrente. Le vocabulaire populaire ne doit pas effacer le public, les conditions ou les preuves. Un sous-titre visible conserve un rythme naturel ; la meta reste un résumé autonome, pas sa copie raccourcie mécaniquement.
 
 Exemple original, sans classement de produits :
 

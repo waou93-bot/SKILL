@@ -16,6 +16,12 @@
 - Pour un dossier fourni non ouvert, écrire « dossier fourni par l'utilisateur, non vérifié indépendamment » ; ne pas inventer d'URL. Paraphraser, ne pas copier.
 - Pour des fixtures de test, annoncer explicitement leur caractère fictif et ne jamais les présenter comme des produits, sources ou prix du marché.
 
+## Benchmark, Trends et ASTRA
+
+- Suivre [h1-metas-trends-astra](h1-metas-trends-astra.md). Citer les pages réellement ouvertes et distinguer H1, title/meta relevés dans les balises et titre/extrait observés dans la recherche. Ne pas déduire trafic ou CTR de leur présence dans les résultats.
+- Documenter les paramètres et observations Trends réellement consultés. Les indices sont relatifs ; séparer fréquence, progression, saisonnalité et manque de données. Aucune tendance ne prouve un volume absolu, un gain de clics ou l'exactitude d'une promesse.
+- Mentionner un arbitrage ASTRA uniquement après une revue réellement effectuée avec le modèle identifié. Si la comparaison ou la revue n'a pas été possible, indiquer l'étape non effectuée et le caractère provisoire du choix. Une auto-revue ne devient pas une revue indépendante.
+
 ## Affiliation
 
 - Lorsque des liens affiliés sont confirmés, placer une mention claire avant ou près du premier lien : « Cet article contient des liens affiliés. Une commission peut être versée si tu achètes via ces liens. » N'affirmer « sans surcoût » que si confirmé.
@@ -33,7 +39,8 @@
 - Affiliation signalée quand réelle ? Inconvénients de chaque produit présents ?
 - Parcours adapté à la question : choix de modèles ou compréhension des critères ? Prose complète sans les offres ? Appels à l'action placés après une raison de choisir, sans interrompre une réserve ?
 - Offres sur la même variante et le même état ? Prix de lancement, prix relevé et frais distingués ? Statuts commerciaux confirmés ou inconnues reprises dans le dossier ?
-- H1 et cinq titles en question, sauf convention explicitement imposée ? Sous-titre et meta donnant une première réponse étayée ? Promesse tenue sans suspense artificiel ? Title/meta comptés, slug fourni ?
+- H1 et cinq titles en question, sauf convention explicitement imposée ? Sous-titre et meta donnant une première réponse étayée ? Promesse tenue sans suspense artificiel ? Champs finaux comptés après arbitrage ? Slug fourni seulement si le périmètre le demande ?
+- Références, observations Trends et décision ASTRA traçables ou étapes non effectuées signalées ? Aucun arbitrage, indice, classement ou gain de CTR inventé ? Édition réellement vérifiée ou simples propositions clairement identifiées ?
 - Deux-points liés au mot précédent par un caractère insécable dans tous les textes éditoriaux ? Aucun saut forcé autour du signe dans une phrase ou un titre ? Contrôle des caractères distingué de la vérification du rendu ?
 - JSON-LD aligné sur le texte, sans notes, prix ou avis fictifs ?
 - Auteur identifié ou [À VÉRIFIER] ? Date de brouillon distinguée de publication/mise à jour publique ?

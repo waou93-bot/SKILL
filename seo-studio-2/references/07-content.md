@@ -1,5 +1,7 @@
 # Contenus, guides et production pilote
 
+Pour l’affiliation, appliquer les [transferts AFFISEO sourcés](26-affiseo-methodes.md) au périmètre de cette référence ; le contrat 24 et les gates existants restent prioritaires.
+
 > Pour un site d’affiliation, appliquer d’abord [le contrat produits/design/phases](24-affiliation-refonte.md). Il prime sur les choix visuels autonomes, la production avant validation, les placeholders produit et tout transfert sans preuves. Le prébuild produit doit être installé et testé dans le projet ; les contrôles structurels du package ne le remplacent pas.
 
 

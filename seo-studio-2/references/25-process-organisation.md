@@ -1,5 +1,7 @@
 # Parcours pas à pas établi et suivi par Organisation
 
+Pour l’affiliation, appliquer les [transferts AFFISEO sourcés](26-affiseo-methodes.md) au périmètre de cette référence ; le contrat 24 et les gates existants restent prioritaires.
+
 Charger le vrai skill Organisation au démarrage. Il établit dans `00_REFLEXION.md`
 une section « Méthode et processus de bout en bout », adaptée au projet réel,
 puis coordonne son exécution. Ne pas se contenter de citer ce document ou ce parcours.

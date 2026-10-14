@@ -1,0 +1,117 @@
+{
+  "read_at": "2026-10-14",
+  "method": "web_text_extraction",
+  "scope": "Five homepages and selected linked pages; no exhaustive crawl or visual/browser QA",
+  "sources": [
+    {
+      "id": "LIT-HOME",
+      "url": "https://quel-litiere-automatique.fr/",
+      "page_type": "accueil",
+      "observation": "Navigation gabarit, format, bac, sécurité, budget et marque ; sélection et analyses.",
+      "provider_crawl_notice": "today",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "LIT-MODEL",
+      "url": "https://quel-litiere-automatique.fr/neakasa-m1-plus-lite-test-avis/",
+      "page_type": "fiche",
+      "observation": "Fiche dédiée à une référence avec analyse documentaire.",
+      "provider_crawl_notice": "4 days ago",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "RAD-HOME",
+      "url": "https://quel-radar-velo.fr/",
+      "page_type": "accueil",
+      "observation": "Navigation compatibilité, portée, autonomie, budget ; classements et analyses.",
+      "provider_crawl_notice": "today",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "RAD-FACET",
+      "url": "https://quel-radar-velo.fr/meilleur-radar-velo-compatible-avec-un-compteur-garmin/",
+      "page_type": "selection",
+      "observation": "Filtres, cartes avec couverture partielle, tableau chiffré et explication du périmètre.",
+      "provider_crawl_notice": "3 weeks ago",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "TON-HOME",
+      "url": "https://www.quel-robot-tondeuse.fr/",
+      "page_type": "accueil",
+      "observation": "Navigation, surface, pente, budget ; accès aux analyses et guides.",
+      "provider_crawl_notice": "today",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "TON-COMP",
+      "url": "https://www.quel-robot-tondeuse.fr/meilleur-robot-tondeuse/",
+      "page_type": "comparatif",
+      "observation": "Comparatif général lié aux critères de navigation et de terrain.",
+      "provider_crawl_notice": "4 weeks ago",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "LAV-HOME",
+      "url": "https://www.quel-lave-linge.fr/",
+      "page_type": "accueil",
+      "observation": "Format, installation, fonctions, budget ; sélections et fiches.",
+      "provider_crawl_notice": "today",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "LAV-MODEL",
+      "url": "https://www.quel-lave-linge.fr/beko-b3wft51243w-test-avis/",
+      "page_type": "fiche",
+      "observation": "Verdict, usages, limites, caractéristiques, couverture et accès marchand Awin/Darty affiché ; images IA déclarées.",
+      "provider_crawl_notice": "today",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "LAV-METHOD",
+      "url": "https://www.quel-lave-linge.fr/methodologie/",
+      "page_type": "methode",
+      "observation": "Méthode publique distinguant documentation, essais et retours ; sources, corpus et notation.",
+      "provider_crawl_notice": "today",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "ASP-HOME",
+      "url": "https://aspirateur-robot-pro.fr/",
+      "page_type": "accueil",
+      "observation": "Entrées par marque, fonction, usage et budget ; analyses et comparaisons.",
+      "provider_crawl_notice": "today",
+      "status": "OBSERVED_TEXT"
+    },
+    {
+      "id": "ASP-COMP",
+      "url": "https://aspirateur-robot-pro.fr/aspirateur-robot/",
+      "page_type": "comparatif",
+      "observation": "Filtres, tri, cartes, classement ; anomalies apparentes de prix/facettes à vérifier.",
+      "provider_crawl_notice": "3 weeks ago",
+      "status": "OBSERVED_TEXT"
+    }
+  ],
+  "unknowns": [
+    "sitemap counts",
+    "traffic",
+    "rankings",
+    "revenue",
+    "full visual design",
+    "filters runtime",
+    "actual affiliate destinations",
+    "product catalogue verification",
+    "WordPress/Yoast/private engine",
+    "robots /qc-clic configuration"
+  ],
+  "user_debrief": {
+    "status": "USER_REPORTED_NOT_REVERIFIED",
+    "quel_canape_urls_approx": 764,
+    "not_extrapolated_to_other_sites": true
+  },
+  "notes": [
+    "Official merchant/manufacturer sources still required for products; competitor observations are not catalogue evidence.",
+    "Text extraction is not current HTTP/browser proof; some cached crawls are older than session read date.",
+    "No revenue or SEO efficacy inferred."
+  ]
+}

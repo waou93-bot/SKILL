@@ -1,5 +1,7 @@
 # Contrôle final : site-checklist, seo-audit et pSEO
 
+Pour l’affiliation, appliquer les [transferts AFFISEO sourcés](26-affiseo-methodes.md) au périmètre de cette référence ; le contrat 24 et les gates existants restent prioritaires.
+
 ## Chargement et périmètre
 
 Pour une mission complète, charger les vrais `site-checklist`, `seo-audit` et

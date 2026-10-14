@@ -11,7 +11,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "3.4.2"
+  version: "3.5.0"
   reviewed_at: "2026-10-14"
 ---
 
@@ -172,6 +172,17 @@ Une page pSEO exige verdict propre, comparaison chiffrée sourcée et critère d
 sinon noindex. Captures comparées V1/V2, autocritique corrigée et rapport QA obligatoire.
 Terminer chaque phase par : ce qui est fait, ce qui est vérifié, ce qui manque.
 Un échec maintient la phase BLOQUEE ; aucune livraison déclarée terminée avec défaut.
+
+## Méthodes produit, SEO et pSEO observées chez AFFISEO
+
+Pour l'affiliation, lire [les transferts sourcés](references/26-affiseo-methodes.md)
+en G1/G2/G3 et recette. Organisation les adapte dans son processus : navigation par
+contraintes, sélection expliquée, cartes produit, tableaux, fiches et duels utiles,
+maillage « Affiner / Comparer aussi / À lire ensuite », familles pSEO admissibles.
+Notes facultatives reproductibles, inconnues explicites, dates de vérification réelles.
+Ces méthodes complètent le contrat 24 sans changer le design approuvé ni Personna.
+Ne pas importer les produits, prix, images ou notes concurrents comme données vérifiées.
+Aucun quota de mots/pages/liens, succès SEO supposé, outil payant ou stack concurrente imposé.
 
 ## Accès produits et boutons des partenaires
 

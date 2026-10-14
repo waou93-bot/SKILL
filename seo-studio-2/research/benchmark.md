@@ -52,3 +52,8 @@ captures desktop/mobile, menu ouvert, article, comparatif, encart et état conse
 Vérifier séparément HTML initial, DOM, liens et schema. Ne pas contourner CAPTCHA,
 connexion ou protection d'accès. Si le domaine reste inaccessible, conserver ce
 statut et continuer les éléments indépendants ; ne pas remplir la fiche par intuition.
+
+
+## Complément AFFISEO — 14 octobre 2026
+
+Lire le [registre daté](affiseo.json) et les [transferts produit/SEO/pSEO](../references/26-affiseo-methodes.md). Cinq accueils et des pages liées ont été lus en extraction texte ; aucun résultat SEO ni audit visuel établi. Ce complément ne modifie pas le périmètre historique du relevé du 8 octobre.

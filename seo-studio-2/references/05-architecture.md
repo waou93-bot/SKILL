@@ -1,5 +1,7 @@
 # Architecture de pages, données et maillage
 
+Pour l’affiliation, appliquer les [transferts AFFISEO sourcés](26-affiseo-methodes.md) au périmètre de cette référence ; le contrat 24 et les gates existants restent prioritaires.
+
 ## Un besoin, une intention, un propriétaire
 
 Regrouper les variantes qui appellent la même réponse. Affecter une page propriétaire

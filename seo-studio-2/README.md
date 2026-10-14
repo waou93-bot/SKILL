@@ -1,4 +1,4 @@
-# SEO Studio 2 — 3.4.2 (14 octobre 2026)
+# SEO Studio 2 — 3.5.0 (14 octobre 2026)
 
 SERP sourcées et approbation avant G3, recette HTTP/navigateur/laboratoire,
 suivi sur exports après publication, mode lite conservant les exigences,

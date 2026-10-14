@@ -1,3 +1,9 @@
+# 3.5.0 — 2026-10-14
+
+Benchmark AFFISEO : cinq accueils et pages liées lus, transferts de présentation
+produit, SEO et pSEO intégrés au processus Organisation. Provenance et limites
+documentées ; zéro donnée produit concurrente importée, aucun outil payant imposé.
+
 # 3.4.2 — 2026-10-14
 
 Audit : entrée réelle sans landing supplémentaire, recherche interne conservée,

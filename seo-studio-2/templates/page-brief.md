@@ -45,6 +45,16 @@ Mobile, tableau long, erreurs, vide, indisponible, clavier et sans JS :
 Canonical / indexation / structured data réellement pertinent :
 Événements utiles et conditions de collecte :
 
+## Modules affiliation (si applicable)
+Mécanismes retenus du benchmark sourcé, adaptations au design approuvé et exclusions :
+Sélection et critères d’admissibilité ; carte, verdict, usages/limites et CTA marchand :
+Tableau : attributs, unités, sources, dates, inconnues et cohérence avec les cartes :
+Notation éventuelle : méthode versionnée, formule, couverture, calcul et preuve ; sinon aucune note :
+Famille pSEO : dimensions valides, intention distincte, verdict propre, comparaison sourcée, critère d’usage :
+Liens « Affiner / Comparer aussi / À lire ensuite » : destination réelle et besoin couvert :
+Date affichée, compteur et journal : données et événements de vérification réellement établis :
+Recette : entrée produits/CTA, filtres/tri, images, tableau mobile et indexabilité ; preuve ou NOT_RUN :
+
 ## Acceptation
 Critères et test ; criticité ; reviewer ; preuves :
 Maintenance, déclencheurs, date de vérification, propriétaire :

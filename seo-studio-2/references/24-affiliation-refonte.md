@@ -46,6 +46,30 @@ site livré : placeholders produit, produits fictifs, images trompeuses,
 caractéristiques approximatives, avis inventés et faux tests.
 Les fixtures synthétiques de tests restent isolées du catalogue publié.
 
+## Produits et accès affiliés dès l'entrée du site
+
+Pour un site d'affiliation, la landing et l'accueil mettent les produits vérifiés
+et les accès affiliés en avant dès le premier écran utile, après une introduction
+courte qui répond au besoin. Pas de long hero ou de mur de texte avant la sélection,
+ni de parcours obligatoire par un guide pour accéder aux offres.
+Présenter images réelles, noms/références, prix datés, utilité et CTA « Voir le prix »
+ou « Voir le modèle sur [marchand] ». Le CTA ouvre directement l'offre exacte via
+le lien affilié autorisé ; conserver tracking, variante et balisage sponsored.
+Les liens commerciaux externes ouvrent un nouvel onglet avec noopener ; les ancres
+éditoriales continuent de servir prioritairement le maillage interne du site.
+La mention commune d'affiliation reste au footer/mentions légales ; ne pas ajouter
+une formule de commission à chaque bouton. Une grande zone cliquable ne doit pas
+masquer les liens internes, créer des liens imbriqués ou rendre le clavier inutilisable.
+
+Respecter le design system approuvé et soumettre ce placement à sa validation en
+phase 1. Si la V1 nécessite un changement de composition, présenter l'ajustement
+localisé demandé, sans étendre cette demande à une refonte graphique globale.
+Sans produits et liens vérifiés disponibles, bloquer le module et la livraison
+affiliée ; jamais de faux produit ou CTA décoratif pour remplir le premier écran.
+Inclure la landing parmi les trois pilotes. En QA, captures desktop/mobile et test
+réel des CTA démontrent visibilité précoce, destination exacte et images chargées.
+Une landing sans mise en avant produit ou accès affilié utilisable échoue à la recette.
+
 ## Design : migrer avant de réinventer
 
 Pour l'existant, avant tout code : crawl et inventaires contenu/produits, puis

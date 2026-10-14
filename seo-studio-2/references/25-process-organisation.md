@@ -33,7 +33,8 @@ Les rôles sont des responsabilités, pas des changements de modèle implicites.
    sources lues, images, prix et affiliation active ; rapports des manques.
    Conserver Astro/Cloudflare retenus. Installer et tester le prébuild du projet.
 7. **Construire et contrôler les pilotes.** Phase 3 : trois pages réelles,
-   templates et contenu propres, recherche interne et SEO intégrés.
+   templates et contenu propres, recherche interne et SEO intégrés. Inclure la
+   landing avec produits vérifiés et CTA affiliés visibles dès le premier écran utile.
    Preuves : build, contrôles produit, captures comparées et corrections.
 8. **Produire par lots.** Phase 4 : lots de 20–30 pages, dernier lot adapté,
    contrôle avant lot suivant, trois éléments propres par page pSEO indexable.

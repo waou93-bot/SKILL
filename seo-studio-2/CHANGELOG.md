@@ -1,3 +1,8 @@
+# 3.4.1 — 2026-10-14
+
+Produits vérifiés et accès affiliés directs dès la landing et l’accueil, intégrés
+au design approuvé, aux pilotes et à la recette desktop/mobile. Personna inchangé.
+
 # 3.4.0 — 2026-10-14
 
 Contrat affiliation : zéro produit inventé, audit et continuité V1, choix du design

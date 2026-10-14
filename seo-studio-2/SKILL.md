@@ -11,7 +11,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "3.4.0"
+  version: "3.4.1"
   reviewed_at: "2026-10-14"
 ---
 
@@ -174,6 +174,14 @@ Terminer chaque phase par : ce qui est fait, ce qui est vérifié, ce qui manque
 Un échec maintient la phase BLOQUEE ; aucune livraison déclarée terminée avec défaut.
 
 ## Accès produits et boutons des partenaires
+
+Pour un site d'affiliation, mettre en avant les produits vérifiés et leurs accès
+marchands affiliés dès la landing et l'accueil : après une réponse introductive
+courte, présenter une sélection visible et des CTA directs, sans tunnel éditorial.
+Images réelles, références exactes, prix datés et boutons « Voir le prix » liés au
+bon modèle ; contrôler leur visibilité et fonctionnement sur desktop et mobile.
+Intégrer ce placement au design system validé ; ne pas réinventer la V1.
+
 
 Lorsque le projet comporte des produits proposés chez des partenaires, les liens
 commerciaux et boutons associés doivent utiliser leurs URLs affiliées fournies et

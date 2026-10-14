@@ -36,6 +36,11 @@ fréquence universelle n'est exigée. Éviter plusieurs blocs identiques visible
 
 ## Liens produits affiliés et boutons
 
+Pour un site d'affiliation, la landing et l'accueil montrent tôt les produits
+vérifiés et leurs accès affiliés directs. Appliquer le placement et sa recette
+selon [le contrat affiliation](24-affiliation-refonte.md#produits-et-accès-affiliés-dès-lentrée-du-site).
+
+
 Pour les produits proposés chez les partenaires, tous les accès commerciaux utilisent
 l'URL affiliée fournie et autorisée du partenaire correspondant : bouton, lien de prix,
 nom, image ou carte cliquables pour consulter ou acheter le modèle. Associer modèle,

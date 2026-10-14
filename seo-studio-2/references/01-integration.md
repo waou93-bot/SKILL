@@ -32,6 +32,7 @@ Le registre de projet distingue `LU`, `INTROUVABLE`, `A_LIRE`, `NON_APPLICABLE` 
 | ai-seo | accès recherche IA, citations, recommandations, mesure | pilote IA conditionnel ; politique des bots préservée |
 | seo-content-engine | briefs, lots, validation et capacité éditoriale | production V1 et maintenance, brouillon par défaut |
 | seo-post-deploy | production, propriétés, sitemaps et mesures réelles | préparer le transfert ; exécuter seulement après autorisation |
+| seo-opportunity-loop | opportunités GSC, choix des améliorations et mesure de leurs effets | G4 : préparer la mesure ; reprise avec données ou après lancement : analyser et améliorer ; conserver les registres et run_id |
 | /personna | formation/configuration des agents | préalable obligatoire à chaque mandat métier |
 
 Ne pas appeler Organisation à nouveau depuis chaque spécialiste. Conserver le

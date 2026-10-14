@@ -111,3 +111,7 @@ security-best-practices pour le code sécurisé et la revue applicable, web-perf
 les mesures et recommandations. Conserver un seul registre de preuves dans 11_QA.md.
 Aucun service payant requis ; lectures, tests locaux, émulation et appareils réels
 restent des preuves distinctes. Les corrections respectent le mandat existant.
+
+## Préparer la boucle d'opportunités
+
+Charger seo-opportunity-loop avant l'analyse GSC ou la préparation de son suivi. Dans `08_MESURE.md`, prévoir propriété/source, filtres, fenêtres, segments, conversion et provenance distinctes, version de référence, responsable et critères de décision. Sans site lancé ou données exploitables, conserver PREPARE_PHASE_ULTERIEURE. Lire [le raccordement post-lancement](21-postlaunch.md#intégration-seo-opportunity-loop) avant l'exécution ; ne pas confondre instrumentation préparée et gain démontré.

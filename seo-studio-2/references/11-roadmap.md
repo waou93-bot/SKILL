@@ -50,5 +50,6 @@ de la cohérence l'emporte sur la commodité d'un composant préfabriqué.
 Préparer le périmètre de seo-post-deploy et les contrôles au moment où les données sont
 suffisantes. Les résultats sont séparés par canal, marque/hors marque, gabarit et appareil
 si les données le permettent. Tester les hypothèses plutôt que modifier tout le site
-après trois jours sans clic. Les commandes de monitoring restent non exécutées tant
-qu'aucune automatisation réelle n'a été demandée et créée.
+après trois jours sans clic. Les contrôles manuels de monitoring peuvent être exécutés dans le périmètre autorisé
+avec les données disponibles. Seule leur exécution récurrente exige une demande
+et un ordonnanceur réel ; une lecture ponctuelle n'exige pas une automatisation.

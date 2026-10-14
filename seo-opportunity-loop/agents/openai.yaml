@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO Opportunity Loop"
+  short_description: "Prioriser, améliorer et mesurer le SEO avec GSC"
+  default_prompt: "Utilise $seo-opportunity-loop pour analyser mes données Search Console, préparer les améliorations prioritaires et définir leur mesure."

@@ -11,7 +11,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "3.3.0"
+  version: "3.3.1"
   reviewed_at: "2026-10-14"
 ---
 
@@ -287,3 +287,9 @@ points de décision humaine selon le mandat, sans arrêt rituel supplémentaire.
 ## Auteur par défaut
 
 Tous les nouveaux sites disposent de la présentation de Nicolas selon [le contrat auteur](references/23-author.md), avec nom/domaine et métier adaptés. Produire AUTEUR.md puis sa route réelle dans le site, attribution éditoriale et contact réel. La bio reprend la méthode fournie ; elle ne prouve ni relecture de chaque page, ni test produit, ni qualification professionnelle. Préserver les identités déjà approuvées sur une reprise.
+
+## Amélioration continue par les opportunités GSC
+
+Intégrer le vrai `seo-opportunity-loop` selon [le contrat de suivi](references/21-postlaunch.md#intégration-seo-opportunity-loop). À G4, préparer accès, baseline, événements et critères dans `08_MESURE.md` ; pour un site existant avec données, analyser les opportunités et alimenter `09_ROADMAP.md`. Après lancement autorisé et premières données exploitables, exécuter la boucle sur les segments pertinents. Une demande ciblée d'optimisation ne relance ni F0–F3 ni une nouvelle équipe.
+
+Réserver à seo-post-deploy l'exploration/indexation et aux contrôles Studio la validation des artefacts. seo-opportunity-loop choisit les améliorations fondées sur GSC et leur mesure. Aucun volume d'articles, calculateur ou traduction imposé, aucune automatisation créée implicitement. Sans accès GSC, utiliser les exports autorisés ou préparer le suivi sans bloquer la réalisation indépendante.

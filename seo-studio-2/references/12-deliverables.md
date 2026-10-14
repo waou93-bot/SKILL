@@ -75,3 +75,7 @@ security-best-practices pour le code sécurisé et la revue applicable, web-perf
 les mesures et recommandations. Conserver un seul registre de preuves dans 11_QA.md.
 Aucun service payant requis ; lectures, tests locaux, émulation et appareils réels
 restent des preuves distinctes. Les corrections respectent le mandat existant.
+
+## Preuves de la boucle d'opportunités
+
+Conserver baseline, filtres et indicateurs dans `08_MESURE.md`, actions priorisées et propriétaires dans `09_ROADMAP.md`, hypothèses et décisions dans `10_DECISIONS.md`, contrôles réellement exécutés dans `11_QA.md`. Après lancement, préserver `monitoring/release-state.json` ; enregistrer toute correction dans une nouvelle révision et relier sa version à la mesure. Les agrégats monitoring n'établissent pas une analyse page–requête : joindre les preuves segmentées lorsqu'elles existent. Un plan sans données est préparé, jamais déclaré performant.

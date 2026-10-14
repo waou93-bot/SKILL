@@ -1,5 +1,8 @@
 # Réalisation indépendante d'un site SEO de bout en bout
 
+> Pour un site d’affiliation, appliquer d’abord [le contrat produits/design/phases](24-affiliation-refonte.md). Il prime sur les choix visuels autonomes, la production avant validation, les placeholders produit et tout transfert sans preuves. Le prébuild produit doit être installé et testé dans le projet ; les contrôles structurels du package ne le remplacent pas.
+
+
 ## Périmètre et gratuité des outils
 
 Une demande « crée/construis le site » autorise préproduction et réalisation locale

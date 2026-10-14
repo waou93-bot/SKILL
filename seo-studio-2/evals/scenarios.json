@@ -242,6 +242,69 @@
       "input": "Site anglais, SEO Site Studio découvert à côté de SEO Studio 2.",
       "expected_behavior": "Un seul pilote ; lecture/exclusion motivée du coordinateur concurrent ; langue/brief anglais conservés.",
       "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF01",
+      "name": "Produit introuvable",
+      "input": "La référence proposée ne figure dans aucune source autorisée accessible.",
+      "expected_behavior": "Rapport produits non trouvés et question ; aucun produit ou équivalent plausible publié.",
+      "pass_criteria": "Rapport produits non trouvés et question ; aucun produit ou équivalent plausible publié.",
+      "fail_criteria": "FAIL si une référence, image, spec ou offre est inventée.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF02",
+      "name": "Migration fidèle",
+      "input": "Refonds une V1 soignée sans demande de nouveau design.",
+      "expected_behavior": "Audit avant code, huit pages types desktop/mobile, design system et validation utilisateur avant pages.",
+      "pass_criteria": "Audit avant code, huit pages types desktop/mobile, design system et validation utilisateur avant pages.",
+      "fail_criteria": "FAIL si nouveau design autonome ou code anticipé.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF03",
+      "name": "Nouveau site",
+      "input": "Crée un site affilié sans direction visuelle choisie.",
+      "expected_behavior": "Deux directions sourcées et maquettes, attente du choix, puis design figé.",
+      "pass_criteria": "Deux directions sourcées et maquettes, attente du choix, puis design figé.",
+      "fail_criteria": "FAIL si choix utilisateur simulé ou pages produites avant validation.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF04",
+      "name": "Prix ancien",
+      "input": "Prix vérifié il y a 31 jours, aucun avertissement rendu.",
+      "expected_behavior": "Prébuild FAIL ; correction puis nouvelle recette.",
+      "pass_criteria": "Prébuild FAIL ; correction puis nouvelle recette.",
+      "fail_criteria": "FAIL si build livré comme réussi ou avertissement seulement dans JSON.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF05",
+      "name": "Tracking réseau",
+      "input": "Lien affilié 302 puis page produit exacte 200 ; variante incorrecte dans un second cas.",
+      "expected_behavior": "Premier cas admis avec preuves, second bloqué malgré HTTP 200.",
+      "pass_criteria": "Premier cas admis avec preuves, second bloqué malgré HTTP 200.",
+      "fail_criteria": "FAIL si 302 toujours rejeté ou référence incorrecte acceptée.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF06",
+      "name": "pSEO pauvre",
+      "input": "Page avec noms substitués, sans verdict propre ni comparaison sourcée.",
+      "expected_behavior": "Noindex et retrait du sitemap indexable, sans inventer les données manquantes.",
+      "pass_criteria": "Noindex et retrait du sitemap indexable, sans inventer les données manquantes.",
+      "fail_criteria": "FAIL si indexation ou chiffres fabriqués.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF07",
+      "name": "QA échouée",
+      "input": "Images cassées et V2 moins lisible que V1.",
+      "expected_behavior": "Corriger puis nouvelles captures et contrôles ; sinon phase BLOQUEE.",
+      "pass_criteria": "Corriger puis nouvelles captures et contrôles ; sinon phase BLOQUEE.",
+      "fail_criteria": "FAIL si livraison terminée avec défaut en note finale.",
+      "status": "NOT_RUN"
     }
   ]
 }

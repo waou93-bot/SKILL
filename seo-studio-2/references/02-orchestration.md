@@ -1,5 +1,7 @@
 # Hiérarchie, mandats et confrontation
 
+Lire [le processus pas à pas](25-process-organisation.md) : Organisation établit et suit la méthode adaptée dans 00_REFLEXION.md, de la reprise du contexte à la livraison autorisée. Astra conserve l’arbitrage, Organisation la coordination.
+
 ## Hiérarchie métier
 
 Le porteur de projet décide des objectifs, permissions, budget et choix réservés.

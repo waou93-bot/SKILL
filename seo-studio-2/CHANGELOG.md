@@ -1,3 +1,11 @@
+# 3.4.0 — 2026-10-14
+
+Contrat affiliation : zéro produit inventé, audit et continuité V1, choix du design
+par l’utilisateur, six phases avec preuves, pilotes et lots, QA corrigée avant livraison.
+Références alignées ; suivi GSC 3.3.1 conservé et Personna inchangé.
+Le contrôle catalogue prébuild est une exigence à implémenter dans chaque site,
+pas une capacité nouvellement certifiée de studio.py.
+
 # SEO Studio 2 — 3.3.0 (14 octobre 2026)
 
 SERP sourcées et approbation avant G3, recette HTTP/navigateur/laboratoire,

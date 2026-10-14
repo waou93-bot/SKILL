@@ -1,5 +1,8 @@
 # Partenaires, affiliation et encarts
 
+> Pour un site d’affiliation, appliquer d’abord [le contrat produits/design/phases](24-affiliation-refonte.md). Il prime sur les choix visuels autonomes, la production avant validation, les placeholders produit et tout transfert sans preuves. Le prébuild produit doit être installé et testé dans le projet ; les contrôles structurels du package ne le remplacent pas.
+
+
 ## Commencer par l'utilité
 
 Le partenaire intervient lorsque son offre aide une tâche du lecteur. Proposer
@@ -61,8 +64,8 @@ destination de preuve ou de parcours ; ils ne deviennent pas des liens marchands
 Sans partenaire confirmé ou URL affiliée disponible, enregistrer
 `URL_AFFILIEE_A_FOURNIR` dans le dossier, avec responsable et donnée manquante.
 Le module reste non publiable ; ne pas livrer de bouton actif pointant vers `#`,
-une URL inventée ou une URL simple présentée comme affiliée. Une maquette peut
-montrer un emplacement clairement provisoire, sans prétendre que le lien fonctionne.
+une URL inventée ou une URL simple présentée comme affiliée. Pour un site d’affiliation, aucun placeholder produit dans les pilotes ou le site
+livré ; consigner les informations manquantes dans le dossier uniquement.
 
 ## Texte d'encart à adapter
 

@@ -1,6 +1,6 @@
 interface:
   display_name: "SEO STUDIO 2"
   short_description: "Créer un site SEO complet, avec personas et recette locale"
-  default_prompt: "Utilise $seo-studio-2 : suis F0–F3, recherche les compétences métier sur LinkedIn et Reddit, forme des personas via le vrai /personna, crée et configure deux sous-agents en full ou un critique en lite puis réalise le site et son corpus V1 jusqu’à la recette locale, sans outil payant obligatoire ni publication implicite."
+  default_prompt: "Utilise $seo-studio-2 : charge Organisation et établis dans 00_REFLEXION.md la méthode pas à pas de bout en bout avec preuves et portes ; suis F0–F3, recherche les compétences métier sur LinkedIn et Reddit, forme des personas via le vrai /personna, crée et configure deux sous-agents en full ou un critique en lite puis réalise le site et son corpus V1 jusqu’à la recette locale, sans outil payant obligatoire ni publication implicite. Pour l’affiliation : applique references/24-affiliation-refonte.md, audit avant code, design validé par l’utilisateur, zéro produit inventé, prébuild produit dans le projet, pilotes puis lots et QA corrigée."
 policy:
   allow_implicit_invocation: true

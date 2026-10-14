@@ -11,7 +11,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "3.3.1"
+  version: "3.4.0"
   reviewed_at: "2026-10-14"
 ---
 
@@ -32,6 +32,17 @@ Une demande explicitement limitée à la préproduction reste documentaire.
 Le backlog hors V1 et la publication ne sont pas automatiquement autorisés.
 Lire [la réalisation indépendante de bout en bout](references/18-realisation-complete.md).
 Le vrai /personna et son processus restent conservés ; ne pas modifier ce skill.
+
+## Méthode et processus pilotés par Organisation
+
+Charger le vrai `organisation` au démarrage et lui faire établir un parcours
+pas à pas adapté au projet, du cadrage à la livraison autorisée.
+Lire [le processus de bout en bout](references/25-process-organisation.md).
+Écrire la méthode dans `00_REFLEXION.md` : pour chaque étape, entrées, action,
+responsable, livrable, preuve, critères PASS/FAIL et condition de passage.
+Organisation coordonne ce parcours, suit les gates et reprend à la première étape
+impactée ; une liste générique ou la simple mention d’Organisation ne suffit pas.
+Les six phases affiliation et leurs validations humaines restent obligatoires.
 
 ## Contrat non négociable
 
@@ -64,7 +75,7 @@ Le vrai /personna et son processus restent conservés ; ne pas modifier ce skill
 9. Pour une nouvelle mission complète : terminer les quatre étapes de réflexion
    F0–F3, rechercher les compétences LinkedIn/Reddit, former les profils via le vrai
    /personna, créer au moins deux sous-agents métier en full (un critique en lite) et charger leurs profils.
-   Enchaîner ensuite la préproduction puis la réalisation locale lorsqu’un site est demandé, sans confirmation rituelle.
+   Enchaîner la réalisation autorisée en respectant les portes affiliation : audit avant code, design validé par l’utilisateur, produits vérifiés avant pilotes.
    Chaque objet majeur exige critique, résolution et nouvelle relecture réelle.
 10. En mode préproduction, rester sur recherche, fichiers et prototypes autorisés.
    Aucun compte, abonnement, dépense, contact partenaire, soumission, publication ou
@@ -113,8 +124,9 @@ restent NON VÉRIFIÉS en préproduction. Ne pas imposer de pages programmatique
 Pour une reprise, une landing, un site local ou une production éditoriale, lire
 [recherche autonome et réalisation](references/13-autonomie-production.md).
 Réutiliser les décisions validées et prendre les choix réversibles de métier :
-recherche de typographies, palette, boutons, menu, parcours, illustrations et sujets.
-Ne pas déléguer ces recherches au client sous forme de questions de préférence.
+recherche et corrections conformes au design approuvé. En refonte, migrer le design
+existant ; toute rupture exige une demande explicite. Pour un nouveau site, préparer
+deux directions et attendre le choix utilisateur avant le code des pages.
 Charger **redaction-editoriale-web** avant chaque rédaction/réécriture éditoriale.
 
 Une demande explicite de réalisation complète dépasse les seuls pilotes : produire
@@ -137,6 +149,29 @@ Appliquer [le contrat de recherche](references/06-design.md#recherche-en-tête-d
 aux briefs, au développement et à la recette : pertinence, corpus entier, résultats
 cliquables, accents/casse, reset, état vide/erreur, clavier, mobile et absence de résultat.
 Aucun service de recherche payant requis. Un champ décoratif ne satisfait pas R12.
+
+## Affiliation : produits réels et continuité du design
+
+Avant une création ou refonte de site d'affiliation, lire et appliquer
+[le contrat produits, design et phases](references/24-affiliation-refonte.md).
+Il prime sur les consignes contradictoires des références existantes.
+Zéro produit inventé : source consultée pendant la session, référence exacte,
+page marchand, prix daté, image réelle, affiliation active et données complètes.
+Sans preuve, produit non publiable et rapport `produits-non-trouves.md` suivi d'une question.
+Installer et tester un contrôle bloquant dans le build du site ; la validation
+structurelle de Studio ne remplace pas ce contrôle.
+
+Existant : audit avant code, crawl et huit pages types desktop/mobile,
+`design-system.md`, reprise de la V1 et validation utilisateur.
+Nouveau : deux directions avec références réelles et maquettes, choix utilisateur
+puis design figé. Aucun changement visuel autonome, template générique ou carte sans image.
+Phases : 0 audit → 1 design validé → 2 produits vérifiés → 3 pilotes sur trois pages
+→ 4 lots de 20–30 → 5 QA corrigée. Preuves avant chaque transition, même en lite.
+Conserver silos, pSEO complémentaire, Astro/Cloudflare retenus et redirections 301.
+Une page pSEO exige verdict propre, comparaison chiffrée sourcée et critère d'usage ;
+sinon noindex. Captures comparées V1/V2, autocritique corrigée et rapport QA obligatoire.
+Terminer chaque phase par : ce qui est fait, ce qui est vérifié, ce qui manque.
+Un échec maintient la phase BLOQUEE ; aucune livraison déclarée terminée avec défaut.
 
 ## Accès produits et boutons des partenaires
 
@@ -180,15 +215,15 @@ Recevoir `niche` et `site_type`. Reprendre pays, langue, audience, marque, budge
 stock existant et contraintes du contexte s'ils sont fiables. Sinon écrire les
 hypothèses réversibles et les inconnues ; une préférence générale ne vaut pas donnée
 commerciale de ce projet. Ne pas imposer France, affiliation, abonnement, blog ou
-Next.js à tous les sites. Ne poser une question que si une décision essentielle et
-non réversible reste impossible ; continuer les travaux indépendants.
+Next.js à tous les sites. Poser une question si une ambiguïté ou une donnée manquante empêche une réalisation
+fidèle ou vérifiable ; ne pas inventer pour compléter. Continuer les travaux indépendants.
 
 Créer ou réutiliser le dossier de travail explicitement choisi, généralement
 `SEO/PREPROD/`. Le script d'initialisation fournit une structure, **pas une préproduction
 terminée**. Remplir les livrables avec les faits de cette niche ; un titre de fichier
 ou du texte interchangeable ne satisfait pas l'exigence.
 
-## Réflexion obligatoire et transition automatique
+## Réflexion obligatoire et transitions contrôlées
 
 Suivre F0_CADRAGE → F1_RECHERCHE → F2_OPTIONS → F3_DECISION dans
 `00_REFLEXION.md` et `workflow.json`. Produire des synthèses utiles : problème,
@@ -199,8 +234,8 @@ la calibration précède les appels d'agents ; le cycle `idees` précède la pr�
 Après F3, produire effectivement G2 à G5 : architecture/fan-out, Design DNA, briefs,
 pilotes, partenaires, technique, mesure et roadmap. Itérer avec les agents créés
 pour cette mission sur architecture, production pilote et roadmap, en conservant
-les objections et la nouvelle relecture de chaque version corrigée. Ne pas s'arrêter
-à un plan ou demander une autorisation de continuer le travail déjà demandé.
+les objections et la nouvelle relecture de chaque version corrigée. Poursuivre le travail autorisé jusqu’aux portes prévues ; attendre la validation
+utilisateur du design et ne pas franchir une porte sans ses preuves.
 
 Les profils prennent leurs compétences dans une deep research propre au secteur
 sur LinkedIn et Reddit. Appliquer le vrai `/personna`, adapter les responsabilités

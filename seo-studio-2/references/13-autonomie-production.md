@@ -1,5 +1,8 @@
 # Recherche autonome et réalisation éditoriale
 
+> Pour un site d’affiliation, appliquer d’abord [le contrat produits/design/phases](24-affiliation-refonte.md). Il prime sur les choix visuels autonomes, la production avant validation, les placeholders produit et tout transfert sans preuves. Le prébuild produit doit être installé et testé dans le projet ; les contrôles structurels du package ne le remplacent pas.
+
+
 Lire cette référence pour concevoir une landing, produire un site local ou enrichir
 un corpus existant. Elle complète G1 à G5 sans imposer une nouvelle orchestration.
 

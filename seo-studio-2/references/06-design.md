@@ -93,7 +93,8 @@ pages de résultats indexables par défaut.
 Pour les cartes et offres produits, appliquer [le contrat partenaires](08-partners.md) :
 URL affiliée autorisée vers le modèle chez le partenaire confirmé, paramètres conservés,
 bouton « Voir le prix » ou « Voir le modèle sur [partenaire] », et mention d'affiliation
-visible séparée du bouton. Le texte et le libellé accessible du bouton n'emploient
+commune dans le footer ou les mentions légales, sans répétition par carte/lien.
+Le texte et le libellé accessible du bouton n'emploient
 pas « lien affilié ». Nom ou image cliquables à des fins commerciales suivent la même
 destination. Spécifier l'état sans URL affiliée sans faux accès actif ; les liens
 de sources et de tests restent distincts.

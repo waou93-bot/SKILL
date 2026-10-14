@@ -212,8 +212,9 @@ def validate_workflow(project, state, strict, *, load, shape, safe_path, digest,
                 errors.append('Profil métier absent : ' + role['id'])
 
     delegates = {d['id']: d for d in workflow['delegates']}
-    if strict and (len(delegates) < 2 or len({d['role_id'] for d in delegates.values()}) < 2):
-        errors.append('Au moins deux vrais sous-agents de rôles distincts requis')
+    minimum = 1 if state.get('planning_mode','full') == 'lite' else 2
+    if strict and (len(delegates) < minimum or len({d['role_id'] for d in delegates.values()}) < minimum):
+        errors.append('Un délégué critique réel requis en lite' if minimum == 1 else 'Au moins deux vrais sous-agents de rôles distincts requis')
     spawn_ids = [d['spawn_evidence_id'] for d in delegates.values()]
     if len(spawn_ids) != len(set(spawn_ids)):
         errors.append('Sous-agents : preuve de création réutilisée')

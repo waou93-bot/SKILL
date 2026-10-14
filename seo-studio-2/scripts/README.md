@@ -112,7 +112,7 @@ avec les dépendances et ne sont pas exécutés par unittest.
 
 Le validateur lit le compagnon `workflow.json` défini par
 `schemas/workflow.schema.json`. Il contrôle F0–F3, sources OBSERVED des deux
-plateformes, compétences liées aux rôles, profils/mandats/hash, au moins deux
+plateformes, compétences liées aux rôles, profils/mandats/hash, au moins deux en full ou un critique en lite
 délégués, ordre des cycles et relectures. Il n'effectue aucun appel d'agent ou réseau.
 Un ancien brouillon sans compagnon retourne un avertissement ; handoff/release
 restent bloqués. Compléter manuellement depuis les templates sans inventer de
@@ -125,3 +125,9 @@ le HTML, title/meta, liens/fragments, ressources, alt et recherche sur chaque pa
 hors landing explicitement déclarée. `--public-base` confronte les canonical.
 LOCAL_HTML_OK n'est ni une recette navigateur ni une preuve d'indexation.
 Voir `references/18-realisation-complete.md` pour le parcours D0–D5.
+
+## Commandes 3.3
+
+init --mode lite conserve R01–R28 et initialise AUTEUR.md pour Nicolas.
+validate confronte research/serp.json avant G3 et technical_audit en release.
+Les détails et preuves sont dans references/20-serp.md,21-postlaunch.md,22-technical-release.md et23-author.md. feedback.py n’écrit dans aucun compte ni état publié.

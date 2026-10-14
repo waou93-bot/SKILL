@@ -47,9 +47,15 @@ contiennent ni « lien affilié », ni « partenaire affilié », ni formule de 
 ou de tracking. Le bouton vers un modèle ouvre ce modèle et sa variante ; une catégorie
 ou une recherche générale exige un libellé qui annonce ce périmètre.
 
-Placer la mention d'affiliation séparément, avant ou près du premier lien concerné,
-lisible sur desktop et mobile. Ne pas la masquer dans une infobulle, le dossier SEO
-ou le pied de page seulement. Les liens de tests, sources et navigation gardent leur
+Centraliser l'information sur l'affiliation et les commissions dans le footer
+ou les mentions légales. Ne pas la répéter sur chaque bannière, bouton, carte ou
+lien ; les libellés restent orientés action. Le champ disclosure du dossier peut
+référencer GLOBAL : il ne commande pas l'affichage d'une mention par encart.
+La mention commune doit rester lisible, accessible et fidèle aux programmes réels.
+Ce placement est la préférence du projet, pas une certification juridique pour
+tout pays ou contrat. Consigner toute obligation spécifique identifiée, son
+champ d'application et la décision retenue ; éviter les répétitions automatiques.
+Les liens de tests, sources et navigation gardent leur
 destination de preuve ou de parcours ; ils ne deviennent pas des liens marchands.
 
 Sans partenaire confirmé ou URL affiliée disponible, enregistrer
@@ -65,7 +71,6 @@ Exemple de structure de copie, pas de contenu final publié :
 > **[Critère utile au lecteur]**
 > Cette option convient à [profil] lorsque [condition vérifiée]. Elle ne convient
 > pas à [limite]. [Caractéristique déterminante avec source/date].
-> **Affiliation** : cet encart contient un lien affilié ; une rémunération peut être perçue selon les conditions du programme.
 > **Voir le prix** ou **Voir le modèle sur [partenaire confirmé]**.
 > Avant de commander : vérifier [variante, taille, compatibilité ou condition spécifique].
 
@@ -117,7 +122,7 @@ Pour chaque accès produit, tracer référence/variante, partenaire confirmé, U
 autorisée, libellé, emplacement de la mention et destination finale vérifiée ou non.
 En réalisation autorisée, contrôler les valeurs réellement rendues, les paramètres
 conservés, les liens de cartes/images/boutons, le clavier et la lisibilité mobile.
-La mention doit être séparée du bouton et chaque libellé doit annoncer la destination.
+La mention commune est centralisée dans le footer ou les mentions légales ; chaque libellé annonce la destination sans répéter affiliation/commission.
 Sans accès à la destination ou au rendu, noter le contrôle non effectué ; une
 spécification ou un hash n'est pas une preuve de clic fonctionnel.
 
@@ -127,3 +132,24 @@ renvoi pertinent et vérifier les gammes réellement couvertes par le flux. Chaq
 sélection conserve sa raison, sa limite et sa source ; une association automatique
 par rubrique ne remplace pas ce contrôle. Aucun objectif de liens universel ne
 justifie une référence hors sujet ou une compatibilité supposée.
+
+## Mention commune et conditions applicables
+
+Exemple à adapter aux faits : « Certains liens de ce site sont affiliés. Nous
+pouvons percevoir une commission lorsqu'un achat éligible est effectué via ces
+liens. » Ne pas promettre « sans surcoût » sans preuve. Les vrais contenus sponsorisés
+gardent l'identification applicable ; affiliation et sponsoring ne sont pas assimilés.
+
+`state.affiliate_notice` porte texte, emplacement footer/legal/footer_and_legal,
+chemin des mentions légales et note de contexte. Les placements `disclosure: GLOBAL`
+réutilisent cette information, tandis que sponsored reste propre à chaque lien payé.
+Une valeur du dossier ne prouve pas son affichage dans le site : vérifier le rendu.
+La règle du projet est transmise aux autres skills et aux mandats, même si un
+template générique propose une répétition locale de la mention.
+
+Sources examinées le 14 octobre 2026 :
+- https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking
+  (contexte américain : visibilité et proximité à apprécier, un lien LEGAL seul
+  peut être insuffisant ; aucune présomption d'application à tous les projets).
+- https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pratiques-commerciales-trompeuses-les-cles-pour-les-reconnaitre-et-sen-premunir
+  (transparence de l'intention commerciale, selon faits et activité).

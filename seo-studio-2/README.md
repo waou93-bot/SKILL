@@ -1,3 +1,12 @@
+# SEO Studio 2 — 3.3.0 (14 octobre 2026)
+
+SERP sourcées et approbation avant G3, recette HTTP/navigateur/laboratoire,
+suivi sur exports après publication, mode lite conservant les exigences,
+mention d'affiliation commune footer/mentions légales sans répétition par bouton.
+Personna 1.2.0 inchangé ; aucun outil payant obligatoire. Les preuves historiques
+ci-dessous conservent leur date et leur périmètre. Voir references/20-serp.md,
+references/21-postlaunch.md et references/22-technical-release.md.
+
 Cette version 3.2.0 intègre les évaluations Personna 1.2.0 recalculées avant
 validation stricte des profils ; voir la section Personna et references/03-personna.md.
 
@@ -135,3 +144,5 @@ du profil impose de rejouer les sessions ; le brouillon signale les preuves manq
 Voir `references/03-personna.md`. Le script embarqué est une copie contrôlée de
 Personna 1.2.0, sans API ni service payant obligatoire. Les tests utilisent des
 sessions explicitement synthétiques et ne prouvent pas le comportement d’un modèle.
+
+Par défaut, tous les sites produits disposent de la présentation de Nicolas, auteur et responsable éditorial, adaptée au site. Voir references/23-author.md et templates/author.md ; aucune expérience, relecture ou qualification n’est inventée.

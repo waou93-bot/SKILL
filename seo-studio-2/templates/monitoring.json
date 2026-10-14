@@ -1,0 +1,10 @@
+{
+  "schema_version": "1",
+  "run_id": null,
+  "release_snapshot": {"path": "monitoring/release-state.json", "sha256": null},
+  "source": {"provider": "GSC_OR_SUPPLIED_EXPORT", "exported_at": null, "path": "monitoring/normalized-export.json", "sha256": null, "limitations": "A_COMPLETER : pays, appareil, filtrage, collecte, couverture et données absentes"},
+  "baseline": {"start": null, "end": null},
+  "current": {"start": null, "end": null},
+  "thresholds": {"min_impressions": 100, "relative_ctr_drop": 0.2},
+  "rows": []
+}

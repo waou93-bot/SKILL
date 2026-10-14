@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "",
+  "niche": "",
+  "context": {
+    "engine": "",
+    "country": "",
+    "language": "",
+    "device": "",
+    "observed_at": "",
+    "coverage": "",
+    "limitations": []
+  },
+  "observations": [],
+  "targets": [],
+  "approval": {
+    "status": "PLANNED",
+    "architecture_sha256": null,
+    "research_sha256": null,
+    "evidence_ids": [],
+    "source_evidence_sha256": null
+  }
+}

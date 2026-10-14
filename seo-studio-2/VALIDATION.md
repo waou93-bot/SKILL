@@ -1,3 +1,31 @@
+# Vérification 3.3.0 — 14 octobre 2026
+
+- Suite complète finale : 197 tests en 480.812 secondes, aucun échec,
+  un test symlink ignoré faute de capacité OS. Les tests antérieurs restent inclus.
+- Registre SERP : sources, architecture et approbation liées ; modification
+  coordonnée d'une source et de son empreinte rend l'ancienne approbation caduque.
+- Publication : les preuves HTTP/navigateur/Lighthouse correspondent au même
+  site et aux routes attendues ; source brute et métriques normalisées rapprochées.
+- Pilote local réel : cinq routes HTTP et Chromium mobile, dont /auteur/.
+  Lighthouse 13.5.0 : LCP 751.171 ms, CLS 0, TBT 0.
+  Une mesure mobile locale représente le gabarit commun ; aucune donnée terrain.
+- Quatre sessions textuelles neuves comparant les consignes 3.2/3.3 sur affiliation
+  et SERP. La règle d'affiliation commune est adoptée ; les deux versions refusent
+  les positions inventées. Une réponse 3.3 fait 180 mots pour « moins de 180 » :
+  petit écart de format conservé dans le bilan, aucune réussite universelle affirmée.
+- Auteur Nicolas par défaut, nom du site adapté, réserve capillaire contextualisée,
+  route publique V1 requise. La bio ne prouve pas les relectures ou tests annoncés.
+- Mode lite conserve R01–R28, la recherche interne et la formation Personna.
+- Aucun fichier Personna modifié, évaluateur embarqué identique à la version 1.2.
+  Aucun outil payant obligatoire. Lighthouse a été exécuté gratuitement dans un
+  cache temporaire du workspace ; aucun compte, achat ou publication de site.
+
+Ce pilote vérifie le protocole technique, pas une niche commerciale, une formation
+Personna complète, Safari réel, des résultats SEO ou l'authenticité cryptographique
+des pièces locales. Les tests de contrats utilisent des fixtures explicitement
+synthétiques ; elles ne servent pas de preuve de lancement d'un projet réel.
+Les contrôles ci-dessous restent historiques.
+
 # Vérification 3.2.0 — 14 octobre 2026
 
 - Suite complète : 154 tests en 799.162 secondes, aucun échec,

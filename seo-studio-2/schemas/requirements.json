@@ -1,5 +1,5 @@
 {
-  "contract_version": "2.1.0",
+  "contract_version": "3.3.0",
   "note": "Ajouter les contraintes utilisateur propres au projet. Une exigence NON_APPLICABLE n’est permise que lorsque allow_not_applicable est vrai et qu’une décision Astra motivée existe.",
   "requirements": [
     {
@@ -94,7 +94,7 @@
     },
     {
       "id": "R16",
-      "text": "Spécifier indépendance commerciale, accès produits via les URLs affiliées autorisées des partenaires, boutons orientés action et mention d'affiliation séparée du bouton",
+      "text": "Spécifier indépendance commerciale, URLs affiliées autorisées, boutons orientés action et mention commune affiliation/commissions dans le footer ou les mentions légales, sans répétition par lien",
       "expected_output": "06_PARTENAIRES.md",
       "allow_not_applicable": false
     },

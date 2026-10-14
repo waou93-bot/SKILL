@@ -11,7 +11,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "3.2.0"
+  version: "3.3.0"
   reviewed_at: "2026-10-14"
 ---
 
@@ -51,6 +51,7 @@ Le vrai /personna et son processus restent conservés ; ne pas modifier ce skill
    transfert strict. Ne pas fabriquer un autre skill portant son nom.
 5. Organisation garde la coordination. Astra reste l'arbitre global des désaccords.
    Deux délégués actifs maximum, aucun descendant exécutant, un écrivain par fichier.
+   En mode lite, un délégué critique réel suffit ; les exigences et preuves restent conservées.
    Une hiérarchie métier à plusieurs niveaux n'autorise pas une délégation récursive.
 6. Ne jamais inventer outil disponible, modèle sélectionné, agent indépendant, test,
    chiffre, partenaire signé, expertise, expérience vécue, produit essayé ou source.
@@ -62,7 +63,7 @@ Le vrai /personna et son processus restent conservés ; ne pas modifier ce skill
    longueurs de titres et objectifs de performance ne sont pas des garanties SEO.
 9. Pour une nouvelle mission complète : terminer les quatre étapes de réflexion
    F0–F3, rechercher les compétences LinkedIn/Reddit, former les profils via le vrai
-   /personna, créer au moins deux sous-agents métier et charger leurs profils.
+   /personna, créer au moins deux sous-agents métier en full (un critique en lite) et charger leurs profils.
    Enchaîner ensuite la préproduction puis la réalisation locale lorsqu’un site est demandé, sans confirmation rituelle.
    Chaque objet majeur exige critique, résolution et nouvelle relecture réelle.
 10. En mode préproduction, rester sur recherche, fichiers et prototypes autorisés.
@@ -148,7 +149,10 @@ Ne pas substituer une URL marchande simple ni inventer un identifiant d'affiliat
 Employer « Voir le prix », « Voir le prix sur [partenaire] » ou « Voir le modèle sur
 [partenaire] », avec le nom réel confirmé. Le texte et le libellé accessible du bouton
 ne portent pas « lien affilié » ni une formule de commission ou de tracking. Placer
-une mention d'affiliation lisible séparée, avant ou près du premier lien concerné.
+une information commune sur les liens affiliés et les commissions dans le footer
+ou les mentions légales, sans répétition sur chaque bannière, bouton ou lien.
+Conserver le balisage sponsored ; documenter les obligations spécifiques réellement
+identifiées sans présenter ce placement comme une conformité juridique universelle.
 Les sources, tests et liens de navigation gardent leurs destinations éditoriales.
 
 Appliquer [le contrat partenaires](references/08-partners.md) à la conception,
@@ -201,7 +205,7 @@ les objections et la nouvelle relecture de chaque version corrigée. Ne pas s'ar
 Les profils prennent leurs compétences dans une deep research propre au secteur
 sur LinkedIn et Reddit. Appliquer le vrai `/personna`, adapter les responsabilités
 au milieu du site, puis transmettre ces profils aux vrais sous-agents. Au moins
-deux agents distincts pour une mission complète ; deux actifs maximum. Les rôles
+deux agents distincts en full, un critique en lite ; deux actifs maximum. Les rôles
 du catalogue servent au découpage, pas à imposer vingt-deux agents génériques.
 Une recherche incomplète ou une délégation indisponible laisse le dossier provisoire.
 
@@ -256,3 +260,30 @@ indépendants réellement exécutés, remettre le dossier en `PROVISOIRE`.
 Livrer les fichiers et un bilan avec les états distincts. Donner la commande
 utilisateur permettant de reprendre ce dossier, les blocages exacts et leurs effets.
 Aucun travail ne continue en arrière-plan par le seul fait d'avoir créé ce skill.
+
+## Acquisition, recette et suivi — contrat 3.3
+
+Lire [SERP et architecture](references/20-serp.md) pendant F1 avant F2/G2.
+Le SEO guide les intentions et les formats ; accessibilité, sécurité, identité et
+contraintes techniques gardent leurs preuves adaptées. Le registre daté
+research/serp.json distingue classement observé, recherche web et analyse de source.
+Volumétrie inconnue et hypothèses ne deviennent pas des chiffres mesurés. G3 exige
+G2 et l'approbation liée à la version courante de la recherche et de l'architecture.
+
+Lire [la recette technique](references/22-technical-release.md) à D4 : crawl HTTP,
+rendu navigateur et budgets laboratoire ont des preuves distinctes. La validation
+release exige un rapport cohérent avec les sources actuelles. TBT n'est pas INP,
+une donnée terrain absente n'est pas inventée. La recette locale n'autorise pas
+la publication. Lire [le suivi](references/21-postlaunch.md) après lancement autorisé.
+
+`init --mode lite` regroupe les revues en stratégie, spécification et recette,
+conserve R01–R28, les étapes F0–F3, Personna et la recherche interne hors landing.
+Le corpus V1 doit rester inférieur à 50 pages ; la complexité et les risques peuvent
+exiger full même sous ce seuil. Le mode allégé ne valide automatiquement aucun gate.
+Relecteur humain, agent et inconnu sont distingués par reviewer_type ; une session
+distincte ne prouve ni diversité de modèle ni compétence humaine. Configurer les
+points de décision humaine selon le mandat, sans arrêt rituel supplémentaire.
+
+## Auteur par défaut
+
+Tous les nouveaux sites disposent de la présentation de Nicolas selon [le contrat auteur](references/23-author.md), avec nom/domaine et métier adaptés. Produire AUTEUR.md puis sa route réelle dans le site, attribution éditoriale et contact réel. La bio reprend la méthode fournie ; elle ne prouve ni relecture de chaque page, ni test produit, ni qualification professionnelle. Préserver les identités déjà approuvées sur une reprise.

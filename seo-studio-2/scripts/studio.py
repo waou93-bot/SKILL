@@ -18,6 +18,8 @@ import uuid
 from typing import Any
 from urllib.parse import urlsplit
 from workflow import validate_workflow, workflow_digest
+from serp import validate_serp
+from technical_audit import validate_technical
 
 ROOT = Path(__file__).resolve().parents[1]
 CORE = {'brain', 'organisation', 'no-slop', 'design-dna'}
@@ -116,6 +118,10 @@ def input_digest(state: dict) -> str:
     """Empreinte des entrées métier, sans journaux/revues pour éviter un cycle."""
     keys = ['niche','site_type','brief_version','assumptions','unknowns','pages','links','placements','claims','sources']
     payload = {key:state[key] for key in keys}
+    payload['planning_mode'] = state.get('planning_mode', 'full')
+    payload['affiliate_notice'] = state.get('affiliate_notice')
+    if 'editorial_identity' in state:
+        payload['editorial_identity']=state['editorial_identity']
     return hashlib.sha256(json.dumps(payload,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode('utf-8')).hexdigest()
 
 
@@ -128,6 +134,9 @@ def review_snapshot(project: Path) -> dict:
     for a in state['artifacts']:
         path=safe_path(project,a['path'],True)
         artifacts.append({'path':a['path'],'sha256':digest(path)})
+    serp_path = safe_path(project, 'research/serp.json')
+    if serp_path.is_file():
+        artifacts.append({'path':'research/serp.json','sha256':digest(serp_path)})
     workflow_path = safe_path(project, 'workflow.json')
     workflow_hash = None
     if workflow_path.is_file():
@@ -203,11 +212,13 @@ def inventory(roots: list[Path]) -> dict:
             'warning': 'Inventaire de fichiers, pas preuve de chargement par l’hôte. Lire les instructions réelles. persona n’est pas automatiquement /personna.'}
 
 
-def initial_files(niche: str, site_type: str) -> dict[str, str]:
+def initial_files(niche: str, site_type: str, mode: str = 'full') -> dict[str, str]:
     if not niche.strip() or not site_type.strip():
         raise ValueError('niche et site_type ne peuvent pas être vides')
     state = load(ROOT/'templates/state.json')
-    state.update(niche=niche.strip(), site_type=site_type.strip(), run_id=str(uuid.uuid4()))
+    if mode not in {'full','lite'}:
+        raise ValueError('Mode full ou lite attendu')
+    state.update(niche=niche.strip(), site_type=site_type.strip(), run_id=str(uuid.uuid4()), planning_mode=mode)
     contents = {}
     for filename, headings in load(ROOT/'templates/deliverables.json').items():
         title = filename.removesuffix('.md').replace('_', ' ')
@@ -221,19 +232,39 @@ def initial_files(niche: str, site_type: str) -> dict[str, str]:
     workflow = load(ROOT/'templates/workflow.json')
     workflow.update(run_id=state['run_id'], niche=state['niche'], brief_version=state['brief_version'])
     contents['workflow.json'] = json_text(workflow)
+    serp = load(ROOT/'templates/serp.json')
+    serp.update(run_id=state['run_id'],niche=state['niche'])
+    contents['research/serp.json'] = json_text(serp)
+    contents['monitoring/README.md'] = '# Suivi après publication autorisée\n\nImporter les exports réels selon references/21-postlaunch.md ; aucune surveillance automatique créée.\n'
+    if mode == 'lite':
+        for role in state['roles']:
+            role['assigned'] = role['id'] in {'ASTRA','TERRA','QA_LEAD'}
+        for artifact in state['artifacts']:
+            if artifact['owner'] not in {'ASTRA','TERRA','QA_LEAD'}:
+                artifact['owner']='TERRA'
+        contents['MODE_LITE.md'] = '# Mode allégé\n\nTrois revues regroupées : stratégie SEO (F0–F3/G0–G2), spécification (G3–G4), recette (G5/D0–D4). R01–R28 conservées. Un délégué critique réel ; profils et preuves Personna restent requis. Aucun gate automatiquement approuvé.\n'
+    author = (ROOT/'templates/author.md').read_text(encoding='utf-8')
+    author = author.replace('{{SITE_NAME}}',state['editorial_identity']['site_name'])
+    if not re.search(r'capill|cheveu|cuir chevelu|coiff|dermat', niche, re.I):
+        author = author.replace("Il n'est ni coiffeur ni dermatologue : quand une question touche à la santé de la\npeau ou du cuir chevelu, les pages renvoient vers l'avis d'un professionnel.",
+                                "Quand une question exige un avis professionnel, les pages distinguent les\ninformations générales de l'expertise qualifiée nécessaire.")
+    contents['AUTEUR.md'] = author
+    state['artifacts'].append({'id':'default-author','path':'AUTEUR.md','kind':'report','content_type':None,'owner':'TERRA','status':'DRAFT','evidence_id':None})
     contents['state.json'] = json_text(state)
     return contents
 
 
-def init_project(project: Path, niche: str, site_type: str, apply: bool = False) -> dict:
+def init_project(project: Path, niche: str, site_type: str, apply: bool = False, mode: str | None = None) -> dict:
     project = project.absolute()
     safe_path(project, 'state.json')
     if (project/'state.json').exists():
         old = load(project/'state.json')
         if old.get('niche') != niche.strip() or old.get('site_type') != site_type.strip():
             raise ValueError('Projet existant différent : aucune réinitialisation autorisée')
+        if mode is not None and mode != old.get('planning_mode','full'):
+            raise ValueError('Changement de mode : migration explicite requise, pas de réinitialisation')
         return {'status':'EXISTS_UNCHANGED','written':[], 'message':'Reprendre le dossier existant sans écrasement.'}
-    proposed = initial_files(niche, site_type)
+    proposed = initial_files(niche, site_type, mode or 'full')
     collisions = [f for f in proposed if safe_path(project, f).exists()]
     if collisions:
         raise ValueError('Dossier partiellement existant : reprise manuelle sans écrasement, conflits : '+', '.join(collisions))
@@ -266,6 +297,12 @@ def validate_project(project: Path, stage: str = 'draft') -> dict:
     ev = {e['id']:e for e in state['evidence']}
     roles = {r['id']:r for r in state['roles']}
     pages = {p['id']:p for p in state['pages']}
+    identity=state.get('editorial_identity')
+    if identity:
+        if not identity['name'].strip() or not identity['site_name'].strip() or not identity['author_path'].startswith('/'):
+            errors.append('Identité éditoriale incomplète')
+        if strict and not any(p['path']==identity['author_path'] and p['public'] and p['wave']=='V1' for p in state['pages']):
+            errors.append('Page auteur publique V1 absente : '+identity['author_path'])
     sources = {s['id']:s for s in state['sources']}
     decisions = {d['id']:d for d in state['decisions']}
     artifacts = {a['path']:a for a in state['artifacts']}
@@ -273,6 +310,13 @@ def validate_project(project: Path, stage: str = 'draft') -> dict:
         load=load, shape=shape, safe_path=safe_path, digest=digest, root=ROOT)
     errors.extend(workflow_errors)
     warnings.extend(workflow_warnings)
+    serp_errors, serp_warnings = validate_serp(project,state,strict,load=load,shape=shape,safe_path=safe_path,digest=digest,root=ROOT)
+    errors.extend(serp_errors); warnings.extend(serp_warnings)
+    if state.get('planning_mode','full') == 'lite' and len([p for p in state['pages'] if p['wave']=='V1']) >= 50:
+        errors.append('Mode lite : corpus V1 inférieur à 50 pages requis ; complexité à revoir')
+    if stage == 'release':
+        technical_errors, technical_warnings = validate_technical(project,state,load=load,safe_path=safe_path,digest=digest)
+        errors.extend(technical_errors); warnings.extend(technical_warnings)
 
     def refs(values: list[str], label: str, needed: bool = False) -> None:
         if needed and not values:
@@ -456,9 +500,14 @@ def validate_project(project: Path, stage: str = 'draft') -> dict:
                 if p['public'] and p['indexable'] and (not only_v1 or p['wave']=='V1') and p['id'] not in reached:
                     errors.append('Page orpheline'+(' V1' if only_v1 else '')+' : '+p['id'])
 
+    notice = state.get('affiliate_notice')
+    if notice and not notice['text'].strip():
+        errors.append('Mention d’affiliation commune vide')
     for placement in state['placements']:
         if placement['page_id'] not in pages:
             errors.append('Encart sur page inconnue : '+placement['id'])
+        if placement['paid'] and placement['disclosure'] == 'GLOBAL' and not notice:
+            errors.append('Encart payé sans mention commune : '+placement['id'])
         if placement['paid'] and ('sponsored' not in placement['rel'] or not placement['disclosure'].strip()):
             errors.append('Encart payé sans sponsored/disclosure : '+placement['id'])
         if placement['target_type'] != placement['label_target_type']:
@@ -489,6 +538,8 @@ def validate_project(project: Path, stage: str = 'draft') -> dict:
             errors.append('Revue caduque : entrées métier modifiées : '+review['id'])
         if strict and not review['reviewed_artifacts']:
             errors.append('Revue sans instantané des fichiers : '+review['id'])
+        if strict and review['topic'] == 'architecture' and not any(s['path'] == 'research/serp.json' for s in review['reviewed_artifacts']):
+            errors.append('Revue architecture sans instantané SERP : '+review['id'])
         for snapshot in review['reviewed_artifacts']:
             try:
                 path=safe_path(project,snapshot['path'],True)
@@ -600,14 +651,14 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command',required=True)
     p = sub.add_parser('inventory'); p.add_argument('--root',type=Path,action='append',required=True)
-    p = sub.add_parser('init'); p.add_argument('--project',type=Path,required=True);p.add_argument('--niche',required=True);p.add_argument('--site-type',required=True);p.add_argument('--apply',action='store_true')
+    p = sub.add_parser('init'); p.add_argument('--project',type=Path,required=True);p.add_argument('--niche',required=True);p.add_argument('--site-type',required=True);p.add_argument('--apply',action='store_true');p.add_argument('--mode',choices=['full','lite'])
     p = sub.add_parser('validate');p.add_argument('project',type=Path);p.add_argument('--stage',choices=['draft','handoff','release'],default='draft')
     p = sub.add_parser('snapshot');p.add_argument('project',type=Path)
     p = sub.add_parser('check-package');p.add_argument('package',type=Path)
     args = parser.parse_args(argv)
     try:
         if args.command=='inventory': result=inventory(args.root)
-        elif args.command=='init': result=init_project(args.project,args.niche,args.site_type,args.apply)
+        elif args.command=='init': result=init_project(args.project,args.niche,args.site_type,args.apply,args.mode)
         elif args.command=='validate': result=validate_project(args.project,args.stage)
         elif args.command=='snapshot': result=review_snapshot(args.project)
         else: result=check_package(args.package)

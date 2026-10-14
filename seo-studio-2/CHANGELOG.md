@@ -1,3 +1,12 @@
+# SEO Studio 2 — 3.3.0 (14 octobre 2026)
+
+SERP sourcées et approbation avant G3, recette HTTP/navigateur/laboratoire,
+suivi sur exports après publication, mode lite conservant les exigences,
+mention d'affiliation commune footer/mentions légales sans répétition par bouton.
+Personna 1.2.0 inchangé ; aucun outil payant obligatoire. Les preuves historiques
+ci-dessous conservent leur date et leur périmètre. Voir references/20-serp.md,
+references/21-postlaunch.md et references/22-technical-release.md.
+
 # 3.2.0 — 2026-10-14
 
 - Intégration du protocole Personna 1.2.0 : chaque profil VERIFIED doit disposer de sessions comparées, revues liées au contexte et d’un rapport recalculé PASS.

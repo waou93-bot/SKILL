@@ -25,7 +25,8 @@ pas une hypothèse réversible ; documenter le blocage et les sorties encore pos
 Après la recherche métier et avant toute délégation métier, appliquer
 [le protocole de compétences](16-recherche-personas-metier.md), puis le vrai
 `/personna`. Produire un profil propre au domaine, une calibration et un mandat.
-Créer au moins deux sous-agents distincts pour une nouvelle mission complète :
+Créer au moins deux sous-agents distincts en full, un critique réel en lite.
+Les quatre étapes de réflexion et R01–R28 restent conservées. Parcours full :
 un contributeur métier et un critique métier. Ils peuvent couvrir plusieurs rôles
 successifs ; ne pas lancer un agent par ligne du catalogue. Deux délégués actifs
 maximum, aucun descendant, un rédacteur par fichier.

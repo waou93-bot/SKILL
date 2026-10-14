@@ -79,7 +79,7 @@ Chaque revue enregistre `inputs_sha256` et les couples chemin/empreinte de `revi
 
 Pour les produits proposés chez des partenaires, G3 vérifie la spécification de
 l'URL affiliée autorisée, du modèle/variante, du bouton d'action et de la mention
-d'affiliation séparée selon [le contrat partenaires](08-partners.md). La recette
+d'affiliation commune dans le footer ou les mentions légales selon [le contrat partenaires](08-partners.md). La recette
 contrôle leurs valeurs rendues et la destination lorsqu'accessible. Une URL affiliée
 manquante, un bouton « lien affilié », une destination produit incorrecte ou une
 mention masquée laisse R16 ouverte pour le module concerné. Les preuves de clic
@@ -105,7 +105,7 @@ restent non vérifiées ; aucune moyenne ni quantité d'articles ne les remplace
 Le [parcours obligatoire](15-reflexion-preproduction.md) complète G0–G5. Le script
 refuse un transfert sans F0–F3 ordonnés, recherche LinkedIn/Reddit déclarée lue et
 liée à des sources OBSERVED, compétences intégrées dans les profils, au moins deux
-appels distincts de sous-agents et quatre cycles complets critique/résolution/relecture.
+appels distincts en full (un critique en lite) et quatre cycles complets critique/résolution/relecture.
 Le cycle idées doit précéder le démarrage de préproduction ; les autres le suivent.
 Les instantanés de revue incluent `workflow_inputs_sha256` : changer contexte,
 recherche, compétences, profils ou formation invalide les approbations affectées.
@@ -148,3 +148,12 @@ security-best-practices pour le code sécurisé et la revue applicable, web-perf
 les mesures et recommandations. Conserver un seul registre de preuves dans 11_QA.md.
 Aucun service payant requis ; lectures, tests locaux, émulation et appareils réels
 restent des preuves distinctes. Les corrections respectent le mandat existant.
+
+## Gates additionnels 3.3
+
+F1 intègre le registre SERP. G2 approuve sa recherche et l'architecture courantes ;
+G3–G6 ne passent pas sans cette approbation. Une modification impose nouvelle revue,
+jamais le rafraîchissement des empreintes pour conserver un verdict ancien.
+La recette release recalcule la cohérence du rapport technique HTTP/navigateur/lab
+et des preuves sources. La validation structurelle ne certifie pas leur authenticité.
+En lite, un critique réel remplace les deux délégués full ; R01–R28 sont conservées.

@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "run_id": null,
   "brief_version": "1",
   "niche": null,
@@ -538,5 +538,14 @@
       "evidence_ids": []
     }
   ],
-  "live_evidence_ids": []
+  "live_evidence_ids": [],
+  "planning_mode": "full",
+  "affiliate_notice": null,
+  "technical_audit": null,
+  "editorial_identity": {
+    "name": "Nicolas",
+    "site_name": "ce site",
+    "author_path": "/auteur/",
+    "origin": "Présentation et méthode éditoriale fournies par l’utilisateur ; adaptation au site requise, aucune relecture effective présumée"
+  }
 }

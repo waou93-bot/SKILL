@@ -1,0 +1,19 @@
+# Recherche SERP et architecture — contrat 3.3.0
+
+Après F0 (public, pays, langue, périmètre), intégrer la recherche SERP à F1, avant F2. La recherche éclaire acquisition, intentions et formats ; sécurité, accessibilité et besoins utilisateurs conservent leurs preuves adaptées. Ne pas exiger une donnée SERP pour chaque décision du projet.
+
+Prioriser les intentions et familles de pages V1. Approfondir les cas ambigus ; aucun top 10 systématique n'est imposé. Inscrire moteur, pays, langue, appareil, date ISO, couverture réelle et limites dans `research/serp.json`, à partir du [template](../templates/serp.json) et du [schéma](../schemas/serp.schema.json). Le pays ne se déduit pas de la langue de l'utilisateur.
+
+Chaque observation décrit requête, intention, format, entités, apport proposé, URL source et preuves datées. `collection_method` distingue `RANKED_SERP`, `WEB_SEARCH` et `SOURCE_REVIEW`. Une position n'est renseignée que pour une SERP classée réellement observée ; une recherche web générique ne devient pas un classement Google.
+
+Les objets `volume` et `difficulty` distinguent `UNKNOWN`, `SOURCED` et `QUALITATIVE`. Une métrique inconnue garde `value: null`, sans source ni preuve inventées. Une valeur sourcée possède URL et preuve SHA actuelles. `QUALITATIVE` s'applique uniquement à la difficulté, avec appréciation textuelle argumentée. Aucun outil payant n'est nécessaire ; l'absence d'indicateur propriétaire n'empêche pas d'utiliser des observations documentées.
+
+Chaque page publique indexable V1 possède une cible : `page_id`, `main_query`, `intent`, `target_format`, entités, apport, observations correspondantes, puis `success` avec métrique, baseline, objectif, période et conditions. Baseline ou objectif inconnus restent `null` et sont signalés ; ils ne constituent ni promesse ni test de classement avant lancement. Une intention principale a une seule URL propriétaire. Le partage d'une requête déclenche une revue, sans prouver à lui seul une cannibalisation.
+
+G2 approuve les preuves de recherche et l'architecture avant G3. `approval` contient son statut, ses preuves de revue, `research_sha256`, `architecture_sha256` et `source_evidence_sha256`. [Le contrôleur](../scripts/serp.py) calcule l'empreinte de recherche sans les métadonnées d'approbation, puis celle des pages/liaisons sans créer de cycle d'approbation. La troisième empreinte lie les enregistrements actuels des preuves sources des observations et métriques sourcées ; les preuves de revue sont exclues de ce calcul. Il vérifie aussi les fichiers sources et rattache la preuve d'approbation à G2. Modifier un fichier et mettre à jour son SHA dans l'état ne conserve donc pas l'approbation précédente. Toute modification de ces entrées nécessite une nouvelle revue. Ces contrôles prouvent une cohérence locale, pas l'authenticité des observations externes.
+
+Un ancien dossier brouillon sans registre produit un avertissement ; un contrôle strict ou un dossier ayant G2/G3 approuvé exige un registre valide et approuvé. Une recherche partielle doit exposer sa couverture et rester provisoire si une intention essentielle manque de preuve. Ne pas compléter des positions ou volumes pour obtenir un PASS.
+
+Le mode allégé regroupe trois revues : stratégie SEO (F0–F3/G0–G2), spécification (G3–G4), puis recette (G5/D0–D4). F0–F3 et R01–R28 conservent leurs résultats et statuts individuels ; le regroupement réduit les documents et intervenants, sans effacer les exigences.
+
+Pour les pages pSEO, vérifier l'utilité de chaque famille et étendre progressivement après observation. Google définit l'abus de contenu à grande échelle par sa finalité et sa faible valeur pour les utilisateurs ; la méthode de production ne suffit pas à qualifier l'abus. [Politique Google](https://developers.google.com/search/docs/essentials/spam-policies).

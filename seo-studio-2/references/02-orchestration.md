@@ -25,7 +25,9 @@ sur l'hôte avant sélection. Un nom de rôle écrit dans un prompt ne change pa
 
 ## Hiérarchie d'exécution
 
-Pour une nouvelle mission complète, créer au moins deux sous-agents distincts
+Pour une nouvelle mission complète en full, créer au moins deux sous-agents distincts ;
+un critique réel suffit en lite. Former les seuls rôles intervenants et conserver
+les mêmes exigences et cycles. En full, créer les deux agents
 pour cette occasion, avec les profils métier sourcés et calibrés du site.
 Le seul orchestrateur lance tous les délégués **directement**, deux au maximum à la
 fois. Les responsables métier ne lancent pas leurs propres descendants : ils rendent

@@ -13,6 +13,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 import studio
 import install as installer
 from workflow_fixture import complete_workflow
+from serp_fixture import complete_serp
 
 
 def write(path: Path, text: str) -> None:
@@ -51,7 +52,7 @@ def fixture(project: Path) -> dict:
         evidence('pilot-'+str(n),rel,'artifact')
         state['artifacts'].append({'id':'pilot-'+str(n),'path':rel,'kind':'pilot','content_type':['article','guide','comparison'][n],
                                   'owner':'EDITORIAL_LEAD','status':'REVIEWED','evidence_id':'pilot-'+str(n)})
-    for pid,route in [('home','/'),('guide','/guide/'),('choice','/choix/')]:
+    for pid,route in [('home','/'),('guide','/guide/'),('choice','/choix/'),('author','/auteur/')]:
         bp='BRIEFS/'+pid+'.md'
         write(project/bp,'# Brief fictif\n\nContrat uniquement, aucune source ni demande réelles.\n')
         evidence('brief-'+pid,bp,'artifact')
@@ -60,7 +61,7 @@ def fixture(project: Path) -> dict:
         state['pages'].append({'id':pid,'path':route,'intent_id':'intent-'+pid,'title':'Titre fictif '+pid,'h1':'Question '+pid,
                                'public':True,'indexable':True,'canonical_path':route,'wave':'V1','kind':'editorial',
                                'brief_path':bp,'next_action':'Lire une explication pertinente','proof_plan':'Fiche de preuve fictive'})
-    for n,(a,b) in enumerate([('home','guide'),('guide','choice'),('choice','home')]):
+    for n,(a,b) in enumerate([('home','guide'),('guide','choice'),('choice','home'),('home','author'),('author','home')]):
         state['links'].append({'id':f'L{n}','from':a,'to':b,'anchor':'Lire '+b,'placement':'corps','reason':'Parcours fictif','active_at_launch':True})
     state['sources']=[{'id':'S1','url':'https://example.org/fixture','status':'OBSERVED','consulted_at':'2026-10-08',
                        'note':'Source fictive — aucune requête externe','evidence_id':'source'}]
@@ -75,10 +76,12 @@ def fixture(project: Path) -> dict:
     for gate in state['gates']:
         if gate['id']!='G6':
             gate.update(status='APPROVED',evidence_ids=['review'])
+    complete_serp(project, state)
     complete_workflow(project, state)
     for review in state['reviews']:
         review['inputs_sha256']=studio.input_digest(state)
         review['reviewed_artifacts']=[{'path':a['path'],'sha256':studio.digest(project/a['path'])} for a in state['artifacts']]
+        review['reviewed_artifacts'].append({'path':'research/serp.json','sha256':studio.digest(project/'research/serp.json')})
     return state
 
 
@@ -262,6 +265,8 @@ class ContractTests(unittest.TestCase):
         self.state['gates'][-1].update(status='APPROVED',evidence_ids=['review'])
         self.state['permissions']['publication']=True
         self.state['live_evidence_ids']=['http','authorization']
+        from technical_fixture import complete_technical
+        complete_technical(self.project,self.state)
         self.assertEqual(self.result(stage='release')['status'],'STRUCTURE_OK')
 
 

@@ -32,7 +32,7 @@ Produits/offres sources, référence/variante exacte, fraîcheur :
 Encarts proposés, destination, disclosure visible et rel :
 Accès produits : référence/variante, partenaire confirmé, URL affiliée autorisée et paramètres conservés :
 Bouton « Voir le prix » / « Voir le modèle sur [partenaire] » ; nom réel et libellé accessible sans « lien affilié » :
-Mention d'affiliation séparée du bouton, emplacement visible desktop/mobile ; état sans URL et destination vérifiée ou non :
+Référence à la mention commune d'affiliation/commissions du footer ou des mentions légales (sans répétition par bannière/bouton/lien) ; état sans URL et destination vérifiée ou non :
 
 ## Design et implémentation
 Gabarit et sections ordonnées ; composants et états :

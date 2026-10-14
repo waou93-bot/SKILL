@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "A_COMPLETER",
+  "target": "http://127.0.0.1:PORT_A_COMPLETER/",
+  "site_context_sha256": "A_COMPLETER",
+  "site_snapshots": [],
+  "status": "NOT_RUN",
+  "errors": ["No HTTP crawl, rendered browser or laboratory measurements executed"],
+  "warnings": [],
+  "http": {"status": "NOT_RUN", "complete": false, "pages": [], "evidence_id": null},
+  "browser": {"status": "NOT_RUN"},
+  "performance": {"status": "NOT_RUN"}
+}

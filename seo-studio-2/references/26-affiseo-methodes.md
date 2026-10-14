@@ -129,8 +129,11 @@ Une ancienne URL déplacée exige une vraie 301 testée, pas un message de dém�
 - Phase 1/G3 : proposer les modules adaptés au design system et les faire valider.
 - Phase 2 : base officielle vérifiée et prébuild branché ; aucune donnée concurrente
   importée comme preuve fabricant/marchand ou affiliation active.
-- Phase 3 : page d'entrée, sélection et fiche/duel parmi trois pilotes représentatifs ;
-  prouver rendu mobile/desktop, CTA, filtres et cohérence du verdict/tableau.
+- Phase 3 : trois pilotes représentatifs incluant la page d'entrée réelle.
+  Choisir sélection, fiche, duel ou guide selon les familles admissibles du projet ;
+  ne pas imposer un duel, une famille pSEO ou des filtres faute de corpus approprié.
+  Prouver rendu mobile/desktop, CTA et cohérence du verdict avec les données ;
+  contrôler tableaux/filtres seulement lorsqu'ils font partie du périmètre retenu.
 - Phase 4 : lots de 20–30, checks produit, indexabilité, maillage et fraîcheur par lot.
 - Phase 5 : recette des modules, notes recalculées si présentes, destinations testées,
   dates et compteurs conformes aux données, erreurs corrigées avant livraison.
@@ -141,7 +144,9 @@ Une ancienne URL déplacée exige une vraie 301 testée, pas un message de dém�
 
 Ne pas imposer 4 000 mots, 86 produits, 20 duels, centaines de liens, volumes de
 pages, WordPress/Yoast, pixels publicitaires ou reproduction de tous les pays.
-Les mécanismes ci-dessus fonctionnent dans Astro/Cloudflare retenus.
+Implémenter les mécanismes retenus dans Astro/Cloudflare lorsqu'ils sont la stack
+approuvée, puis les tester dans le projet. Cette référence n'ajoute pas un moteur
+de comparaison, de notation ou de génération au code du package Studio.
 Le débrief ne prouve ni moteur propriétaire ni stratégie publicitaire ni succès SEO.
 Une fabrication massive destinée à manipuler les classements sans valeur ajoutée
 est visée par la [politique Google sur le contenu à grande échelle](https://developers.google.com/search/docs/essentials/spam-policies#scaled-content).

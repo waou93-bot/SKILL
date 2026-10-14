@@ -1,3 +1,9 @@
+# 3.5.1 — 2026-10-14
+
+Audit AFFISEO : pilotes adaptés aux familles admissibles sans duel/pSEO/filtres
+imposés ; distinction entre méthode à implémenter et capacités du code Studio.
+Scénarios comportementaux toujours NOT_RUN, Personna inchangé.
+
 # 3.5.0 — 2026-10-14
 
 Benchmark AFFISEO : cinq accueils et pages liées lus, transferts de présentation

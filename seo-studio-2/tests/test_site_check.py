@@ -54,6 +54,12 @@ class SiteCheckTests(unittest.TestCase):
         self.write('guide/index.html', self.guide.replace('<title>Guide</title>', ''))
         self.assertTrue(any('title absent' in e for e in check(self.root, ['/'])['errors']))
 
+    def test_non_self_canonical_requires_contract_review(self):
+        self.write('guide/index.html', self.guide + '<link rel="canonical" href="https://example.org/">')
+        result = check(self.root, ['/'], 'https://example.org')
+        self.assertEqual(result['status'], 'LOCAL_HTML_OK')
+        self.assertTrue(any('consolidation' in w for w in result['warnings']))
+
     def test_orphan_content_page_blocks_result(self):
         self.write('isolated/index.html', self.guide)
         self.assertTrue(any('orpheline' in e for e in check(self.root, ['/'])['errors']))

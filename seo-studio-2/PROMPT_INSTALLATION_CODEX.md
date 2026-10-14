@@ -11,6 +11,10 @@ copies existantes de seo-studio-2 ainsi que Brain, Organisation, No Slop, Design
 tous les identifiants contenant SEO et le vrai /personna (vérifier aussi persona
 comme candidat, sans l'assimiler automatiquement à la commande demandée).
 Lis les SKILL.md réels et consigne version, chemin, empreinte et rôle.
+Inclure site-checklist, pSEO, redaction-editoriale-web, webapp-testing,
+cross-platform-qa, security-best-practices et web-perf dans ce contrôle.
+Utiliser le catalogue actif pour les dépendances absentes du dépôt ; aucune
+installation automatique, API ou service payant obligatoire.
 N'écrase aucune personnalisation. Si une version différente existe, sauvegarde-la,
 présente le diff et la migration nécessaire ; l'installateur refuse cet écrasement.
 Ne crée pas de /personna de remplacement. S'il manque, signale le chemin ou le package

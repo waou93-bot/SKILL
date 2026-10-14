@@ -1,4 +1,11 @@
-# SEO STUDIO 2 — package 3.0.0
+Cette révision 3.1 ajoute un contrat commun QA/sécurité/performance et aligne
+le contrôle des dépendances. Voir [l'audit courant](research/audit-3.1.md) et
+[le protocole](references/19-qa-security-performance.md). Les sections historiques
+ci-dessous décrivent leurs dates de livraison, pas une exécution actuelle.
+Les quatre skills sont chargés depuis le catalogue actif : le package n'embarque
+pas leurs runtimes ni leurs services et ne garantit pas leur présence sur un autre hôte.
+
+# SEO STUDIO 2 — package 3.1.0
 
 Créé le 8 octobre 2026. Ce package transforme une niche et un type de site en dossier
 de préproduction puis en site local réalisé et vérifié quand sa création est demandée.

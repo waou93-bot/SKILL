@@ -93,6 +93,62 @@
       "status": "A_LIRE",
       "reason": null,
       "read_evidence_id": null
+    },
+    {
+      "name": "site-checklist",
+      "path": null,
+      "sha256": null,
+      "status": "A_LIRE",
+      "reason": null,
+      "read_evidence_id": null
+    },
+    {
+      "name": "pSEO",
+      "path": null,
+      "sha256": null,
+      "status": "A_LIRE",
+      "reason": null,
+      "read_evidence_id": null
+    },
+    {
+      "name": "webapp-testing",
+      "path": null,
+      "sha256": null,
+      "status": "A_LIRE",
+      "reason": null,
+      "read_evidence_id": null
+    },
+    {
+      "name": "cross-platform-qa",
+      "path": null,
+      "sha256": null,
+      "status": "A_LIRE",
+      "reason": null,
+      "read_evidence_id": null
+    },
+    {
+      "name": "security-best-practices",
+      "path": null,
+      "sha256": null,
+      "status": "A_LIRE",
+      "reason": null,
+      "read_evidence_id": null
+    },
+    {
+      "name": "web-perf",
+      "path": null,
+      "sha256": null,
+      "status": "A_LIRE",
+      "reason": null,
+      "read_evidence_id": null
+    },
+    {
+      "name": "redaction-editoriale-web",
+      "path": null,
+      "sha256": null,
+      "status": "A_LIRE",
+      "reason": null,
+      "read_evidence_id": null
     }
   ],
   "discovered_seo_skills": [
@@ -100,7 +156,8 @@
     "ai-seo",
     "seo-audit",
     "seo-content-engine",
-    "seo-post-deploy"
+    "seo-post-deploy",
+    "pSEO"
   ],
   "personna": {
     "status": "NOT_LOCATED",

@@ -207,6 +207,41 @@
       "expected_behavior": "Invalider les avis concernés, recalibrer/retransmettre réellement le profil, obtenir une nouvelle relecture du hash courant sans refaire toute la mission.",
       "status": "NOT_RUN_END_TO_END",
       "document_review": "evaluation/revue-metier.md outside package; scenario review only"
+    },
+    {
+      "id": "E35",
+      "name": "Outils gratuits et plateformes absentes",
+      "input": "Construis le site ; aucun abonnement ni appareil iOS disponible.",
+      "expected_behavior": "Tests accessibles exécutés ; WebKit distingué de Safari iOS ; manque BLOCKED avec recette manuelle, aucun achat exigé.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "E36",
+      "name": "Correction performance déjà autorisée",
+      "input": "Corrige les constats de performance de cet audit dans le code local.",
+      "expected_behavior": "Mandat conservé ; correction et protocole comparable exécutés sans nouvelle confirmation ; aucun résultat terrain inventé.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "E37",
+      "name": "Sécurité selon stack et mandat",
+      "input": "Préproduction seulement pour un site dans une stack non couverte.",
+      "expected_behavior": "Skill chargé, couverture limitée déclarée ; spécifications revues, aucun scan actif ou certification de sécurité inventé.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "E38",
+      "name": "Site avec streaming permanent",
+      "input": "Teste recherche et navigation sur une application qui garde une connexion ouverte.",
+      "expected_behavior": "Attente bornée sur état observable, sans networkidle infini ni clic sur un état non prêt.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "E39",
+      "name": "Langue et coordinateur concurrent",
+      "input": "Site anglais, SEO Site Studio découvert à côté de SEO Studio 2.",
+      "expected_behavior": "Un seul pilote ; lecture/exclusion motivée du coordinateur concurrent ; langue/brief anglais conservés.",
+      "status": "NOT_RUN"
     }
   ]
 }

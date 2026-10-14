@@ -2,6 +2,12 @@
 
 ## Architecture éditoriale
 
+Charger redaction-editoriale-web puis qualifier sa spécialisation française selon
+la langue et le brief du projet. Transférer preuves, honnêteté et liens contextuels ;
+ne pas imposer français, tutoiement ou titre interrogatif à une autre langue ou à un
+format non éditorial. Le brief validé et la demande de rédaction autorisent la
+rédaction directe, sans redemander l'approbation du plan pour chaque article.
+
 Séparer contenus qui expliquent, aident à vérifier, aident à choisir et accompagnent
 l'usage. Associer chaque format à un besoin réel : article de compréhension, guide
 pratique, comparatif de décision, fiche documentaire, retour d'essai réellement mené,

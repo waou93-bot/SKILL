@@ -102,3 +102,12 @@ Préparer puis appliquer [le contrôle final intégré](17-controle-final.md) : 
 site-checklist et pSEO pour les familles applicables. Spécifier leurs tests à G4,
 revoir les spécifications à G5 et mesurer le site réalisé à G6 dans l'environnement
 autorisé. Le module web-perf de site-checklist reste en audit uniquement.
+
+## QA, sécurité et performance — contrat 3.1
+
+Appliquer [le contrat commun](19-qa-security-performance.md) : webapp-testing pour
+les interactions, cross-platform-qa pour la couverture et la méthode,
+security-best-practices pour le code sécurisé et la revue applicable, web-perf pour
+les mesures et recommandations. Conserver un seul registre de preuves dans 11_QA.md.
+Aucun service payant requis ; lectures, tests locaux, émulation et appareils réels
+restent des preuves distinctes. Les corrections respectent le mandat existant.

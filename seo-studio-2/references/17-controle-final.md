@@ -85,3 +85,12 @@ ou service payant requis. Remplacer l'ancienne exemption « petit corpus » par 
 recherche obligatoire sur chaque page publique de contenu hors landing.
 Contrôler aussi les ancres réellement intégrées au corps, leurs pages cibles et
 leurs fragments. Les revues pSEO/seo-audit/site-checklist restent celles intégrées.
+
+## QA, sécurité et performance — contrat 3.1
+
+Appliquer [le contrat commun](19-qa-security-performance.md) : webapp-testing pour
+les interactions, cross-platform-qa pour la couverture et la méthode,
+security-best-practices pour le code sécurisé et la revue applicable, web-perf pour
+les mesures et recommandations. Conserver un seul registre de preuves dans 11_QA.md.
+Aucun service payant requis ; lectures, tests locaux, émulation et appareils réels
+restent des preuves distinctes. Les corrections respectent le mandat existant.

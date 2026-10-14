@@ -137,5 +137,12 @@
       "scope": "Critique des instructions et lecture du code ; aucun dossier de préproduction entier ni essai acoustique",
       "public_provenance_note": "Identifiant local conservé dans le registre privé ; ce package ne publie pas la trace privée complète."
     }
+  },
+  "maintenance_2026_10_14": {
+    "version": "3.1.0",
+    "registry": "research/integration-3.1.json",
+    "audit": "research/audit-3.1.md",
+    "scope": "Lectures documentaires réelles et revue séparée des intégrations ; aucun site ni formation personna exécuté",
+    "personna_modified": false
   }
 }

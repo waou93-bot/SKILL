@@ -1,3 +1,13 @@
+# 3.1.0 — 2026-10-14
+
+- Intégration webapp-testing, cross-platform-qa, security-best-practices et web-perf :
+  contrat commun G4/G5/D4, propriétaires, preuves, limites et corrections autorisées.
+- Inventaire et transfert strict alignés sur les dépendances QA, pSEO,
+  site-checklist et rédaction déjà exigées ; nouveaux brouillons et reprise préservés.
+- Tests de régression : découverte sans mot SEO, dépendance absente et lecture différée.
+- Aucun outil payant obligatoire ; aucun fichier personna modifié.
+- Audit et preuves de cette révision dans research/audit-3.1.md ; historique conservé.
+
 # 3.0.0 — 2026-10-14
 
 - Création complète du site : préproduction puis D0–D5, code, corpus V1, SEO,

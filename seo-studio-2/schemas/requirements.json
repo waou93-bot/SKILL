@@ -16,7 +16,7 @@
     },
     {
       "id": "R03",
-      "text": "Lire les vrais skills transversaux et tous les skills SEO découverts",
+      "text": "Lire les vrais skills transversaux et tous les skills SEO découverts, ainsi que les dépendances QA/sécurité/performance/éditoriales requises",
       "expected_output": "state.json",
       "allow_not_applicable": false
     },
@@ -148,7 +148,7 @@
     },
     {
       "id": "R25",
-      "text": "Appliquer gates et contrôles sans fausse complétude : revue seo-audit, site-checklist SC01–SC20/Safari/web-perf en audit uniquement, décision et contrôles pSEO applicables à G5 puis recette réelle G6",
+      "text": "Appliquer gates et contrôles sans fausse complétude : revue seo-audit, site-checklist SC01–SC20/Safari/web-perf en audit uniquement, décision et contrôles pSEO applicables à G5 puis recette réelle G6 ; webapp-testing, cross-platform-qa, security-best-practices et web-perf selon le contrat commun 3.1",
       "expected_output": "11_QA.md",
       "allow_not_applicable": false
     },

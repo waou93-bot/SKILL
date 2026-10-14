@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-14",
+  "scope": "Maintenance du package ; disponibilité et empreintes, pas exécution de site",
+  "dependencies": [
+    {
+      "name": "brain",
+      "source": "repository",
+      "sha256": "4f8f440073a4e811fd15f42465face45f2b6bddd2af486a474d1e32f5da441d5",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "organisation",
+      "source": "repository",
+      "sha256": "7d0ac4011a7d19a7e4ac777425596dc4dc53162ae6837e4eb46850b7046bdf24",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "no-slop",
+      "source": "repository",
+      "sha256": "428022918253fe17e4bf293b23687d54fcd66362f22752dbe3790640de1ce5b8",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "design-dna",
+      "source": "repository",
+      "sha256": "0b18094ebf3adbf592916198bcee6eee61023d333c9d220882cf07dcd181af8b",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "seo",
+      "source": "repository",
+      "sha256": "d1e517de63a6e228466a4076555e7826b7358a876c870b14bb305aecef88ea7a",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "ai-seo",
+      "source": "repository",
+      "sha256": "a3573a2f6c69fdc686e3e1d3f11920a03b357c274fee6457d75c7dd6e63e114c",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "seo-audit",
+      "source": "repository",
+      "sha256": "0bcd2d9eec887e7a62a04591ecc5d34555f2d0aa0d76f40f5d8cb374d972a24a",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "seo-content-engine",
+      "source": "repository",
+      "sha256": "5d73cd57651547707ac7f6158cc7a4127f96b35f403cea4834eade08174bcf14",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "seo-post-deploy",
+      "source": "repository",
+      "sha256": "45656e270f9a14768570ebfb6cc2ef34499c2a4f82097b61040f5d9689e12c92",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "pSEO",
+      "source": "repository",
+      "sha256": "b863351120894fa4d79c5ad1a71ee76706eccac1d8a43373a24ca0995a3ef4dd",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "site-checklist",
+      "source": "repository",
+      "sha256": "acfa5c93e35694c0ec25df3ca9da1ba3579f9f18774a278728cc087d03140c10",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "redaction-editoriale-web",
+      "source": "repository",
+      "sha256": "dea7535fa5e5a364f650b1475e9be9dc4815f0aead3ea03dacc9a2245b8f2533",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "webapp-testing",
+      "source": "repository",
+      "sha256": "8bc27790f6e6dfc2bfa6692326d4518baacf6a31dcc646d963c729adad2f7e34",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "cross-platform-qa",
+      "source": "repository",
+      "sha256": "9a2153c86efa8293a5ce04295d29e054eec72ff3d780ed711d0f55ffb81b375f",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "security-best-practices",
+      "source": "active_catalog",
+      "sha256": "7b3dae1ffc5434d890f3c65c8f552af52d0307fab3b35dec13013c9ca3844c4f",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    },
+    {
+      "name": "web-perf",
+      "source": "active_catalog",
+      "sha256": "da4e967ba1544477ba2ce2bc9e6eb86f5eec48997c7773023154a9eaf189965e",
+      "status": "SKILL_MD_READ",
+      "runtime_tested": false
+    }
+  ],
+  "review": "Relecture documentaire séparée /root/integration_review ; SKILL.md lus, références détaillées ciblées ; aucun site testé"
+}

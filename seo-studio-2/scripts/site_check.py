@@ -123,7 +123,7 @@ def check(root: Path, landing_routes=(), public_base=None):
             if not doc.canonical:
                 warnings.append(owner + ' : canonical à vérifier selon le contrat de page')
             elif doc.canonical != public_base.rstrip('/') + owner:
-                errors.append(owner + ' : canonical incohérente avec la route')
+                warnings.append(owner + ' : canonical différente de la route ; vérifier la consolidation selon le contrat de page')
     seen, queue = set(), ['/'] if '/' in docs else []
     while queue:
         key = queue.pop()

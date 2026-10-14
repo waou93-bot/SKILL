@@ -66,3 +66,12 @@ les commandes réellement exécutées et un README de lancement/build/maintenanc
 Documenter dans `11_QA.md` les tests locaux et les liens du corps vérifiés ; dans
 `12_HANDOFF.md`, le chemin du site, la version, les commandes, le rapport HTML,
 les captures/traces navigateur et les limites de publication.
+
+## QA, sécurité et performance — contrat 3.1
+
+Appliquer [le contrat commun](19-qa-security-performance.md) : webapp-testing pour
+les interactions, cross-platform-qa pour la couverture et la méthode,
+security-best-practices pour le code sécurisé et la revue applicable, web-perf pour
+les mesures et recommandations. Conserver un seul registre de preuves dans 11_QA.md.
+Aucun service payant requis ; lectures, tests locaux, émulation et appareils réels
+restent des preuves distinctes. Les corrections respectent le mandat existant.

@@ -139,3 +139,12 @@ fonctionnelle sur les gabarits détaillés et de listes, et les liens intégrés
 `validate --stage handoff` ne prouve pas un site construit. `validate --stage release`
 conserve son sens de publication autorisée et preuves live. Le rapport du contrôleur
 HTML local et les preuves navigateur distinguent les résultats locaux de la production.
+
+## QA, sécurité et performance — contrat 3.1
+
+Appliquer [le contrat commun](19-qa-security-performance.md) : webapp-testing pour
+les interactions, cross-platform-qa pour la couverture et la méthode,
+security-best-practices pour le code sécurisé et la revue applicable, web-perf pour
+les mesures et recommandations. Conserver un seul registre de preuves dans 11_QA.md.
+Aucun service payant requis ; lectures, tests locaux, émulation et appareils réels
+restent des preuves distinctes. Les corrections respectent le mandat existant.

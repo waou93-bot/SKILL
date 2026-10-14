@@ -11,7 +11,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "3.0.0"
+  version: "3.1.0"
   reviewed_at: "2026-10-14"
 ---
 
@@ -93,7 +93,11 @@ quand le travail relève de leur périmètre.
 
 ## Contrôle final intégré
 
-Charger les vrais `site-checklist`, `seo-audit` et `pSEO` pour une mission complète.
+Charger les vrais `site-checklist`, `seo-audit`, `pSEO`, `webapp-testing`,
+`cross-platform-qa`, `security-best-practices` et `web-perf` pour une mission complète.
+Lire [le contrat QA, sécurité et performance](references/19-qa-security-performance.md)
+à G4 avant développement, à G5 pour la revue documentaire et à D4 pour la recette.
+Lire un skill ne signifie pas avoir exécuté ses outils ou validé une plateforme.
 Lire [le contrat de contrôle final](references/17-controle-final.md) : évaluer pSEO
 à G1, appliquer son architecture à G2–G4 lorsqu'elle est pertinente, puis effectuer
 à G5 la revue seo-audit et la couverture documentaire site-checklist (SC01–SC20,

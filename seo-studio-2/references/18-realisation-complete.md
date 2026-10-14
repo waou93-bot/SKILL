@@ -96,8 +96,8 @@ seo-audit et pSEO applicable. Tester menu, navigation, recherche depuis article 
 hub, résultat hors première page, sans résultat, reset, liens contextuels, CTA,
 formulaires, états d'erreur, clavier et mobile. Les vérifications réelles portent
 sur le site actuel et sa version ; stocker captures/logs/rapports sans secrets.
-web-perf reste en audit/recommandations uniquement sauf demande explicite visant
-les optimisations. Si Safari réel est absent, ne pas imposer un service payant :
+web-perf reste en audit/recommandations ; appliquer les corrections lorsque le
+mandat les autorise explicitement selon references/19-qa-security-performance.md. Si Safari réel est absent, ne pas imposer un service payant :
 documenter NON VÉRIFIÉ et la recette manuelle restante. Corriger puis rejouer le
 scénario concerné. Un build réussi ne valide pas les interactions ni l'indexation.
 
@@ -119,3 +119,12 @@ Ne pas créer de propriété, soumettre, contacter, payer ou planifier une surve
 sans autorisation applicable. Un calendrier n'est pas une automation exécutée.
 La mission de création finit avec le résultat local vérifiable si publication non
 autorisée ; elle ne finit pas avec une simple architecture ou une liste de tâches.
+
+## QA, sécurité et performance — contrat 3.1
+
+Appliquer [le contrat commun](19-qa-security-performance.md) : webapp-testing pour
+les interactions, cross-platform-qa pour la couverture et la méthode,
+security-best-practices pour le code sécurisé et la revue applicable, web-perf pour
+les mesures et recommandations. Conserver un seul registre de preuves dans 11_QA.md.
+Aucun service payant requis ; lectures, tests locaux, émulation et appareils réels
+restent des preuves distinctes. Les corrections respectent le mandat existant.

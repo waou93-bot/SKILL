@@ -21,6 +21,7 @@ from workflow import validate_workflow, workflow_digest
 
 ROOT = Path(__file__).resolve().parents[1]
 CORE = {'brain', 'organisation', 'no-slop', 'design-dna'}
+QUALITY = {'site-checklist', 'pSEO', 'webapp-testing', 'cross-platform-qa', 'security-best-practices', 'web-perf', 'redaction-editoriale-web'}
 BASE_SEO = {'seo', 'ai-seo', 'seo-audit', 'seo-content-engine', 'seo-post-deploy'}
 SKIP_DIRS = {'.git', 'node_modules', '__pycache__', '.venv', 'venv'}
 PLACEHOLDER = re.compile(r'\b(?:A_COMPLETER|TODO|LOREM IPSUM)\b', re.I)
@@ -183,13 +184,13 @@ def inventory(roots: list[Path]) -> dict:
                     continue
                 primary = 'seo' in norm or 'seo' in p.parent.name.lower()
                 candidate = 'seo' in header.lower()
-                selected = primary or candidate or norm in CORE | {'personna', 'persona'}
+                selected = primary or candidate or norm in CORE | {n.lower() for n in QUALITY} | {'personna', 'persona'}
                 if not selected:
                     continue
                 v = re.search(r'^\s*version:\s*(.+?)\s*$', header, re.M)
                 entries.append({'name': name, 'path': resolved, 'sha256': digest(p),
                     'version': v.group(1).strip('"\' ') if v else None,
-                    'kind': 'SEO_IDENTIFIER' if primary else 'CORE' if norm in CORE else 'PERSONNA_CANDIDATE' if norm in {'persona','personna'} else 'SEO_DESCRIPTION_CANDIDATE',
+                    'kind': 'SEO_IDENTIFIER' if primary else 'CORE' if norm in CORE else 'QUALITY' if norm in {n.lower() for n in QUALITY} else 'PERSONNA_CANDIDATE' if norm in {'persona','personna'} else 'SEO_DESCRIPTION_CANDIDATE',
                     'status': 'DISCOVERED_NEEDS_READING'})
     groups = defaultdict(list)
     for entry in entries:
@@ -337,12 +338,12 @@ def validate_project(project: Path, stage: str = 'draft') -> dict:
                 errors.append('provenance de lecture absente : '+dep['name'])
             if dep['status'] != 'LU' and not dep['reason']:
                 errors.append('exclusion/phase sans motif : '+dep['name'])
-            if dep['name'] in CORE and dep['status'] != 'LU':
+            if dep['name'] in CORE | QUALITY and dep['status'] != 'LU':
                 errors.append('socle transversal obligatoire : '+dep['name'])
     if 'seo-studio-2' in deps or 'seo-studio-2' in state['discovered_seo_skills']:
         errors.append('Récursion : le studio ne peut pas se rappeler')
     discovered = set(state['discovered_seo_skills'])
-    if strict and not (CORE | BASE_SEO).issubset(deps):
+    if strict and not (CORE | BASE_SEO | QUALITY).issubset(deps):
         errors.append('Socle de dépendances incomplet')
     if strict and not BASE_SEO.issubset(discovered):
         errors.append('Inventaire des skills SEO de base incomplet')

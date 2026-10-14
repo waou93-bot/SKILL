@@ -1,3 +1,22 @@
+# Vérification 3.1.0 — 14 octobre 2026
+
+Maintenance du package sous Windows / Python 3.12.10, avec répertoire temporaire
+dans le workspace après refus du temporaire sandbox initial.
+
+- Suite complète : 142 tests en 574.068 secondes, aucun échec, un test
+  symlink ignoré (capacité OS indisponible). Trois tests de dépendances nouveaux inclus.
+- Contrôleur HTML final après correction canonical : 11 tests réussis séparément.
+- JSON, liens locaux, IDs R01–R28, diff borné et intégrité SHA-256 contrôlés.
+- Revue séparée des 16 SKILL.md intégrés et des corrections ; limites dans
+  research/audit-3.1.md. Cinq scénarios comportementaux ajoutés, non exécutés.
+- Aucun fichier personna modifié. Aucun outil payant obligatoire ajouté.
+
+Les fixtures valident la structure ; elles ne prouvent ni formation personna,
+ni navigateur, ni sécurité d'un site, ni performance terrain ni résultat SEO.
+Les preuves historiques ci-dessous conservent leur date et leur périmètre.
+
+---
+
 # Vérification documentaire 2.3.2 — 13 octobre 2026
 
 Ajout ciblé des accès produits affiliés vers les partenaires, des boutons

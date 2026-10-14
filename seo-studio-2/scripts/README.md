@@ -17,6 +17,11 @@ explicitement autorisé. Les emplacements non lus restent dans `skipped`, jamais
 considérés vides. La sortie ne prouve ni lecture intellectuelle, ni installation,
 ni découverte du skill par Codex. Consigner l'inventaire réel dans `state.json`.
 
+Le groupe QUALITY inclut aussi les compétences QA, sécurité, performance et rédaction
+requises même sans SEO dans leur description. Le transfert strict exige leur lecture
+avec provenance. Ajouter ces entrées lors d'une reprise ancienne, sans réinitialiser
+le dossier ni fabriquer les preuves ; leur application métier reste conditionnelle.
+
 ## Initialiser sans écraser
 
 ```sh

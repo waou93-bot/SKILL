@@ -37,6 +37,10 @@ Le registre de projet distingue `LU`, `INTROUVABLE`, `A_LIRE`, `NON_APPLICABLE` 
 Ne pas appeler Organisation à nouveau depuis chaque spécialiste. Conserver le
 `run_id`, l'`entrypoint`, la version du brief et la propriété des fichiers.
 D'autres skills SEO découverts rejoignent le registre sans dupliquer un périmètre.
+Les coordinateurs concurrents (par exemple seo-site-studio ou newsit-seo si découverts)
+sont lus et classés NON_APPLICABLE à l'appel, avec motif « coordinateur concurrent ».
+Ne pas les rappeler, former une seconde équipe ou créer un autre registre. Leurs
+copies de modules sont comparées par empreinte avant de choisir la source effective.
 Business Checklist est pertinent pour la viabilité d'un nouveau site monétisé ;
 New Site/New Pro pour le transfert, Analytics pour la mesure, Human pour les assets.
 Les lire s'ils sont présents et requis, sinon consigner la limite ; ne pas les inventer.
@@ -88,3 +92,12 @@ L'absence d'accès conserve les limites déjà prévues, sans arrêter les réal
 locales indépendantes ni inventer les preuves. Ne pas annoncer un transfert strict
 si un prérequis réel manque. Les dépendances du runtime Codex sont explicites :
 un skill ne fournit ni son propre modèle ni une inférence gratuite hors de l'hôte.
+
+## QA, sécurité et performance — contrat 3.1
+
+Appliquer [le contrat commun](19-qa-security-performance.md) : webapp-testing pour
+les interactions, cross-platform-qa pour la couverture et la méthode,
+security-best-practices pour le code sécurisé et la revue applicable, web-perf pour
+les mesures et recommandations. Conserver un seul registre de preuves dans 11_QA.md.
+Aucun service payant requis ; lectures, tests locaux, émulation et appareils réels
+restent des preuves distinctes. Les corrections respectent le mandat existant.

@@ -1,3 +1,9 @@
+# 3.4.2 — 2026-10-14
+
+Audit : entrée réelle sans landing supplémentaire, recherche interne conservée,
+formation avant cycle idées/F3, design distingué de G3 final, recette locale
+distincte de publication. Trois scénarios ajoutés, explicitement NOT_RUN.
+
 # 3.4.1 — 2026-10-14
 
 Produits vérifiés et accès affiliés directs dès la landing et l’accueil, intégrés

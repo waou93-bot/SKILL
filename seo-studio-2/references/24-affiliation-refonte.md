@@ -66,9 +66,13 @@ phase 1. Si la V1 nécessite un changement de composition, présenter l'ajusteme
 localisé demandé, sans étendre cette demande à une refonte graphique globale.
 Sans produits et liens vérifiés disponibles, bloquer le module et la livraison
 affiliée ; jamais de faux produit ou CTA décoratif pour remplir le premier écran.
-Inclure la landing parmi les trois pilotes. En QA, captures desktop/mobile et test
+Inclure la page d’entrée réelle (landing si présente, sinon accueil) parmi les trois
+pilotes ; ne pas créer de landing supplémentaire uniquement pour le contrôle.
+En QA, captures desktop/mobile et test
 réel des CTA démontrent visibilité précoce, destination exacte et images chargées.
-Une landing sans mise en avant produit ou accès affilié utilisable échoue à la recette.
+La page d’entrée sans mise en avant produit ou accès affilié utilisable échoue à la
+recette. Un accueil éditorial conserve sa recherche interne obligatoire ; le renommer
+« landing » ne permet pas de contourner cette règle.
 
 ## Design : migrer avant de réinventer
 
@@ -113,8 +117,11 @@ sans empêcher le crawl de la directive. Noindex n'autorise jamais des faits inv
 
 Ne pas démarrer le code avant l'audit ni coder les pages avant validation du design
 et de la base produits. Les maquettes de phase 1 sont des prototypes de conception,
-pas une production anticipée des pages. Les pilotes peuvent couvrir plusieurs gates
-documentaires ; la recette finale porte sur tout le corpus, pas seulement trois pages.
+pas une production anticipée des pages. La validation design de phase 1 est un jalon
+préalable de G3, pas sa validation finale : G3 exige également briefs et pilotes.
+Achever la base produits et les pilotes avant de clôturer les gates qui les exigent.
+Ne pas marquer G3/G4 validés sur la seule approbation du design.
+La recette finale porte sur tout le corpus, pas seulement trois pages.
 Consigner livrables, contrôles, résultats, versions et preuves à chaque porte.
 Une modification invalide les preuves affectées. Ne pas avancer sans la preuve de
 la phase précédente. La validation humaine de phase 1 ne peut être déléguée à un agent.

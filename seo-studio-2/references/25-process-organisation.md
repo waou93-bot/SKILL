@@ -22,8 +22,10 @@ Les rôles sont des responsabilités, pas des changements de modèle implicites.
    crawl et captures de huit pages types desktop/mobile. Manque : question et blocage
    du travail dépendant, sans invention.
 3. **Comparer et décider.** F2/F3 : options, limites et décisions sourcées.
-   Former les profils via le vrai Personna et appliquer les revues réellement
-   disponibles conformément au contrat, sans prétendre à une indépendance absente.
+   Après la recherche métier de F1, former et calibrer les profils via le vrai
+   Personna avant leurs appels et le cycle idées ; clôturer ce cycle avant F3.
+   Appliquer les revues réellement disponibles conformément au contrat, sans
+   prétendre à une indépendance absente.
 4. **Organiser l'architecture.** G2 : silos, intentions, propriétaires des pages,
    maillage, fan-out, routes et mapping 301. Respecter les prérequis SERP avant G3.
 5. **Valider le design.** G3 et phase 1 : extraire la V1 ou proposer deux directions
@@ -34,7 +36,8 @@ Les rôles sont des responsabilités, pas des changements de modèle implicites.
    Conserver Astro/Cloudflare retenus. Installer et tester le prébuild du projet.
 7. **Construire et contrôler les pilotes.** Phase 3 : trois pages réelles,
    templates et contenu propres, recherche interne et SEO intégrés. Inclure la
-   landing avec produits vérifiés et CTA affiliés visibles dès le premier écran utile.
+   page d'entrée réelle (landing si présente, sinon accueil) avec produits vérifiés
+   et CTA affiliés visibles dès le premier écran utile.
    Preuves : build, contrôles produit, captures comparées et corrections.
 8. **Produire par lots.** Phase 4 : lots de 20–30 pages, dernier lot adapté,
    contrôle avant lot suivant, trois éléments propres par page pSEO indexable.

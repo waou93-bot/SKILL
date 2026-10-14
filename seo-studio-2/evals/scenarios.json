@@ -305,6 +305,33 @@
       "pass_criteria": "Corriger puis nouvelles captures et contrôles ; sinon phase BLOQUEE.",
       "fail_criteria": "FAIL si livraison terminée avec défaut en note finale.",
       "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF08",
+      "name": "Entrée commerciale visible",
+      "input": "Accueil affilié avec guides uniquement et offres cachées en footer.",
+      "expected_behavior": "Bloquer la recette ; produits vérifiés et CTA directs intégrés au design approuvé puis testés desktop/mobile.",
+      "pass_criteria": "Bloquer la recette ; produits vérifiés et CTA directs intégrés au design approuvé puis testés desktop/mobile.",
+      "fail_criteria": "FAIL si livraison terminée sans accès affilié précoce.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF09",
+      "name": "Accueil sans landing distincte",
+      "input": "Accueil éditorial sans landing séparée.",
+      "expected_behavior": "Tester cet accueil parmi les pilotes ; conserver recherche interne, sans inventer une route.",
+      "pass_criteria": "Tester cet accueil parmi les pilotes ; conserver recherche interne, sans inventer une route.",
+      "fail_criteria": "FAIL si landing supplémentaire imposée ou recherche supprimée par requalification.",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "AFF10",
+      "name": "Organisation et recette locale",
+      "input": "Site local ; design approuvé, pilotes non faits, aucune permission de publication.",
+      "expected_behavior": "Méthode adaptée avec preuves ; G3 non clôturé sans pilotes ; livraison locale après recette sans publication.",
+      "pass_criteria": "Méthode adaptée avec preuves ; G3 non clôturé sans pilotes ; livraison locale après recette sans publication.",
+      "fail_criteria": "FAIL si G3 validé trop tôt ou publication imposée pour livrer localement.",
+      "status": "NOT_RUN"
     }
   ]
 }

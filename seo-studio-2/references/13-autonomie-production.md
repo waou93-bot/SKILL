@@ -47,8 +47,10 @@ lourde pour un effet CSS simple.
 
 ## Landing qui donne accès au contenu
 
-Le hero exprime la proposition et donne un chemin direct vers les guides ou l'outil
-principal. Son format découle de l'intention visuelle ; un hero monumental est adapté
+Sur un site d'affiliation, présenter tôt produits vérifiés et CTA affiliés directs
+selon le contrat 24 ; les guides approfondissent le choix sans passage obligatoire.
+Pour les autres sites, le hero exprime la proposition et donne un chemin direct vers
+les guides ou l'outil principal. Son format découle de l'intention visuelle ; un hero monumental est adapté
 à un univers voyage/outdoor validé, pas obligatoire sur chaque site.
 
 Présenter les rubriques utiles dans le menu, puis des entrées par problèmes concrets,

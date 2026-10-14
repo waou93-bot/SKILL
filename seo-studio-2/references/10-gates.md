@@ -27,9 +27,11 @@ Les revues métier et preuves de l'hôte sont obligatoires pour le statut final.
 | G5 | critiques, corrections, arbitrages, traçabilité, hashes, transfert gelé | objection P0/P1 ouverte, preuve caduque, auto-revue présentée indépendante |
 | G6 | recette et preuves live de production autorisée | noindex de prod, lien cassé, prix non vérifié, soumission prétendue |
 
-G0 à G5 concernent la préproduction. G6 est préparé mais ne se valide qu'après réalisation
-et autorisation. L'absence d'un site live ne bloque pas un bon dossier de préproduction :
-elle interdit seulement d'y écrire « production testée ».
+G0 à G5 concernent la préproduction. La réalisation et la recette locale G6/D4
+s'exécutent dans le mandat local ; elles ne nécessitent pas une autorisation de
+publication. D5 et la validation release/production exigent autorisation et preuves
+live distinctes. L'absence d'un site live ne bloque pas une livraison locale vérifiée
+ou un bon dossier de préproduction ; elle interdit d'écrire « production testée ».
 
 La [revue fan-out](14-fanout-retour-sites.md) complète les gates existants : G2
 contrôle propriétaires/frontières/liens, G3 les réponses et preuves livrées, G5 la

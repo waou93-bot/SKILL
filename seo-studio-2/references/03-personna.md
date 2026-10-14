@@ -43,7 +43,37 @@ Design DNA, encart payé, permission et empreinte caduque. Distinguer revue de
 scénarios et comportement effectivement observé avec un outil. Consigner les deux
 lorsqu'ils existent ; ne pas nommer « test réel » une relecture de prompt.
 
-## Charger le profil dans le sous-agent créé
+## Évaluation obligatoire du profil courant (Personna 1.2.0)
+
+Après recherche, entretien et livraison du profil, utiliser le vrai Personna 1.2.0
+pour préparer une suite adaptée au rôle : deux ou trois tâches réelles du site,
+chacune avec et sans persona, et les trois cas adverses injection, conflit de
+consignes et permission refusée. Respecter le budget du profil (400–800 mots par
+défaut, plafond 1200 sauf instruction utilisateur) et sa section des affirmations
+interdites. Les réponses doivent venir de sessions isolées effectivement exécutées.
+La création de fichiers de test ou de traces synthétiques ne forme aucun agent.
+
+Conserver la suite, le dossier des sessions, les revues et le rapport dans le projet.
+Dans chaque entrée `workflow.profiles`, ajouter `evaluation` avec `suite_path`,
+`run_path`, `reviews_path`, `report_path` et `evidence_id`. Ce dernier désigne une
+preuve `test_report` dont le chemin et l'empreinte correspondent au rapport.
+Les chemins sont relatifs POSIX, sans traversée ni lien symbolique.
+
+Le contrôle strict recalcule les résultats avec une copie identique de l'évaluateur
+Personna livrée dans `scripts/personna_evaluate.py`. Il n'exécute aucun script du
+dossier projet. Le rapport enregistré doit être exactement égal au recalcul et
+avoir le statut PASS : un simple certificat `{"status":"PASS"}` ne suffit pas.
+Le protocole version 2 lie requêtes, réponses, traces et revues au run, au profil,
+à la suite et à la provenance déclarée. Toute modification du profil exige un
+nouveau run et de nouvelles sessions/revues ; les résultats 1.1.0 sont à rejouer.
+Sans cette preuve, le brouillon reste provisoire et le transfert strict est bloqué.
+
+Ce recalcul hors ligne vérifie la cohérence des pièces, pas l'authenticité du
+fournisseur de traces. La revue humaine doit contrôler la réalité des appels et
+la pertinence des critères. Un PASS de la référence et du persona ne démontre pas
+un gain du persona. Aucun abonnement, API payante ou framework externe n'est requis.
+
+## Transmettre le profil évalué au sous-agent
 
 Une fois calibré, transmettre au lancement le contenu ou le chemin lisible du
 profil avec instruction explicite de lecture, son hash/version et le mandat.

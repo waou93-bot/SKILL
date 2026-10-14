@@ -1,11 +1,14 @@
-Cette révision 3.1 ajoute un contrat commun QA/sécurité/performance et aligne
-le contrôle des dépendances. Voir [l'audit courant](research/audit-3.1.md) et
+Cette version 3.2.0 intègre les évaluations Personna 1.2.0 recalculées avant
+validation stricte des profils ; voir la section Personna et references/03-personna.md.
+
+La révision historique 3.1 ajoute un contrat commun QA/sécurité/performance et aligne
+le contrôle des dépendances. Voir [l'audit 3.1](research/audit-3.1.md) et
 [le protocole](references/19-qa-security-performance.md). Les sections historiques
 ci-dessous décrivent leurs dates de livraison, pas une exécution actuelle.
 Les quatre skills sont chargés depuis le catalogue actif : le package n'embarque
 pas leurs runtimes ni leurs services et ne garantit pas leur présence sur un autre hôte.
 
-# SEO STUDIO 2 — package 3.1.0
+# SEO STUDIO 2 — package 3.2.0
 
 Créé le 8 octobre 2026. Ce package transforme une niche et un type de site en dossier
 de préproduction puis en site local réalisé et vérifié quand sa création est demandée.
@@ -122,3 +125,13 @@ Ne publie rien sans autorisation.
 
 Voir `references/18-realisation-complete.md`. Les skills locaux sont conservés.
 Le moteur d'inférence reste celui de l'hôte ; le package ne fournit pas de modèle.
+
+## Personna 1.2.0 dans Studio 3.2.0
+
+Chaque profil doit relier `evaluation` à une suite adaptée, un dossier de sessions,
+les revues et le rapport, tous dans le projet. Le contrôle strict recalcule ce
+rapport depuis les pièces et exige PASS avec empreinte actuelle. Une modification
+du profil impose de rejouer les sessions ; le brouillon signale les preuves manquantes.
+Voir `references/03-personna.md`. Le script embarqué est une copie contrôlée de
+Personna 1.2.0, sans API ni service payant obligatoire. Les tests utilisent des
+sessions explicitement synthétiques et ne prouvent pas le comportement d’un modèle.

@@ -11,7 +11,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "3.1.0"
+  version: "3.2.0"
   reviewed_at: "2026-10-14"
 ---
 

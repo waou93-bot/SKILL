@@ -4,6 +4,7 @@ from datetime import datetime
 import hashlib
 import json
 import re
+from personna_evaluate import grade as grade_personna
 from urllib.parse import urlsplit
 
 HASH = re.compile(r'^[0-9a-f]{64}$')
@@ -26,6 +27,8 @@ def workflow_digest(workflow, evidence):
     for profile in workflow['profiles']:
         ids.update(profile['training_evidence_ids'])
         ids.update(profile['calibration_evidence_ids'])
+        if profile.get('evaluation'):
+            ids.add(profile['evaluation']['evidence_id'])
     for agent in workflow['delegates']:
         ids.update([agent['spawn_evidence_id'], agent['persona_load_evidence_id']])
     payload['evidence_context'] = sorted([e for e in evidence if e['id'] in ids], key=lambda e: e['id'])
@@ -151,6 +154,7 @@ def validate_workflow(project, state, strict, *, load, shape, safe_path, digest,
         if (strict and not c['source_ids']) or any(s not in read_sources for s in c['source_ids']):
             errors.append('Compétence sans sources métier lues : ' + c['id'])
     profiles = {p['role_id']: p for p in workflow['profiles']}
+    evaluation_cache = {}
     for rid, p in profiles.items():
         label = 'Profil ' + rid
         if rid not in roles or not roles[rid]['assigned'] or p['niche'] != state['niche'] or not p['version'].strip():
@@ -158,6 +162,35 @@ def validate_workflow(project, state, strict, *, load, shape, safe_path, digest,
         snapshot({'path': p['profile_path'], 'sha256': p['sha256']}, label)
         refs(p['training_evidence_ids'], label + ' formation', {'training'}, needed=strict)
         refs(p['calibration_evidence_ids'], label + ' calibration', {'training', 'test_report'}, needed=strict)
+        evaluation = p.get('evaluation')
+        if not evaluation:
+            (errors if strict else warnings).append(label + ': évaluation Personna 1.2 absente ; profil provisoire')
+        else:
+            try:
+                suite = safe_path(project, evaluation['suite_path'], True)
+                run = safe_path(project, evaluation['run_path'])
+                reviews = safe_path(project, evaluation['reviews_path'], True)
+                report = safe_path(project, evaluation['report_path'], True)
+                if not run.is_dir():
+                    raise ValueError('Dossier de sessions absent')
+                # Every imported run artifact stays inside the project. Never import
+                # Python from a project, suite, evidence or dependency path.
+                profile_path = safe_path(project, p['profile_path'], True)
+                cache_key = (digest(profile_path), str(suite), str(run), str(reviews))
+                if cache_key not in evaluation_cache:
+                    for child in run.rglob('*'):
+                        safe_path(project, child.relative_to(project).as_posix())
+                    evaluation_cache[cache_key] = grade_personna(profile_path, suite, run, reviews)
+                actual = evaluation_cache[cache_key]
+                if actual['status'] != 'PASS':
+                    raise ValueError('Sessions Personna : ' + actual['status'])
+                if load(report) != actual:
+                    raise ValueError('Rapport différent du recalcul des sessions')
+                proof = ev.get(evaluation['evidence_id'])
+                if not proof or proof['kind'] != 'test_report' or proof['path'] != evaluation['report_path'] or proof['sha256'] != digest(report):
+                    raise ValueError('Preuve du rapport absente ou empreinte différente')
+            except (ValueError, OSError, KeyError, TypeError, re.error) as exc:
+                errors.append(label + ': évaluation Personna invalide : ' + str(exc))
         if strict and p['status'] != 'VERIFIED':
             errors.append(label + ': profil provisoire/non calibré')
         f1 = steps.get('F1_RECHERCHE', {}).get('sequence')

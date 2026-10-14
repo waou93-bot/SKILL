@@ -2,4 +2,7 @@
 * text=auto
 
 # Preserve the exact bytes covered by the SEO Studio 2 manifest.
-seo-studio-2/** -text
+seo-studio-2/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve the exact bytes covered by the Personna manifest.
+personna/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,6 +1,7 @@
 """Données de tests entièrement fictives ; aucun réseau ou agent n'est exécuté."""
 import studio
 from workflow import workflow_digest
+from personna_fixture import evaluation_fixture
 
 
 def complete_workflow(project, state):
@@ -33,6 +34,7 @@ def complete_workflow(project, state):
         next(p for p in wf['research']['platforms'] if p['platform'] == platform).update(
             status='READ', queries=['requête fictive méthodes', 'requête fictive limites'],
             source_ids=[sid], evidence_ids=[eid], attempted_at='2026-10-13')
+    shared_evaluation = None
     for role in state['roles']:
         if not role['assigned']:
             continue
@@ -44,10 +46,18 @@ def complete_workflow(project, state):
                                   'behavior': 'Distinguer source et hypothèse', 'calibration_case': 'Fiche sans essai'})
         path = 'PERSONAS/' + rid + '.md'
         write(path, '# Profil fictif\n\nFixture de contrat ; aucun modèle formé ni chargé.\n')
+        # All fixture profiles contain the exact same synthetic bytes. A single
+        # evaluation of those bytes is shared; real distinct profiles need runs
+        # matching their respective current content.
+        if shared_evaluation is None:
+            shared_evaluation = evaluation_fixture(project, project / path, rid)
+            shared_evaluation['evidence_id'] = proof('evaluation-' + rid, 'test_report', shared_evaluation['report_path'])
+        evaluation = shared_evaluation.copy()
         wf['profiles'].append({'role_id': rid, 'niche': state['niche'], 'version': '1',
                                'profile_path': path, 'sha256': studio.digest(project / path),
                                'competency_ids': [cid], 'training_evidence_ids': ['training'],
-                               'calibration_evidence_ids': ['test_report'], 'prepared_sequence': 3, 'status': 'VERIFIED'})
+                               'calibration_evidence_ids': ['test_report'], 'prepared_sequence': 3, 'status': 'VERIFIED',
+                               'evaluation': evaluation})
     for rid, seq, close in [('TERRA', 4, 25), ('QA_LEAD', 5, 26)]:
         p = next(p for p in wf['profiles'] if p['role_id'] == rid)
         spawn_id = proof('spawn-' + rid, 'runtime')

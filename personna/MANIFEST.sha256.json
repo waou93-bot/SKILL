@@ -1,0 +1,18 @@
+{
+  "agents/openai.yaml": "53cf3929b36e4a957dbdde5c654d5d101002d426f242e9c6843eea893258ba22",
+  "CHANGELOG.md": "ebae3f8765330c80d74f52bbdb4e69c6a389786a03704006517e9259e13ffa5b",
+  "evals/evals.json": "a988d179a788007868b9408a2205b237b96068d09ccbda919f42175775be0b2c",
+  "examples/document-auditor/persona.md": "710db0da8723a04c396c8b18fe6e3fbe7ef7fe01e945542daddb6220e6a844b9",
+  "examples/document-auditor/suite.json": "266cfb80b04faf57a88d3e2b394699adf92293745088d9027374a4463bc0b22c",
+  "README.md": "afe75f15c2939c3cb26a97d05b1dfcb84c75a3c472507221e8b6625b87c96f0d",
+  "references/entretien.md": "f0ce63e6cbf517e70afa5e8aa055c0512d07f2fdf6613467245efb1057d77772",
+  "references/evaluation.md": "f98c223486fc8ed435d4f780262d2f3a6eff6d44114996db99b606abed6b28e3",
+  "references/livraison.md": "e8e72b7bb953ad7d78114874fe78e66fb714f6a4521859d0d37e49e9f795b583",
+  "references/recherche.md": "07f818546f16e0fe777175fa771e43c92296758cbe24c82e46430fc9b7840d5f",
+  "references/sources-depart.md": "12e8c21de0eb53f8ab00fa7e2013d7ebb70e4dfe1880ad0bb2f0c58edd6764fb",
+  "scripts/evaluate.py": "8646c3f8f8273b6d803caa1adb4f5686ea2206b49ef114afc84e3bf425c8cc4f",
+  "SKILL.md": "56f1bfaffb1324f7ab8847febbd5ef74d5e162e1377f962c2773e11c23290fa1",
+  "templates/scenarios.template.json": "63bf96ae1606dd869168dd4906648e6a58a3ab8125507e1bf11123ae16728a59",
+  "tests/test_evaluate.py": "56776f1316696e64f12ec40262f042a7d8e9d2c2a0cc09a9ce718106602f71f6",
+  "VALIDATION.md": "e0557d7f1f73f5ee32fce7e1be535e63363f9d4278aa0dab598c1f4f316a6648"
+}

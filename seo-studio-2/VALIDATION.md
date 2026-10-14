@@ -1,3 +1,18 @@
+# Vérification 3.2.0 — 14 octobre 2026
+
+- Suite complète : 154 tests en 799.162 secondes, aucun échec,
+  un test symlink ignoré faute de capacité OS ; 11 tests d'intégration inclus.
+- Personna : 17 tests de régression réussis. Évaluateur intégré byte-identique.
+- Dix sessions textuelles neuves, revue séparée des 14 critères de fond et quatre
+  assertions regex : PASS sans/avec. Aucun gain causal sur baseline démontré.
+- Preuves textuelles actuelles importées dans un dossier Studio synthétique :
+  acceptées, puis bloquées STALE après modification du profil ; restauration acceptée.
+- Modèle/paramètres non observés, traces finales sans journal complet des outils.
+  Le parcours métier complet recherche/entretien/site n'a pas été exécuté ici.
+- Aucun outil payant obligatoire ; recherches et entretien Personna conservés.
+
+Les résultats 3.1.0 ci-dessous sont historiques.
+
 # Vérification 3.1.0 — 14 octobre 2026
 
 Maintenance du package sous Windows / Python 3.12.10, avec répertoire temporaire
@@ -127,3 +142,10 @@ Le manifeste SHA-256 est régénéré pour les octets de cette copie publique ;
 ses empreintes peuvent donc différer de la copie installée sur le poste de révision.
 L'intégrité de cette copie est contrôlée avant publication. Les résultats de tests
 consignés décrivent les exécutions antérieures ; aucun nouveau résultat n'est inventé.
+
+## Révision 3.2.0 : contrat Personna
+
+La suite `tests/test_personna_integration.py` vérifie le recalcul des sessions,
+les rapports status-only, empreintes caduques, requêtes et provenance modifiées,
+revues anciennes, chemins sortants et identité de l’évaluateur avec Personna.
+Les fixtures sont synthétiques ; la réalité des sessions reste soumise à revue.

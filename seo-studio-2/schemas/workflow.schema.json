@@ -271,6 +271,34 @@
               "VERIFIED",
               "PROVISIONAL"
             ]
+          },
+          "evaluation": {
+            "type": "object",
+            "required": [
+              "suite_path",
+              "run_path",
+              "reviews_path",
+              "report_path",
+              "evidence_id"
+            ],
+            "properties": {
+              "suite_path": {
+                "type": "string"
+              },
+              "run_path": {
+                "type": "string"
+              },
+              "reviews_path": {
+                "type": "string"
+              },
+              "report_path": {
+                "type": "string"
+              },
+              "evidence_id": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
           }
         },
         "additionalProperties": false

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personna"
+  short_description: "Conçoit des personas d’agents après recherche web"
+  default_prompt: "Utilise $personna pour concevoir le persona d’un agent ou sous-agent adapté à mon contexte, après une recherche approfondie sur Reddit et GitHub."

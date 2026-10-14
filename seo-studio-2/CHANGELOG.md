@@ -1,3 +1,10 @@
+# 3.2.0 — 2026-10-14
+
+- Intégration du protocole Personna 1.2.0 : chaque profil VERIFIED doit disposer de sessions comparées, revues liées au contexte et d’un rapport recalculé PASS.
+- Évaluateur Personna livré à l’identique ; aucune exécution de code provenant des dossiers projet ou des preuves.
+- Régression des certificats status-only, profils caducs, requêtes altérées, provenance modifiée et chemins sortants.
+- Les fixtures prouvent uniquement le contrat hors ligne ; aucune certification du comportement des modèles ni outil payant obligatoire.
+
 # 3.1.0 — 2026-10-14
 
 - Intégration webapp-testing, cross-platform-qa, security-best-practices et web-perf :

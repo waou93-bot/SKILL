@@ -1,3 +1,25 @@
+# 3.0.0 — 2026-10-14
+
+- Création complète du site : préproduction puis D0–D5, code, corpus V1, SEO,
+  recherche interne, build, recette locale et publication seulement autorisée.
+- Aucun framework d'agents externe ni outil/service payant obligatoire ; capacités
+  de l'hôte et skills locaux conservés. /personna et sa formation inchangés.
+- Recherche obligatoire sur toute page publique de contenu sauf landing, y compris
+  pages détaillées et petits corpus ; ancienne exemption supprimée.
+- Liens contextuels intégrés aux expressions du corps, concordants avec le contrat
+  mis à jour de redaction-editoriale-web.
+- Contrôleur HTML local Python standard, sans réseau, avec limites explicites.
+- Exigences existantes et modèles documentaires alignés ; aucun faux statut live.
+
+# 2.3.3 — 2026-10-14
+
+- Intégration explicite site-checklist, pSEO et passage seo-audit obligatoire à G5.
+- Préproduction documentaire distincte de la recette du site réalisé à G6.
+- SC01–SC20, Safari SF01–SF08 et web-perf audit uniquement ; décision pSEO,
+  contrats de familles/données, indexabilité, pipeline et montée en charge.
+- Livrables et exigences R20/R25 alignés sans nouveau champ machine obligatoire.
+- Le validateur structurel ne certifie pas l'exécution ni le fond de ces audits.
+
 # 2.3.2 — 2026-10-13
 
 - Accès commerciaux des produits via les URLs affiliées autorisées des partenaires,

@@ -88,3 +88,12 @@ les artefacts affectés et leurs descendants, pas seulement le fichier édité. 
 met à jour le plan d'impact ; Astra arbitre les conflits avec le gel. Aucun agent de
 production ne peut « améliorer » silencieusement le skin, l'URL, l'intention, les CTA
 ou les promesses. Il soumet un change request avec impact et vérification prévue.
+
+## Orchestration du développement sans moteur externe
+
+Pour une création complète, l'orchestrateur de l'hôte continue après G5 et suit
+[18-realisation-complete.md](18-realisation-complete.md). Les deux délégués peuvent
+porter successivement frontend, données/backend et critique QA/SEO. Mandats,
+fichiers possédés et critères sont transmis à chaque changement de tâche.
+Ne pas installer un framework d'agents pour obtenir ce fonctionnement.
+Le vrai /personna et sa formation ne sont ni remplacés ni modifiés.

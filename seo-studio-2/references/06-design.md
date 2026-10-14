@@ -46,11 +46,13 @@ moyen compréhensible de comparer plutôt que rétrécir les colonnes à l'extr�
 
 ## Recherche en tête des rubriques
 
-Une rubrique est concernée lorsque son catalogue est étoffé, sa liste paginée ou
-son contenu difficile à parcourir rapidement. Tenir compte du corpus réel ou prévu
-en V1 ; ne pas imposer un seuil arbitraire à tous les sites. Documenter les rubriques
-concernées dans l'architecture et les briefs. Une courte liste lisible peut conserver
-une navigation simple, avec cette justification.
+Recherche obligatoire sur toutes les pages publiques de contenu sauf landing :
+articles, guides, comparatifs, fiches produits, hubs, listes et pages informatives.
+Un petit corpus ne dispense plus du moteur. La recherche peut utiliser un index
+local partagé ; ne pas imposer un moteur SaaS. Dans un article ou une fiche,
+annoncer « Rechercher dans les articles, guides et produits » selon le corpus réel.
+Dans une rubrique, annoncer son périmètre complet. Une icône ou la recherche globale
+cachée dans le menu ne remplace pas le champ visible sur la page.
 
 Placer un champ de recherche visible après le titre et la courte introduction
 éventuelle, avant les filtres, cartes, grilles ou listes. Le rendre directement

@@ -85,11 +85,11 @@ manquante, un bouton « lien affilié », une destination produit incorrecte ou 
 mention masquée laisse R16 ouverte pour le module concerné. Les preuves de clic
 et de rendu non exécutées restent non vérifiées ; le dossier ne les invente pas.
 
-Pour les rubriques riches en contenus, G2 précise le corpus et les champs de recherche,
+Pour chaque page publique de contenu hors landing, G2 précise le corpus et les champs de recherche,
 G3 spécifie son emplacement en tête de rubrique et ses états, et la recette de
 réalisation vérifie [le comportement du moteur](06-design.md#recherche-en-tête-des-rubriques).
 Une rubrique concernée sans cette spécification, ou un champ décoratif en réalisation,
-laisse l'exigence R12 ouverte. Un petit corpus peut justifier une navigation simple.
+laisse l'exigence R12 ouverte. Un petit corpus ne dispense pas de la recherche interne.
 Une vérification documentaire ne prouve pas le fonctionnement dans le navigateur.
 
 Pour un site réalisé, compléter G2/G3 par les preuves du
@@ -117,3 +117,25 @@ que les comportements du profil intègrent correctement les sources, ni que l'ID
 vient réellement d'un outil. Relire contenus et retours de l'hôte ; aucun champ
 auto-déclaré ne constitue une certification. Un brouillon ancien sans workflow
 reste lisible avec avertissement ; le transfert demande un complément documenté.
+
+## Gate obligatoire des trois skills de contrôle
+
+Appliquer [le contrat de contrôle final](17-controle-final.md) avant signature de G5 :
+site-checklist documentaire SC01–SC20, préparation Safari SF01–SF08 et web-perf
+en audit uniquement ; revue seo-audit ; décision pSEO et revue des familles applicables.
+G6 rejoue les contrôles sur le site réalisé avec preuves par environnement.
+R25 porte cette couverture ; R20 porte les spécifications techniques et pSEO.
+La revue documentaire ne certifie pas le site futur. Les tests différés correctement
+spécifiés ne bloquent pas seuls G5 ; une lacune bloquante ou dépendance requise absente
+interdit le transfert strict. Vérifier le fond : studio.py ne certifie pas ces revues.
+
+## Réalisation complète et recherche hors landing
+
+Une création de site ne s'arrête plus à G5. Exécuter D0–D4 et préparer/exécuter D5
+selon [18-realisation-complete.md](18-realisation-complete.md).
+R12 couvre désormais toute page publique de contenu hors landing, même courte ;
+ancienne exemption de petit corpus supprimée. La recette doit prouver la recherche
+fonctionnelle sur les gabarits détaillés et de listes, et les liens intégrés au corps.
+`validate --stage handoff` ne prouve pas un site construit. `validate --stage release`
+conserve son sens de publication autorisée et preuves live. Le rapport du contrôleur
+HTML local et les preuves navigateur distinguent les résultats locaux de la production.

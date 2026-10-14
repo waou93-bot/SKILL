@@ -95,3 +95,10 @@ Prévoir contrôles de lancement, après premières données puis aux fenêtres 
 Calendrier = plan, pas tâche récurrente créée. Toute surveillance effective nécessite
 une demande et un ordonnanceur réel. Une soumission ou un déploiement ne se déduit pas
 implicitement de « créer ma préprod ».
+
+## Audits intégrés
+
+Préparer puis appliquer [le contrôle final intégré](17-controle-final.md) : seo-audit,
+site-checklist et pSEO pour les familles applicables. Spécifier leurs tests à G4,
+revoir les spécifications à G5 et mesurer le site réalisé à G6 dans l'environnement
+autorisé. Le module web-perf de site-checklist reste en audit uniquement.

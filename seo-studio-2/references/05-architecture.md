@@ -17,7 +17,7 @@ Pour chaque hub, catégorie ou index riche en contenus, préciser le corpus rech
 les types et champs couverts, les filtres utiles et les destinations des résultats.
 Prévoir une recherche en tête de rubrique selon [le contrat de design](06-design.md#recherche-en-tête-des-rubriques),
 sur tout ce corpus, y compris les entrées hors de la première page. Une recherche
-globale seule ne suffit pas ; une courte rubrique peut justifier son absence.
+globale cachée ne suffit pas ; toute page de contenu hors landing possède un champ visible.
 
 Pour les pages prioritaires, intégrer la [matrice de sous-questions et propriétaires](14-fanout-retour-sites.md)
 à l'inventaire : branche observée ou hypothèse, réponse/section, preuve, décision et
@@ -86,3 +86,19 @@ Importer l'inventaire, mapper anciennes/nouvelles URLs, décider maintenir/enric
 fusionner/rediriger au cas par cas, prévoir retour arrière et tests. L'audit seul
 n'autorise aucune suppression. Le changement de framework n'est jamais une tâche SEO
 par défaut. Documenter l'impact sur chaque brief, lien entrant et événement mesuré.
+
+## Architecture programmatique
+
+Charger le vrai pSEO et appliquer [le contrôle final intégré](17-controle-final.md)
+si des familles de pages proviennent de données structurées. Consigner dans ce
+livrable la décision d'applicabilité, les combinaisons valides, les données minimales,
+la valeur propre et les règles d'indexabilité. Sans besoin, justifier ce choix.
+
+## Recherche sur les pages détaillées
+
+R12 exige maintenant une recherche sur chaque page de contenu hors landing,
+quel que soit le nombre d'entrées. Ajouter le composant et le corpus aux contrats
+des articles, guides, comparatifs, fiches et pages informatives, pas seulement aux hubs.
+Pour R10/R13, prévoir aussi les expressions du corps à rendre cliquables vers des
+articles, guides ou fiches produits réels : ancre, URL, contexte, justification et
+preuve de destination. Appliquer redaction-editoriale-web sans URL inventée.

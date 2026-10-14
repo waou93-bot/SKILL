@@ -49,3 +49,20 @@ Une reprise garde `state.json` et les IDs R09/R10/R13/R17/R20/R21/R22 existants.
 Le besoin de livrables dépend du type de site : justifier les `NON_APPLICABLE` prévus
 par le contrat. Même lorsqu'aucune monétisation n'est pertinente, `06_PARTENAIRES.md`
 explique ce choix et les formats exclus au lieu de fabriquer une offre.
+
+## Contrôles intégrés à conserver dans les livrables existants
+
+Selon [le contrat de contrôle final](17-controle-final.md), `11_QA.md` contient
+la revue seo-audit, les tableaux SC01–SC20/SF01–SF08, le protocole ou rapport web-perf
+et la revue pSEO applicable. `03_ARCHITECTURE.md` contient sa décision d'applicabilité
+et les familles ; `07_TECHNIQUE.md` leur pipeline et les tests ; `08_MESURE.md`
+les cohortes ; `09_ROADMAP.md` les paliers ; `12_HANDOFF.md` les tests restant à exécuter.
+
+## Livrables supplémentaires d'une réalisation complète
+
+En plus du dossier conservé, remettre le dépôt/code du site, tout le corpus V1,
+les assets autorisés, l'index/moteur de recherche local, les données/CMS nécessaires,
+les commandes réellement exécutées et un README de lancement/build/maintenance.
+Documenter dans `11_QA.md` les tests locaux et les liens du corps vérifiés ; dans
+`12_HANDOFF.md`, le chemin du site, la version, les commandes, le rapport HTML,
+les captures/traces navigateur et les limites de publication.

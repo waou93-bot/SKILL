@@ -147,3 +147,10 @@ Core Web Vitals ou exhaustivité du catalogue depuis un build réussi. La mise e
 reste une action séparément autorisée. À la reprise, continuer les travaux manquants
 à partir du contexte conservé, sans recommencer le cadrage ni interroger à nouveau
 sur les décisions validées.
+
+## Parcours complet
+
+Pour une demande de création de site, suivre [18-realisation-complete.md](18-realisation-complete.md)
+jusqu'au code, au corpus V1 et à la recette locale. Recherche interne obligatoire
+sur chaque page de contenu hors landing, sans exception liée à la taille du corpus.
+Intégrer au corps les liens contextuels demandés par redaction-editoriale-web.

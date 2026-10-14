@@ -100,3 +100,12 @@ contenu distinct et liens effectivement intégrés. Réutiliser les autorisation
 de rédaction directe sans une attente de plan supplémentaire. Les pilotes sont
 le minimum documentaire de préproduction, pas une limite au travail de réalisation
 explicitement confié. Le volume doit rester utile et maintenable.
+
+## Liens hypertextes intégrés au corps
+
+Appliquer le contrat de liens contextuels de redaction-editoriale-web : sélectionner
+des mots ou expressions pertinents dans les paragraphes et les relier directement
+aux articles, guides ou fiches produits utiles du site. Livrer ces ancres réellement
+intégrées au texte, pas seulement une liste dans le dossier SEO. Préserver la prose
+et la destination précise ; pas de quota, d'autolink de toutes les occurrences ni
+de faux lien. Les liens vers un marchand suivent le contrat d'affiliation.

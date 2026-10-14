@@ -58,7 +58,8 @@
     "Lecture mobile",
     "Accessibilité et motion",
     "Assets et droits",
-    "Tests visuels prévus ou exécutés"
+    "Tests visuels prévus ou exécutés",
+    "Recherche obligatoire sur chaque page de contenu hors landing"
   ],
   "05_CONTENU.md": [
     "Doctrine éditoriale",
@@ -69,7 +70,8 @@
     "Méthode, sources et auteurs",
     "Calendrier soutenable",
     "Maintenance",
-    "Couverture question, réponse, preuve, limite et action"
+    "Couverture question, réponse, preuve, limite et action",
+    "Liens contextuels réellement intégrés aux mots et expressions du corps"
   ],
   "06_PARTENAIRES.md": [
     "Pertinence ou exclusions",
@@ -130,7 +132,13 @@
     "P0/P1/P2",
     "Gates",
     "Non vérifié et impact",
-    "Recette de couverture, métadonnées, liens et réalisation"
+    "Recette de couverture, métadonnées, liens et réalisation",
+    "Revue seo-audit : périmètre, preuves et corrections",
+    "Site-checklist SC01–SC20 : spécifications et tests différés ou exécutés",
+    "Safari SF01–SF08 et web-perf audit uniquement : couverture et limites",
+    "pSEO : applicabilité et revue par famille",
+    "Réalisation D0–D5 : version/code/corpus V1 et build",
+    "Recherche depuis pages détaillées et liens du corps : scénarios et preuves"
   ],
   "12_HANDOFF.md": [
     "État final",
@@ -139,6 +147,7 @@
     "Consignes de réalisation",
     "Permissions et interdits",
     "Blocages",
-    "Reprise et prochaine vérification"
+    "Reprise et prochaine vérification",
+    "Site réalisé : chemin, version, lancement/build et limites de publication"
   ]
 }

@@ -26,7 +26,7 @@ Relecture qualifiée nécessaire / disponible / manquante :
 
 ## Parcours et maillage
 Liens entrants (page, ancre, emplacement, raison) :
-Liens sortants internes (page, ancre, emplacement, raison) :
+Liens sortants internes réellement intégrés aux mots/expressions du corps (page, URL exacte, ancre, emplacement, raison, vérification) :
 Action suivante et alternative sans achat :
 Produits/offres sources, référence/variante exacte, fraîcheur :
 Encarts proposés, destination, disclosure visible et rel :
@@ -36,7 +36,7 @@ Mention d'affiliation séparée du bouton, emplacement visible desktop/mobile ; 
 
 ## Design et implémentation
 Gabarit et sections ordonnées ; composants et états :
-Recherche en tête de rubrique : applicable / petit corpus avec justification ; emplacement avant les listes :
+Recherche obligatoire hors landing : rôle réel landing/contenu, emplacement après titre/introduction avant corps/listes :
 Libellé et corpus complet (produits / articles / guides / autre), champs et filtres couverts :
 Résultats, destinations, pertinence, pagination ; chargement / erreur / vide / effacement :
 Recette recherche : entrée hors première page, zéro résultat, requête vide, clavier et mobile ; preuve ou non exécuté :

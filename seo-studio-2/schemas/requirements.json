@@ -58,7 +58,7 @@
     },
     {
       "id": "R10",
-      "text": "Produire les liens contextuels entrants/sortants et les prochaines actions des pages",
+      "text": "Produire les liens contextuels entrants/sortants et prochaines actions, avec ancres pertinentes réellement intégrées au corps vers articles, guides et produits existants",
       "expected_output": "state.json",
       "allow_not_applicable": false
     },
@@ -70,7 +70,7 @@
     },
     {
       "id": "R12",
-      "text": "Spécifier gabarits, composants, mobile et états, dont la recherche en tête des rubriques riches en contenus avec corpus, résultats et critères de recette",
+      "text": "Spécifier et réaliser lorsque demandé gabarits, composants, mobile et états, avec recherche interne fonctionnelle obligatoire sur toute page publique de contenu hors landing, sans exemption de petit corpus",
       "expected_output": "04_DESIGN.md",
       "allow_not_applicable": false
     },
@@ -118,7 +118,7 @@
     },
     {
       "id": "R20",
-      "text": "Spécifier SEO technique, version/source publique, routes à préserver, performance et recette",
+      "text": "Spécifier SEO technique, version/source publique, routes à préserver, performance et recette, avec contrats de données/gabarits et indexabilité pSEO lorsque pertinent",
       "expected_output": "07_TECHNIQUE.md",
       "allow_not_applicable": false
     },
@@ -148,13 +148,13 @@
     },
     {
       "id": "R25",
-      "text": "Appliquer gates et contrôles sans fausse complétude",
+      "text": "Appliquer gates et contrôles sans fausse complétude : revue seo-audit, site-checklist SC01–SC20/Safari/web-perf en audit uniquement, décision et contrôles pSEO applicables à G5 puis recette réelle G6",
       "expected_output": "11_QA.md",
       "allow_not_applicable": false
     },
     {
       "id": "R26",
-      "text": "Geler et transmettre les artefacts, règles et permissions",
+      "text": "Geler et transmettre les artefacts, règles et permissions ; pour une création complète livrer aussi code, corpus V1, recherche et recette locale selon D0–D5",
       "expected_output": "12_HANDOFF.md",
       "allow_not_applicable": false
     },

@@ -61,3 +61,30 @@ Le travail indépendant continue en `PROVISOIRE`. La dépendance concernée rest
 est cité. La préparation peut être utile sans être strictement complète ; le bilan
 doit le dire. Les modules post-déploiement, non applicables au stade préproduction,
 sont préparés et non artificiellement marqués réussis.
+
+## Contrôles de fin de préproduction et réalisation
+
+| Dépendance | Responsabilité | Passage Studio |
+|---|---|---|
+| site-checklist | SC01–SC20, Safari SF01–SF08 et web-perf en audit uniquement | couverture documentaire G5 ; recette réelle G6 |
+| seo-audit | exploration/indexation, technique, on-page, contenu et liens | revue G5 obligatoire ; contrôles réels G6 |
+| pSEO | familles de pages issues de données, utilité et indexabilité | applicabilité G1 ; conception G2–G4 si pertinente ; revue G5/G6 |
+
+Lire [le contrat de contrôle final](17-controle-final.md). Charger les trois skills
+réels ; justifier l'absence de système pSEO plutôt que le créer artificiellement.
+L'intégration de seo-audit déjà existante devient un passage explicite à G5.
+
+## Indépendance de la réalisation — version 3
+
+Le Studio possède son parcours de développement et de recette dans
+[18-realisation-complete.md](18-realisation-complete.md). Ne pas exiger GSD,
+BMad, OpenCode, CrewAI, OpenHands, LangGraph, un cloud ou un service payant.
+Les skills locaux sont des instructions ; ils ne constituent pas une autorisation
+d'installer leurs outils ni de payer leurs services. Conserver le vrai /personna,
+ses entrées, sa calibration et les preuves de chargement des agents.
+La recherche utilise les accès publics ou les données autorisées disponibles ;
+aucun compte LinkedIn, Reddit, outil de mots-clés ou abonnement ne doit être créé.
+L'absence d'accès conserve les limites déjà prévues, sans arrêter les réalisations
+locales indépendantes ni inventer les preuves. Ne pas annoncer un transfert strict
+si un prérequis réel manque. Les dépendances du runtime Codex sont explicites :
+un skill ne fournit ni son propre modèle ni une inférence gratuite hors de l'hôte.

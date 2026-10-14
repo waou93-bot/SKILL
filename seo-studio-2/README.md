@@ -1,7 +1,8 @@
-# SEO STUDIO 2 — package 2.3.0
+# SEO STUDIO 2 — package 3.0.0
 
 Créé le 8 octobre 2026. Ce package transforme une niche et un type de site en dossier
-complet de préproduction. Il comporte les instructions, des playbooks, les mandats
+de préproduction puis en site local réalisé et vérifié quand sa création est demandée.
+Il comporte les instructions, des playbooks, les mandats
 métiers, une bibliothèque de patterns observés, des contrats JSON, des scripts locaux
 et leurs tests. Il ne comporte ni serveur autonome, ni abonnement, ni appel API payant.
 
@@ -98,3 +99,19 @@ additionnels. `init` produit des étapes PLANNED et aucune preuve/approbation.
 Ancien dossier : aucune réinitialisation ; draft reste lisible, handoff demande les
 nouveaux registres/preuves. `snapshot` n'approuve rien et inclut l'empreinte des
 entrées de recherche/formation. Les preuves runtime restent à contrôler sur l'hôte.
+
+## Créer le site de bout en bout
+
+```text
+$seo-studio-2
+Niche : [niche]
+Type de site : [type]
+Crée le site complet et son corpus V1 jusqu'au résultat local vérifiable.
+Conserve le vrai /personna. Aucun framework d'agents externe ni outil payant obligatoire.
+Recherche interne sur toutes les pages de contenu sauf landing.
+Intègre les liens pertinents aux mots/expressions du corps des articles.
+Ne publie rien sans autorisation.
+```
+
+Voir `references/18-realisation-complete.md`. Les skills locaux sont conservés.
+Le moteur d'inférence reste celui de l'hôte ; le package ne fournit pas de modèle.

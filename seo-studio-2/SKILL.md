@@ -1,32 +1,37 @@
 ---
 name: seo-studio-2
 description: >-
-  SEO STUDIO 2 : transformer une niche et un type de site en préproduction complète,
+  SEO STUDIO 2 : créer un site SEO de bout en bout, du cadrage au site local testé,
   sourcée et contrôlée : positionnement, Design DNA, architecture, maillage, contenus,
-  guides, comparatifs, couverture fan-out, encarts partenaires, technique, roadmap et transfert production.
+  guides, comparatifs, fan-out, partenaires, développement, recherche interne, recette et publication autorisée.
+  Sans framework d’agents externe ni outil payant obligatoire ; conserver le vrai /personna.
   Coordonner Brain, Organisation, No Slop, tous les skills SEO découverts et /personna.
   Imposer réflexion structurée, deep research LinkedIn/Reddit des compétences métier,
   personas sectoriels et itérations avec de vrais sous-agents créés pour cette mission.
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "2.3.2"
-  reviewed_at: "2026-10-13"
+  version: "3.0.0"
+  reviewed_at: "2026-10-14"
 ---
 
 # SEO STUDIO 2
 
 ## Résultat attendu
 
-À partir de **la niche et du type de site**, remettre un dossier de préproduction
-exécutable par une équipe : chaque page, lien, composant, contenu, dépendance,
+À partir de **la niche et du type de site**, produire le site demandé et son dossier
+de préproduction exécutable : chaque page, lien, composant, contenu, dépendance,
 contrôle et décision a un propriétaire et un critère d'acceptation. Produire les
 fichiers, pas seulement annoncer leur liste. Le dossier doit permettre de construire
 le site sans réinventer sa stratégie en cours de route.
 
-La préproduction comprend la stratégie et les spécifications de l'ensemble du périmètre,
-les briefs complets de la première version et ses contenus pilotes. Elle ne signifie
-ni publication de toutes les idées du backlog ni création automatique d'un site réel.
+La demande « créer/construire un site » déclenche la réalisation complète :
+préproduction, code, corpus V1 réellement rédigé, recherche interne fonctionnelle,
+SEO intégré, build, recette et remise d'un résultat local reproductible.
+Une demande explicitement limitée à la préproduction reste documentaire.
+Le backlog hors V1 et la publication ne sont pas automatiquement autorisés.
+Lire [la réalisation indépendante de bout en bout](references/18-realisation-complete.md).
+Le vrai /personna et son processus restent conservés ; ne pas modifier ce skill.
 
 ## Contrat non négociable
 
@@ -58,7 +63,7 @@ ni publication de toutes les idées du backlog ni création automatique d'un sit
 9. Pour une nouvelle mission complète : terminer les quatre étapes de réflexion
    F0–F3, rechercher les compétences LinkedIn/Reddit, former les profils via le vrai
    /personna, créer au moins deux sous-agents métier et charger leurs profils.
-   Enchaîner ensuite la préproduction autorisée sans confirmation rituelle.
+   Enchaîner ensuite la préproduction puis la réalisation locale lorsqu’un site est demandé, sans confirmation rituelle.
    Chaque objet majeur exige critique, résolution et nouvelle relecture réelle.
 10. En mode préproduction, rester sur recherche, fichiers et prototypes autorisés.
    Aucun compte, abonnement, dépense, contact partenaire, soumission, publication ou
@@ -84,7 +89,19 @@ quand le travail relève de leur périmètre.
 | G3 — définir l'expérience | [design](references/06-design.md), [contenus](references/07-content.md), [partenaires](references/08-partners.md) | skin, gabarits, briefs, contenus pilotes, encarts et inventaire commercial |
 | G4 — rendre réalisable | [technique et mesure](references/09-technical.md), [roadmap](references/11-roadmap.md) | deux stacks, ADR, budgets de performance, instrumentation, backlog dépendant |
 | G5 — confronter et transmettre | gates, [contrat des livrables](references/12-deliverables.md) | corrections, décisions, vérifications, dossier gelé et transfert versionné |
-| G6 — suite autorisée seulement | vrais skills de production/SEO post-déploiement | tests réels de preview/production, soumissions et mesures autorisées |
+| G6 — réaliser et vérifier | [réalisation complète](references/18-realisation-complete.md), contrôle final | site et corpus V1, recherche, title/meta/fan-out, build et recette locale ; publication/post-déploiement si autorisés |
+
+## Contrôle final intégré
+
+Charger les vrais `site-checklist`, `seo-audit` et `pSEO` pour une mission complète.
+Lire [le contrat de contrôle final](references/17-controle-final.md) : évaluer pSEO
+à G1, appliquer son architecture à G2–G4 lorsqu'elle est pertinente, puis effectuer
+à G5 la revue seo-audit et la couverture documentaire site-checklist (SC01–SC20,
+module Safari SF01–SF08 et protocole web-perf en mode audit uniquement).
+Consigner preuves, limites et corrections dans `11_QA.md` avant transfert.
+À G6, vérifier le site réalisé dans l'environnement autorisé ; les tests futurs
+restent NON VÉRIFIÉS en préproduction. Ne pas imposer de pages programmatiques
+à un site éditorial sans besoin. Une reprise ciblée ne rejoue que les points impactés.
 
 ## Autonomie et réalisation autorisée
 
@@ -101,22 +118,20 @@ au dossier de préproduction. Une reprise ciblée charge les références applic
 et poursuit l'orchestration existante ; elle ne relance pas G0 ni une formation complète.
 La production locale autorisée ne vaut jamais autorisation de publication externe.
 
-## Recherche en tête des rubriques riches en contenus
+## Recherche interne obligatoire hors landing
 
-Pour les catalogues de produits, index d'articles, guides, comparatifs, ressources
-et autres rubriques volumineuses ou paginées, prévoir un moteur de recherche interne
-visible au début de la rubrique, après son titre et une courte introduction éventuelle,
-avant les filtres et les listes. Adapter son libellé et son périmètre au contenu :
-« Rechercher un produit », « Rechercher un article », « Rechercher un guide ».
-La recherche globale du site ne remplace pas cet accès local.
-
-Appliquer [le contrat de recherche des rubriques](references/06-design.md#recherche-en-tête-des-rubriques)
-à G2/G3, aux briefs et à la recette : corpus complet, résultats pertinents,
-réinitialisation, absence de résultat, mobile et clavier. Pour une rubrique courte
-facile à parcourir, justifier simplement l'absence de recherche. En préproduction,
-spécifier le comportement ; en réalisation autorisée, le rendre fonctionnel et
-le tester. Un champ décoratif ou filtrant uniquement la page courante ne satisfait
-pas cette règle.
+Chaque page publique de contenu possède un moteur de recherche interne visible,
+y compris articles, guides, comparatifs, fiches produits, hubs, catégories et pages
+informatives. La landing est la seule exception à cette obligation ; la qualifier
+selon son rôle réel, jamais pour éviter le contrôle. Aucun petit corpus n'exempte
+une page de contenu. Le même composant local peut être réutilisé sur plusieurs pages.
+Placer le champ après le titre/introduction, avant le corps ou les listes. Sur une
+page détaillée, rechercher articles, guides et produits du site ; sur une rubrique,
+annoncer le corpus complet de cette rubrique et permettre d'élargir explicitement.
+Appliquer [le contrat de recherche](references/06-design.md#recherche-en-tête-des-rubriques)
+aux briefs, au développement et à la recette : pertinence, corpus entier, résultats
+cliquables, accents/casse, reset, état vide/erreur, clavier, mobile et absence de résultat.
+Aucun service de recherche payant requis. Un champ décoratif ne satisfait pas R12.
 
 ## Accès produits et boutons des partenaires
 

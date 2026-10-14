@@ -12,7 +12,7 @@ pilotes. La recherche et la préparation des profils appartiennent à ce cadrage
 | F1_RECHERCHE | Rechercher les besoins et les compétences du secteur, dont LinkedIn et Reddit | `01_RECHERCHE.md`, `01_COMPETENCES.md` : contenus lus, contre-preuves, limites ; profils préparés par le vrai /personna |
 | F2_OPTIONS | Comparer des approches réalisables et leurs conséquences | options sérieuses, preuves, coûts inconnus, différenciation, couverture fan-out ; proposition soumise à un sous-agent métier |
 | F3_DECISION | Corriger avec sa critique, vérifier puis retenir le périmètre V1 | décision motivée, réponse aux objections, test discriminant, critères ; cycle `idees` réellement clos |
-| PREPRODUCTION | Enchaîner G2 à G5 dans le même travail autorisé | architecture et maillage, skin, briefs, pilotes, partenaires, technique, mesure, roadmap et transfert |
+| PREPRODUCTION | Enchaîner G2 à G5, puis D0–D5 pour une création de site autorisée | architecture et maillage, skin, briefs, pilotes, partenaires, technique, mesure, roadmap et transfert |
 
 Ne pas terminer par « voici le plan, veux-tu que je continue ? ». Après F3, exécuter
 la préproduction autorisée et produire les fichiers. Ne demander qu'une information

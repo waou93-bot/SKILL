@@ -112,3 +112,11 @@ délégués, ordre des cycles et relectures. Il n'effectue aucun appel d'agent o
 Un ancien brouillon sans compagnon retourne un avertissement ; handoff/release
 restent bloqués. Compléter manuellement depuis les templates sans inventer de
 preuves ni réinitialiser. Les nouvelles exigences sont R27/R28.
+
+## Contrôle natif d'un site HTML réalisé
+
+`python scripts/site_check.py CHEMIN_EXPORT --landing-route /` contrôle hors réseau
+le HTML, title/meta, liens/fragments, ressources, alt et recherche sur chaque page
+hors landing explicitement déclarée. `--public-base` confronte les canonical.
+LOCAL_HTML_OK n'est ni une recette navigateur ni une preuve d'indexation.
+Voir `references/18-realisation-complete.md` pour le parcours D0–D5.

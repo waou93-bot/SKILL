@@ -1,6 +1,6 @@
 interface:
   display_name: "SEO STUDIO 2"
-  short_description: "Réflexion → personas métier → préproduction SEO itérative"
-  default_prompt: "Utilise $seo-studio-2 : suis F0–F3, recherche les compétences métier sur LinkedIn et Reddit, forme des personas via le vrai /personna, crée et configure deux sous-agents pour cette mission puis enchaîne la préproduction complète en itérant avec eux, sans publication."
+  short_description: "Créer un site SEO complet, avec personas et recette locale"
+  default_prompt: "Utilise $seo-studio-2 : suis F0–F3, recherche les compétences métier sur LinkedIn et Reddit, forme des personas via le vrai /personna, crée et configure deux sous-agents pour cette mission puis réalise le site et son corpus V1 jusqu’à la recette locale, sans outil payant obligatoire ni publication implicite."
 policy:
   allow_implicit_invocation: true

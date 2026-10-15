@@ -8,3 +8,5 @@ Version générique publiable, 5 octobre 2026. Les historiques et décisions pro
 - Vérifier images exactes, proportions, référence/couleur et rendu mobile ; ne pas présenter une illustration générique comme un produit précis.
 
 Ces préférences sont un profil explicite à activer pour l'utilisateur concerné, pas une règle universelle. Une instruction locale plus récente prime. Enregistrer provenance, portée et exceptions dans PROJECT_SKIN ; ne pas exporter d'historique privé pour appliquer ces principes.
+
+- 15 octobre 2026, demande explicite : finition léchée, profondeur perceptible, direction cinématique adaptée à chaque niche ; appliquer cinematic-craft.md et son gate de recette. Préserver les composants approuvés et leur qualité d'interaction.

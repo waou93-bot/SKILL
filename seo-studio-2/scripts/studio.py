@@ -28,6 +28,13 @@ BASE_SEO = {'seo', 'ai-seo', 'seo-audit', 'seo-content-engine', 'seo-post-deploy
 SKIP_DIRS = {'.git', 'node_modules', '__pycache__', '.venv', 'venv'}
 PLACEHOLDER = re.compile(r'\b(?:A_COMPLETER|TODO|LOREM IPSUM)\b', re.I)
 HASH = re.compile(r'^[0-9a-f]{64}$')
+COMPANION_DIR = 'seo-site-preproduction/'
+TEMPLATE_ASSESSMENT_HEADINGS = (
+    'Template analysé : source, version et date',
+    'Applicabilité à la niche, au public, aux tâches et à l’existant',
+    'Éléments conservés, adaptés ou écartés et motifs',
+    'Preuves consultées et impacts sur les décisions de reprise',
+)
 
 
 def load(path: Path) -> Any:
@@ -242,7 +249,7 @@ def initial_files(niche: str, site_type: str, mode: str = 'full') -> dict[str, s
         for artifact in state['artifacts']:
             if artifact['owner'] not in {'ASTRA','TERRA','QA_LEAD'}:
                 artifact['owner']='TERRA'
-        contents['MODE_LITE.md'] = '# Mode allégé\n\nTrois revues regroupées : stratégie SEO (F0–F3/G0–G2), spécification (G3–G4), recette (G5/D0–D4). R01–R28 conservées. Un délégué critique réel ; profils et preuves Personna restent requis. Aucun gate automatiquement approuvé.\n'
+        contents['MODE_LITE.md'] = '# Mode allégé\n\nTrois revues regroupées : stratégie SEO (F0–F3/G0–G2), spécification (G3–G4), recette (G5/D0–D4). R01–R31 conservées. Un délégué critique réel ; profils et preuves Personna restent requis. Aucun gate automatiquement approuvé.\n'
     author = (ROOT/'templates/author.md').read_text(encoding='utf-8')
     author = author.replace('{{SITE_NAME}}',state['editorial_identity']['site_name'])
     if not re.search(r'capill|cheveu|cuir chevelu|coiff|dermat', niche, re.I):
@@ -250,6 +257,12 @@ def initial_files(niche: str, site_type: str, mode: str = 'full') -> dict[str, s
                                 "Quand une question exige un avis professionnel, les pages distinguent les\ninformations générales de l'expertise qualifiée nécessaire.")
     contents['AUTEUR.md'] = author
     state['artifacts'].append({'id':'default-author','path':'AUTEUR.md','kind':'report','content_type':None,'owner':'TERRA','status':'DRAFT','evidence_id':None})
+    execution = load(ROOT/'templates/execution.json')
+    execution['run_id'] = state['run_id']
+    contents['EXECUTION.json'] = json_text(execution)
+    volume = load(ROOT/'templates/volume.json')
+    volume.update(run_id=state['run_id'],niche=state['niche'])
+    contents['research/volume.json'] = json_text(volume)
     contents['state.json'] = json_text(state)
     return contents
 
@@ -280,7 +293,7 @@ def init_project(project: Path, niche: str, site_type: str, apply: bool = False,
             'warning':'Structure uniquement : textes, preuves, formation et revues à produire. Aucun gate validé.'}
 
 
-def validate_project(project: Path, stage: str = 'draft') -> dict:
+def validate_project(project: Path, stage: str = 'draft', site_root: Path | None = None, source_root: Path | None = None) -> dict:
     project = project.absolute()
     state_path = safe_path(project, 'state.json', True)
     state = load(state_path)
@@ -288,7 +301,7 @@ def validate_project(project: Path, stage: str = 'draft') -> dict:
     warnings = []
     if errors:
         return {'status':'BLOQUE','stage':stage,'errors':errors,'warnings':warnings}
-    strict = stage in {'handoff','release'}
+    strict = stage in {'handoff','local','release'}
     requirements = {r['id']:r for r in load(ROOT/'schemas/requirements.json')['requirements']}
     for field in ('dependencies','roles','requirements','artifacts','evidence','sources','claims','pages','links','placements','reviews','objections','decisions','gates'):
         key = 'name' if field == 'dependencies' else 'id'
@@ -314,7 +327,7 @@ def validate_project(project: Path, stage: str = 'draft') -> dict:
     errors.extend(serp_errors); warnings.extend(serp_warnings)
     if state.get('planning_mode','full') == 'lite' and len([p for p in state['pages'] if p['wave']=='V1']) >= 50:
         errors.append('Mode lite : corpus V1 inférieur à 50 pages requis ; complexité à revoir')
-    if stage == 'release':
+    if stage in {'local','release'}:
         technical_errors, technical_warnings = validate_technical(project,state,load=load,safe_path=safe_path,digest=digest)
         errors.extend(technical_errors); warnings.extend(technical_warnings)
 
@@ -421,6 +434,17 @@ def validate_project(project: Path, stage: str = 'draft') -> dict:
     if strict:
         expected = set(load(ROOT/'templates/deliverables.json')) | {'PROJECT_SKIN.yaml'}
         errors.extend('Livrable obligatoire absent du registre : '+p for p in expected - artifacts.keys())
+        architecture_path = safe_path(project, '03_ARCHITECTURE.md')
+        if architecture_path.is_file():
+            architecture_text = architecture_path.read_text(encoding='utf-8-sig')
+            for heading in TEMPLATE_ASSESSMENT_HEADINGS:
+                section = re.search(
+                    r'(?ms)^##\s+'+re.escape(heading)+r'\s*\n(.*?)(?=^##\s|\Z)',
+                    architecture_text)
+                if not section:
+                    errors.append('03_ARCHITECTURE.md : section template obligatoire absente : '+heading)
+                elif not section.group(1).strip():
+                    errors.append('03_ARCHITECTURE.md : section template vide : '+heading)
         if not any(a['kind'] == 'pilot' for a in state['artifacts']):
             errors.append('Aucun contenu pilote écrit dans le registre')
         pilots = [a for a in state['artifacts'] if a['kind'] == 'pilot']
@@ -601,7 +625,11 @@ def validate_project(project: Path, stage: str = 'draft') -> dict:
     if not state['niche'] or not state['site_type']:
         errors.append('Niche et type de site obligatoires')
     warnings.append('Les hashes et traces déclarées ne prouvent ni vérité, ni indépendance réelle, ni qualité : revue métier et preuves de l’hôte nécessaires.')
-    return {'status':'BLOQUE' if errors else 'STRUCTURE_OK','stage':stage,'errors':list(dict.fromkeys(errors)),
+    if stage in {'local','release'}:
+        from delivery import validate_execution
+        errors.extend('Livraison : '+e for e in validate_execution(project,state,site_root,source_root))
+    success = 'LOCAL_VERIFIED' if stage=='local' else 'RELEASE_VERIFIED' if stage=='release' else 'STRUCTURE_OK'
+    return {'status':'BLOQUE' if errors else success,'stage':stage,'errors':list(dict.fromkeys(errors)),
             'warnings':warnings, 'counts':{k:len(state[k]) for k in ['requirements','pages','links','artifacts','reviews']}}
 
 
@@ -633,6 +661,7 @@ def check_package(root: Path) -> dict:
     for name in expected:
         safe_path(root,name)
     actual = file_signature(root, {'MANIFEST.sha256.json'})
+    actual = {p:h for p,h in actual.items() if not p.startswith(COMPANION_DIR)}
     package_errors=[]
     if 'SKILL.md' not in actual:
         package_errors.append('SKILL.md obligatoire absent')
@@ -647,21 +676,61 @@ def check_package(root: Path) -> dict:
     return {'status':'BLOQUE' if errors else 'PACKAGE_INTEGRITY_OK','errors':errors,'files':len(actual)}
 
 
+def check_companion(root: Path, standalone: bool = False) -> dict:
+    root = root.absolute()
+    companion = root if standalone else safe_path(root, 'seo-site-preproduction')
+    manifest_path = safe_path(companion, 'MANIFEST.sha256.json', True)
+    expected = load(manifest_path)
+    if not isinstance(expected,dict) or not all(
+            isinstance(k,str) and isinstance(v,str) and HASH.fullmatch(v)
+            for k,v in expected.items()):
+        raise ValueError('Manifeste du skill compagnon invalide')
+    for name in expected:
+        safe_path(companion,name)
+    actual = file_signature(companion, {'MANIFEST.sha256.json'})
+    errors=[]
+    if 'SKILL.md' not in actual:
+        errors.append('seo-site-preproduction/SKILL.md obligatoire absent')
+    else:
+        text=(companion/'SKILL.md').read_text(encoding='utf-8-sig')
+        if (not re.match(r'^---\s*\n',text)
+                or not re.search(r'^name:\s*["\']?seo-site-preproduction["\']?\s*$',text,re.M)
+                or not re.search(r'^description:\s*\S',text,re.M)):
+            errors.append('Frontmatter du skill compagnon invalide')
+    errors += ['fichier compagnon absent : '+p for p in expected.keys()-actual.keys()]
+    errors += ['fichier compagnon non déclaré : '+p for p in actual.keys()-expected.keys()]
+    errors += ['empreinte compagnon différente : '+p
+               for p in actual.keys() & expected.keys() if actual[p]!=expected[p]]
+    return {'status':'BLOQUE' if errors else 'COMPANION_INTEGRITY_OK',
+            'errors':list(dict.fromkeys(errors)),'files':len(actual)}
+
+
+def check_distribution(root: Path) -> dict:
+    package = check_package(root)
+    if not (root/'seo-site-preproduction').exists():
+        return package
+    companion = check_companion(root)
+    errors = list(package['errors']) + companion['errors']
+    return {'status':'BLOQUE' if errors else 'PACKAGE_INTEGRITY_OK',
+            'errors':list(dict.fromkeys(errors)),'files':package['files'],
+            'companion_files':companion['files']}
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command',required=True)
     p = sub.add_parser('inventory'); p.add_argument('--root',type=Path,action='append',required=True)
     p = sub.add_parser('init'); p.add_argument('--project',type=Path,required=True);p.add_argument('--niche',required=True);p.add_argument('--site-type',required=True);p.add_argument('--apply',action='store_true');p.add_argument('--mode',choices=['full','lite'])
-    p = sub.add_parser('validate');p.add_argument('project',type=Path);p.add_argument('--stage',choices=['draft','handoff','release'],default='draft')
+    p = sub.add_parser('validate');p.add_argument('project',type=Path);p.add_argument('--stage',choices=['draft','handoff','local','release'],default='draft');p.add_argument('--site-root',type=Path);p.add_argument('--source-root',type=Path)
     p = sub.add_parser('snapshot');p.add_argument('project',type=Path)
     p = sub.add_parser('check-package');p.add_argument('package',type=Path)
     args = parser.parse_args(argv)
     try:
         if args.command=='inventory': result=inventory(args.root)
         elif args.command=='init': result=init_project(args.project,args.niche,args.site_type,args.apply,args.mode)
-        elif args.command=='validate': result=validate_project(args.project,args.stage)
+        elif args.command=='validate': result=validate_project(args.project,args.stage,args.site_root,args.source_root)
         elif args.command=='snapshot': result=review_snapshot(args.project)
-        else: result=check_package(args.package)
+        else: result=check_distribution(args.package)
         print(json_text(result),end='')
         return 2 if result.get('status')=='BLOQUE' else 0
     except (OSError, ValueError, TypeError, KeyError) as exc:

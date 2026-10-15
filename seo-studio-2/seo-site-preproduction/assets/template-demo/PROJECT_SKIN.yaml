@@ -1,0 +1,97 @@
+project: "Repère Salon — gabarit de comparateur éditorial"
+surface: "website"
+
+visual_concept: "Une table de prise de mesures pour aider à choisir un canapé : les dimensions et les décisions structurent l’interface comme elles structurent une pièce."
+
+core:
+  design_dna: "design-dna"
+  preserve_approved_assets: true
+  preserve_approved_motion: true
+
+personality:
+  mood: [précis, calme, tactile, franc]
+  keywords: [mesure, matière, espace, décision]
+  avoid: [promesses absolues, fausses preuves, imitation de comparateur existant]
+
+composition:
+  density: "medium"
+  asymmetry: "medium"
+  negative_space: "medium"
+  chaptering: "strong"
+
+color:
+  mode: "light"
+  contrast: "high"
+  temperature: "mixed"
+  palette_notes: "Fond gris sauge très clair #F1F4EF, encre vert forêt #173B32, accent corail #E45D3D, vert doux #DDE9E0 et jaune mesure #E9C65D. Le corail signale l’action ; le jaune marque les contraintes de mesure."
+
+typography:
+  ui_body: "Plus Jakarta Sans"
+  neutral_fallback: "Inter"
+  display: "project-specific"
+  display_direction: "Sans-serif compacte, large et fortement hiérarchisée ; la typographie remplace les visuels décoratifs."
+  notes: "Pile système locale, sans appel à une police distante. Données et dimensions en monospace lisible."
+
+surfaces:
+  radius: "restrained"
+  depth: "subtle"
+  texture: "none"
+  borders: "structural"
+
+illustrations_and_diagrams:
+  quality_standard: professional_only
+  cheap_or_crude_diagrams_allowed: false
+  final_display_size: "Non applicable — aucun schéma autonome livré."
+  art_direction: "Les contrôles de largeur sont des interactions HTML fonctionnelles, pas des illustrations décoratives."
+  data_and_labels_verified: false
+  inspected_in_context: false
+
+imagery:
+  role: "minimal"
+  style: "Aucune photo factice. Ajouter seulement des photos de produits autorisées et propres au catalogue."
+  crop: "product"
+  treatment: "Neutre, sans filtre décoratif."
+
+motion:
+  intensity: "low"
+  micro: true
+  structural: true
+  narrative: false
+  signature_motion: "Mise à jour immédiate des modèles compatibles quand la largeur change."
+  reduced_motion_required: true
+
+spatial_tech:
+  parallax: false
+  two_point_five_d: false
+  webgl_3d: false
+  justification: "La tâche centrale repose sur la mesure et la comparaison, pas sur une scène immersive."
+  fallback: "Tout le contenu reste disponible en HTML si JavaScript est désactivé."
+
+signature_exception:
+  idea: "Un contrôle de largeur directement dans le hero transforme l’entrée SEO en premier geste de décision."
+  reason: "Les modèles analysés sont les plus utiles lorsqu’ils aident à répondre à une contrainte réelle avant de pousser un produit."
+
+anti_slop:
+  forbidden_patterns:
+    - "hero SaaS centré générique"
+    - "dégradé violet ou bleu décoratif"
+    - "glassmorphism décoratif"
+    - "grille bento automatique"
+    - "mur de cartes identiques"
+    - "orb ou blob 3D décoratif"
+    - "photo stock sans intention"
+    - "animation sans fonction"
+    - "avis, note ou chiffre d’autorité inventé"
+
+quality_gate:
+  review_status: "pending_visual_review"
+  review_note: "Revue du code source effectuée. Contrôle rendu à faire dans le navigateur avant validation visuelle."
+  anti_slop_passed: false
+  typography_passed: false
+  composition_passed: false
+  imagery_passed: "not_applicable"
+  illustrations_and_diagrams_passed: "not_applicable"
+  motion_passed: false
+  responsive_passed: false
+  accessibility_passed: false
+  performance_passed: false

@@ -92,6 +92,8 @@ An audit only reports findings; a skill update does not authorize changes to a s
 
 ### 2. Create a Project Skin
 
+For Nicolas, first apply [the niche, depth and cinematic craft contract](references/cinematic-craft.md).
+
 Before producing final UI, create or update a `PROJECT_SKIN.yaml` using
 `templates/project-skin.template.yaml`.
 
@@ -302,3 +304,51 @@ For pattern detection, `no-slop` complements the gates here: read its `reference
 when available for a web/UI review. Design DNA owns preferences and identity, No Slop diagnoses
 unmotivated patterns, and `human` handles pixel-level asset review when applicable. Do not
 recursively launch these skills or present a cited skill as an executed review.
+
+
+## Loading and propagation contract
+
+Calling skills must read this actual SKILL.md before visual decisions or production, including image prompts, SVG/chart creation, UI implementation and user-visible previews. A name mention or remembered summary does not count. Read the relevant image-direction and quality-gates references before illustration/diagram work, resolving paths from this skill directory. If this skill cannot be read, report that blocker and continue only authorized non-visual work.
+
+Apply the professional-only rule to calling-skill references, examples, default exports and any authorized delegated production. Each visual executor must read the skill and applicable approved skin before producing its part. Internal rough studies may aid reasoning; every visual presented to the user requires professional execution at its intended size. Simple or grayscale wireframes can be professional; low fidelity must never mean careless composition or unreadable labels.
+
+
+## Professional illustrations and diagrams only
+
+Never produce or deliver a cheap, crude little diagram. Only professionally executed illustrations or diagrams are acceptable, including small inline visuals, prototypes shown to the user, presentation slides, document figures and animated explainers. This is Nicolas's explicit quality constraint.
+
+- Small or minimal can be professional: judge precision and readability, not size, ornament or complexity. Do not inflate a simple explanation into an elaborate infographic.
+- Reject makeshift box-and-arrow arrangements, emoji or stock-icon collages, generic pictograms used as filler, ASCII art presented as a finished visual, inconsistent line work and tiny unreadable labels.
+- Design each visual around its actual subject: clear information hierarchy, intentional composition, coherent geometry and line weights, aligned labels, controlled spacing, restrained palette and typography matching the project.
+- For explanatory or data diagrams, verify relationships, directions, scales, units and labels. Never fabricate data or let generated artwork invent factual details. Keep critical text and data editable where practical.
+- Choose the medium that can meet the standard: art-directed raster illustration, precise SVG/vector diagram, professionally styled chart or interactive visual. SVG, Canvas, CSS and Mermaid are tools, not evidence of quality; inspect their rendered output.
+- Internal sketches may support reasoning, but must never be presented as finished illustrations or diagrams. A polished hand-drawn style is allowed when deliberately requested; careless execution is not.
+- Inspect at the real display/export size and in its page, slide or document. Correct clipping, crossings, crowded labels, artifacts and weak composition before delivery. If professional production or inspection is unavailable, report the limitation and provide a clear textual explanation rather than substituting a low-grade visual.
+
+Apply the illustration/diagram checks in `references/image-direction.md` and `references/quality-gates.md`. A failed visual blocks final visual acceptance; effects, animation and the word "premium" cannot excuse it.
+
+
+## Button labels
+
+Do not add small decorative arrows to buttons or call-to-action links. Use a clear text label without arrow glyphs or arrow icons. Preserve functional direction controls only when direction itself is the action (for example previous/next navigation). This is Nicolas's explicit design preference.
+
+
+## Nicolas's mandatory finish: niche, depth and cinematic direction
+
+For Nicolas's projects, read references/cinematic-craft.md before choosing the skin,
+components or motion. This explicit preference applies across websites and product UI:
+a polished, authored result with perceptible depth and cinematic composition appropriate
+to the actual niche. A flat generic template or an off-topic visual universe fails.
+Cinematic means deliberate framing, layers, light/material, typography, pacing and
+continuity; it does not require dark mode, 3D, a video intro or constant animation.
+
+Preserve approved controls and prior project work. Inspect the actual existing buttons,
+cards/tiles, inputs and selection states before replacing them. Reuse their demonstrated
+interaction quality, while deriving imagery, palette and composition from this niche.
+Never claim to have studied unavailable earlier examples.
+
+The skin and design-system must document niche evidence, depth strategy, cinematic
+sequence, component states, selected tools and reduced-motion/performance fallbacks.
+At template pilot and final acceptance, inspect rendered desktop/mobile screens and
+interactions against those decisions. Fix niche mismatch, flatness and unfinished
+controls before visual acceptance. A successful build is not visual acceptance.

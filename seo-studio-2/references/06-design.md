@@ -143,3 +143,18 @@ police réellement identifiée ou alternative autorisée, états des boutons, ac
 rapide au corpus, images professionnelles et preuve desktop/mobile. Une retouche
 conserve le skin validé ; ne pas demander deux nouvelles pistes ni une nouvelle
 validation artistique quand la décision locale réversible est déjà autorisée.
+
+
+## Finition visuelle et pertinence de niche
+
+Appliquer Design DNA/references/cinematic-craft.md : finition léchée, profondeur
+perceptible et composition cinématique adaptée au sujet. Conserver le design V1
+approuvé en refonte ; cette exigence de qualité n'autorise pas une rupture visuelle.
+Dans le skin et design-system.md, documenter références de niche, stratégie de relief,
+cadrage/rythme, outils et composants réutilisés, états des boutons/cartes/cases.
+Dans les trois pilotes puis en QA, inspecter desktop/mobile, gros plans des composants,
+clavier et motion réduite, et corriger les écarts avant PASS.
+Les revues design et qa exigent niche_fit, depth, cinematic_direction, component_states
+en plus des contrôles existants ; une compilation ou des captures non regardées ne
+valident pas ces dimensions. Produits et liens affiliés restent accessibles dès la
+landing. Aucun outil payant obligatoire, aucun décor générique imposé à toutes les niches.

@@ -5,13 +5,21 @@
   "audience_reading_constraints": [],
   "directions_considered": [],
   "selected_direction": null,
-  "typography": {"display": null, "body": null, "rationale": null},
+  "typography": {
+    "display": null,
+    "body": null,
+    "rationale": null
+  },
   "palette": {},
   "grid_and_reading_width": {},
   "density_and_spacing": {},
   "image_direction": null,
   "media_provenance_and_rights": [],
-  "motion": {"purpose": null, "intensity": null, "reduced_motion_fallback": null},
+  "motion": {
+    "purpose": null,
+    "intensity": null,
+    "reduced_motion_fallback": null
+  },
   "signature": null,
   "components_and_states": [],
   "anti_slop_exclusions": [],
@@ -19,5 +27,14 @@
   "decision_provenance": [],
   "accessibility_checks": [],
   "performance_budgets": {},
-  "approvals": []
+  "approvals": [],
+  "craft": {
+    "niche_fit_evidence": [],
+    "depth_strategy": null,
+    "cinematic_composition_and_pacing": null,
+    "preserved_approved_components": [],
+    "component_tools_and_sources": [],
+    "component_states_to_test": [],
+    "desktop_mobile_review_evidence": []
+  }
 }

@@ -39,7 +39,7 @@ class UpgradeTests(unittest.TestCase):
         studio.init_project(other,'niche','contenu',True,'lite')
         state=studio.load(other/'state.json')
         self.assertEqual(state['planning_mode'],'lite')
-        self.assertEqual(len(state['requirements']),28)
+        self.assertEqual({r['id'] for r in state['requirements']},{r['id'] for r in studio.load(studio.ROOT/'schemas/requirements.json')['requirements']})
         self.assertEqual(studio.validate_project(other)['status'],'STRUCTURE_OK')
     def test_default_author_portable_and_no_fake_contact(self):
         text=studio.initial_files('niche fictive','vitrine')['AUTEUR.md']
@@ -60,7 +60,8 @@ class UpgradeTests(unittest.TestCase):
         self.state['permissions']['publication']=True;self.state['gates'][-1].update(status='APPROVED',evidence_ids=['review']);self.state['live_evidence_ids']=['http','authorization']
         self.assertTrue(any('technical audit absent' in e for e in self.result('release')['errors']))
         complete_technical(self.project,self.state)
-        self.assertEqual(self.result('release')['status'],'STRUCTURE_OK')
+        self.assertEqual(self.result('release')['status'],'BLOQUE')
+        self.assertTrue(any('Livraison' in e for e in self.result('release')['errors']))
     def test_serp_snapshot_included_without_approval(self):
         self.result();snap=studio.review_snapshot(self.project)
         self.assertIn('research/serp.json',[a['path'] for a in snap['reviewed_artifacts']])

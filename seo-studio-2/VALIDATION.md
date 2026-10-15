@@ -1,3 +1,16 @@
+# Vérification 3.6.0 — 15 octobre 2026
+
+247 tests distincts consolidés : 246 réussis, 1 ignoré (symlink Windows).
+Suite complète 245 tests, puis correction de trois fixtures de bundle et relance
+des 19 tests fichiers/installation ; 35 tests moteur finaux après critères Design DNA.
+Ce bilan consolide les dernières exécutions, sans prétendre à un run unique entièrement vert.
+Chromium réel : six visites de pages et deux scénarios d'interaction sur fixture locale ;
+interactions du template original également exécutées. Quatorze tests HTTP produits locaux.
+Installation neuve et relance identique vérifiées ; projet incomplet correctement bloqué.
+Benchmark sans plafond d'URL et revues niche/profondeur/cinématique/composants obligatoires.
+Fixtures synthétiques, pas une livraison client ou une approbation visuelle réelle.
+Personna conservé, aucun outil payant obligatoire, aucun déploiement public.
+
 # Vérification 3.3.0 — 14 octobre 2026
 
 - Suite complète finale : 197 tests en 480.812 secondes, aucun échec,

@@ -70,3 +70,13 @@ Report each relevant gate as passed, failed or unverified with environment, stat
 Without a rendered browser/device check, report source inspection only; do not claim mobile
 wrapping, hover, motion or image proportions passed. An authored scenario is not an independent
 evaluation. An audit does not authorize changing the site.
+
+
+## Gate 9 — Niche, depth and component craft (Nicolas)
+
+Read cinematic-craft.md. Reject a visual universe unrelated to the niche, a flat
+generic result, or cinematic decoration that obscures products/content.
+Inspect actual desktop/mobile renders, resting surfaces and applicable control states.
+Record niche_fit, depth, cinematic_direction and component_states in the review,
+with inspected evidence and corrections. Check keyboard and reduced-motion behavior.
+No uninspected item may be marked passed; a build cannot substitute for this gate.

@@ -11,8 +11,8 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "3.5.1"
-  reviewed_at: "2026-10-14"
+  version: "3.6.0"
+  reviewed_at: "2026-10-15"
 ---
 
 # SEO STUDIO 2
@@ -32,6 +32,21 @@ Une demande explicitement limitée à la préproduction reste documentaire.
 Le backlog hors V1 et la publication ne sont pas automatiquement autorisés.
 Lire [la réalisation indépendante de bout en bout](references/18-realisation-complete.md).
 Le vrai /personna et son processus restent conservés ; ne pas modifier ce skill.
+
+## Livraison exécutable et volume SEO
+Pour toute création de site, appliquer [le contrat exécutable](references/28-execution-livraison.md)
+en utilisant les templates et l'évaluation R29 existants. Un benchmark sourcé estime
+le volume d'URL cible par familles ; aucun plafond global de pages n'est imposé.
+La taille concurrente ne prouve pas une demande ni une visibilité. Le périmètre engagé
+couvre la cible admissible, sauf découpage explicitement autorisé ; les lots ne sont
+pas une limite de site. R30 et research/volume.json rendent cette décision vérifiable.
+EXECUTION.json complète les états existants par des liaisons de livrables et preuves.
+Les phases ne passent que si leurs contrôles et revues sont valides pour les versions
+courantes. Après réalisation, exécuter validate --stage local sur les vrais dossiers
+sources et build ; seul LOCAL_VERIFIED autorise à annoncer la livraison locale complète.
+STRUCTURE_OK reste un contrôle documentaire. La publication exige en plus release
+et son autorisation. Si une preuve manque ou un contrôle échoue, poursuivre la
+correction ou signaler un blocage réel ; ne pas déclarer le site terminé.
 
 ## Méthode et processus pilotés par Organisation
 
@@ -81,6 +96,31 @@ Les six phases affiliation et leurs validations humaines restent obligatoires.
    Aucun compte, abonnement, dépense, contact partenaire, soumission, publication ou
    déploiement sans permission séparée adaptée au périmètre.
 
+## Préproduction SEO par template
+
+Pour toute création de site, reprise ou refonte qui touche son architecture, son expérience,
+ses contenus ou sa conversion, évaluer le template avec le skill installé
+`seo-site-preproduction`. Pour un site éditorial, comparateur, média, affilié ou
+content-led, charger ce skill dès la première phase G2 ou G3 concernée. Pour les autres
+types de site, documenter dans R29 si le modèle est applicable ; s'il ne l'est pas,
+justifier l'exclusion et ne retenir que les motifs utiles.
+
+Une reprise ne saute pas cette évaluation : vérifier la décision existante, sa version,
+ses preuves et son adéquation à la niche, à l'audience, aux tâches et à l'existant.
+Conserver une décision uniquement si ces preuves restent valides ; sinon rouvrir la
+première phase impactée. Une intervention ciblée qui ne touche pas ces sujets peut
+réutiliser l'évaluation validée en la reliant à R29. Ne pas rejouer les étapes sans lien
+avec le changement.
+
+Le skill combine le vrai `design-dna` et `redaction-editoriale-web` avec un exemple
+de site. Repère Salon est fictif : adapter à chaque mission les pages, la taxonomie, les
+outils, les critères, la prose, le design, les preuves et la conversion à la niche
+demandée. Ne pas copier les canapés ni remplacer seulement les noms. Utiliser les
+fichiers canoniques existants, sans dossier ni registre parallèle. Lire [le contrat de
+préproduction depuis un template](references/27-template-site-preproduction.md) et
+l'aligner sur le mapping du skill. Les gates et permissions de Studio continuent de
+s'appliquer.
+
 ## Lecture progressive obligatoire
 
 Lire immédiatement [le contrat d'intégration](references/01-integration.md),
@@ -97,8 +137,8 @@ quand le travail relève de leur périmètre.
 | F0–F3 — réfléchir et décider | parcours obligatoire, recherche de compétences, /personna | synthèses de décisions, matrice LinkedIn/Reddit, profils calibrés, agents créés, critique des idées close |
 | G0 — cadrer | intégration, agents, formation | contexte, registre des accès/skills, exigences, hypothèses |
 | G1 — établir les preuves | [recherche et positionnement](references/04-research.md), [bibliothèque observée](research/benchmark.md) | recherche niche, concurrence, besoins, différenciation, décision de canal |
-| G2 — organiser le site | [architecture et maillage](references/05-architecture.md) | parcours, intentions, pages, taxonomie, graphe de liens, CMS |
-| G3 — définir l'expérience | [design](references/06-design.md), [contenus](references/07-content.md), [partenaires](references/08-partners.md) | skin, gabarits, briefs, contenus pilotes, encarts et inventaire commercial |
+| G2 — organiser le site | [architecture et maillage](references/05-architecture.md), `seo-site-preproduction`, [contrat template](references/27-template-site-preproduction.md) | R29 : applicabilité, preuves et décisions de reprise/adaptation/rejet dans `03_ARCHITECTURE.md` ; intentions, types de pages, taxonomie, graphe de liens, CMS |
+| G3 — définir l'expérience | [design](references/06-design.md), [contenus](references/07-content.md), [partenaires](references/08-partners.md), `seo-site-preproduction` | traduire les motifs retenus dans le design, la prose et la conversion ; justifier les éléments écartés |
 | G4 — rendre réalisable | [technique et mesure](references/09-technical.md), [roadmap](references/11-roadmap.md) | deux stacks, ADR, budgets de performance, instrumentation, backlog dépendant |
 | G5 — confronter et transmettre | gates, [contrat des livrables](references/12-deliverables.md) | corrections, décisions, vérifications, dossier gelé et transfert versionné |
 | G6 — réaliser et vérifier | [réalisation complète](references/18-realisation-complete.md), contrôle final | site et corpus V1, recherche, title/meta/fan-out, build et recette locale ; publication/post-déploiement si autorisés |
@@ -331,9 +371,9 @@ une donnée terrain absente n'est pas inventée. La recette locale n'autorise pa
 la publication. Lire [le suivi](references/21-postlaunch.md) après lancement autorisé.
 
 `init --mode lite` regroupe les revues en stratégie, spécification et recette,
-conserve R01–R28, les étapes F0–F3, Personna et la recherche interne hors landing.
-Le corpus V1 doit rester inférieur à 50 pages ; la complexité et les risques peuvent
-exiger full même sous ce seuil. Le mode allégé ne valide automatiquement aucun gate.
+conserve R01–R31, les étapes F0–F3, Personna et la recherche interne hors landing.
+Le mode lite est réservé aux corpus V1 de moins de 50 pages ; au-delà, utiliser
+full sans réduire le nombre d’URL. La complexité peut exiger full sous ce seuil. Le mode allégé ne valide automatiquement aucun gate.
 Relecteur humain, agent et inconnu sont distingués par reviewer_type ; une session
 distincte ne prouve ni diversité de modèle ni compétence humaine. Configurer les
 points de décision humaine selon le mandat, sans arrêt rituel supplémentaire.
@@ -347,3 +387,18 @@ Tous les nouveaux sites disposent de la présentation de Nicolas selon [le contr
 Intégrer le vrai `seo-opportunity-loop` selon [le contrat de suivi](references/21-postlaunch.md#intégration-seo-opportunity-loop). À G4, préparer accès, baseline, événements et critères dans `08_MESURE.md` ; pour un site existant avec données, analyser les opportunités et alimenter `09_ROADMAP.md`. Après lancement autorisé et premières données exploitables, exécuter la boucle sur les segments pertinents. Une demande ciblée d'optimisation ne relance ni F0–F3 ni une nouvelle équipe.
 
 Réserver à seo-post-deploy l'exploration/indexation et aux contrôles Studio la validation des artefacts. seo-opportunity-loop choisit les améliorations fondées sur GSC et leur mesure. Aucun volume d'articles, calculateur ou traduction imposé, aucune automatisation créée implicitement. Sans accès GSC, utiliser les exports autorisés ou préparer le suivi sans bloquer la réalisation indépendante.
+
+
+## Finition visuelle et pertinence de niche
+
+Appliquer Design DNA/references/cinematic-craft.md : finition léchée, profondeur
+perceptible et composition cinématique adaptée au sujet. Conserver le design V1
+approuvé en refonte ; cette exigence de qualité n'autorise pas une rupture visuelle.
+Dans le skin et design-system.md, documenter références de niche, stratégie de relief,
+cadrage/rythme, outils et composants réutilisés, états des boutons/cartes/cases.
+Dans les trois pilotes puis en QA, inspecter desktop/mobile, gros plans des composants,
+clavier et motion réduite, et corriger les écarts avant PASS.
+Les revues design et qa exigent niche_fit, depth, cinematic_direction, component_states
+en plus des contrôles existants ; une compilation ou des captures non regardées ne
+valident pas ces dimensions. Produits et liens affiliés restent accessibles dès la
+landing. Aucun outil payant obligatoire, aucun décor générique imposé à toutes les niches.

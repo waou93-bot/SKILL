@@ -1,5 +1,5 @@
 {
-  "contract_version": "3.3.0",
+  "contract_version": "3.6.0",
   "note": "Ajouter les contraintes utilisateur propres au projet. Une exigence NON_APPLICABLE n’est permise que lorsque allow_not_applicable est vrai et qu’une décision Astra motivée existe.",
   "requirements": [
     {
@@ -168,6 +168,24 @@
       "id": "R28",
       "text": "Rechercher LinkedIn/Reddit et intégrer les compétences métier aux personas des vrais sous-agents",
       "expected_output": "01_COMPETENCES.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R29",
+      "text": "Évaluer l’applicabilité du template à la niche, au public, aux tâches et à l’existant pour toute création, reprise ou refonte de site ; consigner source/version, éléments conservés/adaptés/écartés, preuves et impacts, ou motiver l’exclusion du modèle",
+      "expected_output": "03_ARCHITECTURE.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R30",
+      "text": "Benchmarker les sites concurrents et justifier le volume d'URL par familles, sans plafond arbitraire ; distinguer observé, estimé, admissible et périmètre engagé",
+      "expected_output": "01_RECHERCHE.md",
+      "allow_not_applicable": false
+    },
+    {
+      "id": "R31",
+      "text": "Pour un site réalisé, exécuter le contrat de livraison, les contrôles métier et la recette locale ; ne pas assimiler STRUCTURE_OK à un site terminé",
+      "expected_output": "12_HANDOFF.md",
       "allow_not_applicable": false
     }
   ]

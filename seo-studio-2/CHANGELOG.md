@@ -1,3 +1,22 @@
+# 3.6.0 — 15 octobre 2026
+
+Direction de niche, profondeur, composition cinématique et états des composants : nouveaux critères bloquants design/QA, cohérents avec Design DNA et sans outil payant obligatoire.
+
+Parcours exécutable fondé sur le template réel et R29 : états et preuves liés aux versions, contrôles produit/HTML/pSEO/build, navigateur desktop/mobile, recette locale obligatoire, tests d'omission. Benchmark et volume sourcés R30 sans plafond d'URL ; R31 distingue dossier et livraison. Companion conservé, contrôle de dossier corrigé. Personna inchangé.
+
+# 3.5.3 — 2026-10-15
+
+Template évalué de façon obligatoire en création, reprise et refonte via R29,
+sections dédiées de `03_ARCHITECTURE.md` contrôlées au transfert strict ; reprise
+ciblée limitée aux phases impactées. L'installateur vérifie et installe le bundle
+comme deux skills frères, sans écraser les dossiers existants. Tests non exécutés.
+
+# 3.5.2 — 2026-10-15
+
+G2–G5 : ajout du skill seo-site-preproduction comme aide niche-first pour relier
+architecture SEO, Design DNA, rédaction web et le template de démonstration.
+Repère Salon est explicitement un exemple à adapter. Livrables Studio, registres
+et gates existants conservés ; aucune évaluation automatisée déclarée.
 # 3.5.1 — 2026-10-14
 
 Audit AFFISEO : pilotes adaptés aux familles admissibles sans duel/pSEO/filtres

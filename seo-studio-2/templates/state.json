@@ -489,6 +489,24 @@
       "status": "A_FAIRE",
       "evidence_ids": [],
       "decision_id": null
+    },
+    {
+      "id": "R29",
+      "status": "A_FAIRE",
+      "evidence_ids": [],
+      "decision_id": null
+    },
+    {
+      "id": "R30",
+      "status": "A_FAIRE",
+      "evidence_ids": [],
+      "decision_id": null
+    },
+    {
+      "id": "R31",
+      "status": "A_FAIRE",
+      "evidence_ids": [],
+      "decision_id": null
     }
   ],
   "artifacts": [],

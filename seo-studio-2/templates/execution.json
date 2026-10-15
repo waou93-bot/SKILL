@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "run_id": null,
+  "scope": "SITE",
+  "site_kind": null,
+  "affiliation": null,
+  "entry_page_id": null,
+  "catalogue_path": "PRODUCTS/products.json",
+  "product_report_path": "EXECUTION-products.json",
+  "baseline": [],
+  "baseline_waiver_path": null,
+  "directions": [],
+  "pilot_ids": [],
+  "pages": [],
+  "batches": [],
+  "captures": [],
+  "auxiliary_outputs": [],
+  "build_receipt": null,
+  "receipts": {},
+  "volume_path": "research/volume.json",
+  "features": []
+}

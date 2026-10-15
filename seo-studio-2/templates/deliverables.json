@@ -48,7 +48,12 @@
     "Modèle CMS et relations",
     "États et cas limites",
     "Existant et migration",
-    "Questions principales, branches fan-out et propriétaires"
+    "Questions principales, branches fan-out et propriétaires",
+    "Types de pages et outils retenus/rejetés selon la niche, avec justification du template utilisé",
+    "Template analysé : source, version et date",
+    "Applicabilité à la niche, au public, aux tâches et à l’existant",
+    "Éléments conservés, adaptés ou écartés et motifs",
+    "Preuves consultées et impacts sur les décisions de reprise"
   ],
   "04_DESIGN.md": [
     "Concept et deux directions",
@@ -60,7 +65,9 @@
     "Accessibilité et motion",
     "Assets et droits",
     "Tests visuels prévus ou exécutés",
-    "Recherche obligatoire sur chaque page de contenu hors landing"
+    "Direction visuelle propre à la niche ; éléments du template repris ou rejetés et pourquoi",
+    "Recherche obligatoire sur chaque page de contenu hors landing",
+    "Éléments du template traduits dans l’expérience UI/UX ou exclusion motivée"
   ],
   "05_CONTENU.md": [
     "Doctrine éditoriale",
@@ -72,7 +79,8 @@
     "Calendrier soutenable",
     "Maintenance",
     "Couverture question, réponse, preuve, limite et action",
-    "Liens contextuels réellement intégrés aux mots et expressions du corps"
+    "Liens contextuels réellement intégrés aux mots et expressions du corps",
+    "Prose de décision : question, preuve, limite, objection et CTA adaptés au public demandé"
   ],
   "06_PARTENAIRES.md": [
     "Pertinence ou exclusions",

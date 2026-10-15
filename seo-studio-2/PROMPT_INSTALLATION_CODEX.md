@@ -3,9 +3,10 @@
 Copier le bloc ci-dessous dans la session qui possède les fichiers du package.
 
 ```text
-Installe SEO STUDIO 2 à partir du dossier seo-studio-2 de ce package.
-Lis README.md et SKILL.md en entier. N'en recrée pas une version simplifiée.
-Vérifie MANIFEST.sha256.json et exécute les tests du package avant installation.
+Installe le bundle depuis sa racine avec scripts/install.py : il contient les skills
+seo-studio-2 et seo-site-preproduction à placer dans deux dossiers frères reconnus
+par l'hôte. Lis README.md, les deux SKILL.md et MANIFEST.sha256.json. N'en recrée pas
+une version simplifiée. N'écrase aucun skill différent existant.
 Détecte les emplacements de skills réellement lus par cet hôte. Inventorie les
 copies existantes de seo-studio-2 ainsi que Brain, Organisation, No Slop, Design DNA,
 tous les identifiants contenant SEO et le vrai /personna (vérifier aussi persona
@@ -21,7 +22,7 @@ Ne crée pas de /personna de remplacement. S'il manque, signale le chemin ou le 
 nécessaire ; installe néanmoins SEO STUDIO 2 si le reste de l'installation est sûr,
 mais laisse son état de préparation stricte BLOQUE_DEPENDANCE.
 Utilise scripts/install.py avec un chemin cible vérifié, d'abord sans --apply, puis
-avec --apply pour effectuer cette installation explicitement demandée.
+avec --apply pour installer explicitement les deux skills.
 N'installe pas les autres skills automatiquement et ne change pas leur version.
 Ne modifie aucun projet, dossier MASTER/BUSINESS/SEO, site, compte ni config globale.
 Après copie, contrôle les empreintes et la découverte réelle du skill dans l'hôte.

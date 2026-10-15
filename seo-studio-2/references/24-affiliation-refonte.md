@@ -86,6 +86,14 @@ Lier ce document au PROJECT_SKIN.yaml existant ; ne pas créer de décisions con
 La V2 reprend ce système. Une rupture nécessite une demande explicite de l'utilisateur.
 Une optimisation SEO ne vaut pas autorisation de changer le design.
 
+Dans les deux cas — nouveau site et refonte — établir aussi l'évaluation R29 dans
+`03_ARCHITECTURE.md` : examiner l'exemple `seo-site-preproduction` face à la niche,
+aux parcours et à l'existant, puis justifier motifs repris, adaptés ou écartés. Pour
+une reprise, l'évaluation ne remplace pas le design system à préserver : elle sert à
+décider si un motif existant reste pertinent, et toute rupture du système approuvé
+requiert toujours une demande explicite. Si G2/G3 ne sont pas touchées, rattacher les
+preuves R29 déjà valides plutôt que relancer une refonte.
+
 Pour un nouveau site : deux directions visuelles avec références réelles consultées
 et maquettes desktop/mobile, attente du choix utilisateur, puis gel du design system
 avant le code des pages. Charger Design DNA avant la production visuelle.

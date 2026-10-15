@@ -1,5 +1,7 @@
 # Parcours pas à pas établi et suivi par Organisation
 
+Appliquer le [contrat exécutable de livraison et de volume](28-execution-livraison.md) : il contrôle ces phases et leurs preuves sans remplacer les états, l'architecture ou le template existants.
+
 Pour l’affiliation, appliquer les [transferts AFFISEO sourcés](26-affiseo-methodes.md) au périmètre de cette référence ; le contrat 24 et les gates existants restent prioritaires.
 
 Charger le vrai skill Organisation au démarrage. Il établit dans `00_REFLEXION.md`

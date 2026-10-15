@@ -1,4 +1,4 @@
-# SEO Studio 2 — 3.5.1 (14 octobre 2026)
+# SEO Studio 2 — 3.6.0 (15 octobre 2026)
 
 SERP sourcées et approbation avant G3, recette HTTP/navigateur/laboratoire,
 suivi sur exports après publication, mode lite conservant les exigences,
@@ -7,7 +7,7 @@ Personna 1.2.0 inchangé ; aucun outil payant obligatoire. Les preuves historiqu
 ci-dessous conservent leur date et leur périmètre. Voir references/20-serp.md,
 references/21-postlaunch.md et references/22-technical-release.md.
 
-Cette version 3.2.0 intègre les évaluations Personna 1.2.0 recalculées avant
+La version historique 3.2.0 intégrait les évaluations Personna 1.2.0 recalculées avant
 validation stricte des profils ; voir la section Personna et references/03-personna.md.
 
 La révision historique 3.1 ajoute un contrat commun QA/sécurité/performance et aligne
@@ -50,6 +50,12 @@ des pages, les briefs et contenus pilotes, des encarts et offres partenaires ada
 un plan de mesure, une roadmap dépendante, les gates et le dossier de transfert.
 Le détail et les critères sont dans `references/12-deliverables.md`.
 
+Pour toute création, reprise ou refonte touchant l'architecture, l'expérience, les
+contenus ou la conversion, évaluer le template en G2/G3 et inscrire R29 dans
+`03_ARCHITECTURE.md`. Le skill compagnon `seo-site-preproduction` explicite le
+processus ; ses exemples restent à adapter à la niche demandée. Voir
+[le contrat de reprise et d'adaptation](references/27-template-site-preproduction.md).
+
 Toutes les idées n'ont pas vocation à devenir des pages. Le skill préfère mettre
 à jour une page utile plutôt que multiplier les variantes. Il propose aussi de ne
 pas acheter ou de ne pas utiliser l'affiliation quand cela sert mieux le projet.
@@ -72,8 +78,9 @@ pas acheter ou de ne pas utiliser l'affiliation quand cela sert mieux le projet.
 
 ## Installation locale non destructive
 
-Lire `PROMPT_INSTALLATION_CODEX.md`. L'installateur copie seulement ce skill ; il ne
-remplace pas Organisation, Design DNA ou les autres dépendances. Aperçu par défaut :
+Lire `PROMPT_INSTALLATION_CODEX.md`. L'installateur vérifie le bundle et copie SEO Studio 2
+et `seo-site-preproduction` comme deux skills frères ; il ne remplace pas Organisation,
+Design DNA ou les autres dépendances. L'aperçu reste sans écriture :
 
 ```sh
 python scripts/install.py --target-root CHEMIN_DES_SKILLS
@@ -82,8 +89,7 @@ python scripts/install.py --target-root CHEMIN_DES_SKILLS --apply
 
 L'emplacement utilisateur local documenté pour Codex est `$HOME/.agents/skills`.
 Sur Windows, utiliser le véritable profil utilisateur, pas un chemin copié d'une
-capture. L'installation refuse un dossier déjà différent : sauvegarder et comparer
-avant toute migration ; aucun écrasement automatique. Les doublons d'autres
+capture. L'installateur refuse tout dossier existant différent, sans écrasement automatique. Les doublons d'autres
 emplacements sont à traiter après inventaire, pas à supprimer au hasard.
 
 ## Vérifications

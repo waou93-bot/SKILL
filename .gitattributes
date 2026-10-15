@@ -6,3 +6,7 @@ seo-studio-2/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-a
 
 # Preserve the exact bytes covered by the Personna manifest.
 personna/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve Design DNA distribution bytes and module-lock fingerprints.
+design-dna/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+plugins/seo-site-studio/modules/design-dna/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

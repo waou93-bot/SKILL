@@ -74,8 +74,12 @@ l'authenticité des déclarations : la revue du dossier consulte ces retours.
 
 Une reprise ciblée garde les étapes et les agents encore pertinents. Rechercher et
 reformer seulement les profils affectés par un changement de domaine, de besoins,
-de preuves ou de mandat. Pour un ancien dossier 2.0, ajouter le registre depuis le
-template et les exigences R27/R28 sans réinitialiser le dossier. Ne pas marquer les
+de preuves ou de mandat. Pour toute reprise/refonte qui touche architecture,
+expérience, contenus ou conversion, contrôler R29 et l'évaluation du template dans
+les phases G2/G3 impactées. Conserver l'évaluation antérieure si sa source, ses preuves,
+la niche, l'audience, les tâches et le périmètre restent valides ; sinon rouvrir la
+première phase affectée, sans réinitialiser le dossier. Pour un ancien dossier 2.0,
+ajouter le registre depuis le template et les exigences R27–R29. Ne pas marquer les
 étapes faites rétroactivement sans preuve : compléter les manques avant transfert.
 Le validateur accepte l'ancien brouillon avec un avertissement ; le transfert sous
 le nouveau contrat nécessite ces preuves. Aucun fichier projet n'est migré seul.

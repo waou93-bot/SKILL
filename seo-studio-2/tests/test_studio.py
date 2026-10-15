@@ -46,6 +46,15 @@ def fixture(project: Path) -> dict:
         write(project/a['path'],text)
         evidence('file-'+a['id'],a['path'],'artifact')
         a.update(status='REVIEWED',evidence_id='file-'+a['id'])
+    architecture=project/'03_ARCHITECTURE.md'
+    with architecture.open('a',encoding='utf-8') as f:
+        for heading in studio.TEMPLATE_ASSESSMENT_HEADINGS:
+            f.write('\n## '+heading+'\n\nAnalyse fictive de test : adaptation documentée, aucune validation terrain.\n')
+    for artifact in state['artifacts']:
+        if artifact['path']=='03_ARCHITECTURE.md':
+            for item in state['evidence']:
+                if item['id']==artifact['evidence_id']:
+                    item['sha256']=studio.digest(architecture)
     for n in range(3):
         rel=f'PILOTES/pilote-{n}.md'
         write(project/rel,'# Pilote fictif\n\nLe texte est une fixture, pas un article commercial.\n')
@@ -267,7 +276,8 @@ class ContractTests(unittest.TestCase):
         self.state['live_evidence_ids']=['http','authorization']
         from technical_fixture import complete_technical
         complete_technical(self.project,self.state)
-        self.assertEqual(self.result(stage='release')['status'],'STRUCTURE_OK')
+        self.assertEqual(self.result(stage='release')['status'],'BLOQUE')
+        self.assertTrue(any('Livraison' in e for e in self.result(stage='release')['errors']))
 
 
     def test_business_inputs_change_invalidates_approvals(self):
@@ -350,7 +360,10 @@ class FilesystemTests(unittest.TestCase):
     def make_package(self):
         package=self.base/'source'
         write(package/'SKILL.md','---\nname: seo-studio-2\ndescription: Fixture\n---\nFiction\n')
-        write(package/'MANIFEST.sha256.json',studio.json_text(studio.file_signature(package)))
+        companion=package/'seo-site-preproduction'
+        write(companion/'SKILL.md','---\nname: seo-site-preproduction\ndescription: Fixture compagnon\n---\nFiction\n')
+        write(companion/'MANIFEST.sha256.json',studio.json_text(studio.file_signature(companion)))
+        write(package/'MANIFEST.sha256.json',studio.json_text({p:h for p,h in studio.file_signature(package).items() if not p.startswith('seo-site-preproduction/')}))
         return package
     def test_manifest_cannot_certify_empty_skill(self):
         package=self.base/'empty'
@@ -375,6 +388,11 @@ class FilesystemTests(unittest.TestCase):
         installer.install(package,dest,True);write(dest/'seo-studio-2'/'custom.md','user')
         with self.assertRaises(ValueError):installer.install(package,dest,True)
         self.assertEqual((dest/'seo-studio-2'/'custom.md').read_text(),'user')
+    def test_install_refuses_missing_companion(self):
+        package=self.make_package()
+        import shutil
+        shutil.rmtree(package/'seo-site-preproduction')
+        with self.assertRaisesRegex(ValueError,'bundle source'):installer.install(package,self.base/'skills',True)
     def test_install_refuses_corrupt_package(self):
         package=self.make_package();write(package/'SKILL.md','altered')
         with self.assertRaises(ValueError):installer.install(package,self.base/'skills',True)

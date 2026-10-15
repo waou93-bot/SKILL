@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "run_id": null,
+  "niche": null,
+  "observed_at": null,
+  "competitors": [],
+  "families": [],
+  "target_urls": null,
+  "delivery_urls": null,
+  "backlog_urls": null,
+  "wave_authorization_path": null,
+  "strategy": null,
+  "uncertainty": null
+}

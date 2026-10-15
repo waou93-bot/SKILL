@@ -100,7 +100,7 @@ def audit(base_url, max_pages=200, timeout=10, depth_budget=20, allow_remote=Fal
         raise ValueError('explicit HTTP(S) target without credentials required')
     if not allow_remote and u.hostname not in ('localhost', '127.0.0.1', '::1'):
         raise ValueError('remote target requires explicit allow_remote authorization')
-    if not 1 <= max_pages <= 10000 or not 0 < timeout <= 120 or not 0 <= depth_budget <= 30:
+    if not 1 <= max_pages or not 0 < timeout <= 120 or not 0 <= depth_budget <= 30:
         raise ValueError('invalid bounded crawl limits')
     origin = (u.scheme, u.hostname, u.port)
     root = f'{u.scheme}://{u.netloc}/'

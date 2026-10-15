@@ -42,7 +42,7 @@ interaction:
 
 surfaces:
   radius: "restrained | project-specific"
-  depth: "flat | subtle | medium | strong"
+  depth: "medium | strong | subtle with reason for functional areas"
   texture: "none | subtle | material | project-specific"
   borders: "none | subtle | structural"
 
@@ -91,8 +91,22 @@ quality_gate:
   anti_slop_passed: false
   typography_passed: false
   composition_passed: false
+  niche_fit_passed: false
+  depth_passed: false
+  cinematic_direction_passed: false
+  component_states_passed: false
   imagery_passed: false
   motion_passed: false
   responsive_passed: false
   accessibility_passed: false
   performance_passed: false
+
+
+craft:
+  niche_fit_evidence: []
+  depth_strategy: ""
+  cinematic_composition_and_pacing: ""
+  preserved_approved_components: []
+  component_tools_and_sources: []
+  component_states_to_test: []
+  desktop_mobile_review_evidence: []

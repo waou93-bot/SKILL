@@ -16,3 +16,15 @@ decisions are consistency checks, not independent agent runs or rendered site te
 
 Result: the eight manually recorded decisions respect the revised scope rules. No font was
 downloaded, no site changed, and no browser/API integration tested in this walkthrough.
+
+
+## Added 15 October 2026 — acceptance scenarios to run on each actual project
+
+These are required expected outcomes, not claimed executed visual tests.
+- A technically valid but flat generic niche landing fails depth/authorship.
+- A striking gaming/space design applied to plumbing without a relevant brief fails niche_fit.
+- An affiliation landing hides products behind a cinematic intro: fails immediate product access.
+- A polished existing approved button is replaced by a default library button: restore its approved craft.
+- Hover is polished but keyboard/touch/selected/error states are absent: fail component_states.
+- A dense reading page uses strong framing/type/material with restrained motion: may pass cinematic_direction.
+- Reduced-motion keeps content visible and feedback understandable: required functional observation.

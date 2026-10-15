@@ -36,5 +36,15 @@
     "component_tools_and_sources": [],
     "component_states_to_test": [],
     "desktop_mobile_review_evidence": []
+  },
+  "hero_artwork": {
+    "default": "full_hero_background",
+    "source_aspect_ratio": "16:9",
+    "source_and_provenance": null,
+    "coverage": "cover",
+    "focal_point_desktop": null,
+    "focal_point_mobile": null,
+    "text_contrast_treatment": null,
+    "responsive_height": true
   }
 }

@@ -72,3 +72,20 @@ La revue doit citer les vues et états inspectés et expliquer :
 PASS seulement après observation rendue et correction des défauts.
 SOURCE_ONLY ou NOT_RUN ne valent pas validation. Aucun score automatique de goût :
 les tests contrôlent les états et preuves, la revue visuelle juge le rendu.
+
+
+## Hero illustré par défaut — instruction du 15 octobre 2026
+
+Sur tous les sites, le hero utilise par défaut une illustration de niche au format
+source 16:9, en fond sur toute la surface du hero, bord à bord. Ce n'est pas une
+vignette ni un visuel dans une colonne. Choisir un sujet et un cadrage cohérents avec
+la niche ; préserver des zones calmes derrière les textes et CTA.
+Le format 16:9 qualifie le média source : la hauteur du hero reste responsive.
+Utiliser une couverture cover et un point focal explicite ; prévoir le recadrage mobile.
+Ne pas étirer l'image ni imposer un hero mobile si haut qu'il cache les produits.
+Préserver lisibilité, contraste et accès immédiat aux actions. Optimiser le média LCP,
+réserver son espace et ne pas charger tardivement l'image principale.
+Une illustration ne constitue pas une photo d'un produit exact ni une preuve de test.
+Le choix du média respecte les droits/provenance et ne nécessite aucun outil payant.
+Consigner dans le skin source, ratio, point focal desktop/mobile, traitement de contraste
+et contrôle du cadrage. En refonte, intégrer cette préférence dans le design validé.

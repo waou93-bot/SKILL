@@ -138,13 +138,13 @@
         "references/image-direction.md": "7589094e544e743a46589bdb1d226bf14bc2712ec15778b3f484ce12045bb851",
         "references/motion.md": "0262cd42a98758e13124f3c67b2de508394a89b78c47d350a22baa38022927c5",
         "references/personal-preferences.md": "65441b2490c0f757252a8e9b06698450c2e4916472dd3f4c0ca6ec3e80d22015",
-        "references/quality-gates.md": "ee1cffd38f0183fc02e548b22de4885204fa164c70ac5d8e8e0c5da24a8196bd",
+        "references/quality-gates.md": "5061d5c72959c96df007db481da893c97d12ed09ffdd498b4995a0aeba3a4157",
         "references/scenarios.md": "e7b950411aa944257edb029b86b66c437d899df32f79ec19b18ca0a98554a8d2",
         "references/typography.md": "620e84ffc3b8287e5bf1ab4d5d37e104cdda8e5b57a7f14fb060ffd1ff9b0cd4",
-        "SKILL.md": "05f020b9ea980fe603a1fd78147f69739d51e5c5d1ebb180dc275407d54e2a98",
-        "templates/project-skin.template.yaml": "27bf39902615644e268d3ab1ab642fe05d81bc4466ddf6febf975bb616d6717b",
+        "SKILL.md": "45935a4cb5147978eab7a91d4ff7b8514fba41c891344c442e2654385c2f5f34",
+        "templates/project-skin.template.yaml": "35e54ece55da01b04ee9176943ccc286e210245ee91c7929177437602ee1d35b",
         "templates/tokens.template.css": "cb7999dce7e195e669187621b1bee893b883035e7865da1c8c45c067a1f641d5",
-        "references/cinematic-craft.md": "1cd253161f05c18bfa45c1a45d8e3346971d4b3435aa1b1dcc2f3bd8f4b2a296"
+        "references/cinematic-craft.md": "ebcac18f1f5bff470d5fe95c3378b88fbfffdd69084c6b96897640a2acb216db"
       },
       "mode": "resource; load only when relevant",
       "source": "local reviewed snapshot; upstream standalone sources preserved"

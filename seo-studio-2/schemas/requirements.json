@@ -1,5 +1,5 @@
 {
-  "contract_version": "3.6.0",
+  "contract_version": "3.6.1",
   "note": "Ajouter les contraintes utilisateur propres au projet. Une exigence NON_APPLICABLE n’est permise que lorsque allow_not_applicable est vrai et qu’une décision Astra motivée existe.",
   "requirements": [
     {

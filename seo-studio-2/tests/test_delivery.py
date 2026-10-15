@@ -2,6 +2,7 @@
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 import copy
+import base64
 import json
 import struct
 import sys
@@ -66,6 +67,9 @@ class DeliveryCase:
 
     def html(self,pid,route,ed):
         links='<nav><a href="/">Accueil</a><a href="/guide/">Guide</a><a href="/method/">Méthode</a></nav>'
+        if pid=="home":
+            artwork=base64.b64encode(png(160,90)).decode()
+            links+='<section data-hero style="position:relative;isolation:isolate;height:180px"><img data-hero-artwork alt="" src="data:image/png;base64,'+artwork+'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1"><p>Hero de protocole synthétique</p></section>'
         search="" if pid=="home" else """<form id="search"><label>Recherche<input type="search" aria-label="Recherche"></label></form>
 <div data-search-results><a href="/guide/">Guide de validation</a></div>
 <script>document.querySelector('#search').onsubmit=e=>{e.preventDefault();document.querySelector('[data-search-results] a').hidden=!document.querySelector('input').value.toLowerCase().includes('guide');}</script>"""
@@ -106,7 +110,7 @@ class DeliveryCase:
         for item in self.plan["pages"]:
             for profile in ("desktop","mobile"):
                 runs.append({"page_id":item["id"],"profile":profile,"html_sha256":studio.digest(self.site/item["output_path"]),
-                 "checks":{k:True for k in ("rendered","images","entry_products_visible","search","search_empty","navigation")},
+                 "checks":{k:True for k in ("rendered","images","entry_products_visible","search","search_empty","navigation","hero_artwork")},
                  "errors":[],"screenshot_path":profile+".png","screenshot_sha256":studio.digest(self.project/(profile+".png"))})
         write(self.project/"EXECUTION-browser.json",{"run_id":self.state["run_id"],"tool":"Playwright","version":"SYNTHETIC",
           "site_sha256":d.canonical(d.tree(self.site)),"status":"PASS","errors":[],"runs":runs})
@@ -230,6 +234,11 @@ class DeliveryTests(unittest.TestCase):
             review["checks"].remove("niche_fit");write(p,review)
             scope=self.c.plan["pilot_ids"] if phase=="qa" else ["project"]
             with self.assertRaises(ValueError):d.proof(self.c.project,phase+".json",phase,scope)
+    def test_hero_browser_check_cannot_be_omitted(self):
+        self.c.through_pilots();self.c.record("batches");self.c.browser_fixture()
+        p=self.c.project/"EXECUTION-browser.json";report=studio.load(p)
+        report["runs"][0]["checks"].pop("hero_artwork");write(p,report)
+        with self.assertRaisesRegex(ValueError,"navigateur"):self.c.record("qa")
     def test_large_volume_has_no_fixed_url_cap(self):
         state=copy.deepcopy(self.c.state);state["pages"]=[{"public":True,"wave":"V1"}]*100001
         self.c.volume(100001,100001)

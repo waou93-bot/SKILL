@@ -80,3 +80,10 @@ Inspect actual desktop/mobile renders, resting surfaces and applicable control s
 Record niche_fit, depth, cinematic_direction and component_states in the review,
 with inspected evidence and corrections. Check keyboard and reduced-motion behavior.
 No uninspected item may be marked passed; a build cannot substitute for this gate.
+
+
+## Hero background default
+The site entry hero uses niche-specific 16:9 source illustration covering the whole
+hero. Inspect desktop/mobile focal point, contrast, image quality and product access.
+The source ratio does not impose a fixed mobile hero height. Automated geometry
+checks complement the rendered visual review; they do not establish aesthetic quality.

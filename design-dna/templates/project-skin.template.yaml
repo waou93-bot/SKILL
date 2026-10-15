@@ -110,3 +110,15 @@ craft:
   component_tools_and_sources: []
   component_states_to_test: []
   desktop_mobile_review_evidence: []
+
+
+hero_artwork:
+  default: full_hero_background
+  source_aspect_ratio: "16:9"
+  source_and_provenance: ""
+  coverage: cover
+  focal_point_desktop: ""
+  focal_point_mobile: ""
+  text_contrast_treatment: ""
+  responsive_height: true
+  image_lcp_optimized: false

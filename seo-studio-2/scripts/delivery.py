@@ -19,11 +19,11 @@ from urllib.error import HTTPError
 PHASES = ("audit", "design", "products", "pilots", "batches", "qa")
 CHECKS = {
     "audit": {"scope", "sources", "template_adaptation"},
-    "design": {"design_system", "responsive", "user_approval", "niche_fit", "depth", "cinematic_direction", "component_states"},
+    "design": {"design_system", "responsive", "user_approval", "niche_fit", "depth", "cinematic_direction", "component_states", "hero_artwork"},
     "products": {"source_provenance", "affiliate_program", "prices", "images"},
     "pilots": {"editorial", "navigation", "conversion"},
     "batches": {"editorial", "pseo", "internal_links"},
-    "qa": {"visual", "editorial", "security", "accessibility", "functional", "niche_fit", "depth", "cinematic_direction", "component_states"},
+    "qa": {"visual", "editorial", "security", "accessibility", "functional", "niche_fit", "depth", "cinematic_direction", "component_states", "hero_artwork"},
 }
 DOCS = {
     "audit": ("00_CADRAGE.md", "01_RECHERCHE.md", "03_ARCHITECTURE.md"),
@@ -561,7 +561,7 @@ def automatic(project, state, plan, phase, site_root, source_root):
             raise ValueError("Couverture navigateur desktop/mobile incomplète")
         for run in runs:
             html = s.safe_path(site_root, actual[run["page_id"]]["output_path"], True)
-            checks={"rendered","images","entry_products_visible","search","search_empty","navigation"}
+            checks={"rendered","images","entry_products_visible","search","search_empty","navigation","hero_artwork"}
             if (run.get("html_sha256") != s.digest(html) or run.get("errors") != []
                     or set(run.get("checks",{})) != checks or not all(v is True for v in run["checks"].values())):
                 raise ValueError("Contrôle navigateur échoué/incomplet")

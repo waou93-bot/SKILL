@@ -44,6 +44,19 @@ async function main() {
           run.final_url=page.url();
           run.checks.rendered=await page.locator('h1').isVisible();
           run.checks.images=await page.locator('img').evaluateAll(images=>images.every(x=>x.complete&&x.naturalWidth>0));
+          run.checks.hero_artwork=await page.locator('[data-hero]').evaluateAll((heroes,required)=>{
+            if(required&&heroes.length===0)return false;
+            return heroes.every(hero=>{
+              const img=hero.querySelector('img[data-hero-artwork]');
+              if(!img||!img.complete||img.naturalWidth<=0||img.naturalHeight<=0)return false;
+              const bounds=hero.getBoundingClientRect(), image=img.getBoundingClientRect(), style=getComputedStyle(img);
+              return bounds.width>0&&bounds.height>0&&Math.abs(img.naturalWidth/img.naturalHeight-16/9)<0.02
+                &&image.left<=bounds.left+2&&image.top<=bounds.top+2
+                &&image.right>=bounds.right-2&&image.bottom>=bounds.bottom-2
+                &&style.objectFit==='cover'&&Number(style.opacity)>0&&style.visibility!=='hidden'
+                &&['absolute','fixed'].includes(style.position);
+            });
+          },binding.id===plan.entry_page_id);
           run.checks.entry_products_visible=true;
           if (plan.affiliation && binding.id===plan.entry_page_id) {
             run.checks.entry_products_visible=await page.locator('[data-product-id]').evaluateAll(nodes=>

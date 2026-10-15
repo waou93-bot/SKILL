@@ -187,3 +187,14 @@ Les revues design et qa exigent niche_fit, depth, cinematic_direction, component
 en plus des contrôles existants ; une compilation ou des captures non regardées ne
 valident pas ces dimensions. Produits et liens affiliés restent accessibles dès la
 landing. Aucun outil payant obligatoire, aucun décor générique imposé à toutes les niches.
+
+
+## Contrôle du fond de hero
+Baliser chaque hero avec data-hero et son image de fond décorative avec data-hero-artwork
+sur img (picture est possible autour). L'image couvre le conteneur avec position absolute,
+inset 0, width/height 100%, object-fit cover ; gérer le plan du texte et le recadrage.
+Ces attributs ne sont pas visibles pour le lecteur. La recette vérifie les dimensions
+intrinsèques proches de 16:9 et la couverture du conteneur sur desktop/mobile.
+L'entrée du site doit avoir ce hero. Chaque autre hero présent est également contrôlé.
+La revue humaine vérifie pertinence, cadrage, qualité d'illustration et contraste :
+la couverture géométrique ne prouve pas ces qualités.

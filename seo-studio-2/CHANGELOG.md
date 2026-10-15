@@ -1,3 +1,7 @@
+# 3.6.1 — 15 octobre 2026
+
+Hero illustré de niche en source 16:9, fond couvrant par défaut. Skin et Design DNA alignés ; contrôle Chromium de couverture et de ratio desktop/mobile, cas négatif et 36 tests moteur réussis.
+
 # 3.6.0 — 15 octobre 2026
 
 Direction de niche, profondeur, composition cinématique et états des composants : nouveaux critères bloquants design/QA, cohérents avec Design DNA et sans outil payant obligatoire.

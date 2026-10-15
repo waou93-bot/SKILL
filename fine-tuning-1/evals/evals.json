@@ -1,0 +1,23 @@
+{
+  "skill_name": "fine-tuning-1",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Améliore la page d'accueil existante de ce site d'affiliation : applique le template SEO Studio 2 à la niche, mets rapidement en avant les produits vérifiés, améliore les cartes et les boutons, et ajoute une aide directe pour choisir.",
+      "expected_output": "Le skill inspecte l'existant et les règles réelles du template, réutilise les données produits vérifiées sans en inventer, place les produits et CTA tôt, construit une aide au choix fondée sur des attributs réels, puis contrôle les rendus desktop/mobile et interactions.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Relis les textes de tout le site, corrige-les, et améliore le maillage interne avec des liens posés sur les expressions pertinentes.",
+      "expected_output": "Le skill inventorie les routes/pages, fait appliquer Human Reading aux rendus finaux et redaction-editoriale-web aux copies, priorise les liens internes vers des routes réellement existantes et rapporte précisément la couverture non vérifiée.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Rends ce site plus cinématique avec quelques animations au scroll et au survol. Tu peux inventer des produits en attendant les flux marchands.",
+      "expected_output": "Le skill refuse d'inventer ou publier des produits, garde les données manquantes hors du catalogue, applique une direction visuelle spécifique à la niche, ajoute uniquement des mouvements accessibles et limités, et respecte reduced-motion, performance et les gates existantes.",
+      "files": []
+    }
+  ]
+}

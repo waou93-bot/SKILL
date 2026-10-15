@@ -341,7 +341,14 @@ def page_checks(project, state, plan, site_root, ids):
                 if (kind, value) in own_sections:
                     raise ValueError("Élément pSEO réutilisé : " + pid)
                 own_sections[kind, value] = pid
-        for product_id in item.get("product_ids", []):
+        planned_product_ids = item.get("product_ids", [])
+        if (not isinstance(planned_product_ids, list)
+                or any(not isinstance(product_id, str) or not product_id for product_id in planned_product_ids)
+                or len(planned_product_ids) != len(set(planned_product_ids))):
+            raise ValueError("Liste d'identifiants produit invalide : " + pid)
+        if set(doc.products) != set(planned_product_ids):
+            raise ValueError("Produits affichés absents du plan ou non prévus/vérifiés : " + pid)
+        for product_id in planned_product_ids:
             if product_id not in products:
                 raise ValueError("Produit non prévu/vérifié : " + product_id)
             row = products[product_id]

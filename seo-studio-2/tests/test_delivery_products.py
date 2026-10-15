@@ -100,6 +100,19 @@ class ProductDeliveryTests(unittest.TestCase):
         self.c.plan["pages"][0]["price_warnings"]={"SKU":warning}
         write(target,base.replace("</main>",card.replace("</article>","<p>"+warning+"</p></article>")+"</main>"))
         d.page_checks(self.c.project,self.c.state,self.c.plan,self.c.site,["home"])
+    def test_affiliate_entry_without_declared_product_blocks(self):
+        self.c.plan["pages"][0]["product_ids"]=[]
+        write(self.c.site/"index.html",self.c.html("home","/",self.c.plan["pages"][0]["editorial"]))
+        with self.assertRaisesRegex(ValueError,"Page d'entrée sans produit/CTA affilié"):
+            d.page_checks(self.c.project,self.c.state,self.c.plan,self.c.site,["home"])
+    def test_unplanned_product_card_blocks_page(self):
+        self.c.plan["pages"][0]["product_ids"]=["SKU"]
+        base=self.c.html("home","/",self.c.plan["pages"][0]["editorial"])
+        verified='<article data-product-id="SKU">Fixture-1 12,50 EUR<img src="'+self.row["image_url"]+'"><a href="'+self.row["lien_affilié"]+'" rel="sponsored noopener" target="_blank">Voir le prix</a></article>'
+        unplanned='<article data-product-id="UNVERIFIED">Un modèle non déclaré<img src="'+self.row["image_url"]+'"><a href="'+self.row["lien_affilié"]+'" rel="sponsored noopener" target="_blank">Voir le prix</a></article>'
+        write(self.c.site/"index.html",base.replace("</main>",verified+unplanned+"</main>"))
+        with self.assertRaisesRegex(ValueError,"Produits affichés absents du plan"):
+            d.page_checks(self.c.project,self.c.state,self.c.plan,self.c.site,["home"])
     def test_account_evidence_change_changes_inputs(self):
         before=d.product_inputs(self.c.project,self.c.plan)
         write(self.c.project/"account.txt","Changed evidence")

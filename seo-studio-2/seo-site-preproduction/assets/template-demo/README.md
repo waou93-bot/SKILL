@@ -6,6 +6,13 @@ Starter statique en français, inspiré des architectures éditoriales et compar
 
 Les consignes complètes et la vérification avant livraison sont dans [`TEMPLATE_RULES.md`](TEMPLATE_RULES.md). Les lire avant chaque réutilisation du template.
 
+**La page d'accueil fournie n'est pas un exemple de landing affiliée conforme.**
+Elle met un outil avant les modèles fictifs, et ne fournit ni image produit réelle,
+ni prix, ni offre marchande. Pour un site d'affiliation, reconstruire la page
+d'entrée depuis le catalogue vérifié : le premier écran utile présente un vrai
+produit et son accès affilié direct. Le gabarit ne passe pas ce contrôle tant que
+ces données manquent. Ne pas simuler de produits ni de bouton marchand.
+
 ## Règles de personnalisation par niche
 
 1. Identifier d’abord la niche, le public et la décision que le visiteur cherche à prendre à partir de la demande de l’utilisateur. En cas d’inconnue décisive, la clarifier avant de figer le contenu.
@@ -18,7 +25,7 @@ Les consignes complètes et la vérification avant livraison sont dans [`TEMPLAT
 
 ## Aperçu
 
-- `index.html` — accueil et outil de contrôle de largeur.
+- `index.html` — accueil de démonstration, centré sur un outil de largeur ; il ne passe pas le gate produit d'un site affilié.
 - `canapes-compacts.html` — catégorie commerciale par besoin.
 - `guide-dimensions.html` — guide informationnel relié à la catégorie et à la fiche.
 - `modele-canape.html` — gabarit de fiche à remplir avec les données du fabricant ou du marchand.
@@ -52,6 +59,11 @@ Les consignes complètes et la vérification avant livraison sont dans [`TEMPLAT
 | Méthode | Comprendre la sélection et la rémunération | Explique les règles de comparaison, les sources et les limites de l’évaluation. |
 
 L’outil de largeur, la liste à comparer et les filtres ne nécessitent pas de création d’URL indexables. Garder les facettes dans l’interface tant qu’elles ne correspondent pas à une intention distincte et à un contenu réellement utile.
+
+Pour une mission affiliée, remplacer cette séquence de démonstration par une entrée
+produit-first conforme aux règles ci-dessus et aux contrats 24/26 de Studio 2.
+Organiser les hubs à partir des axes qui portent une intention et des références
+vérifiées ; ne pas traiter la taxonomie de canapé compacte comme universelle.
 
 ## Principes techniques
 

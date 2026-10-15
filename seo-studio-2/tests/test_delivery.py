@@ -190,6 +190,11 @@ class DeliveryTests(unittest.TestCase):
         self.c.through_pilots();self.c.record("batches");self.c.browser_fixture()
         p=self.c.project/"EXECUTION-browser.json";r=studio.load(p);r["status"]="NOT_RUN";write(p,r)
         with self.assertRaisesRegex(ValueError,"navigateur"):self.c.record("qa")
+    def test_browser_qa_rejects_entry_offer_outside_first_viewport(self):
+        self.c.through_pilots();self.c.record("batches");self.c.browser_fixture()
+        p=self.c.project/"EXECUTION-browser.json";report=studio.load(p)
+        report["runs"][0]["checks"]["entry_products_visible"]=False;write(p,report)
+        with self.assertRaisesRegex(ValueError,"Contrôle navigateur"):self.c.record("qa")
     def test_qa_requires_existing_technical_audit(self):
         self.c.through_pilots();self.c.record("batches");self.c.browser_fixture()
         with self.assertRaisesRegex(ValueError,"Recette HTTP"):self.c.record("qa")

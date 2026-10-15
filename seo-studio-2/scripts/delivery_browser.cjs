@@ -59,13 +59,28 @@ async function main() {
           },binding.id===plan.entry_page_id);
           run.checks.entry_products_visible=true;
           if (plan.affiliation && binding.id===plan.entry_page_id) {
-            run.checks.entry_products_visible=await page.locator('[data-product-id]').evaluateAll(nodes=>
-              nodes.some(n=>{
+            const plannedProductIds=Array.isArray(binding.product_ids)?binding.product_ids:[];
+            run.checks.entry_products_visible=plannedProductIds.length>0&&await page.locator('[data-product-id]').evaluateAll((nodes,plannedIds)=>{
+              const planned=new Set(plannedIds);
+              const visibleInViewport=el=>{
+                if(!el||!el.getClientRects().length)return false;
+                for(let node=el;node instanceof Element;node=node.parentElement){
+                  const style=getComputedStyle(node);
+                  if(node.hidden||node.getAttribute('aria-hidden')==='true'||style.display==='none'||
+                     style.visibility==='hidden'||style.visibility==='collapse'||Number(style.opacity)<=0)return false;
+                }
+                const r=el.getBoundingClientRect();
+                if(r.width<=0||r.height<=0||r.left<0||r.right>innerWidth||r.top<0||r.bottom>innerHeight)return false;
+                const top=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);
+                return !!top&&(top===el||el.contains(top));
+              };
+              return nodes.some(n=>{
+                if(!planned.has(n.getAttribute('data-product-id')))return false;
                 const image=n.querySelector('img'), a=n.querySelector('a[rel~="sponsored"]');
                 if(!image || !a) return false;
-                const r=image.getBoundingClientRect(), b=a.getBoundingClientRect();
-                return image.complete&&image.naturalWidth>0&&r.width>0&&r.height>0&&r.top>=0&&r.bottom<=innerHeight&&b.width>0&&b.height>0&&b.top>=0&&b.bottom<=innerHeight;
-              }));
+                return image.complete&&image.naturalWidth>0&&visibleInViewport(image)&&visibleInViewport(a);
+              });
+            },plannedProductIds);
           }
           const screenshot='EXECUTION-browser/'+i+'-'+profile+'.png';
           await page.screenshot({path:path.join(project,screenshot),fullPage:true});

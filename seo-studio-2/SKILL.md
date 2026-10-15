@@ -11,7 +11,7 @@ description: >-
   Astra arbitre les désaccords. Ne pas déclencher ce parcours complet pour une retouche,
   un simple article ou une question SEO isolée. Aucun déploiement implicite.
 metadata:
-  version: "3.6.1"
+  version: "3.6.2"
   reviewed_at: "2026-10-15"
 ---
 
@@ -200,6 +200,16 @@ page marchand, prix daté, image réelle, affiliation active et données complè
 Sans preuve, produit non publiable et rapport `produits-non-trouves.md` suivi d'une question.
 Installer et tester un contrôle bloquant dans le build du site ; la validation
 structurelle de Studio ne remplace pas ce contrôle.
+
+Le template Repère Salon est un exemple fictif et non affilié : son accueil donne
+la priorité à l'outil de largeur et ses modèles n'ont ni photos réelles, ni prix,
+ni offres marchandes vérifiées. Il ne passe donc pas le gate d'une landing affiliée.
+Ne pas reprendre cette hiérarchie pour un site d'affiliation. Construire l'accueil
+depuis le catalogue vérifié selon les contrats 24 et 26 : réponse courte, produits
+et CTA visibles dans le premier écran utile, puis navigation vers des familles
+de choix prouvées par la recherche et les attributs réels. Le contrôle navigateur
+doit attester la visibilité des offres déclarées, pas d'un produit supplémentaire
+ou non prévu. Sans catalogue admissible, la livraison reste bloquée.
 
 Existant : audit avant code, crawl et huit pages types desktop/mobile,
 `design-system.md`, reprise de la V1 et validation utilisateur.

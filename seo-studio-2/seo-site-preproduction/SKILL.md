@@ -28,6 +28,14 @@ Do not make a mechanical word replacement. Keep only structure that serves the
 new audience's task, and remove everything else. Never carry over fabricated
 products, prices, reviews, results, expertise or affiliate relationships.
 
+For affiliate work, the bundled homepage is specifically **not** a passing landing
+example: it leads with a measuring tool and its products are synthetic, without real
+images, prices or merchant offers. Do not inherit that order. Use the verified
+catalogue and the affiliate contracts in SEO Studio 2 references 24 and 26 to put
+real product choices and usable affiliate CTAs in the first useful viewport, then
+place relevant tools and editorial routes around that choice. If the catalogue is
+not verified, keep the project blocked; do not fill the component with demo items.
+
 ## When SEO Studio 2 coordinates
 
 Use SEO Studio 2 as the project orchestrator and its current dossier as the single

@@ -1,4 +1,4 @@
-# SEO Studio 2 — 3.6.1 (15 octobre 2026)
+# SEO Studio 2 — 3.6.2 (15 octobre 2026)
 
 SERP sourcées et approbation avant G3, recette HTTP/navigateur/laboratoire,
 suivi sur exports après publication, mode lite conservant les exigences,
@@ -6,6 +6,12 @@ mention d'affiliation commune footer/mentions légales sans répétition par bou
 Personna 1.2.0 inchangé ; aucun outil payant obligatoire. Les preuves historiques
 ci-dessous conservent leur date et leur périmètre. Voir references/20-serp.md,
 references/21-postlaunch.md et references/22-technical-release.md.
+
+La démo Repère Salon est un exemple structurel non affilié, pas une landing de
+comparateur prête à reprendre. Pour une mission affiliée, les produits vérifiés
+passent avant l'outil sur la page d'entrée, et seules les familles de produits
+appuyées par la niche, la recherche et les données réelles deviennent des pages.
+Le gate de recette lie chaque produit visible aux IDs prévus et vérifiés.
 
 La version historique 3.2.0 intégrait les évaluations Personna 1.2.0 recalculées avant
 validation stricte des profils ; voir la section Personna et references/03-personna.md.

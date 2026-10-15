@@ -7,7 +7,8 @@ questions for project-specific preproduction, not a mandatory sitemap or design.
 
 | Possible pattern in the demo | Preproduction question for the requested niche |
 |---|---|
-| Home with a decision-oriented tool | What is the first useful task a visitor can complete here? Use a tool only if its result can be grounded and maintained. |
+| Home with a decision-oriented tool | What is the first useful task a visitor can complete here? Use a tool only if its result can be grounded and maintained. For affiliate sites, show verified product choices and direct offers before a tool; the bundled tool-first sofa home is not a passing affiliate landing. |
+| Commercial entry and product families (when the model is affiliate) | Which verified products answer the main need now? Put real product imagery, exact references, dated prices and usable affiliate CTAs in the first useful viewport. Derive category hubs from benchmarked demand and verified attributes; keep unsupported combinations as UI filters or omit them. |
 | Category/choice page | Which distinct decision or search intent deserves a hub? Define eligibility, filters, limits and its supporting prose. |
 | Practical guide | What must the reader understand or do before choosing? Build the guide from evidence and real workflow, not keyword variations. |
 | Product/model detail | Does the niche need a record for a specific item, service, location or case? Define data provenance, missing states, update cadence and when no detail page is justified. |
@@ -24,6 +25,8 @@ when the niche and user request do not support it.
 Map the decision journey before reusing components. The sofa demo uses a measurable
 constraint as its opening gesture; another niche may need a diagnosis, eligibility
 check, location, budget, timeline, compatibility question or no interactive tool.
+On an affiliate site, verified product access remains ahead of optional tools and
+long editorial routes on the entry page.
 For each proposed interaction, define:
 
 - its user problem and input data;

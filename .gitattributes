@@ -10,3 +10,4 @@ personna/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eo
 # Preserve Design DNA distribution bytes and module-lock fingerprints.
 design-dna/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 plugins/seo-site-studio/modules/design-dna/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+seo-studio-2/documentation/*.pdf -diff

@@ -95,5 +95,6 @@
   "tests/test_studio_33.py": "4ccdc16cee575d85900953de58d2e5ec5bf1e59e94d4386866ebafbeba9247bb",
   "tests/test_technical_audit.py": "f123980640fe2678b8dcd05b3d2c0dd830fdb84f3bbd0d16861296a9a8d7aa1c",
   "tests/test_workflow.py": "247901aa5375587fb78b6330ac0f2e5a7d393fb021fbfab507edfe1d61a5199e",
-  "tests/workflow_fixture.py": "9cb3355ec9a97f95baa1c35d84a88370e9fd361064f60918ba43f52fd8f4c48f"
+  "tests/workflow_fixture.py": "9cb3355ec9a97f95baa1c35d84a88370e9fd361064f60918ba43f52fd8f4c48f",
+  "documentation/Feuille-de-route-SEO-Studio-2-illustree.pdf": "8c6848515816723cd644c072fb3d0002ae7082104604cd043d82ea1cfe1059ec"
 }

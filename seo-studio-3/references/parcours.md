@@ -26,13 +26,14 @@ Mener les deux analyses avant de décider le type de site, la refonte ou un inve
 
 ### Business
 
-- Pour une activité monétisée, appliquer le vrai skill `business`. Établir client, payeur, problème, offre, revenus, prix, coûts incrémentaux, contribution, encaissement et cash disponible pertinent.
+- Pour une offre commerciale nouvelle ou une décision économique importante, appliquer le skill canonique `business-checklist` dans son mode adapté. Sur l'existant, choisir `AUDIT_EXISTANT` ou `MISE_A_JOUR` selon le périmètre. Si l'offre et les décisions sont documentées et toujours valables, réutiliser ces preuves et limiter l'analyse aux variables économiques qui peuvent changer la prochaine décision. Ne pas lancer aussi `business` en doublon ni exiger un business plan complet quand un livrable ciblé suffit.
+- Établir client, payeur, problème, offre, revenus, prix, coûts incrémentaux, contribution, encaissement et cash disponible pertinent.
 - Réutiliser les preuves d'achat, de clic partenaire, de vente, de refus et de coûts ; identifier la fraîcheur et le périmètre. Un trafic ou clic n'est pas une vente. Une commande n'est pas nécessairement un revenu encaissé.
 - Examiner l'hypothèse défavorable, notamment aucun client ou revenu supplémentaire pendant la fenêtre du pilote. Aucun coût inconnu ne devient zéro.
 
 ### SEO
 
-- Appliquer le vrai skill `seo` dans le mode correspondant : cadrage, audit, migration, suivi ou correction ciblée. Pour un site existant, joindre `seo-audit` si l'audit de contenu/technique/maillage est pertinent.
+- Appliquer le vrai skill `seo` dans le mode correspondant : cadrage, audit, migration, suivi ou correction ciblée. Pour un site existant, le mode `AUDIT` de `seo` pilote l'audit ; joindre `seo-audit` uniquement pour des vérifications page par page distinctes qui ajoutent une preuve utile, sans dupliquer l'audit complet.
 - Rechercher intentions et demande observable ; examiner résultats et concurrents sur le territoire/langue visés. Distinguer concurrence commerciale et présence réelle en SERP. Les scores tiers n'établissent ni difficulté ni ventes.
 - Sur un site actif, segmenter Search Console par page/requête, marque/hors marque, pays et appareil lorsque les données le permettent. Comparer périodes cohérentes et changements publiés. Sans accès aux données internes, borner le diagnostic public.
 - Relier chaque page proposée à l'audience, à l'intention, à une réponse crédible et à une action aval. L'étude documentaire seule ne prouve pas que le SEO est le canal prioritaire.
@@ -47,7 +48,7 @@ Mener les deux analyses avant de décider le type de site, la refonte ou un inve
 4. **Préciser le parcours commercial.** Vérifier partenaires/programmes, produits, références, prix et destinations dans les sources réelles. Statuer sur l'information des relations commerciales selon pays et support. Si rien n'est confirmé, ne pas fabriquer de boutons, offres ni revenus ; décider si le site reste utile sans ce module.
 5. **Concevoir et approuver.** Créer/réutiliser un unique skin et un système de design adapté. Lire `design-dna` avant la production visuelle. Proposer des directions si un choix utilisateur est vraiment nécessaire ; ne pas imposer un hero illustré, une recherche sur chaque page ou un template unique.
 6. **Écrire et construire le pilote.** Produire un petit parcours réel permettant de tester intention → arrivée → compréhension → action. Les pages comportent preuves, limites, sources, liens utiles et contenu complet ; pas de placeholder publié ni de variantes pSEO sans valeur propre. Faire une revue éditoriale avec `redaction-editoriale-web` lorsque le travail est éditorial.
-7. **Revoir avant d'étendre.** Tester les fonctions et l'expérience réellement livrées sur les environnements disponibles. Corriger le pilote, puis étendre le corpus par lots seulement si la valeur, les données, la charge et la maintenance sont soutenables.
+7. **Revoir avant d'étendre.** Tester les fonctions et l'expérience réellement livrées sur les environnements disponibles. Corriger le pilote. Si l'utilisateur a demandé un site de bout en bout, poursuivre ensuite jusqu'à la V1 complète convenue par lots, sans attendre une validation séparée pour chaque étape locale ; arrêter au pilote uniquement si c'est le périmètre demandé ou si une décision, une inconnue ou une autorisation externe bloque la suite. Étendre le corpus par lots seulement si la valeur, les données, la charge et la maintenance sont soutenables.
 
 ## 3. Parcours REPRENDRE
 

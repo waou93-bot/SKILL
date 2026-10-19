@@ -6,7 +6,7 @@ description: >-
   prospects ou revenus. Pour une création complète ou l'audit et l'amélioration
   d'un site existant ; pas pour une question SEO isolée.
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # SEO Studio 3
@@ -68,6 +68,8 @@ Lire [le parcours opérationnel](references/parcours.md) après le choix du mode
 ## Skills spécialisés : appels proportionnés
 
 Utiliser les méthodes spécialisées disponibles sans transformer leur lecture en preuve d'exécution. Après Organisation, les appels les plus fréquents sont `business-checklist` quand une décision économique nouvelle ou matérielle le justifie, et `seo`. Ajouter seulement les compétences requises par le travail courant : `deep-research` ou `customer-research` pour une incertitude client ou marché importante ; `seo-site-preproduction` pour adapter un modèle de site ; `pSEO` pour des familles programmatiques justifiées ; `redaction-editoriale-web` pour une rédaction éditoriale ; `design-dna` avant une production visuelle ; `analytics` pour une question de collecte/mesure ; `seo-opportunity-loop` sur données de recherche existantes ; `seo-post-deploy` après publication autorisée. Choisir ensuite des skills d'implémentation, sécurité, QA et performance selon la stack et le risque réels.
+
+Pour tout site ou changement de contenu visible livré, ajouter `human-reading` à la QA visuelle lorsque le rendu peut être ouvert ou capturé. Ce skill vérifie la lisibilité réelle à l’écran — contraste, taille, hiérarchie, coupures et texte superposé — tandis que `redaction-editoriale-web` contrôle la qualité éditoriale. Ce contrôle n’est ni une détection d’écriture par IA, ni une validation factuelle. Lire les captures écran par écran à leur taille de rendu, au minimum sur les formats desktop et mobile concernés ; un montage de captures ne remplace pas cette inspection. Vérifier le texte courant, les titres, boutons, légendes, tableaux et mentions dans leur contexte ; corriger puis rendre et inspecter à nouveau. Viser au moins 4,5:1 pour le texte courant et 3:1 pour le grand texte et les éléments d’interface ; viser 7:1 lorsque le texte est petit ou dense. Si le rendu ou certains formats ne sont pas accessibles, nommer précisément les contrôles omis au lieu de les marquer faits.
 
 Ne pas inventorier ni lire tous les skills contenant « SEO » par principe. Ne pas relancer un routeur appelé par Organisation. Ne pas annoncer une revue indépendante, un persona formé ou un sous-agent qui n'a pas réellement été utilisé. Déléguer seulement si l'hôte, les règles de la session et le mandat l'autorisent, et si cela réduit un risque ou accélère un travail indépendant.
 

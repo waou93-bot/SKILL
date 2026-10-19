@@ -43,7 +43,7 @@ Les gates ne sont pas un score global ; un blocage critique ne se compense pas p
 1. **BUSINESS** — offre, client/payeur, mécanisme de revenu, coût, contribution et contrainte de cash sont compris ou explicitement inconnus.
 2. **SEO** — intention/demande et opportunité sont observées, hypothétiques ou inconnues ; le niveau de preuve est noté.
 3. **PILOTE** — tranche la plus petite qui permet une décision ; baseline, action, coût max et critère d'arrêt existent.
-4. **RÉALISATION** — périmètre, données, partenaire, autorisation, sauvegarde/rollback et QA nécessaire sont disponibles.
+4. **RÉALISATION** — périmètre, données, partenaire, autorisation, sauvegarde/rollback et QA nécessaire sont disponibles. Pour un site rendu ou un changement de contenu visible, le contrôle `human-reading` a inspecté les écrans concernés à leur taille réelle sur les formats visés ; les défauts ont été corrigés et réinspectés, ou les contrôles non effectués sont explicitement signalés. Pour une analyse sans rendu, ce contrôle est `NON APPLICABLE`.
 5. **MESURE** — données aval suffisantes pour décider ; sinon état non concluant et prochaine observation concrète.
 
 Pour chaque gate, indiquer `FAVORABLE`, `DÉFAVORABLE`, `INCONNU`, `NON CONCLUANT` ou `NON APPLICABLE`, avec preuve datée. Une décision de poursuivre est bornée par un périmètre, un plafond, un responsable et une date de revue. Aucune probabilité de réussite ou promesse de rang n'est déduite d'un avis d'agent.

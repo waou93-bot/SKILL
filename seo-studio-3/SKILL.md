@@ -6,7 +6,7 @@ description: >-
   prospects ou revenus. Pour une création complète ou l'audit et l'amélioration
   d'un site existant ; pas pour une question SEO isolée.
 metadata:
-  version: "1.7.0"
+  version: "1.8.0"
 ---
 
 # SEO Studio 3
@@ -42,6 +42,8 @@ Lire les vrais skills disponibles dans le catalogue actif avant de les appliquer
 - **Décision réunie** : relier les requêtes et pages à l'offre, à la prochaine action mesurable et à l'économie du projet. Si le canal organique est trop lent, trop cher ou mal adapté au délai de cash, dire-le et proposer les options sans les exécuter. Le porteur choisit le pari ; une hypothèse n'est jamais renommée « preuve ».
 
 Ne pas imposer un volume ou un quota de pages, de liens, d'articles ou d'illustrations. Pour toute création et toute reprise d'un site multi-pages, appliquer [l'architecture de référence obligatoire](references/architecture-et-indexation.md) avant de figer les familles de pages, les URLs et le menu. Les nœuds pertinents sont inclus ; les autres sont exclus ou testés avec une raison documentée. Une architecture imposée ne signifie jamais créer des pages sans demande distincte, valeur, contenu ou capacité de maintenance. Pour l'affiliation, valider les programmes et les liens réels ; décider des mentions commerciales selon le territoire, le support et les règles actuelles. Un lien `sponsored` ne remplace pas nécessairement une information claire pour le lecteur.
+
+Pour chaque site public, créer ou auditer le pied de page et les pages de confiance à l'aide du [template réutilisable](references/footer-et-pages-de-confiance.md). Adapter les modules au modèle économique et à la niche ; ne publier aucune méthode, notation, limitation, identité, affiliation, utilisation d'IA ou pratique de données qui n'est pas étayée par les faits du projet. Vérifier le rendu et les destinations dans chaque gabarit de page.
 
 ## Liens sortants : partenaires confirmés uniquement
 

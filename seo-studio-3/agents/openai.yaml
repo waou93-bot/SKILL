@@ -1,0 +1,7 @@
+interface:
+  display_name: "SEO Studio 3"
+  short_description: "Business + SEO pour créer ou reprendre un site"
+  default_prompt: "Utilise $seo-studio-3 pour créer un site ou reprendre un site existant, avec Business et SEO en premier, puis mesure les clics et conversions."
+
+policy:
+  allow_implicit_invocation: true

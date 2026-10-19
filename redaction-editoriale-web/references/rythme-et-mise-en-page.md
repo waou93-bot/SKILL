@@ -35,7 +35,7 @@ Avant livraison, rechercher les espaces ordinaires avant `:` dans toutes les zon
 
 ## Mise en page Markdown par défaut
 
-- H1 en question, sous-titre qui donne un début de réponse, chapô qui développe, éventuelle synthèse rapide, puis développement. Le sous-titre est une phrase sous le H1, pas un H2 décoratif ; fusionner sous-titre et chapô si le support le demande. Un sommaire est utile pour un guide long, pas pour une brève.
+- H1 formulé selon l’intention : question si le lecteur pose une question, titre descriptif pour une sélection ou un explicatif. Ajouter un sous-titre qui donne un début de réponse, un chapô qui la développe, puis une éventuelle synthèse rapide avant le développement. Le sous-titre est une phrase sous le H1, pas un H2 décoratif ; fusionner sous-titre et chapô si le support le demande. Un sommaire est utile pour un guide long, pas pour une brève.
 - Une ligne vide entre paragraphes et autour des titres, listes, tableaux et images. Ne pas ajouter des lignes vides multiples ou des sauts de ligne manuels après chaque phrase pour simuler des marges.
 - Corps en prose. Puces pour critères parallèles, points forts et limites ; numérotation pour actions ordonnées. Encadré bref pour avertissement ou verdict réellement utile, sans transformer tout l’article en cartes.
 - Dans les guides, répéter une même structure de fiche pour permettre la comparaison. Dans les explicatifs, garder une progression continue. Dans les tutoriels, placer le visuel près de l’action concernée.

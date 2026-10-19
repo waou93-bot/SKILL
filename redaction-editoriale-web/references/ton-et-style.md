@@ -43,9 +43,9 @@ Préférer « utiliser », « choisir », « ouvrir », « enregistrer », « li
 
 ## Titres et accroches
 
-Identifier l'intention avant de titrer. Par défaut, écrire le H1, le title et les variantes proposées sous forme de question précise. Mettre le mot-clé dans les 30 premiers caractères quand cela reste naturel. Choisir un angle clair dans la question : usage, critère, budget, difficulté ou conséquence. Un chiffre ou une année utile peut préciser cet angle, sans empiler les promesses. Respecter un titre exact ou une convention explicitement demandés dans le brief.
+Identifier l'intention avant de titrer. Employer une question précise seulement si elle correspond à la requête ou au besoin réel ; choisir sinon une formulation descriptive adaptée au guide, au comparatif, au tutoriel ou à l’explicatif. Mettre le sujet principal tôt lorsque cela reste naturel. Choisir un angle clair : usage, critère, budget, difficulté ou conséquence. Un chiffre ou une année utile peut préciser cet angle, sans empiler les promesses. Respecter un titre exact ou une convention explicitement demandés dans le brief.
 
-Le sous-titre sous le H1 donne une première réponse, un critère décisif ou une conséquence confirmée en une phrase. La meta description commence également à répondre à la question et reste autonome ; ce n'est pas une invitation vague à découvrir la réponse. Une réserve déterminante figure dans cette première réponse si les preuves l'exigent. Le chapô développe le point sans répéter mot pour mot le sous-titre. Si le support fusionne sous-titre et chapô, une seule ouverture suffit.
+Le sous-titre sous le H1 donne une première réponse, un critère décisif ou une conséquence confirmée en une phrase. La meta description commence également à répondre à la promesse du titre et reste autonome ; ce n'est pas une invitation vague à découvrir la réponse. Une réserve déterminante figure dans cette première réponse si les preuves l'exigent. Le chapô développe le point sans répéter mot pour mot le sous-titre. Si le support fusionne sous-titre et chapô, une seule ouverture suffit.
 
 Les H2/H3 font avancer la réponse : élément de décision, conséquence ou sous-question réellement traitée. Appliquer à tous ces textes les contrôles de fidélité, de preuve et de promesse tenue.
 

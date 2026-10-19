@@ -6,7 +6,7 @@ Utiliser le format qui répond au brief ; pour une fiche produit éditoriale, ad
 
 ### Sélection de modèles / meilleur X
 
-- H1 sous forme de question à mot-clé, sous-titre qui amorce la réponse et chapô qui précise besoin et périmètre ; ajouter l'année seulement si la mise à jour annuelle est assurée.
+- H1 précis, conforme à l’intention : question réelle si le lecteur cherche un choix, titre descriptif si l’article présente une sélection. Le sous-titre amorce la réponse et le chapô précise le public et le périmètre ; ajouter l’année seulement si la mise à jour annuelle est assurée.
 - Sélection rapide de quelques choix réellement distincts : budget, polyvalence, usage ou compatibilité. Expliquer le critère de chacun sans imposer un « meilleur global ». Sans preuves suffisantes, les recommandations restent provisoires ou impossibles à départager.
 - Sommaire pour un guide long. Faire remonter les prérequis qui pourraient invalider toute la sélection.
 - Fiches comparables sous des intertitres produit + usage : identification et visuel utile, atouts/limites, analyse en prose, provenance et offre éventuelle. La prose développe confort ou prise en main, performances utiles et compromis selon le sujet ; une fiche ne se réduit pas à des spécifications en puces.
@@ -15,7 +15,7 @@ Utiliser le format qui répond au brief ; pour une fiche produit éditoriale, ad
 
 ### Guide pédagogique / comment choisir
 
-- H1 en question sur le choix, sous-titre qui donne un premier critère de réponse, chapô orienté vers la décision, repères essentiels et sommaire si le développement est long.
+- H1 adapté à l’intention : question si le lecteur demande comment choisir, formulation descriptive sinon. Sous-titre et chapô conduisent à la décision, avec les repères essentiels ; ajouter un sommaire si le guide est long.
 - Usages, familles/formes, puis critères techniques et pratiques dans un ordre qui resserre le choix.
 - Pour chaque critère : définition accessible, conséquence concrète, limite et options comparables si utiles. Placer une image à proximité de l'explication ; proposer ensuite une catégorie vérifiée si le brief comporte un catalogue.
 - Terminer par une synthèse de décision ou une suite pertinente. Aucun classement, prix, produit ou FAQ artificiels lorsque le contenu sert à comprendre les critères.
@@ -28,7 +28,7 @@ Fiche de travail : « Modèle [nom fourni] — Pour qui : [usage]. Atout :
 
 ## 2. Comparatif A vs B
 
-- H1 en question (« Faut-il choisir A ou B pour [usage] ? »), sous-titre qui amorce le verdict avec sa condition essentielle.
+- H1 adapté à l’intention comparative : question naturelle ou formulation descriptive qui nomme les options et le critère. Sous-titre qui amorce le verdict avec sa condition essentielle.
 - Verdict en haut, conditionné aux usages et à la qualité des preuves.
 - Tableau de spécifications avec source pour chaque ensemble de données ; distinguer specs, mesures et ressenti.
 - Différences qui comptent : effet concret pour le lecteur, sans réciter toutes les lignes.
@@ -40,7 +40,7 @@ Exemple court : « Choisis A si [caractéristique établie] répond à ton usa
 
 ## 3. Tutoriel pas à pas
 
-- H1 en question sur l'action à accomplir, sous-titre qui indique la première voie ou le prérequis décisif.
+- H1 orienté vers l’action à accomplir ; question naturelle si elle correspond au besoin, formulation directe sinon. Sous-titre qui indique la voie ou le prérequis décisif.
 - Résultat attendu, durée sourcée ou estimation explicitement signalée, prérequis, système et version concernés.
 - Étapes numérotées : un verbe d'action en tête, une action par étape. Séparer ouvrir, sélectionner et confirmer si ce sont trois actions.
 - Pour chaque étape : capture ou visuel suggéré avec texte alternatif ; ne pas prétendre avoir produit une capture réelle.
@@ -53,7 +53,7 @@ Ne pas présenter des menus mémorisés comme vérifiés sur une version actuell
 
 ## 4. Explicatif / actualité
 
-- H1 en question sur le changement ou sa conséquence, sous-titre qui en donne une première réponse confirmée.
+- H1 qui résume le changement confirmé ou sa conséquence ; question seulement si elle correspond à la requête réelle. Sous-titre qui donne une première réponse confirmée.
 - Chapô qui répond immédiatement à la question ou décrit le changement confirmé.
 - Contexte : événement, date et version, avec les inconnues visibles.
 - Points clés sous des intertitres informatifs, en distinguant annonce, disponibilité effective et interprétation.
@@ -64,4 +64,4 @@ Exemple court : « Le changement annoncé concerne [public documenté]. Sa dis
 
 ## Paquet commun
 
-Ajouter à chaque format les livrables SEO de checklist-seo.md, auteur et mise à jour, provenance, affiliation applicable et liste de vérifications. La longueur dépend de la décision à éclairer ; pas de minimum de mots artificiel. Pour un article long (plusieurs sections développées), fournir aussi le plan H2 optimisé et trois titres sociaux.
+Pour chaque article complet, livrer un ensemble prêt à relire : H1, title et meta alignés sur l’intention, fan-out justifié, plan et contenu intégral, liens contextuels, emplacements/briefs d’illustrations, offres et bannières partenaires selon le brief, sources, limites et contrôles à faire. Séparer le texte lecteur du dossier SEO et des notes de production. Ne pas prétendre que les assets, liens ou rendus non fournis ont été intégrés ou vérifiés. Ajouter auteur/date s’ils sont connus ; aucun quota de mots. Fournir des titres sociaux et H2 alternatifs seulement si le brief les demande ou si cela aide concrètement la publication.

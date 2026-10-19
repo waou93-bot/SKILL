@@ -1,17 +1,17 @@
 # H1, métas, tendances et arbitrage ASTRA
 
-Appliquer ce parcours pour créer ou améliorer les H1 et les métadonnées d'un article. Faire soi-même la recherche, proposer les variantes, obtenir l'arbitrage puis éditer dans le périmètre demandé. Une correction orthographique ou typographique isolée n'exige pas ce parcours complet. Garder les tableaux de recherche et les échanges d'arbitrage dans le dossier éditorial, hors du texte public.
+Utiliser ce parcours approfondi pour une demande ciblée de H1/métas, un benchmark concurrentiel demandé ou un arbitrage d’accroche réellement disputé. Pour un article complet ordinaire, appliquer checklist-seo et le fan-out ; ne pas imposer benchmark, Trends, ASTRA et variantes multiples par défaut. Faire soi-même la recherche, proposer les variantes, obtenir l'arbitrage puis éditer dans le périmètre demandé. Une correction orthographique ou typographique isolée n'exige pas ce parcours complet. Garder les tableaux de recherche et les échanges d'arbitrage dans le dossier éditorial, hors du texte public.
 
 ## 1. Cadrer les champs et la promesse
 
 Partir du brief, du contenu existant et des preuves disponibles. Définir sujet, lecteur, intention, langue, zone et actualité du sujet. Reprendre les paramètres du site lorsqu'ils sont connus ; à défaut, annoncer les hypothèses utiles, par exemple France pour un lectorat français non précisé. Ne pas solliciter le lecteur pour des choix de recherche ordinaires.
 
-- **H1** : titre visible principal de l'article, en question par défaut. Il expose une promesse précise ; la cible de longueur du title ne lui impose pas une limite de 60 caractères.
+- **H1** : titre visible principal, distinctif et fidèle au contenu ; une question seulement si elle correspond au besoin de recherche, sinon un titre descriptif. Il expose une promesse précise ; la cible de longueur du title ne lui impose pas une limite de 60 caractères.
 - **Title** : contenu de la balise `<title>`, parfois appelé « meta title ». Il reste cohérent avec le H1 et peut être plus court. Ce n'est pas nécessairement le titre affiché par le moteur.
 - **Sous-titre** : première réponse sous le H1, avec un critère ou une réserve utile. Ce texte visible est distinct de la meta description.
 - **Meta description** : résumé dans `<meta name="description">`, autonome, qui commence à répondre. Un extrait affiché dans les résultats peut provenir du corps de l'article ; ce n'est pas une preuve du contenu de cette balise.
 
-Définir en une phrase ce que l'article permet réellement de décider ou de faire. Écarter toute formulation qui exige une preuve absente. Garder la préférence pour les questions, sauf instruction explicite contraire.
+Définir en une phrase ce que l’article permet réellement de décider ou de faire. Écarter toute formulation qui exige une preuve absente. Choisir un format interrogatif ou descriptif selon l’intention et la formulation naturelle du sujet.
 
 ## 2. Comparer les références éditoriales du sujet
 
@@ -35,7 +35,7 @@ Les indices de Trends sont relatifs et normalisés, fondés sur un échantillon 
 
 ## 4. Construire des ensembles comparables
 
-Produire cinq variantes de title en question, comptées selon [checklist-seo](checklist-seo.md), puis développer les trois plus pertinentes en ensembles **H1 + title + sous-titre + meta description**. Varier les angles, pas seulement un synonyme. Chaque ensemble commence à répondre, précise un bénéfice réel et conserve la réserve déterminante. Une requête populaire sans réponse dans l'article est éliminée.
+Produire plusieurs variantes seulement si la comparaison apporte quelque chose ou est demandée. Pour une optimisation ciblée, cinq angles distincts peuvent être comparés ; ils ne doivent pas tous être interrogatifs. Développer plusieurs ensembles H1/title/sous-titre/meta uniquement si le périmètre justifie cette profondeur. Pour un article complet ordinaire, livrer d’abord un ensemble final défendable. Varier les angles, pas seulement un synonyme. Chaque ensemble commence à répondre, précise un bénéfice réel et conserve la réserve déterminante. Une requête populaire sans réponse dans l'article est éliminée.
 
 Comparer chaque ensemble selon ces critères, dans cet ordre : fidélité au contenu et aux preuves ; intention et public ; réponse concrète ; précision et différence face aux références ; naturel, rythme et longueur. Trends éclaire le vocabulaire et l'intérêt relatif, sans remplacer ce jugement. Ne pas fabriquer un score scientifique ni une prévision de clics. Faire une recommandation initiale argumentée et expliciter les incertitudes.
 

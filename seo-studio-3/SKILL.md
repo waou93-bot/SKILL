@@ -6,7 +6,7 @@ description: >-
   prospects ou revenus. Pour une création complète ou l'audit et l'amélioration
   d'un site existant ; pas pour une question SEO isolée.
 metadata:
-  version: "1.4.0"
+  version: "1.5.0"
 ---
 
 # SEO Studio 3
@@ -43,6 +43,16 @@ Lire les vrais skills disponibles dans le catalogue actif avant de les appliquer
 
 Ne pas imposer un nombre de pages, un quota de liens, un format d'article, une illustration, une recherche visible sur chaque page, une présence d'auteur particulière, une stack ou un partenaire. Les choisir seulement si les besoins et preuves du projet le justifient. Pour l'affiliation, valider les programmes et les liens réels ; décider des mentions commerciales selon le territoire, le support et les règles actuelles. Un lien `sponsored` ne remplace pas nécessairement une information claire pour le lecteur.
 
+## Liens sortants : partenaires confirmés uniquement
+
+Pour tout site créé ou repris avec SEO Studio 3, chaque hyperlien public qui quitte le domaine doit mener à un partenaire commercial confirmé, via une destination partenaire active et vérifiée pour l'offre et le territoire concernés. Cette règle couvre les articles, boutons, CTA, cartes produits, bannières, widgets, navigation et pied de page.
+
+- N'ajouter aucun lien public direct vers un fabricant, une marque, un vendeur, une source éditoriale, une autorité ou tout autre site sans partenariat confirmé. Un programme repéré mais non activé pour le projet ne suffit pas.
+- Les sources officielles et autres références peuvent servir à vérifier les faits ; conserver leurs URL dans le brief ou le registre interne des sources, sans les publier comme liens sortants. Les liens contextuels publics restent internes au site ou mènent à un partenaire confirmé.
+- Vérifier l'URL partenaire réelle, les redirections, le suivi et la destination finale avant intégration. Si aucun partenaire adapté n'est confirmé, ne pas fabriquer de destination ni laisser un lien externe : retirer le CTA externe ou orienter vers une page interne utile.
+- À la QA, inventorier les hyperliens sortants sur toutes les pages et tous les modèles du périmètre. Classer chacun comme partenaire vérifié, non-partenaire ou inconnu ; le contrôle échoue tant qu'un lien non-partenaire ou inconnu subsiste. Un échantillon ne vaut pas audit exhaustif.
+- Marquer les liens commerciaux avec `rel="sponsored"` et afficher une information claire sur la relation commerciale, selon le territoire et le support. Ces mentions ne rendent pas admissible un lien vers un non-partenaire.
+
 ## Deux parcours
 
 Lire [le parcours opérationnel](references/parcours.md) après le choix du mode. Il reprend la feuille de route fournie tout en évitant les gates et fonctions universelles de Studio 2.
@@ -67,7 +77,7 @@ Lire [le parcours opérationnel](references/parcours.md) après le choix du mode
 
 ## Skills spécialisés : appels proportionnés
 
-Utiliser les méthodes spécialisées disponibles sans transformer leur lecture en preuve d'exécution. Après Organisation, les appels les plus fréquents sont `business-checklist` quand une décision économique nouvelle ou matérielle le justifie, et `seo`. Ajouter seulement les compétences requises par le travail courant : `toolbox` avant un choix matériel de stack, référence UX/visuelle, source média, fournisseur ou outil ; `deep-research` ou `customer-research` pour une incertitude client ou marché importante ; `seo-site-preproduction` pour adapter un modèle de site ; `pSEO` pour des familles programmatiques justifiées ; `redaction-editoriale-web` pour une rédaction éditoriale ; `design-dna` avant une production visuelle ; `analytics` pour une question de collecte/mesure ; `seo-opportunity-loop` sur données de recherche existantes ; `seo-post-deploy` après publication autorisée. Choisir ensuite des skills d'implémentation, sécurité, QA et performance selon la stack et le risque réels. Pour une retouche locale simple, ne pas lancer `toolbox` si aucun choix d'outil ou de référence ne reste ouvert.
+Utiliser les méthodes spécialisées disponibles sans transformer leur lecture en preuve d'exécution. Après Organisation, les appels les plus fréquents sont `business-checklist` quand une décision économique nouvelle ou matérielle le justifie, et `seo`. Ajouter seulement les compétences requises par le travail courant : `toolbox` avant un choix matériel de stack, référence UX/visuelle, source média, fournisseur ou outil ; `deep-research` ou `customer-research` pour une incertitude client ou marché importante ; `seo-site-preproduction` pour adapter un modèle de site ; `pSEO` pour des familles programmatiques justifiées ; `redaction-editoriale-web` pour une rédaction éditoriale, en lui transmettant la règle stricte des liens sortants réservés aux partenaires confirmés et en gardant les URL de sources dans les notes internes ; `design-dna` avant une production visuelle ; `analytics` pour une question de collecte/mesure ; `seo-opportunity-loop` sur données de recherche existantes ; `seo-post-deploy` après publication autorisée. Choisir ensuite des skills d'implémentation, sécurité, QA et performance selon la stack et le risque réels. Pour une retouche locale simple, ne pas lancer `toolbox` si aucun choix d'outil ou de référence ne reste ouvert.
 
 Pour tout site ou changement de contenu visible livré, ajouter `human-reading` à la QA visuelle lorsque le rendu peut être ouvert ou capturé. Ce skill vérifie la lisibilité réelle à l’écran — contraste, taille, hiérarchie, coupures et texte superposé — tandis que `redaction-editoriale-web` contrôle la qualité éditoriale. Ce contrôle n’est ni une détection d’écriture par IA, ni une validation factuelle. Lire les captures écran par écran à leur taille de rendu, au minimum sur les formats desktop et mobile concernés ; un montage de captures ne remplace pas cette inspection. Vérifier le texte courant, les titres, boutons, légendes, tableaux et mentions dans leur contexte ; corriger puis rendre et inspecter à nouveau. Viser au moins 4,5:1 pour le texte courant et 3:1 pour le grand texte et les éléments d’interface ; viser 7:1 lorsque le texte est petit ou dense. Si le rendu ou certains formats ne sont pas accessibles, nommer précisément les contrôles omis au lieu de les marquer faits.
 

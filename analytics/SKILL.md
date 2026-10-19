@@ -2,7 +2,7 @@
 name: analytics
 description: When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics," "conversion tracking," "event tracking," "UTM parameters," "tag manager," "GTM," "analytics implementation," "tracking plan," "how do I measure this," "track conversions," "attribution," "Mixpanel," "Segment," "are my events firing," or "analytics isn't working." Use this whenever someone asks how to know if something is working or wants to measure marketing results. For A/B test measurement, see ab-testing.
 metadata:
-  version: 2.1.0
+  version: 2.2.0
 ---
 
 # Analytics Tracking
@@ -99,6 +99,14 @@ checkout_payment_completed
 | form_submitted | form_type |
 | signup_completed | method, source |
 | demo_requested | - |
+
+### Affiliate / Partner Sites
+
+| Event | Properties |
+|-------|------------|
+| partner_outbound_click | partner_id, placement_id, page_type, offer_id, link_id |
+
+Use this event only for confirmed partner placements; keep generic outbound-link events for other destinations. Treat the click as an intermediate step, not as an order or revenue. Use the affiliate platform's reporting as the source for reported orders, approved or reversed commissions, and amounts actually paid. See [the affiliate funnel and reconciliation rules](references/event-library.md#affiliate-partner-measurement) before defining reports. Honor the site's consent settings and avoid personal data or raw destination query strings in event properties.
 
 ### Product/App
 

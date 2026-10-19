@@ -5,6 +5,17 @@ description: Orchestrer une automatisation SEO à grande échelle pour un ou plu
 
 # SEO Content Engine
 
+<!-- GOOGLE_STARTER_GUIDE:BEGIN -->
+## Socle Google Search Central
+
+Lire et appliquer [les bonnes pratiques du guide SEO Google](../seo/references/google-starter-guide.md) avant les étapes concernées, dans un périmètre proportionné. Intégrer les contrôles applicables dans ContentBrief et ValidationReport : originalité, preuves, lisibilité, liens, titre/extrait, médias et maintenance. Marquer les contrôles pass/fail/unknown dans les contrats existants ; ne pas déclarer le guide validé par le seul validateur JSON.
+
+Source consultée le 8 octobre 2026. Le socle prime sur les recettes rigides contradictoires ; il nʼétend aucune autorisation.
+
+
+Pour les controles specialises (rendu, sitemap, liens, medias, international, recherche generative et mesure), lire uniquement les sections pertinentes des [controles avances Google](../seo/references/google-advanced-practices.md). Verifier les sources actuelles avant application et distinguer exigences, recommandations et options.
+<!-- GOOGLE_STARTER_GUIDE:END -->
+
 Reproduire le parcours fonctionnel décrit par l'utilisateur comme AutoSEO, sans prétendre connaître son algorithme propriétaire. Aucun classement, trafic ou citation IA garanti.
 
 ## Démarrage
@@ -18,6 +29,7 @@ Reproduire le parcours fonctionnel décrit par l'utilisateur comme AutoSEO, sans
 
 - Auditer l'inventaire et les obstacles observables; distinguer mesure, hypothèse et inconnu. Produire SiteAudit.
 - Rechercher des opportunités avec sources, pays, appareil et dates; sans fournisseur, produire des hypothèses sans volume, difficulté, CPC ni classement inventés. Produire KeywordOpportunity.
+- Avant le calendrier, établir le mapping intention → URL canonique et type de page selon [Architecture et intentions](references/strategy.md). Réutiliser les champs des contrats existants; ne pas créer une URL par mot-clé ou par facette.
 - Préférer la mise à jour si l'intention est déjà couverte. Planifier 30 jours selon effort, budget et qualité; ne pas imposer une cadence quotidienne. Produire EditorialCalendar et ContentBrief.
 - Rédiger avec valeur originale, sources et preuves d'entreprise; produire ArticlePackage, puis ValidationReport. Les défauts bloquants empêchent la publication; les sujets sensibles demandent une validation qualifiée.
 - Créer ou mettre à jour un brouillon seulement si le connecteur le permet. Appliquer les règles de publication dans connectors. draft ne publie jamais; review exige une autorisation portant sur la version revue; automatic doit être explicitement configuré et autorisé pour le périmètre. Respecter les autorisations déjà données sans les redemander. Aucun remplacement silencieux. Produire PublicationRecord même en cas d'échec.

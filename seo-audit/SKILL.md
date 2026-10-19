@@ -1,9 +1,9 @@
 ---
 name: seo-audit
-description: When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," "SEO health check," "my traffic dropped," "lost rankings," "not showing up in Google," "site isn't ranking," "Google update hit me," "page speed," "core web vitals," "crawl errors," or "indexing issues." Use this even if the user just says something vague like "my SEO is bad" or "help with SEO" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema. For AI search optimization, see ai-seo.
+description: When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," "SEO health check," "my traffic dropped," "lost rankings," "not showing up in Google," "site isn't ranking," "Google update hit me," "page speed," "core web vitals," "crawl errors," or "indexing issues." Use this even if the user just says something vague like "my SEO is bad" or "help with SEO" — start with an audit. For building SEO pages at scale, see pSEO. For broader SEO guidance on structured data and architecture, see seo. For AI search optimization, see ai-seo.
 metadata:
-  version: 2.2.0
-  reviewed_at: "2026-10-13"
+  version: 2.3.0
+  reviewed_at: "2026-10-19"
 ---
 
 # SEO Audit
@@ -142,7 +142,7 @@ Raw HTML can reveal server-rendered JSON-LD. Text conversions may remove script 
 
 **XML Sitemap**
 - If present, accessible and valid; a sitemap is useful but not universally required
-- Submitted to Search Console
+- If submitted to Search Console, inspect its status and reported issues; lack of submission alone is not a defect
 - Contains only canonical, indexable URLs
 - Reflects significant changes; accurate lastmod, not routine date refreshes
 - Proper formatting
@@ -502,8 +502,7 @@ Same format as above
 ## Related Skills
 
 - **ai-seo**: For optimizing content for AI search engines (AEO, GEO, LLMO)
-- **programmatic-seo**: For building SEO pages at scale
-- **site-architecture**: For page hierarchy, navigation design, and URL structure
-- **schema**: For implementing structured data
+- **pSEO**: For building SEO pages at scale
+- **seo**: For broader guidance on site architecture, structured data, and SEO implementation
 - **cro**: For optimizing pages for conversion (not just ranking)
 - **analytics**: For measuring SEO performance

@@ -7,6 +7,7 @@ Comprehensive list of events to track by business type and context.
 - Product/App Events (onboarding, core usage, errors & support)
 - Monetization Events (pricing & checkout, subscription management)
 - E-commerce Events (browsing, cart, checkout, post-purchase)
+- Affiliate / Partner Site Events and Funnel
 - B2B / SaaS Specific Events (team & collaboration, integration events, account events)
 - Event Properties (Parameters)
 - Funnel Event Sequences
@@ -45,6 +46,24 @@ Comprehensive list of events to track by business type and context.
 | contact_submitted | Contact form sent | inquiry_type |
 | newsletter_subscribed | Email list signup | source, list_name |
 | trial_started | Free trial began | plan, source |
+
+---
+
+## Affiliate / Partner Measurement
+
+For an affiliate or partner site, keep the observable click separate from the transaction and the cash outcome. Use `partner_outbound_click` only for a confirmed partner link. Keep `outbound_link_clicked` for other external destinations.
+
+| Event / milestone | Measurement source | Properties or dimensions | Interpretation |
+|-------------------|--------------------|--------------------------|----------------|
+| partner_outbound_click | Site analytics | partner_id, placement_id, page_type, offer_id, link_id | A referral attempt; not proof that the partner received, attributed, or converted it |
+| order reported | Partner platform report or authorized integration | partner_id, reporting_period, order_count, currency | Provisional reported orders; reconcile status and reporting window |
+| commission approved | Partner platform report | partner_id, reporting_period, approved_commission, currency | Validated commission after the partner's review |
+| commission reversed | Partner platform report | partner_id, reporting_period, reversed_commission, reason_category | Cancellations, returns, or other partner adjustments |
+| commission paid | Partner statement or payment record | partner_id, payment_period, amount_paid, currency | Cash received; distinguish it from approved but unpaid commission |
+
+Reporting funnel: Search Console impressions and clicks → analytics organic landing sessions → partner outbound clicks → partner-reported orders → approved commission → cash paid. These are separate systems with different coverage and timing. Do not treat Search Console clicks as analytics sessions, infer orders from outbound clicks, or claim keyword-level revenue attribution unless a verified and authorized data source supports it. Compare aligned periods and disclose missing, delayed, or aggregated partner data.
+
+Do not send personal data, raw partner URLs with query strings, or customer-level order identifiers to general analytics. Use stable non-personal IDs and only the minimum aggregation needed for decisions. If an integration or postback is proposed, document its source, consent behavior, deduplication, reversals, and access before implementation.
 
 ---
 

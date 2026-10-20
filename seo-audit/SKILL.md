@@ -1,9 +1,9 @@
 ---
 name: seo-audit
-description: When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," "SEO health check," "my traffic dropped," "lost rankings," "not showing up in Google," "site isn't ranking," "Google update hit me," "page speed," "core web vitals," "crawl errors," or "indexing issues." Use this even if the user just says something vague like "my SEO is bad" or "help with SEO" — start with an audit. For building pages at scale to target keywords, see programmatic-seo. For adding structured data, see schema. For AI search optimization, see ai-seo.
+description: When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions "SEO audit," "technical SEO," "why am I not ranking," "SEO issues," "on-page SEO," "meta tags review," "SEO health check," "my traffic dropped," "lost rankings," "not showing up in Google," "site isn't ranking," "Google update hit me," "page speed," "core web vitals," "crawl errors," or "indexing issues." Use this even if the user just says something vague like "my SEO is bad" or "help with SEO" — start with an audit. For building SEO pages at scale, see pSEO. For broader SEO guidance on structured data and architecture, see seo. For AI search optimization, see ai-seo.
 metadata:
-  version: 2.2.0
-  reviewed_at: "2026-10-13"
+  version: 2.4.0
+  reviewed_at: "2026-10-20"
 ---
 
 # SEO Audit
@@ -95,6 +95,18 @@ Inspect the delivered HTML head and body, not only source files. For each URL/te
 
 Compare initial HTML with rendered DOM when scripts or interactions may add, remove, or alter content or markup. Use the current official rich-results validator for applicable structured data. Report syntax validity separately from required-property errors, optional warnings, policy/content mismatch, eligibility, and actual search appearance. A parser that cannot see a script or an initial-HTML-only check does not prove that markup is absent.
 
+#### Breadcrumb compatibility: visible navigation, structured data, and Search Console
+
+For each in-scope template where a breadcrumb trail is relevant, check the user-facing trail and Google-compatible markup as separate things. A visible breadcrumb helps users navigate; it does not by itself prove that structured data exists. Conversely, valid markup does not prove that a usable breadcrumb is visible on the page.
+
+- Compare the displayed hierarchy, labels, links, and current-page item with the site's actual information architecture and the page's role. Verify that linked ancestors resolve to the intended canonical pages. Do not require URL folders to mirror the trail literally or treat a missing visible trail as a Google structured-data error.
+- Inspect initial HTML and rendered DOM for `BreadcrumbList` in JSON-LD, Microdata, or RDFa. For Google eligibility, check `itemListElement` and its ordered `ListItem`s, ascending `position` values starting at 1, meaningful `name` values, and a valid `item` URL for each item. Google permits the final `ListItem` to omit `item`; Google then uses the containing page URL. Compare names and destinations with the page and intended trail. Multiple legitimate trails can exist when they reflect meaningful ways to reach the page.
+- Validate representative live URLs with Google's [Rich Results Test](https://search.google.com/test/rich-results) and, when available, Search Console URL Inspection. Record URL, template, rendered/initial source, date, errors, warnings, and validation result. A valid test establishes technical eligibility only; it does not guarantee display or ranking.
+- If Search Console access is available, inspect **Enhancements → Breadcrumbs**. The report covers structured-data items Google detected and is a sample, not a complete page inventory. It appears only when Google finds valid supported markup. If it is absent, do not label the whole site broken or compliant from that fact alone: inspect representative URLs and rendered markup, and record access or crawl limits. Distinguish report status and valid/invalid item counts from search impressions, clicks, and actual result appearance.
+- Google no longer displays breadcrumb paths in mobile search results; the markup remains supported for desktop results and the Search Console report remains available. Do not diagnose mobile absence in the SERP as an implementation defect. Recheck Google's current [breadcrumb documentation](https://developers.google.com/search/docs/appearance/structured-data/breadcrumb), [Search Console rich-result report guidance](https://support.google.com/webmasters/answer/7552505?hl=fr), and [mobile display announcement](https://developers.google.com/search/blog/2025/01/simplifying-breadcrumbs) during a future audit.
+
+Report one of: `VALIDÉ` (markup and sample URL checks pass), `À_CORRIGER` (specific markup/navigation defect observed), `NON_DÉTECTÉ` (markup not found in the declared crawl/render scope), `NON_VÉRIFIÉ` (access or rendering unavailable), or `NON_APPLICABLE` (no meaningful breadcrumb is expected). Missing markup alone is an opportunity or scope note, not a ranking defect or reason to block publication.
+
 ### Metadata and page-level evidence
 
 Check title and description presence, useful uniqueness, accuracy, and consistency with the actual page; verify canonical and robots directives against the intended indexability and sitemap; and confirm social metadata agrees with the page. Do not treat a missing canonical by itself, description length, or deprecated meta keywords as a demonstrated Google ranking defect. A canonical tag and a sitemap are signals, not proof of the URL Google selected or indexed it.
@@ -142,7 +154,7 @@ Raw HTML can reveal server-rendered JSON-LD. Text conversions may remove script 
 
 **XML Sitemap**
 - If present, accessible and valid; a sitemap is useful but not universally required
-- Submitted to Search Console
+- If submitted to Search Console, inspect its status and reported issues; lack of submission alone is not a defect
 - Contains only canonical, indexable URLs
 - Reflects significant changes; accurate lastmod, not routine date refreshes
 - Proper formatting
@@ -502,8 +514,8 @@ Same format as above
 ## Related Skills
 
 - **ai-seo**: For optimizing content for AI search engines (AEO, GEO, LLMO)
-- **programmatic-seo**: For building SEO pages at scale
-- **site-architecture**: For page hierarchy, navigation design, and URL structure
-- **schema**: For implementing structured data
+- **pSEO**: For building SEO pages at scale
+- **seo**: For broader guidance on site architecture, structured data, and SEO implementation
 - **cro**: For optimizing pages for conversion (not just ranking)
 - **analytics**: For measuring SEO performance
+

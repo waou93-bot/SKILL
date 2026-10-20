@@ -1,9 +1,20 @@
 ---
 name: seo-post-deploy
-description: Prendre en charge après déploiement la découverte et l'indexation du site courant, sa liaison GA4–Search Console autorisée, et l'optimisation de visibilité fondée sur données réelles Google, Bing et IA. Conserver les preuves et reprendre les actions inachevées sans promettre classement ni élargir les autorisations.
+description: Prendre en charge après déploiement l'audit exhaustif des pages indexables avant toute démarche Google/Bing, la configuration autorisée de GA4, Search Console, Bing Webmaster Tools et Clarity, puis l'optimisation de visibilité fondée sur des données réelles. Conserver les preuves et reprendre les actions inachevées sans promettre de classement ni élargir les autorisations.
 ---
 
 # Référencement après déploiement
+
+<!-- GOOGLE_STARTER_GUIDE:BEGIN -->
+## Socle Google Search Central
+
+Lire et appliquer [les bonnes pratiques du guide SEO Google](../seo/references/google-starter-guide.md) avant les étapes concernées, dans un périmètre proportionné. Contrôler ce socle sur les pages prioritaires réellement publiées. Distinguer réception du sitemap, exploration, indexation et résultats ; adapter les délais de suivi sans multiplier les soumissions ni promettre un effet.
+
+Source consultée le 8 octobre 2026. Le socle prime sur les recettes rigides contradictoires ; il nʼétend aucune autorisation.
+
+
+Pour les controles specialises (rendu, sitemap, liens, medias, international, recherche generative et mesure), lire uniquement les sections pertinentes des [controles avances Google](../seo/references/google-advanced-practices.md). Verifier les sources actuelles avant application et distinguer exigences, recommandations et options.
+<!-- GOOGLE_STARTER_GUIDE:END -->
 
 Exécuter les démarches utiles pour le site de production courant, avec les accès disponibles et dans le périmètre demandé par l'utilisateur. Une demande opérationnelle peut autoriser les soumissions officielles gratuites et les configurations de propriété strictement nécessaires sur ce site ; le skill ne crée pas d'autorisation supplémentaire. Un audit ou une validation du skill reste en lecture seule sur les services externes. Ne pas promettre l'indexation, le classement ou une citation IA.
 
@@ -17,7 +28,19 @@ Lire [les opérateurs et sources](references/operators.md) pour sélectionner le
 
 ## Vérifier la production avant soumission
 
-Contrôler HTTPS, redirections et hôte final, réponses HTTP, robots.txt, meta robots et X-Robots-Tag, canonical, contenu HTML accessible, maillage et sitemaps. Tester accueil et pages prioritaires, puis un échantillon par gabarit/langue ; déclarer la couverture réelle. Examiner CDN/WAF et logs si disponibles. Une simulation d'user-agent ne prouve pas l'accès du robot réel.
+Appliquer les [contrôles dépôt, publication et indexation](../seo/references/production-indexation.md) lorsqu'il existe une correction ou une republication : PR/branche principale/déploiement réel, pages publiques absentes du dépôt, origines canonical/og:url/JSON-LD/sitemap, exclusions noindex intentionnelles et recontrôle public. Comparer les dates du rapport global Search Console avec celles des inspections individuelles ; un test live valide prouve l'indexabilité actuelle, pas l'indexation. Préserver les validations déjà en cours.
+
+### Point de contrôle obligatoire avant Google et Bing
+
+Avant d'ouvrir une propriété ou d'agir dans Google Search Console ou Bing Webmaster Tools (inspection, soumission de sitemap, demande d'exploration/indexation ou IndexNow depuis leur interface), réaliser et présenter un contrôle de toutes les URLs de production destinées à l'indexation. Ne pas confondre ce contrôle avec la publication : il ne retarde ni n'annule un déploiement déjà autorisé. L'objectif est d'éviter d'envoyer aux moteurs un inventaire connu comme incomplet ou incorrect.
+
+1. **Établir le périmètre exhaustif et sa preuve.** Recenser les URLs canoniques publiées depuis les sitemaps et index de sitemaps, le CMS/routes ou l'inventaire du dépôt, puis les comparer à un crawl interne du site. Dédupliquer, normaliser les redirections et réconcilier les écarts. Distinguer les pages qui doivent être indexables des pages volontairement exclues (privées, utilitaires, variantes techniques, `noindex` éditorial intentionnel, etc.). Indiquer le nombre d'URLs par source, les écarts, la date, les erreurs et les limites d'accès. « Toutes les pages » ne peut être déclaré vérifié que si le périmètre a été réconcilié et chaque URL destinée à l'indexation a été contrôlée ; sinon donner la couverture réelle et marquer le contrôle incomplet.
+2. **Contrôler chaque page indexable sur la production.** Vérifier réponse HTTP finale (succès attendu), HTTPS/hôte/cible après redirections, accessibilité au crawl, absence de `noindex` non voulu dans `meta robots` ou `X-Robots-Tag`, canonical cohérente, absence de directives contradictoires, contenu utile accessible, présence et pertinence du H1, title et meta description uniques et alignés sur l'intention, et présence dans le sitemap seulement si la page est canonique, publique et indexable. Vérifier les autres balises qui influent sur le rendu ou l'indexabilité lorsque pertinentes (langue, pagination, données structurées), sans traiter Open Graph comme une balise de classement Google.
+3. **Vérifier le maillage page par page.** Chaque page indexable doit être atteignable depuis au moins une autre page HTML indexable par un lien interne explorable, avec une ancre compréhensible et un parcours cohérent. Signaler les pages orphelines et les liens cassés/redirects. Une page absente du crawl n'est pas automatiquement orpheline si elle est inaccessible au crawl : la confronter à l'inventaire du CMS et des sitemaps. Ne pas inventer une obligation de nombre de liens.
+4. **Vérifier l'intention et le fan-out.** Pour chaque page prioritaire et chaque gabarit éditorial, comparer H1/title/meta et contenu au sujet principal et à sa carte de fan-out (intentions et sous-questions utiles, affectation à la page ou à une page distincte). Repérer fan-out incomplet, questions non traitées, chevauchement/cannibalisation probable, ou sous-intentions qui méritent une autre URL. S'appuyer sur le brief et les résultats de recherche accessibles ; si aucune carte ou preuve n'existe, la construire prudemment ou marquer l'évaluation « hypothèse/non vérifiée ». N'imposer ni quota de mots ni couverture mécanique de variantes.
+5. **Faire valider le rapport avant l'accès aux outils moteurs.** Fournir une liste des URLs contrôlées ou un artefact exploitable, la couverture, les défauts par page, les exclusions intentionnelles, les corrections proposées et le statut ; demander explicitement à l'utilisateur de vérifier ce bilan avant d'ouvrir GSC/Bing ou de lancer une soumission. Si l'inventaire n'est pas exhaustif, suspendre ces démarches et demander l'accès ou l'inventaire manquant. Si des défauts subsistent, demander s'ils doivent être corrigés avant soumission ou si l'utilisateur autorise une poursuite avec réserves documentées. Ne jamais soumettre de pages privées, hors domaine, volontairement exclues ou dont les directives d'indexation/canonicals sont erronées. Ce point de contrôle porte sur les démarches aux moteurs, pas sur la publication déjà autorisée.
+
+Contrôler HTTPS, redirections et hôte final, réponses HTTP, robots.txt, meta robots et X-Robots-Tag, canonical, contenu HTML accessible, maillage et sitemaps. Examiner CDN/WAF et logs si disponibles. Une simulation d'user-agent ne prouve pas l'accès du robot réel.
 
 Sitemaps : format valide, URLs absolues canoniques, indexables et publiques, index/enfants accessibles, dates lastmod exactes, limites officielles respectées. Exclure preview, administration, données privées, paramètres inutiles et pages non destinées à la recherche. Ne pas indexer une page volontairement privée ou noindex. Les notifications de suppression IndexNow suivent une voie distincte et peuvent concerner des URLs supprimées.
 
@@ -36,11 +59,22 @@ Corriger les blocages démontrés dans le périmètre autorisé, avec la stack e
 
 Privilégier API/connecteurs officiels ; utiliser une session navigateur autorisée si nécessaire et disponible. En cas de connexion, MFA, CAPTCHA ou preuve de propriété manquante, demander uniquement l'intervention indispensable sans contourner le contrôle. Ne pas arrêter tout le workflow pour un seul opérateur inaccessible.
 
-## Relier mesure organique et Analytics
+## Installer et raccorder Analytics, Search Console, Bing et Clarity
 
-Pour un site réel autorisé, charger Analytics et sa [procédure GA4–Search Console](../analytics/references/search-console-link.md). Lire les liens existants avant création ; vérifier le couple propriété GSC/flux web GA4, sa portée effective et les rôles Éditeur GA4/propriétaire vérifié GSC. Réutiliser le lien exact. Une mauvaise association ou une limite occupée ne permet pas de supprimer/recréer sans mandat adapté. Sans site/propriété ciblés, produire la préparation uniquement ; sans accès, noter le rôle et l’intervention manquants sans bloquer les autres démarches.
+Pour le site courant, inventorier ce qui existe déjà avant de proposer une inscription : compte/propriété et flux web GA4, collecte effectivement observée, consentement, propriété Search Console vérifiée, site Bing Webmaster Tools, projet Clarity, tag/installation Clarity et intégrations existantes. Distinguer absent, installé, lié, vérifié, accessible et données reçues. Demander à l'utilisateur s'il souhaite créer les propriétés manquantes ou réutiliser les siennes ; demander l'accès ou l'intervention minimale. Ne jamais demander de mot de passe, créer un compte au nom de l'utilisateur, publier un tag/script, changer DNS ou modifier la plateforme de consentement sans autorisation explicite.
 
-Vérifier et consigner séparément lien configuré, collection publiée, rapports accessibles et données disponibles ; observer une période éligible et tenir compte du délai documenté. Préserver consentement et choix de collecte ; une liaison n’autorise pas de nouveau tag. Ne jamais assimiler clics GSC à sessions GA4, réception de sitemap à indexation, ou configuration réussie à collecte observée. Après résultat d’écriture inconnu, rechercher le lien avant réessai.
+Suivre le graphe réel des intégrations, sans promettre de lien natif Analytics–Bing :
+
+- **GA4 ↔ Search Console** : appliquer la [procédure GA4–Search Console](../analytics/references/search-console-link.md). Lire les associations avant création ; vérifier le couple propriété GSC/flux web GA4, leur portée et les rôles requis. Réutiliser l'association correcte ; ne jamais supprimer/recréer un lien occupé ou erroné sans mandat adapté.
+- **GA4 ↔ Microsoft Clarity** : une fois GA4 et le projet Clarity configurés, proposer et réaliser, si autorisé et disponible, l'association dans Clarity. Vérifier la propriété/flux sélectionné et noter les limites de portée. L'association ne remplace pas l'installation de la collecte Clarity sur le site.
+- **Bing Webmaster Tools ↔ Clarity** : utiliser l'intégration Clarity disponible dans Bing Webmaster Tools si le compte et la propriété le permettent ; confirmer le site exact et l'état affiché.
+- **Search Console → Bing Webmaster Tools** : l'import officiel d'une propriété vérifiée GSC peut faciliter l'ajout/vérification dans Bing ; l'utiliser seulement avec le compte Google et les permissions nécessaires. Ce transfert n'est pas une intégration GA4–Bing.
+
+Sources officielles à revalider au moment de la configuration : [lier GA4 à Clarity](https://learn.microsoft.com/en-us/clarity/ga-integration/ga-integration), [FAQ Microsoft Clarity](https://learn.microsoft.com/en-us/clarity/faq), [intégration Clarity de Bing Webmaster Tools](https://www.bing.com/webmasters/help/webmaster-support-24ab5ebf), [importer/vérifier un site depuis Search Console dans Bing](https://www2.bing.com/webmasters/help/add-and-verify-site-12184f8b). Ces intégrations et leurs conditions peuvent évoluer.
+
+Séquence recommandée : terminer le contrôle page par page et obtenir la validation explicite du rapport avant toute action dans GSC/Bing. Si GA4 manque, demander à l'utilisateur de s'inscrire/créer son compte Analytics, sa propriété GA4 et son flux web, ou solliciter son accord pour le guider ; confirmer ensuite que la collecte fonctionne. Puis relier GA4 à GSC si pertinent, vérifier/importer le site dans Bing depuis GSC si autorisé, créer/configurer Clarity si l'utilisateur le demande et raccorder Clarity à GA4 et à Bing quand les intégrations sont disponibles. Poursuivre les tâches indépendantes sans inventer de lien ni de résultat.
+
+Vérifier et consigner séparément propriété créée/vérifiée, tag installé, consentement préservé, association configurée, rapports accessibles et données disponibles ; observer une période éligible et tenir compte des délais documentés. Une liaison n'autorise pas à elle seule un nouveau tag ni une collecte sans consentement requis. Ne jamais assimiler clics GSC à sessions GA4, impressions Bing aux impressions Google, réception de sitemap à indexation, ni configuration réussie à collecte observée. En l'absence de lien Analytics–Bing natif, exploiter séparément leurs rapports et comparer des périodes/périmètres explicites. Après résultat d'écriture inconnu, rechercher l'association avant réessai.
 
 ## Optimiser la visibilité après déploiement
 
@@ -66,5 +100,8 @@ Pour les fixtures et le déroulé manuel, lire [les scénarios](references/scena
 - Site déjà présent dans Google/Bing : réutiliser les propriétés et sitemaps ; traiter les nouveaux changements sans doublons.
 - Blog ordinaire : sitemap/Search Console ; aucune utilisation abusive de Google Indexing API.
 - Preview noindex et production publique : traiter seulement la production ; préserver la preview.
+- Avant toute action GSC/Bing : réconcilier toutes les URLs attendues avec sitemaps/CMS/crawl, contrôler chaque URL indexable et rendre visible la couverture ; les pages noindex intentionnelles restent exclues.
+- GA4, GSC, Bing et Clarity : décrire les liens qui existent réellement, demander les comptes/autorisations absents, ne pas inventer de lien natif GA4–Bing ni publier un tag sans accord.
 - IndexNow accepte une notification mais aucune preuve d'indexation : statut de soumission uniquement.
 - Site local non éligible ou marché hors cible : exclure les fiches/modules concernés avec raison.
+

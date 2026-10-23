@@ -1,6 +1,6 @@
 # Plateformes : accès et contrôles, pas des facteurs de classement secrets
 
-Révision documentaire : 2026-10-04. Sources primaires dans [sources.md](sources.md).
+Révision documentaire : 2026-10-23. Sources primaires dans [sources.md](sources.md).
 Vérifier à nouveau les contrôles avant application. Les plateformes et les surfaces ne
 partagent pas nécessairement leur index, leurs outils ou leurs signaux de classement.
 
@@ -9,6 +9,7 @@ partagent pas nécessairement leur index, leurs outils ou leurs signaux de class
 | ChatGPT Search | `OAI-SearchBot` pour recherche ; IP officielles et WAF | Autorisation = éligibilité technique, pas recommandation garantie. |
 | Entraînement OpenAI | `GPTBot`, politique indépendante de la recherche | Bloquer GPTBot ne signifie pas bloquer ChatGPT Search. |
 | Visite demandée à ChatGPT | `ChatGPT-User` ; robots peut ne pas s'appliquer à l'action utilisateur | Ce fetcher ne détermine pas l'inclusion dans Search. |
+| Validation publicitaire ChatGPT | `OAI-AdsBot` pour les pages soumises comme annonces | Agent distinct de Search et de l'entraînement ; ne concerne pas les pages non soumises comme annonces. |
 | Perplexity recherche | `PerplexityBot`, non destiné à l'entraînement des modèles fondamentaux | Ne pas assimiler une visite à une citation. |
 | Visite demandée à Perplexity | `Perplexity-User`, fetch utilisateur pouvant ignorer robots | robots n'est pas une protection d'accès. |
 | Claude recherche | `Claude-SearchBot` | Ce n'est pas `ClaudeBot`. |
@@ -50,3 +51,18 @@ d'entraînement n'est présenté comme un canal d'acquisition mesurable à court
 ## Google Search generative AI - verification 2026-10-08
 
 Lire la section recherche generative des [controles Google](../../seo/references/google-advanced-practices.md). Inspecter l'etat effectif et l'heritage des proprietes avant diagnostic. Ce controle distingue inclusion generative, recherche classique et entrainement ; ne pas modifier un choix du proprietaire sans autorisation. Le rapport dedie mesure des impressions ; ne pas inventer des clics/conversions IA ni additionner ses donnees au total Web.
+
+## Actualisation OpenAI et Bing — 23 octobre 2026
+
+La documentation OpenAI actuelle sépare explicitement `OAI-SearchBot` (Search),
+`GPTBot` (entraînement des modèles fondamentaux), `ChatGPT-User` (action déclenchée
+par un utilisateur) et `OAI-AdsBot` (pages d'annonces soumises). Pour Search,
+OpenAI indique qu'un changement de robots.txt peut demander environ 24 heures et
+publie des plages IP par agent. Vérifier la source immédiatement avant toute règle :
+https://developers.openai.com/api/docs/bots
+
+Bing Webmaster Tools a ajouté Topics Portfolio en bêta le 13 octobre 2026. Le rapport
+regroupe les grounding queries par thèmes et expose taille, concurrence et opportunités,
+mais Bing qualifie les classifications et volumes d'approximatifs et directionnels.
+Les utiliser pour prioriser une expérience, jamais comme preuve de causalité ou de rang :
+https://blogs.bing.com/webmaster/2026/10/introducing-topics-portfolio-beta-in-ai-performance/

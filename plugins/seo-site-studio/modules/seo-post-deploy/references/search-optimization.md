@@ -14,3 +14,7 @@ Portée : visibilité organique du site courant après publication, pas moteur d
 GA4 et GSC décrivent des phénomènes différents : [comparaison officielle](https://developers.google.com/search/docs/monitor-debug/google-analytics-search-console). Analyser acquisition, comportement et événements clés distinctement ; ne pas imposer clics=visites, ni associer une requête précise à un utilisateur ou une vente sans données le permettant. Aucune promesse de classement, trafic, revenu ou délai d’indexation.
 
 Livrable : constats sourcés et limites, baseline, backlog priorisé, actions réellement faites/locales/publiées, preuves et prochaine fenêtre utile. Statuts de configuration, soumission, indexation, mesure et optimisation restent séparés.
+
+## Complément Google — 2026-10-08
+
+Appliquer les sections pertinentes des [contrôles avancés](../../seo/references/google-advanced-practices.md) : contenu, médias et données structurées pour l’éditorial ; contrôle effectif Search generative AI, attribution canonique et distinction impressions/clics/sessions pour la mesure. Les rapports IA ne s’additionnent pas aux données Web qui les incluent. Ne pas étendre le périmètre aux réglages de comptes sans autorisation.

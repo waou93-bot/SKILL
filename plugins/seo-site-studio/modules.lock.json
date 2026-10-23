@@ -301,10 +301,10 @@
     {
       "name": "seo-post-deploy",
       "files": {
-        "references/operators.md": "b39aa50cbdd014337bade842b5933954de22e1e728d5e4c877d2003c86390de6",
-        "references/scenarios.md": "bc69d1c66eaa3eeaec58bbfd9d1c6e03254b9db99dc5337dc181efa07e972db5",
-        "references/search-optimization.md": "12f72eea6393a41528ea7ec55ff9acc5d1a5dc648ff8872dc818b02b1c914c49",
-        "SKILL.md": "45656e270f9a14768570ebfb6cc2ef34499c2a4f82097b61040f5d9689e12c92"
+        "references/operators.md": "3fcc0076dd5c8f65b5979b6078eecf38b7c97c799c563c2012ca64c18e147b58",
+        "references/scenarios.md": "7e1736541e09fca3fc1db2cd67caf955d8f941a3c787ce4088418fc1c78160ce",
+        "references/search-optimization.md": "4fa5726293e9aef03121d8be2cd17704c897012885624af26f6a60a0d5bc14d4",
+        "SKILL.md": "3d66e800d6208b6116adbd4892337cf2be7f87e4cb6ab521e24c6e6d23c9d66b"
       },
       "mode": "resource; load only when relevant",
       "source": "local reviewed snapshot; upstream standalone sources preserved"

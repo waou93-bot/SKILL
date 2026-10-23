@@ -23,3 +23,16 @@ Fixtures fictives, déroulées manuellement le 5 octobre 2026 par l'auteur des c
 | 17. Marché ne justifiant pas Yandex ; DuckDuckGo absent d'une recherche site: | Yandex NON_APPLICABLE avec raison ; vérifier sources DuckDuckGo/Bing sans prétendre absence exhaustive ni inventer portail | Pertinence, observation et limites des recherches ponctuelles |
 
 Bilan du déroulé révisé : les 17 décisions ci-dessus respectent les invariants examinés. Cela ne mesure pas la fiabilité d'un agent en exécution autonome. Les ambiguïtés initiales corrigées concernent l'autorisation d'une validation, les formats sitemap, la couverture/droits GSC, les réponses IndexNow, le résultat d'écriture inconnu et les procédures conditionnelles détaillées.
+
+## Cas d’acceptation ajoutés le 23 octobre 2026 — non déroulés
+
+Ces cas définissent les décisions attendues pour le nouveau parcours d’indexation. Ils n’ont pas été exécutés ; ne pas les présenter comme des résultats de test.
+
+| Cas et données d’entrée | Décision attendue | Invariant |
+|---|---|---|
+| 18. Demande opérationnelle explicite ; propriété GSC absente du compte connecté ; droits GSC et preuve DNS disponibles | Ajouter et vérifier la propriété GSC, puis vérifier Bing et l’import ou l’ajout du site ; consigner séparément ajout et vérification | Création uniquement dans le périmètre demandé ; la propriété n’est pas considérée vérifiée avant preuve |
+| 19. GSC contient une exclusion globale ancienne ; inspection récente de l’URL prioritaire indique indexée | Comparer les dates, consigner les deux observations, ne pas répéter la demande d’indexation sans motif actuel | Les rapports globaux et inspections individuelles ont des dates distinctes |
+| 20. Sitemap valide avec plus de 100 URL éligibles ; Bing affiche un quota supérieur | Soumettre le sitemap ; limiter les demandes Bing directes à 100 URL uniques par exécution ; utiliser dans Google les demandes que permet le quota affiché ; prioriser les pages nouvelles, modifiées et importantes | 100 est le plafond du workflow Bing, pas le quota annoncé par la plateforme ; Google suit son propre quota |
+| 21. Propriété Bing ancienne, vérifiée, peu ou pas de données | Vérifier périmètre, dates, sitemap, Site Explorer, URL Inspection, robots.txt, rendu public, CDN/WAF et qualité ; ne pas modifier Crawl Control sans cause ; contacter le support si l’absence persiste après plusieurs jours | Diagnostic avant modification de configuration ; les délais d’une propriété nouvelle ne s’appliquent pas à une propriété historique |
+| 22. L’API URL Inspection GSC répond pour une page non indexée | Consigner le statut en lecture seule ; demander une nouvelle exploration dans l’interface si la page est éligible et que le quota l’autorise | Une inspection API ne soumet pas une demande d’exploration |
+| 23. Sitemap mêlant URL publiques valides et URL privées ou noindex | Ne pas soumettre les URL exclues ; soumettre les URL valides seulement si la liste est propre ou poursuivre avec la correction nécessaire consignée | Aucune page privée ou volontairement exclue dans les soumissions |

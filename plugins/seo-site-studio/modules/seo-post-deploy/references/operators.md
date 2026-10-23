@@ -21,6 +21,15 @@ Sources consultées le 5 octobre 2026. Google, IndexNow, OpenAI, Yandex, DuckDuc
 - [Google Indexing API : usages autorisés](https://developers.google.com/search/apis/indexing-api/v3/using-api) — offres JobPosting et diffusions BroadcastEvent intégrées à VideoObject, selon critères actuels.
 - [Bing : ajouter et vérifier un site](https://www2.bing.com/webmasters/help/add-and-verify-site-12184f8b)
 - [Bing : sitemaps](https://www2.bing.com/webmasters/help/sitemaps-3b5cf6ed)
+- [Bing : soumission d’URL et quotas](https://www.bing.com/webmasters/help/URL-Submission-62f2860b)
+- [Bing : inspection d’URL](https://www.bing.com/webmasters/help/URL-Inspection-55a30305)
+- [Bing : Site Explorer](https://www.bing.com/webmasters/help/site-explorer-c680da37)
+- [Bing : aide au diagnostic et données absentes](https://www.bing.com/webmasters/help/webmaster-support-24ab5ebf)
+- [Bing : robots.txt tester](https://www.bing.com/webmasters/help/robots-txt-tester-623520ca)
+- [Bing : Crawl Control](https://www.bing.com/webmasters/help/crawl-control-55a30303)
+- [GSC API : ajouter une propriété](https://developers.google.com/webmaster-tools/v1/sites/add)
+- [GSC API : soumettre un sitemap](https://developers.google.com/webmaster-tools/v1/sitemaps/submit)
+- [GSC API : inspection d’URL](https://developers.google.com/webmaster-tools/v1/urlInspection.index/urlInspection.index)
 - [Bing : retrait de la soumission anonyme](https://blogs.bing.com/webmaster/2022/5/Spring-cleaning-Removed-Bing-anonymous-sitemap-submission/)
 - [IndexNow : protocole](https://www.indexnow.org/documentation)
 - [IndexNow : questions et limites](https://www.indexnow.org/faq)
@@ -28,6 +37,12 @@ Sources consultées le 5 octobre 2026. Google, IndexNow, OpenAI, Yandex, DuckDuc
 - [OpenAI : robots](https://developers.openai.com/api/docs/bots)
 
 Ne pas réutiliser les anciens endpoints de ping Google/Bing. Vérifier les endpoints, OAuth/scopes et quotas avant une intégration, sans copier de jetons dans les livrables.
+
+## Quotas et limites d’indexation vérifiés
+
+Les pages Bing consultées le 23 octobre 2026 annoncent jusqu’à 10 000 soumissions d’URL par domaine et par jour pour la soumission manuelle et l’API, avec des lots API pouvant contenir jusqu’à 500 URL. La page précise que le quota réel peut être inférieur et varie selon les paramètres du site. Le workflow demandé par l’utilisateur plafonne malgré cela les soumissions directes à 100 URL uniques éligibles Bing par exécution ; présenter 100 comme limite de workflow, pas comme le quota officiel Bing. La même page annonce le retrait des anciens endpoints SOAP/POX au 31 août 2026 : relire la documentation courante et privilégier IndexNow ou l’API REST documentée, sans reprendre d’exemples d’anciens endpoints.
+
+L’API GSC Sites.add ajoute une propriété au compte, mais ne valide pas la propriété du domaine. Les propriétés Domaine exigent une preuve DNS. L’API Sitemaps permet de soumettre un sitemap. L’API URL Inspection renvoie l’état de l’index en lecture seule ; elle ne demande pas de nouvelle exploration. Pour demander l’exploration d’une URL Google, utiliser l’interface Search Console lorsqu’elle le permet et respecter le quota quotidien affiché, qui n’est pas un plafond général fixe de 100. Ne jamais utiliser l’Indexing API pour des pages ordinaires.
 
 ## Moteurs complémentaires
 

@@ -2,8 +2,8 @@
 name: ai-seo
 description: "Construire, auditer et mesurer l'acquisition par les moteurs IA : couverture query fan-out, réponses vérifiables, citations, recommandations et conversion. Utiliser pour SEO IA, GEO/AEO/LLMO, visibilité ChatGPT/Claude/Perplexity/Gemini/Copilot, accès des robots ou site lisible par les agents. Ne pas déclencher pour un chatbot interne, une simple retouche visuelle ou un audit SEO classique sans enjeu IA."
 metadata:
-  version: "3.2.0"
-  reviewed_at: "2026-10-13"
+  version: "3.3.0"
+  reviewed_at: "2026-10-23"
 ---
 
 # AI SEO — acquisition, citations et recommandations
@@ -48,6 +48,7 @@ Audit seul = lecture seule. Une demande d'implémentation autorise les changemen
 - `llms.txt`, Markdown, OKF, MCP, WebMCP et protocoles marchands ne sont pas des tickets de classement. Les traiter selon leur support réellement documenté et le besoin produit ; lire [les extensions optionnelles](references/okf.md).
 - Ne pas reprendre des pourcentages universels de gain, des quotas de mots ou une liste figée de facteurs de classement. Étiqueter chaque recommandation : documentation officielle, observation locale, hypothèse ou expérience.
 - Reconsulter les [sources primaires](references/sources.md) avant un conseil dépendant d'un fournisseur. En cas de documentation contradictoire, dater le conflit et privilégier la source officielle spécifique actualisée, sans inventer une certitude.
+- Avant toute mesure GEO ou expérience locale, appliquer [le protocole de mesure](references/04-measurement.md) : une métrique primaire, un seul changement interprétable, des témoins lorsque possible, répétitions, localisation déclarée et réseau enregistrés séparément, garde-fous et rollback.
 
 ## Workflow
 

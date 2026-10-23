@@ -1,5 +1,13 @@
 # Mesure et expérimentation
 
+## Chaîne de visibilité
+
+Mesurer séparément : `ACCESS` (fetch), `INDEX` (éligibilité/indexation),
+`RETRIEVAL` (sélection pour une requête ou sous-requête), `CITATION` (source affichée),
+`ABSORPTION` (information effectivement utilisée), `FIDELITY` (usage fidèle),
+`VISIT` (arrivée attribuable) et `OUTCOME` (action qualifiée). Ne jamais présenter
+une étape comme preuve automatique de la suivante.
+
 ## Trois tableaux séparés
 
 1. Éligibilité technique : contrôles URL/HTTP/robots/rendu et accès réels démontrés.
@@ -17,9 +25,12 @@ Fixer plateforme ET surface (application web/mobile/API, Google AI Mode vs autre
 recherche activée, modèle affiché s'il existe et état de personnalisation. Utiliser un contexte
 neutre lorsque possible ; documenter toute impossibilité.
 
-Répéter un sous-ensemble sur plusieurs dates pour estimer la variabilité. Les répétitions ne sont
-pas des utilisateurs indépendants. Une sortie API ne remplace pas une observation du produit public.
-Ne pas contourner CAPTCHA, conditions d'utilisation ou quotas ; commencer manuellement si nécessaire.
+Répéter chaque condition exploratoire au moins trois fois, sur plusieurs dates si possible,
+puis augmenter l'effectif lorsque le désaccord entre runs reste matériel. Les répétitions ne sont
+pas des utilisateurs indépendants. Pour une requête locale ou commerciale, contrôler séparément
+la localisation déclarée par l'application, le pays/région réseau, la localisation nommée dans la
+requête et la langue. Une sortie API ne remplace pas une observation du produit public. Ne pas
+contourner CAPTCHA, conditions d'utilisation ou quotas ; commencer manuellement si nécessaire.
 
 Pour chaque observation : `run_id`, `query_id`, `platform`, `surface`, `branded`, `language`,
 `country`, `search_enabled`, `context_control`, `synthetic`, `observed_at` avec fuseau,
@@ -94,3 +105,16 @@ l'autorisation de l'utilisateur. Ne pas annoncer une surveillance permanente ine
 ## Cartographie des sources récurrentes
 
 Compléter les observations avec URL exacte, domaine, type de source et affirmation soutenue selon [le protocole de cartographie](citation-map-pilot.md). Séparer citations du site et sources tierces. Pour chaque domaine, compter au plus une occurrence par réponse et afficher réponses valides et questions uniques concernées.
+
+## État de preuve GEO — octobre 2026
+
+Une étude du 10 octobre 2026 sur 158 099 réponses et 468 037 citations associe, au sein
+d'un même site, la proximité sémantique entre questions, titres et paragraphes aux citations.
+Elle ne montre pas le même signal interne pour FAQ, structured data, encadrés ou vitesse ; ces
+facteurs observés entre sites restent confondus. La récupération expliquait davantage de variation
+que les propriétés de page dans ce protocole. Traiter ces résultats comme hypothèses à répliquer,
+pas comme facteurs universels : https://arxiv.org/abs/2610.15033
+
+Une étude contrôlée du 16 octobre 2026 (31 200 réponses) observe des canaux de localisation
+différents selon ChatGPT et Gemini. Toute mesure locale doit donc enregistrer et varier localisation
+déclarée et réseau indépendamment : https://arxiv.org/abs/2610.24081

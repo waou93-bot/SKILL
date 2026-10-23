@@ -256,6 +256,10 @@ Reuse rules, not finished compositions.
 - Respect `prefers-reduced-motion`.
 - Provide low-power / no-WebGL fallbacks where relevant.
 - Optimize images instead of relying on low-quality assets or aggressive upscaling.
+- Keep critical copy, headings, links and factual content in accessible HTML rather than images, canvas or interaction-only states.
+- Preserve a logical DOM reading order and semantic heading hierarchy even when the composition is asymmetric.
+- Give informative media useful alt text, captions or transcripts; keep decorative media silent to assistive technology.
+- Keep visible content, metadata and structured data consistent. Do not distort the visual concept for an unverified SEO or GEO tactic.
 
 ## Handoff output for every project
 
@@ -270,7 +274,8 @@ A complete Design DNA handoff should include, when relevant:
 7. motion intensity and signature behaviors;
 8. explicit anti-slop exclusions;
 9. one distinctive project-specific visual idea;
-10. implementation constraints and fallbacks.
+10. implementation constraints and fallbacks;
+11. semantic reading order and multimodal discoverability notes for public surfaces.
 
 For a targeted correction, update the existing skin and return only the relevant changed
 decisions, observed checks and limits; do not produce a new art direction just to fill this list.
@@ -284,6 +289,8 @@ When used with `Organisation`, this skill must run before any visual production 
 Recommended routing:
 
 `Organisation -> Design DNA -> Project Skin -> visual concept/wireframe -> production -> Anti-Slop Gate -> Design Quality Gate`
+
+For public surfaces intended for organic or generative discovery, continue through `seo` and, when relevant, `ai-seo` before release. Design DNA owns visual meaning; SEO owns crawl, indexation and structured data; AI SEO owns generative-platform controls and measurement. None may silently override another.
 
 For `New Site`, `New App`, `New Pro` or equivalent project bootstrap skills:
 

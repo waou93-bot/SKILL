@@ -78,6 +78,17 @@ l’analyse des canaux de Business ; ne pas imposer le SEO comme canal principal
 Pour une retouche ciblée, utiliser uniquement les contrôles pertinents. Pour un projet
 privé sans enjeu de recherche web, ne pas lancer un plan SEO complet.
 
+Pour une surface publique visant aussi les réponses génératives, citations, recommandations
+ou moteurs IA, charger ensuite ai-seo. SEO garde le socle technique et éditorial ; ai-seo
+porte les plateformes génératives, leurs crawlers et la mesure expérimentale. Exiger une
+baseline datée et distinguer accès, indexation, récupération, citation, absorption fidèle,
+visite et résultat. Les exigences officielles et corrections techniques démontrées sont des
+gates ; les tactiques GEO non répliquées restent des expériences, jamais des garanties.
+
+Router l’inventaire et les normalisations répétitives vers LUNA, la priorisation thématique
+et le plan d’expérience vers TERRA, l’implémentation et l’instrumentation vers SOL, et les
+migrations risquées, le pSEO à grande échelle ou les arbitrages de preuve vers ASTRA.
+
 Lire le contexte et les dossiers BUSINESS/ et SEO/ existants. Retourner à Organisation
 la décision de canal ET l’état technique, les preuves, les inconnues et le backlog.
 Une recommandation n’est pas une permission de publication, suppression ou dépense.

@@ -6,7 +6,7 @@ description: >-
   prospects ou revenus. Pour une création complète ou l'audit et l'amélioration
   d'un site existant ; pas pour une question SEO isolée.
 metadata:
-  version: "1.13.0"
+  version: "1.13.1"
 ---
 
 # SEO Studio 3
@@ -106,6 +106,10 @@ Pour une revue complète, restituer les 20 contrôles et les statuts de `site-ch
 Pour une revue visuelle et éditoriale complète de tout le site avant publication, utiliser `site-editorial-release` ; il coordonne une passe globale `human-reading`, les corrections avec `redaction-editoriale-web` et `no-slop`, les doublons de termes/phrases, la relecture finale et `seo-post-deploy`, sans redemander séparément les mêmes contrôles pour les mêmes pages. Pour une correction ciblée ou lorsqu’aucune revue intégrale n’est demandée, appliquer directement `human-reading` à la QA visuelle du changement lorsque le rendu peut être ouvert ou capturé. Il vérifie la lisibilité réelle à l’écran — contraste, taille, hiérarchie, coupures et texte superposé — tandis que `redaction-editoriale-web` contrôle la qualité éditoriale. Ce contrôle n’est ni une détection d’écriture par IA, ni une validation factuelle. Lire les captures écran par écran à leur taille de rendu, sur les formats concernés ; un montage de captures ne remplace pas cette inspection. Vérifier le texte courant, les titres, boutons, légendes, tableaux et mentions dans leur contexte ; corriger puis rendre et inspecter à nouveau. Viser au moins 4,5:1 pour le texte courant et 3:1 pour le grand texte et les éléments d’interface ; viser 7:1 lorsque le texte est petit ou dense. Si le rendu ou certains formats ne sont pas accessibles, nommer précisément les contrôles omis au lieu de les marquer faits.
 
 Ne pas inventorier ni lire tous les skills contenant « SEO » par principe. Ne pas relancer un routeur appelé par Organisation. Ne pas annoncer une revue indépendante, un persona formé ou un sous-agent qui n'a pas réellement été utilisé. Fonctionner avec un seul agent par défaut ; ne lancer une délégation qu'après une demande explicite de l'utilisateur pour le « mode agentique » (ou formulation sans ambiguïté), et seulement si l'hôte et les règles l'autorisent. Dans ce mode, répartir uniquement des tâches indépendantes puis consolider les résultats et leurs preuves.
+
+## Repasse sémantique
+
+Pour une repasse transversale des pages d’un site existant, charger `seo-semantic-pass` s’il est disponible. Lui transmettre le contexte et les preuves du projet ; réutiliser la mémoire SEO, les outils gratuits et les autorisations existantes. Distinguer signaux lexicaux, intentions inférées et données de recherche observées ; ne pas relancer un audit complet pour une correction ciblée.
 
 ## Mémoire SEO du projet
 

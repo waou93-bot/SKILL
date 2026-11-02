@@ -1,0 +1,5 @@
+interface:
+  display_name: "SEO Semantic Pass"
+  short_description: "Améliorer la cohérence des pages"
+  default_prompt: "Utilise $seo-semantic-pass pour analyser les intentions, les réponses et le maillage de ce site, puis proposer une repasse éditoriale sourcée."
+

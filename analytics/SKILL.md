@@ -298,10 +298,10 @@ Inspect the actual session catalog before using any connector, API or browser. T
 | Tool | Best For | MCP | Guide |
 |------|----------|:---:|-------|
 | **GA4** | Web analytics, Google ecosystem | Verify availability | Official Google documentation and the Search Console procedure above |
-| **Mixpanel** | Product analytics, event tracking | - | [mixpanel.md](../../tools/integrations/mixpanel.md) |
-| **Amplitude** | Product analytics, cohort analysis | - | [amplitude.md](../../tools/integrations/amplitude.md) |
-| **PostHog** | Open-source analytics, session replay | - | [posthog.md](../../tools/integrations/posthog.md) |
-| **Segment** | Customer data platform, routing | - | [segment.md](../../tools/integrations/segment.md) |
+| **Mixpanel** | Product analytics, event tracking | - | [mixpanel](https://docs.mixpanel.com/docs/what-is-mixpanel) |
+| **Amplitude** | Product analytics, cohort analysis | - | [amplitude](https://amplitude.com/docs) |
+| **PostHog** | Open-source analytics, session replay | - | [posthog](https://posthog.com/docs) |
+| **Segment** | Customer data platform, routing | - | [segment](https://www.twilio.com/docs/segment/guides) |
 
 ---
 

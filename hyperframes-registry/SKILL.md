@@ -10,6 +10,8 @@ The registry provides reusable blocks and components installable via `hyperframe
 - **Blocks** — standalone sub-compositions (own dimensions, duration, timeline). Included via `data-composition-src` in a host composition.
 - **Components** — effect snippets (no own dimensions). Pasted directly into a host composition's HTML.
 
+> This installation uses CLI 0.7.64. Browse with `catalog --type` and `--tag` on this version. Use ranked search and gap reports only on project CLI versions whose help lists the corresponding flags. Get explicit authorization before sending search feedback.
+
 ## Quick reference
 
 ```bash

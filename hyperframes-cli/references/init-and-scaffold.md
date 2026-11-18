@@ -4,6 +4,8 @@ Scaffolding commands. Use these instead of creating files by hand — they set u
 
 ## init
 
+With CLI 0.7.64, set the environment variable `HYPERFRAMES_SKIP_SKILLS=1` for this command to preserve the local skill installation. Use `--non-interactive --example=blank` for a deterministic blank project.
+
 ```bash
 npx hyperframes init my-video                                    # TTY: interactive wizard
 npx hyperframes init my-video --example warm-grain               # pick an example
@@ -11,7 +13,7 @@ npx hyperframes init my-video --example blank --resolution portrait
 npx hyperframes init my-video --video clip.mp4                   # with video file
 npx hyperframes init my-video --audio track.mp3                  # with audio file
 npx hyperframes init my-video --example blank --tailwind         # Tailwind v4 browser runtime
-npx hyperframes init my-video --non-interactive --example blank  # CI/agents — flag-only
+npx hyperframes init my-video --non-interactive --example=blank  # CI — flag-only, blank
 ```
 
 **Default depends on TTY**: in a terminal, the CLI prompts for example/options. Outside a TTY (CI, agents, piped output) it auto-switches to non-interactive and **requires `--example`** (the CLI errors with a usage example if missing). Pass `--non-interactive` to force flag-only mode even on a TTY.

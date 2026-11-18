@@ -18,6 +18,7 @@ Reproduire le parcours fonctionnel décrit par l'utilisateur comme AutoSEO, sans
 
 - Auditer l'inventaire et les obstacles observables; distinguer mesure, hypothèse et inconnu. Produire SiteAudit.
 - Rechercher des opportunités avec sources, pays, appareil et dates; sans fournisseur, produire des hypothèses sans volume, difficulté, CPC ni classement inventés. Produire KeywordOpportunity.
+- Avant le calendrier, établir le mapping intention → URL canonique et type de page selon [Architecture et intentions](references/strategy.md). Réutiliser les champs des contrats existants; ne pas créer une URL par mot-clé ou par facette.
 - Préférer la mise à jour si l'intention est déjà couverte. Planifier 30 jours selon effort, budget et qualité; ne pas imposer une cadence quotidienne. Produire EditorialCalendar et ContentBrief.
 - Rédiger avec valeur originale, sources et preuves d'entreprise; produire ArticlePackage, puis ValidationReport. Les défauts bloquants empêchent la publication; les sujets sensibles demandent une validation qualifiée.
 - Créer ou mettre à jour un brouillon seulement si le connecteur le permet. Appliquer les règles de publication dans connectors. draft ne publie jamais; review exige une autorisation portant sur la version revue; automatic doit être explicitement configuré et autorisé pour le périmètre. Respecter les autorisations déjà données sans les redemander. Aucun remplacement silencieux. Produire PublicationRecord même en cas d'échec.

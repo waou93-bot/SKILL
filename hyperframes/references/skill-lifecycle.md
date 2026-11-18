@@ -1,33 +1,14 @@
-# Skill installation and freshness
+# HyperFrames skill maintenance
 
-Read this reference when installing or updating skills, diagnosing unexpected workflow behavior, or running HyperFrames setup in CI.
+The installed CLI version is 0.7.64. Read the existing local skills first, including general-video, motion-graphics, product-launch-video and the domain skills. Local workflows preserve Design DNA, project briefs, review gates and companion flows. A branch-default catalog can differ from the release for the installed CLI.
 
-HyperFrames installs the core set eagerly and workflow skills lazily.
+For scaffolding with 0.7.64, set the environment variable `HYPERFRAMES_SKIP_SKILLS=1` before `hyperframes init`. For example, in PowerShell use `$env:HYPERFRAMES_SKIP_SKILLS = '1'` for the command's session.
 
-- **Core set:** `/hyperframes`, the `hyperframes-*` domain skills, and `/media-use`.
-- **Workflow skills:** installed when routing selects them through `npx hyperframes skills update <workflow-name>`.
+For maintenance or a missing workflow:
 
-## What `init` does
+1. Check the actual CLI and project pin. Use the bundled references or the corresponding [release tag](https://github.com/heygen-com/hyperframes/tree/v0.7.64/skills).
+2. Stage the selected workflow and dependencies outside installed catalogs and compare against both local copies. Preserve locally adapted routing, Design DNA blocks, scripts, and references.
+3. Back up and merge the selected changes. Check links, commands and cross-workflow references before relying on them.
+4. If a workflow is unavailable for that release, explain the limitation and use an installed route only when it covers the deliverable.
 
-`npx hyperframes init` checks GitHub and refreshes the core set plus other skills already installed. It does not install workflows that have never been used. A current install is a no-op. Offline or rate-limited checks degrade gracefully and do not fail project scaffolding.
-
-The `--skip-skills` CLI flag is temporarily ignored. CI and tests may opt out with `HYPERFRAMES_SKIP_SKILLS=1`.
-
-## Diagnose and update
-
-```bash
-npx hyperframes skills check
-npx hyperframes skills check --json
-npx hyperframes skills update
-npx hyperframes skills update <workflow-name>
-npx hyperframes skills
-```
-
-- `skills check` exits non-zero when an installed skill is stale or the core set is incomplete. Workflows available on demand but not installed are not failures.
-- Bare `skills update` refreshes the core set and everything already installed, prunes unpublished skills, and does not expand the workflow set.
-- Named `skills update <name...>` also installs those named workflows or domain skills.
-- Bare `skills` installs the full published set explicitly.
-
-If the HyperFrames CLI is unavailable, use `npx skills add heygen-com/hyperframes --skill <workflow-name>` for one workflow or `npx skills add heygen-com/hyperframes --all` for the full published set.
-
-The CLI may print a one-line stale-skill reminder during `render`, `lint`, or `check`. Treat a failed update as a visible tool failure; do not continue from a remembered workflow contract.
+The 0.7.64 updater can prune unpublished skills and can refresh dependencies even for named updates. Use a staged merge for this customized installation.

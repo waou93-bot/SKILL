@@ -10,13 +10,7 @@ description: >
 
 # General video
 
-Before relying on this workflow, run:
-
-```bash
-npx hyperframes skills update general-video
-```
-
-A successful no-op means the skill is current. Surface an update failure instead of continuing from memory.
+Use this local workflow and follow the [HyperFrames skill lifecycle](../hyperframes/references/skill-lifecycle.md) for maintenance.
 
 ## 1. Apply cross-cutting source adapters
 
@@ -135,7 +129,7 @@ Timed elements use `class="clip"`; the root and relevant ancestors are sized; ea
 
 ### Borrow workflows safely
 
-When the piece resembles a shipped workflow, borrow its genre references as examples. First run `npx hyperframes skills update <workflow-name>`. Borrow its story shape and taste, not its private scripts, pipeline state, or directory contract. The generic build remains owned by this skill.
+When the piece resembles a shipped workflow, borrow its genre references as examples. Read the installed workflow first. For a missing workflow, follow the [skill lifecycle](../hyperframes/references/skill-lifecycle.md). Borrow its story shape and taste, not its private scripts, pipeline state, or directory contract. The generic build remains owned by this skill.
 
 ## 7. Done
 

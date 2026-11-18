@@ -75,13 +75,7 @@ For fresh creation the intent layer (`references/intent-interview.md`) runs the 
 
 ## 4. Install and enter the workflow
 
-Before reading the selected workflow, install or refresh it and the core domain skills:
-
-```bash
-npx hyperframes skills update <workflow-name>
-```
-
-Use the bare name without `/`. If the command fails, surface the error; do not reconstruct the workflow from memory. Everything else about installation — the core-vs-lazy split, what `init` refreshes, diagnosis, CI opt-out, and the no-CLI fallback — lives in `references/skill-lifecycle.md`.
+Open the installed local workflow first. The local HyperFrames skills include routing, review and Design DNA adaptations. Use [the skill lifecycle](references/skill-lifecycle.md) for missing workflows and version-specific maintenance.
 
 ## 5. Load domain skills on demand
 

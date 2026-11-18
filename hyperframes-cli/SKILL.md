@@ -13,16 +13,35 @@ description: >
 
 Run commands as `npx hyperframes ...` unless project instructions provide a wrapper. Obey the wrapper when present. The CLI requires Node.js 22 or newer and FFmpeg.
 
+## Installed CLI
+
+This installation uses HyperFrames 0.7.64. Match commands to the project's pinned CLI when it differs. Pass `HYPERFRAMES_SKIP_SKILLS=1` as an environment variable when scaffolding with 0.7.64 to preserve the adapted skill installation. Use `--non-interactive --example=blank` for a deterministic blank project in automation.
+
 ## Development loop
 
-1. **Scaffold:** `npx hyperframes init <project>` or capture a site. In non-TTY mode, pass `--non-interactive --example=<name>`.
-2. **Author:** write the composition using `/hyperframes-core`.
-3. **Get fast feedback while editing:** run `npx hyperframes lint` after the first HTML pass and after structural changes.
-4. **Run the final gate:** run `npx hyperframes check`; it reruns lint before opening the browser. Do not prepend a redundant standalone lint invocation. Add `--snapshots` for annotated overview frames and finding crops.
-5. **Inspect sub-compositions:** when `index.html` mounts `data-composition-src`, capture midpoint snapshots and inspect each mounted scene.
-6. **Open the final Studio preview:** run `npx hyperframes preview`, hand the timeline project URL to the user, and ask whether to revise or render.
-7. **Render only after approval:** use draft quality for iteration and high quality for delivery.
-8. **Verify the output:** confirm the file exists, is non-empty, and has a plausible duration.
+1. **Scaffold:** `npx hyperframes init <project> --non-interactive --example=blank`, or capture a site. Set the environment variable above when scaffolding.
+2. **Find the move:** before authoring motion by hand, search for a primitive that already does it: `npx hyperframes catalog --type block --tag text`. Ask for the effect you want rather than the mechanism you have in mind. Install with `npx hyperframes add <name>` (see `/hyperframes-registry`). Author by hand only once nothing fits.
+3. **Author:** write the composition using `/hyperframes-core`.
+4. **Get fast feedback while editing:** run `npx hyperframes lint` after the first HTML pass and after structural changes.
+5. **Run the final gate:** run `npx hyperframes check`; it reruns lint before opening the browser. Do not prepend a redundant standalone lint invocation. Add `--snapshots` for annotated overview frames and finding crops.
+6. **Inspect sub-compositions:** when `index.html` mounts `data-composition-src`, capture midpoint snapshots and inspect each mounted scene.
+7. **Open the final Studio preview:** run `npx hyperframes preview --background`, verify the URL returns HTTP 200, hand the timeline project URL to the user, and ask whether to revise or render. Keep it alive until review ends.
+8. **Render only after approval:** use `--quality draft` while iterating, `--quality standard` for the first real encode (the CLI default), and `--quality high` for final delivery.
+9. **Verify the output:** confirm the file exists and is non-empty. Read the render summary's second line (`beginframe` vs `screenshot`, GPU, stage timings). `screenshot` + `software gpu` on Linux is the slow path. `ffprobe -v error -show_format -show_streams` and compare duration (and fps if the brief set it) to the root `data-duration`.
+
+## Mandatory creator-edit cross-references
+
+- Before authoring or diagnosing a zoom, punch-in/punch-out, reframe, camera
+  move, or any keyframe motion, read `/hyperframes-keyframes` first.
+- Before `hyperframes keyframes`, read `/hyperframes-keyframes`; the command
+  surfaces animation trajectories and does not diagnose clip cuts.
+- For a cut, trim, splice, reorder, or source timing edit, read
+  `/hyperframes-core` and use its clip/timeline contract.
+- For fade-in/fade-out, crossfade, track gain, volume automation, ducking,
+  voiceover carve, or FX on placed audio, read `/hyperframes-audio`. Load core
+  alongside it when clip placement or picture timing also changes.
+- Use `/media-use` only to source/generate media or preprocess a derived asset.
+  Copy creator edit markup from `/hyperframes-core` → `references/creator-editing-recipes.md`.
 
 ```bash
 # Fast iteration check; repeat while authoring as needed.
@@ -30,8 +49,8 @@ npx hyperframes lint
 
 # Required final gate; includes lint.
 npx hyperframes check
-npx hyperframes preview
-npx hyperframes render --quality high --output out.mp4
+npx hyperframes preview --background
+npx hyperframes render --quality standard --output out.mp4
 test -s out.mp4
 ffprobe -v error -show_format out.mp4
 ```
@@ -61,6 +80,8 @@ Treat tiny unstyled content, canvas-sized icons, missing hero elements, or timel
 
 ## Agent conventions
 
+- Browse the catalog before authoring motion by hand. Use `npx hyperframes catalog --type block --tag <tag>`. Follow the registry skill for options available on the project version.
+
 - Prefer `--json` for agent and CI calls. Server-mode `render`, `preview`, and `play` do not provide ordinary JSON output; `preview --selection --json` and `preview --context --json` are query-mode exceptions.
 - `doctor --json` always exits zero. Gate on its payload:
 
@@ -68,7 +89,7 @@ Treat tiny unstyled content, canvas-sized icons, missing hero elements, or timel
   npx hyperframes doctor --json | jq -e '.ok' >/dev/null
   ```
 
-- Non-TTY mode is automatic. `init` requires `--example` there; use `--non-interactive` to force deterministic behavior on a TTY.
+- In automation, use `--non-interactive --example=blank` for a blank scaffold.
 - Use one `HYPERFRAMES_RUN_ID` for all commands in the same verification loop.
 - Use `--strict`, `--strict-all`, and `--strict-variables` when the corresponding warnings, variables, or CI conditions must gate the render.
 - JSON paths redact the home directory as `$HOME`; do not try to reverse the redaction.
@@ -90,7 +111,8 @@ Use `selection.target.hfId` when available, otherwise its selector and source fi
 | Need                                     | Command                                                                       |
 | ---------------------------------------- | ----------------------------------------------------------------------------- |
 | Fast local iteration                     | `npx hyperframes render --quality draft`                                      |
-| Final local delivery                     | `npx hyperframes render --quality high --output out.mp4`                      |
+| First real encode                        | `npx hyperframes render --quality standard --output out.mp4`                     |
+| Final local delivery                     | `npx hyperframes render --quality high --output out.mp4`                  |
 | Reproducible container render            | `npx hyperframes render --docker --strict --output out.mp4`                   |
 | Local variable-driven batch render       | `npx hyperframes render --batch rows.json --output "renders/{name}.mp4"`      |
 | HeyGen-hosted zero-infrastructure render | `npx hyperframes cloud render`                                                |
@@ -101,7 +123,7 @@ Skill attribution is automatic — the examples above need no `--skill`. A proje
 
 Use cloud rendering when the user wants hosted rendering without local Chrome, FFmpeg, or AWS. Use Lambda only when AWS ownership is a requirement. Use Cloud Run only when GCP ownership is a requirement. Read the matching reference before running any cloud path.
 
-After verifying a successful render, send one feedback report unless telemetry is disabled or the user opted out:
+Send feedback only when the user explicitly authorizes sending it. After verifying the render, use:
 
 ```bash
 npx hyperframes feedback --rating <0-10> --comment "<specific result or friction>"
@@ -137,3 +159,10 @@ npx hyperframes keyframes <project-dir> --json
 ```
 
 `present` serves a navigable deck with presenter and audience synchronization. `beats` is the standalone Studio beat-grid utility defined in `references/beats.md`. `keyframes` surfaces seek-safe animation and motion-path diagnostics.
+
+## Commands you should not run
+
+Two entries in `hyperframes --help` are not part of the authoring loop, and reaching for them wastes a turn:
+
+- `events` is the telemetry endpoint skills use to report their **own** invocation, ideally from a bundled script. It emits an anonymous event and exits 0 no matter what you pass it. It is not a way to read telemetry back, and an agent has no reason to call it by hand.
+- `validate`, `inspect`, and `layout` are deprecated aliases kept for old scripts. `check` is the one that is maintained, and it is what every reference in this skill assumes.
